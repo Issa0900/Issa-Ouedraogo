@@ -7,10 +7,22 @@
 
 Tableau de bord interactif pour suivre les ventes, marges et performances régionales d'une entreprise de vente au détail, et identifier les zones à améliorer.
 
-> 📁 Fichier livrable : [`Dashboard_Ventes.xlsx`](./Dashboard_Ventes.xlsx)
+> 📁 Fichier livrable : [`Dashboard_Ventes.xlsx`](./Dashboard_Ventes.xlsx)  ·  👁️ [**Ouvrir en ligne (Office Viewer)**](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FIssa0900%2FIssa-Ouedraogo%2Fmain%2FDashboard_Ventes.xlsx)  ·  ⬇️ [Télécharger](https://github.com/Issa0900/Issa-Ouedraogo/raw/main/Dashboard_Ventes.xlsx)
+>
+> ℹ️ GitHub ne sait pas prévisualiser correctement les fichiers Excel complexes (formules, graphiques, feuille masquée, filtres). Utilise le lien **"Ouvrir en ligne"** ci-dessus pour consulter le vrai fichier dans ton navigateur, ou télécharge-le pour l'ouvrir dans Excel et tester les filtres. Les aperçus ci-dessous montrent exactement ce que tu y trouveras.
 
-<!-- 📸 Ajoute ici une capture d'écran de l'onglet "Dashboard" -->
-<!-- ![Aperçu du dashboard](./assets/dashboard-preview.png) -->
+![Aperçu du dashboard — vue globale](./assets/dashboard-preview-tous.png)
+
+---
+
+## 🎬 Aperçu — filtrage interactif
+
+Le dashboard se pilote entièrement via 3 segments (Région / Catégorie / Année). Exemple : en filtrant sur **Région = West**, tous les indicateurs et graphiques se recalculent instantanément.
+
+| Vue par défaut (Tous) | Vue filtrée (Région = West) |
+|---|---|
+| ![Vue globale](./assets/dashboard-preview-tous.png) | ![Vue filtrée sur West](./assets/dashboard-preview-west.png) |
+| Ventes : 2 295 274 € · Marge : 12,5 % | Ventes : 725 458 € · Marge : 14,9 % |
 
 ---
 
@@ -64,12 +76,12 @@ Construire un tableau de bord Excel interactif permettant d'analyser en temps r�
 - **La catégorie Technology est la plus rentable** (145 K$ de profit), loin devant Furniture (18 K$) malgré des ventes comparables — signe d'un problème de marge sur le mobilier
 - **Deux sous-catégories sont déficitaires : Tables (-17,7 K$) et Bookcases (-3,5 K$)** — probablement liées à des remises excessives, à creuser en priorité
 
-## 🚀 Comment utiliser le dashboard
+## 🚀 Comment tester l'interactivité toi-même
 
-1. Ouvrir `Dashboard_Ventes.xlsx` dans Excel (le classeur se recalcule automatiquement à l'ouverture)
+1. Télécharger [`Dashboard_Ventes.xlsx`](./Dashboard_Ventes.xlsx) et l'ouvrir dans Excel (le classeur se recalcule automatiquement à l'ouverture)
 2. Aller sur l'onglet **Dashboard**
-3. Utiliser les listes déroulantes (cellules jaunes) pour filtrer par **Région**, **Catégorie** et **Année**
-4. Les indicateurs et graphiques se mettent à jour automatiquement
+3. Changer les listes déroulantes (cellules jaunes) — **Région**, **Catégorie**, **Année**
+4. Observer les 4 indicateurs et les 4 graphiques se mettre à jour instantanément, sans macro ni manipulation supplémentaire
 
 ## 🧠 Choix méthodologique : segments sans TCD natif
 
