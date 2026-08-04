@@ -11,7 +11,7 @@ Tableau de bord interactif pour suivre les ventes, marges et performances régio
 >
 > ℹ️ GitHub ne sait pas prévisualiser correctement les fichiers Excel complexes (formules, graphiques, feuille masquée, filtres). Utilise le lien **"Ouvrir en ligne"** ci-dessus pour consulter le vrai fichier dans ton navigateur, ou télécharge-le pour l'ouvrir dans Excel et tester les filtres. Les aperçus ci-dessous montrent exactement ce que tu y trouveras.
 
-![Aperçu du dashboard — vue globale](./assets/dashboard-preview-tous.png)
+![Aperçu du dashboard — vue globale](./dashboard-preview-tous.png)
 
 ---
 
@@ -21,7 +21,7 @@ Le dashboard se pilote entièrement via 3 segments (Région / Catégorie / Anné
 
 | Vue par défaut (Tous) | Vue filtrée (Région = West) |
 |---|---|
-| ![Vue globale](./assets/dashboard-preview-tous.png) | ![Vue filtrée sur West](./assets/dashboard-preview-west.png) |
+| ![Vue globale](./dashboard-preview-tous.png) | ![Vue filtrée sur West](./dashboard-preview-west.png) |
 | Ventes : 2 295 274 € · Marge : 12,5 % | Ventes : 725 458 € · Marge : 14,9 % |
 
 ---
