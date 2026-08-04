@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/photo-profil.jpg" alt="Issa Ouedraogo" width="140" style="border-radius: 50%; object-fit: cover; height: 140px;" />
 
-  # 👋 Portfolio — Issa Ouedraogo
+  # Issa Ouedraogo
 
   *Gestion de Commerce · Analyse de données au service de la décision*
 
@@ -12,9 +12,9 @@
 
 ## 👋 À propos
 
-Mon parcours en **Gestion de Commerce** m'a donné une compréhension fine des enjeux business, que je complète par des compétences en **analyse de données** — Excel avancé, Python, SQL, Power BI/Tableau, statistiques appliquées — pour aider à la bonne prise de décision.
+Mon parcours en **Gestion de Commerce** m'a donné une compréhension fine des enjeux business. Je complète cette base par des compétences en **analyse de données**, notamment Excel avancé, Python, SQL, Power BI/Tableau et statistiques appliquées, pour aider à la bonne prise de décision.
 
-Je conçois des outils d'aide à la décision — tableaux de bord interactifs, analyses de données, requêtes SQL — qui transforment des données brutes en informations exploitables pour piloter une activité, de bout en bout : du nettoyage des données jusqu'au livrable final documenté.
+Je conçois des outils d'aide à la décision, comme des tableaux de bord interactifs, des analyses de données et des requêtes SQL, qui transforment des données brutes en informations exploitables pour piloter une activité, du nettoyage des données jusqu'au livrable final documenté.
 
 Je recherche activement un **stage ou une alternance en analyse de données**, ainsi que des **missions freelance** ponctuelles.
 
