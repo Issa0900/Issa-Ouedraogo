@@ -1,0 +1,16 @@
+title: Issa Ouedraogo — Portfolio Data Analyst
+description: "Analyste de données — projets Excel, Python et visualisation de données"
+theme: jekyll-theme-cayman
+
+author: Issa Ouedraogo
+email: issaouedraogo0900@gmail.com
+
+# Page à utiliser comme accueil du site (au lieu du README.md, qui reste la vitrine du repo sur GitHub)
+show_downloads: false
+
+# Fichiers/dossiers que Jekyll ne doit pas essayer de traiter comme des pages du site
+exclude:
+  - README.md
+  - METHODE-PORTFOLIO.md
+  - "dashboard-ventes-performance/README.md"
+  - "dashboard-ventes-performance/data/"

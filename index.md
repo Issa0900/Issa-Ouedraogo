@@ -1,14 +1,19 @@
-<div align="center">
-  <img src="assets/photo-profil.jpg" alt="Issa Ouedraogo" width="140" style="border-radius: 50%; object-fit: cover; height: 140px;" />
-
-  # 👋 Portfolio — Issa Ouedraogo
-
-  *Gestion de Commerce · Analyse de données au service de la décision*
-
-  📧 [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
-</div>
-
 ---
+layout: default
+title: Accueil
+---
+
+<div align="center">
+  <img src="assets/photo-profil.jpg" alt="Issa Ouedraogo" width="180" style="border-radius: 50%; object-fit: cover; height: 180px;" />
+
+  <h1>Issa Ouedraogo</h1>
+  <p><em>Gestion de Commerce · Analyse de données au service de la décision</em></p>
+  <p>
+    📧 <a href="mailto:issaouedraogo0900@gmail.com">issaouedraogo0900@gmail.com</a>
+    &nbsp;·&nbsp;
+    💼 <a href="https://www.linkedin.com/in/issa-ouedraogo-34b146332/" target="_blank">LinkedIn</a>
+  </p>
+</div>
 
 ## 👋 À propos
 
@@ -18,21 +23,13 @@ Je conçois des outils d'aide à la décision — tableaux de bord interactifs, 
 
 Je recherche activement un **stage ou une alternance en analyse de données**, ainsi que des **missions freelance** ponctuelles.
 
-Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un README détaillé expliquant le contexte métier, la méthode et les résultats.
-
-> 🌐 Version web avec présentation complète : **[page portfolio](https://issa0900.github.io/Issa-Ouedraogo/)** *(une fois GitHub Pages activé)*
-
----
-
 ## 📁 Projets
 
 | Projet | Description | Compétences | Lien |
 |---|---|---|---|
 | 📊 **Dashboard Ventes & Performance** | Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie | Excel avancé, Python (pandas/openpyxl), nettoyage de données | [Voir le projet →](./dashboard-ventes-performance/) |
 
-*(Les prochains projets s'ajouteront ici, un dossier par projet.)*
-
----
+*(Les prochains projets s'ajouteront ici.)*
 
 ## 🛠️ Compétences
 
@@ -43,7 +40,3 @@ Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)
 ![Statistiques](https://img.shields.io/badge/Statistiques-6A5ACD?style=flat&logo=googleanalytics&logoColor=white)
-
-## 📬 Contact
-
-**Issa Ouedraogo** — [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com) · [LinkedIn](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
