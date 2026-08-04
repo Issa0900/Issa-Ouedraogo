@@ -27,7 +27,7 @@ Je recherche activement un **stage ou une alternance en analyse de données**, a
 
 | Projet | Description | Compétences | Lien |
 |---|---|---|---|
-| 📊 **Dashboard Ventes & Performance** | Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie | Excel avancé, Python (pandas/openpyxl), nettoyage de données | [Voir le projet →](./dashboard-ventes-performance/) |
+| 📊 **Dashboard Ventes & Performance** | Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie | Excel avancé, Python (pandas/openpyxl), nettoyage de données | [Voir le projet →](https://github.com/Issa0900/Issa-Ouedraogo/tree/main/dashboard-ventes-performance) |
 
 *(Les prochains projets s'ajouteront ici.)*
 
