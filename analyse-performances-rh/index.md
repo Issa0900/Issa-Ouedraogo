@@ -3,7 +3,7 @@ layout: default
 title: Analyse des performances RH
 ---
 
-# 📈 Analyse des performances RH — Statistiques descriptives & détection d'outliers
+# 📈 Analyse des performances RH : statistiques descriptives et détection d'outliers
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
@@ -30,7 +30,7 @@ Une entreprise veut comprendre la répartition de la performance de ses employé
 
 | | |
 |---|---|
-| **Source** | HRDataset_v14 — jeu de données RH de référence pour l'exercice académique |
+| **Source** | HRDataset_v14, jeu de données RH de référence pour l'exercice académique |
 | **Volume** | 311 employés, 36 variables (actifs et sortis) |
 | **Répartition** | 207 employés actifs, 104 sortis |
 | **Variables clés** | Salaire, score de performance, engagement, satisfaction, absences, retards, projets spéciaux, département |
@@ -58,12 +58,12 @@ Une entreprise veut comprendre la répartition de la performance de ses employé
 
 ## 💡 Insights clés
 
-- **78,1 % des employés « répondent aux attentes »**, 11,9 % les dépassent ; **10 %** (31 employés) sont « à améliorer » ou en plan de redressement (PIP) — c'est ce groupe qui doit concentrer l'attention RH.
+- **78,1 % des employés « répondent aux attentes »**, 11,9 % les dépassent ; **10 %** (31 employés) sont « à améliorer » ou en plan de redressement (PIP), c'est ce groupe qui doit concentrer l'attention RH.
 - **Le salaire n'explique presque pas la performance** (corrélation r = 0,13). Ce qui la prédit vraiment : la **ponctualité** (r = -0,73) et l'**engagement** (r = +0,54). Payer plus ne suffit pas à faire performer davantage dans cet échantillon.
-- **29 employés (9,3 %)** ont un salaire statistiquement atypique (> 96 838 $), presque tous des postes de direction ou de gestion IT — cohérent avec la hiérarchie. Un cas détonne : un gestionnaire IT à 157 000 $ avec une performance « Needs Improvement », un écart rémunération/performance à documenter.
+- **29 employés (9,3 %)** ont un salaire statistiquement atypique (> 96 838 $), presque tous des postes de direction ou de gestion IT, cohérent avec la hiérarchie. Un cas détonne : un gestionnaire IT à 157 000 $ avec une performance « Needs Improvement », un écart rémunération/performance à documenter.
 - **9 employés ont un engagement anormalement bas** (< 2,17/5) : un signal de désengagement à traiter nommément avant qu'il ne se traduise en sous-performance ou en départ.
-- **Contre-intuitif sur le turnover** : ce ne sont pas les employés en PIP qui partent le plus (38,5 %), mais ceux classés « à améliorer » (55,6 %) — probablement des départs volontaires anticipés, avant toute mesure formelle.
-- **Limite méthodologique documentée** : pour les variables concentrées à zéro (retards, projets spéciaux), Q1 = Q3 = 0, donc l'IQR = 0 et *toute* valeur non nulle est mathématiquement « outlier ». Ce n'est pas une anomalie individuelle mais un artefact statistique propre aux distributions zero-inflated — la lecture a été ajustée en conséquence plutôt que citée telle quelle.
+- **Contre-intuitif sur le turnover** : ce ne sont pas les employés en PIP qui partent le plus (38,5 %), mais ceux classés « à améliorer » (55,6 %), probablement des départs volontaires anticipés, avant toute mesure formelle.
+- **Limite méthodologique documentée** : pour les variables concentrées à zéro (retards, projets spéciaux), Q1 = Q3 = 0, donc l'IQR = 0 et *toute* valeur non nulle est mathématiquement « outlier ». Ce n'est pas une anomalie individuelle mais un artefact statistique propre aux distributions zero-inflated. La lecture a été ajustée en conséquence plutôt que citée telle quelle.
 
 ## 📊 Visualisations
 
@@ -82,10 +82,10 @@ python generer_graphiques.py       # régénère les graphiques dans assets/
 
 ## 🧠 Choix méthodologique : la règle IQR n'est pas neutre
 
-La règle des 1,5 × IQR est standard, mais elle suppose implicitement une distribution avec un minimum de variance dans les quartiles centraux. Sur une variable où plus de 75 % des valeurs sont à zéro (ex. retards, projets spéciaux), l'IQR s'effondre à 0 et la règle étiquette *toute* valeur positive comme aberrante — 22,5 % des employés se retrouvent ainsi « outliers » sur les projets spéciaux, ce qui reflète en réalité la nature du poste (Production vs bureau), pas une anomalie. Appliquer une règle statistique sans vérifier ses hypothèses de forme aurait produit une conclusion trompeuse dans le rapport final.
+La règle des 1,5 × IQR est standard, mais elle suppose implicitement une distribution avec un minimum de variance dans les quartiles centraux. Sur une variable où plus de 75 % des valeurs sont à zéro (ex. retards, projets spéciaux), l'IQR s'effondre à 0 et la règle étiquette *toute* valeur positive comme aberrante. 22,5 % des employés se retrouvent ainsi « outliers » sur les projets spéciaux, ce qui reflète en réalité la nature du poste (Production vs bureau), pas une anomalie. Appliquer une règle statistique sans vérifier ses hypothèses de forme aurait produit une conclusion trompeuse dans le rapport final.
 
 ## 📬 Contact
 
-Réalisé par **Issa Ouedraogo** — [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)
+Réalisé par **Issa Ouedraogo**, [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)
 
 [← Retour au portfolio](../)
