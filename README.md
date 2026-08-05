@@ -3,7 +3,7 @@
 
   # Issa Ouedraogo
 
-  *Gestion de Commerce · Analyse de données au service de la décision*
+  *Analyse de données · IA appliquée · Gestion de Commerce*
 
   📧 [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
 </div>
@@ -16,7 +16,9 @@ Mon parcours en **Gestion de Commerce** m'a donné une compréhension fine des e
 
 Je conçois des outils d'aide à la décision, comme des tableaux de bord interactifs, des analyses de données et des requêtes SQL, qui transforment des données brutes en informations exploitables pour piloter une activité, du nettoyage des données jusqu'au livrable final documenté.
 
-Je recherche activement un **stage ou une alternance en analyse de données**, ainsi que des **missions freelance** ponctuelles.
+Je vais plus loin en intégrant l'**IA à mon flux de travail** : automatisation de tâches répétitives, génération assistée de scripts Python, structuration de rapports par prompts. L'objectif est concret — réduire les délais de production pour concentrer le temps sur l'interprétation et la recommandation, là où se trouve la vraie valeur ajoutée pour l'entreprise.
+
+Je recherche activement des **missions freelance** en analyse de données.
 
 Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un README détaillé expliquant le contexte métier, la méthode et les résultats.
 
@@ -40,6 +42,7 @@ Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un
 
 ## 🛠️ Compétences
 
+![IA appliquée](https://img.shields.io/badge/IA_appliquée-automatisation-0B6B45?style=flat&logo=openai&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)

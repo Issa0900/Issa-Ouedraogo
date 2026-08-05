@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Issa Ouedraogo — Analyste de données</title>
-<meta name="description" content="Gestion de commerce et analyse de données au service de la décision — Excel, Python, SQL, Power BI, statistiques appliquées." />
+<meta name="description" content="Analyse de données et IA appliquée au service de la décision — Excel, Python, SQL, Power BI, automatisation et statistiques appliquées." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -54,9 +54,22 @@
     font-size:0.72rem; padding:8px 12px;
     letter-spacing:0.04em;
   }
+  .avail-badge{
+    position:absolute; top:18px; right:-22px;
+    display:flex; align-items:center; gap:8px;
+    background:var(--paper); border:1px solid var(--line);
+    box-shadow: 0 12px 28px -12px rgba(26,30,23,0.28);
+    padding:10px 16px 10px 12px;
+    font-size:0.8rem; color:var(--ink);
+    max-width:180px; line-height:1.3;
+  }
+  .avail-dot{
+    width:7px; height:7px; border-radius:50%; background:var(--accent);
+    flex:none; box-shadow:0 0 0 3px var(--accent-soft);
+  }
 
   /* animated data line behind hero text, content-relevant motif */
-  .hero-chart{ position:absolute; inset:0; pointer-events:none; opacity:0.55; z-index:0; }
+  .hero-chart{ position:absolute; top:0; right:0; width:58%; height:100%; pointer-events:none; opacity:0.4; z-index:0; }
   .hero-chart svg{ width:100%; height:100%; }
   .hero-chart path.line{
     fill:none; stroke:var(--accent); stroke-width:1.4;
@@ -120,7 +133,12 @@
   .project:last-child{ border-bottom:1px solid var(--line); }
   .project:hover{ padding-left:10px; background:rgba(11,107,69,0.045); }
   .project .idx{
-    font-family:"IBM Plex Mono", monospace; color:var(--ink-soft); font-size:0.85rem; padding-top:4px;
+    display:flex; flex-direction:column; gap:8px; padding-top:4px;
+  }
+  .project .idx .n{ font-family:"IBM Plex Mono", monospace; color:var(--ink-soft); font-size:0.85rem; }
+  .project .domain{
+    font-family:"IBM Plex Mono", monospace; font-size:0.66rem;
+    text-transform:uppercase; letter-spacing:0.05em; color:var(--accent);
   }
   .project h3{ font-size:1.18rem; font-weight:500; }
   .project .desc{ color:var(--ink-soft); font-size:0.93rem; }
@@ -131,25 +149,36 @@
   }
   .project:hover .arrow{ transform:translateX(6px); }
 
-  /* ---------- Skills ---------- */
+  /* ---------- Skills (bande sombre pour rompre le rythme clair/clair) ---------- */
+  :root{ --accent-bright:#4fcf95; }
+  .skills-dark{ background:var(--ink); }
+  .skills-dark .kicker{ color:var(--accent-bright); }
+  .skills-dark .section-head h2{ color:var(--paper); }
+  .skills-dark .section-head p{ color:rgba(241,242,236,0.6); }
   .skills-grid{
-    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
-    background:var(--line); border:1px solid var(--line);
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:36px 28px;
   }
-  .skill-cell{
-    background:var(--paper); padding:22px 20px;
+  .skill-cell .cat{
+    font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--accent-bright); font-family:"IBM Plex Mono", monospace;
   }
-  .skill-cell .cat{ font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); font-family:"IBM Plex Mono", monospace; }
-  .skill-cell ul{ list-style:none; margin:10px 0 0; padding:0; }
-  .skill-cell li{ font-size:0.92rem; padding:4px 0; color:var(--ink); }
+  .tag-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .tag{
+    font-size:0.82rem; padding:6px 13px; color:rgba(241,242,236,0.82);
+    border:1px solid rgba(241,242,236,0.18); border-radius:999px;
+    transition: border-color .2s ease, color .2s ease;
+  }
+  .tag:hover{ border-color:var(--accent-bright); color:#fff; }
 
   @media (max-width: 860px){
     .hero-grid{ grid-template-columns:1fr; }
     .portrait-frame{ max-width:280px; }
+    .avail-badge{ right:0; top:auto; bottom:36px; max-width:150px; font-size:0.75rem; }
     .stats-grid{ grid-template-columns:repeat(2,1fr); }
     .stat:nth-child(3){ border-left:none; }
     .about-grid{ grid-template-columns:1fr; }
-    .project{ grid-template-columns: 34px 1fr; }
+    .project{ grid-template-columns: 68px 1fr; }
+    .project .domain{ white-space:normal; }
     .project .skills, .project .arrow{ grid-column:2; }
     .skills-grid{ grid-template-columns:repeat(2,1fr); }
   }
@@ -190,9 +219,9 @@
     </div>
     <div class="wrap hero-grid">
       <div>
-        <p class="kicker" id="kicker">Analyste de données · Gestion de commerce</p>
-        <h1 id="h1">Je transforme des données brutes en <em>décisions</em> commerciales.</h1>
-        <p class="lead" id="lead">Excel avancé, Python, SQL et statistiques appliquées, au service d'analyses concrètes et de tableaux de bord qui pilotent une activité — pas de la théorie, des livrables utilisés.</p>
+        <p class="kicker" id="kicker">Analyse de données · IA appliquée · Gestion de commerce</p>
+        <h1 id="h1">Je transforme des données brutes en <em>décisions</em> commerciales — plus vite, grâce à l'IA.</h1>
+        <p class="lead" id="lead">Excel avancé, Python, SQL et statistiques appliquées — combinés à l'IA dans mon flux de travail (automatisation, scripts, génération de rapports) pour livrer plus rapidement, sans sacrifier la rigueur.</p>
         <div class="hero-actions" id="hero-actions">
           <a class="btn btn-primary" href="#projets">Voir les projets</a>
           <a class="btn btn-ghost" href="mailto:issaouedraogo0900@gmail.com">Me contacter</a>
@@ -201,6 +230,7 @@
       <div class="portrait-frame" id="portrait">
         <img class="photo" src="assets/photo-profil.jpg" alt="Portrait d'Issa Ouedraogo" />
         <span class="portrait-tag mono">Montréal, QC</span>
+        <div class="avail-badge"><span class="avail-dot"></span>Disponible pour des missions freelance</div>
       </div>
     </div>
   </section>
@@ -226,8 +256,9 @@
           <p>Je conçois des outils d'aide à la décision — tableaux de bord interactifs, analyses statistiques, requêtes SQL — qui transforment des données brutes en informations exploitables, du nettoyage des données jusqu'au livrable final documenté.</p>
         </div>
         <div data-reveal>
-          <p>Chaque projet du portfolio est indépendant : données, méthode et résultats sont documentés dans un README dédié, avec le contexte métier qui justifie chaque choix d'analyse.</p>
-          <div class="status-line">Je recherche activement un <strong>stage ou une alternance en analyse de données</strong>, ainsi que des <strong>missions freelance</strong> ponctuelles.</div>
+          <p>Je vais plus loin en intégrant l'<strong>IA à mon flux de travail</strong> : automatisation de tâches répétitives, génération assistée de scripts Python, structuration de rapports par prompts. L'objectif est concret — réduire les délais de production pour concentrer le temps sur l'interprétation et la recommandation, là où se trouve la vraie valeur ajoutée pour l'entreprise.</p>
+          <p>Chaque projet du portfolio est documenté dans un README dédié, avec le contexte métier qui justifie chaque choix d'analyse.</p>
+          <div class="status-line">Je recherche activement des <strong>missions freelance</strong> en analyse de données.</div>
         </div>
       </div>
     </div>
@@ -242,35 +273,35 @@
       </div>
       <div class="project-list" data-reveal>
         <a class="project" href="./geomarketing-quebec/">
-          <span class="idx mono">01</span>
+          <span class="idx"><span class="n mono">01</span><span class="domain">Marketing</span></span>
           <h3>Geomarketing Québec</h3>
           <span class="desc">Score d'opportunité commerciale par région (population, revenu, croissance, concurrence) à partir de 257 755 établissements et des données ISQ.</span>
           <span class="skills">Python · pandas · web scraping · SQL · modélisation de score</span>
           <span class="arrow">→</span>
         </a>
         <a class="project" href="./dashboard-ventes-performance/">
-          <span class="idx mono">02</span>
+          <span class="idx"><span class="n mono">02</span><span class="domain">Ventes</span></span>
           <h3>Dashboard Ventes &amp; Performance</h3>
           <span class="desc">Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie.</span>
           <span class="skills">Excel avancé · Python (pandas/openpyxl) · nettoyage de données</span>
           <span class="arrow">→</span>
         </a>
         <a class="project" href="./analyse-performances-rh/">
-          <span class="idx mono">03</span>
+          <span class="idx"><span class="n mono">03</span><span class="domain">RH</span></span>
           <h3>Analyse des performances RH</h3>
           <span class="desc">Statistiques descriptives et détection d'outliers (règle 1,5×IQR) sur 311 employés pour identifier les vrais facteurs de performance.</span>
           <span class="skills">Python (pandas/matplotlib) · statistiques descriptives · outliers</span>
           <span class="arrow">→</span>
         </a>
         <a class="project" href="./analyse-financiere-demarrage/">
-          <span class="idx mono">04</span>
+          <span class="idx"><span class="n mono">04</span><span class="domain">Finance</span></span>
           <h3>Bilan de démarrage &amp; analyse financière</h3>
           <span class="desc">Modélisation financière complète du lancement d'une entreprise : montage financier, états financiers, ratios, seuil de rentabilité, rentabilité par produit.</span>
           <span class="skills">Analyse financière · ratios &amp; DuPont · Python · Acomba</span>
           <span class="arrow">→</span>
         </a>
         <a class="project" href="./analyse-statistique-inferentielle/">
-          <span class="idx mono">05</span>
+          <span class="idx"><span class="n mono">05</span><span class="domain">Statistiques</span></span>
           <h3>Analyse statistique et tests d'hypothèses</h3>
           <span class="desc">Trois échantillons (225 employés, 150 salaires, 2 330 pièces) : distribution, corrélation, intervalle de confiance et quatre tests d'hypothèses.</span>
           <span class="skills">Statistiques inférentielles · khi-deux · régression · Python</span>
@@ -280,7 +311,7 @@
     </div>
   </section>
 
-  <section id="competences">
+  <section id="competences" class="skills-dark">
     <div class="wrap">
       <div class="section-head" data-reveal>
         <p class="kicker">03 — Compétences</p>
@@ -288,20 +319,34 @@
       </div>
       <div class="skills-grid" data-reveal>
         <div class="skill-cell">
+          <p class="cat">IA appliquée</p>
+          <div class="tag-row">
+            <span class="tag">Prompts &amp; automatisation</span><span class="tag">Excel assisté par IA</span><span class="tag">Scripts Python assistés</span><span class="tag">Génération de rapports</span>
+          </div>
+        </div>
+        <div class="skill-cell">
           <p class="cat">Tableurs &amp; BI</p>
-          <ul><li>Excel avancé (TCD, macros)</li><li>Power BI</li><li>Tableau</li><li>Acomba</li></ul>
+          <div class="tag-row">
+            <span class="tag">Excel avancé</span><span class="tag">TCD</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Acomba</span>
+          </div>
         </div>
         <div class="skill-cell">
           <p class="cat">Programmation</p>
-          <ul><li>Python (pandas, matplotlib)</li><li>SQL</li><li>openpyxl</li></ul>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">matplotlib</span><span class="tag">SQL</span><span class="tag">openpyxl</span>
+          </div>
         </div>
         <div class="skill-cell">
           <p class="cat">Statistiques</p>
-          <ul><li>Statistiques inférentielles</li><li>Tests d'hypothèses, khi-deux</li><li>Régression, corrélation</li></ul>
+          <div class="tag-row">
+            <span class="tag">Stat. inférentielles</span><span class="tag">Tests d'hypothèses</span><span class="tag">Khi-deux</span><span class="tag">Régression</span><span class="tag">Corrélation</span>
+          </div>
         </div>
         <div class="skill-cell">
           <p class="cat">Analyse financière</p>
-          <ul><li>États financiers &amp; ratios</li><li>Modèle DuPont</li><li>Seuil de rentabilité</li></ul>
+          <div class="tag-row">
+            <span class="tag">États financiers</span><span class="tag">Ratios</span><span class="tag">Modèle DuPont</span><span class="tag">Seuil de rentabilité</span>
+          </div>
         </div>
       </div>
     </div>
