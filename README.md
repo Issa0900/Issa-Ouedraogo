@@ -32,6 +32,7 @@ Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un
 | 📊 **Dashboard Ventes & Performance** | Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie | Excel avancé, Python (pandas/openpyxl), nettoyage de données | [Voir le projet →](./dashboard-ventes-performance/) |
 | 📈 **Analyse des performances RH** | Statistiques descriptives et détection d'outliers (règle 1,5×IQR) sur 311 employés pour identifier les vrais facteurs de performance | Python (pandas, matplotlib), statistiques descriptives, détection d'outliers | [Voir le projet →](./analyse-performances-rh/) |
 | 💼 **Bilan de démarrage & analyse financière** | Modélisation financière complète du lancement d'une entreprise commerciale : montage financier, états financiers, ratios, seuil de rentabilité et rentabilité par produit | Analyse financière, ratios & DuPont, seuil de rentabilité, Python (pandas/openpyxl/matplotlib), Acomba | [Voir le projet →](./analyse-financiere-demarrage/) |
+| 📊 **Analyse statistique et tests d'hypothèses** | Trois échantillons (225 employés, 150 salaires, 2 330 pièces) : distribution, corrélation, intervalle de confiance et quatre tests d'hypothèses, tous recalculés et confrontés au classeur d'origine | Statistiques inférentielles, khi-deux, régression, Python (pandas/openpyxl/matplotlib), Excel | [Voir le projet →](./analyse-statistique-inferentielle/) |
 
 *(Les prochains projets s'ajouteront ici, un dossier par projet.)*
 

@@ -1,0 +1,5 @@
+test,h0,h1,seuil,statistique,valeur_critique,p_valeur,decision,statistique_classeur,decision_classeur
+Khi-deux d'indépendance · sexe et rébellion,Aucun lien entre le sexe et l'exécution d'un acte de rébellion,Il existe un lien entre le sexe et l'exécution d'un acte de rébellion,0.1,5.315476792970608,2.7055434540954133,0.021136808958567177,rejet de H0,5.315476792970608,rejet de H0
+Khi-deux d'ajustement · normalité des salaires,Le salaire des manœuvres beaucerons suit N(36 300 ; 9 500²),Le salaire des manœuvres beaucerons ne suit pas cette loi normale,0.05,10.38637258554563,12.591587243743977,0.10929591022181684,H0 non rejetée,10.386372585545603,H0 non rejetée
+Test sur une moyenne · salaire inférieur à 44 000 $,Le salaire moyen est égal à 44 000 $,Le salaire moyen est inférieur à 44 000 $,0.05,-5.019969893466692,-1.6448536269514715,2.5839789308257366e-07,rejet de H0,,rejet de H0
+Test sur une proportion · pièces non conformes,"La proportion de pièces non conformes est de 0,5 %","La proportion de pièces non conformes dépasse 0,5 %",0.06,1.5713729722376846,1.5547735945968526,0.05804802009379206,rejet de H0,,rejet de H0
