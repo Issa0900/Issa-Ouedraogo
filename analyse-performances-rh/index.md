@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Analyse des performances RH
 ---
 

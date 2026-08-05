@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Bilan de démarrage & analyse financière
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Analyse statistique et tests d'hypothèses
 ---
 

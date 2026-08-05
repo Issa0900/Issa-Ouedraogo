@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Issa Ouedraogo — Analyste de données</title>
+<meta name="description" content="Gestion de commerce et analyse de données au service de la décision — Excel, Python, SQL, Power BI, statistiques appliquées." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  /* ---------- Hero (page d'accueil uniquement) ---------- */
+  .hero{
+    padding:96px 0 72px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap:56px;
+    align-items:center;
+  }
+  .hero .kicker{ opacity:0; }
+  .hero h1{
+    font-size: clamp(2.4rem, 5vw, 3.6rem);
+    line-height:1.06;
+    text-wrap:balance;
+    opacity:0;
+  }
+  .hero h1 em{ font-style:italic; color:var(--accent); }
+  .hero p.lead{
+    margin-top:22px; max-width:46ch;
+    font-size:1.08rem; color:var(--ink-soft);
+    opacity:0;
+  }
+  .hero-actions{ margin-top:32px; display:flex; gap:14px; flex-wrap:wrap; opacity:0; }
+
+  .portrait-frame{
+    position:relative;
+    opacity:0;
+  }
+  .portrait-frame .photo{
+    width:100%; aspect-ratio: 4/5; object-fit:cover;
+    border-radius:var(--radius);
+    filter: grayscale(15%);
+    border:1px solid var(--line);
+  }
+  .portrait-tag{
+    position:absolute; left:-1px; bottom:-1px;
+    background:var(--ink); color:var(--paper);
+    font-family:"IBM Plex Mono", monospace;
+    font-size:0.72rem; padding:8px 12px;
+    letter-spacing:0.04em;
+  }
+
+  /* animated data line behind hero text, content-relevant motif */
+  .hero-chart{ position:absolute; inset:0; pointer-events:none; opacity:0.55; z-index:0; }
+  .hero-chart svg{ width:100%; height:100%; }
+  .hero-chart path.line{
+    fill:none; stroke:var(--accent); stroke-width:1.4;
+    stroke-dasharray: 900; stroke-dashoffset:900;
+  }
+  .hero-chart path.area{ fill:url(#areaGrad); opacity:0; }
+
+  /* ---------- Stats ---------- */
+  .stats{
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    background:var(--paper-2);
+  }
+  .stats-grid{
+    display:grid; grid-template-columns:repeat(4,1fr);
+    max-width:var(--maxw); margin:0 auto;
+  }
+  .stat{
+    padding:34px 28px; text-align:left;
+    border-left:1px solid var(--line);
+  }
+  .stat:first-child{ border-left:none; }
+  .stat .num{
+    font-family:"Fraunces", serif; font-size:2.1rem; color:var(--accent);
+    display:block; font-variant-numeric: tabular-nums;
+  }
+  .stat .lbl{
+    font-size:0.82rem; color:var(--ink-soft); margin-top:6px; display:block;
+  }
+
+  /* ---------- Section shell ---------- */
+  section{ padding:88px 0; }
+  .section-head{ margin-bottom:44px; max-width:60ch; }
+  .section-head .kicker{ margin-bottom:14px; }
+  .section-head h2{ font-size:clamp(1.7rem,3vw,2.3rem); }
+  .section-head p{ color:var(--ink-soft); margin-top:14px; }
+
+  /* ---------- About ---------- */
+  .about-grid{
+    display:grid; grid-template-columns: 1fr 1fr; gap:56px;
+  }
+  .about-grid p{ color:var(--ink-soft); margin:0 0 16px; }
+  .about-grid p:last-child{ margin-bottom:0; }
+  .about-grid strong{ color:var(--ink); font-weight:600; }
+  .status-line{
+    margin-top:26px; padding:18px 20px;
+    border-left:2px solid var(--accent);
+    background:var(--accent-soft);
+    font-size:0.94rem;
+  }
+
+  /* ---------- Projects ---------- */
+  .projects{ background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .project-list{ display:flex; flex-direction:column; }
+  .project{
+    display:grid; grid-template-columns: 60px 1.3fr 1fr auto;
+    align-items:start; gap:28px;
+    padding:30px 0; border-top:1px solid var(--line);
+    text-decoration:none; color:var(--ink);
+    transition: padding-left .25s ease, background .25s ease;
+  }
+  .project:last-child{ border-bottom:1px solid var(--line); }
+  .project:hover{ padding-left:10px; background:rgba(11,107,69,0.045); }
+  .project .idx{
+    font-family:"IBM Plex Mono", monospace; color:var(--ink-soft); font-size:0.85rem; padding-top:4px;
+  }
+  .project h3{ font-size:1.18rem; font-weight:500; }
+  .project .desc{ color:var(--ink-soft); font-size:0.93rem; }
+  .project .skills{ font-size:0.78rem; color:var(--ink-soft); font-family:"IBM Plex Mono", monospace; }
+  .project .arrow{
+    font-size:1.1rem; color:var(--accent); padding-top:4px;
+    transition: transform .25s ease;
+  }
+  .project:hover .arrow{ transform:translateX(6px); }
+
+  /* ---------- Skills ---------- */
+  .skills-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+    background:var(--line); border:1px solid var(--line);
+  }
+  .skill-cell{
+    background:var(--paper); padding:22px 20px;
+  }
+  .skill-cell .cat{ font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); font-family:"IBM Plex Mono", monospace; }
+  .skill-cell ul{ list-style:none; margin:10px 0 0; padding:0; }
+  .skill-cell li{ font-size:0.92rem; padding:4px 0; color:var(--ink); }
+
+  @media (max-width: 860px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .portrait-frame{ max-width:280px; }
+    .stats-grid{ grid-template-columns:repeat(2,1fr); }
+    .stat:nth-child(3){ border-left:none; }
+    .about-grid{ grid-template-columns:1fr; }
+    .project{ grid-template-columns: 34px 1fr; }
+    .project .skills, .project .arrow{ grid-column:2; }
+    .skills-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .hero-actions, .kicker, .hero h1, .hero p.lead, .portrait-frame{ opacity:1 !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-row">
+    <a class="brand" href="#top">Issa <span>Ouedraogo</span></a>
+    <nav class="links">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-chart" aria-hidden="true">
+      <svg viewBox="0 0 1000 400" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0b6b45" stop-opacity="0.16"/>
+            <stop offset="100%" stop-color="#0b6b45" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path class="area" d="M0,320 L60,300 L140,310 L220,240 L300,260 L380,180 L460,205 L540,140 L620,165 L700,100 L780,130 L860,70 L940,95 L1000,60 L1000,400 L0,400 Z"/>
+        <path class="line" d="M0,320 L60,300 L140,310 L220,240 L300,260 L380,180 L460,205 L540,140 L620,165 L700,100 L780,130 L860,70 L940,95 L1000,60"/>
+      </svg>
+    </div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="kicker" id="kicker">Analyste de données · Gestion de commerce</p>
+        <h1 id="h1">Je transforme des données brutes en <em>décisions</em> commerciales.</h1>
+        <p class="lead" id="lead">Excel avancé, Python, SQL et statistiques appliquées, au service d'analyses concrètes et de tableaux de bord qui pilotent une activité — pas de la théorie, des livrables utilisés.</p>
+        <div class="hero-actions" id="hero-actions">
+          <a class="btn btn-primary" href="#projets">Voir les projets</a>
+          <a class="btn btn-ghost" href="mailto:issaouedraogo0900@gmail.com">Me contacter</a>
+        </div>
+      </div>
+      <div class="portrait-frame" id="portrait">
+        <img class="photo" src="assets/photo-profil.jpg" alt="Portrait d'Issa Ouedraogo" />
+        <span class="portrait-tag mono">Montréal, QC</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" data-reveal>
+    <div class="wrap stats-grid">
+      <div class="stat"><span class="num" data-count="5">0</span><span class="lbl">Projets documentés</span></div>
+      <div class="stat"><span class="num" data-count="257755">0</span><span class="lbl">Établissements analysés (Geomarketing)</span></div>
+      <div class="stat"><span class="num" data-count="311">0</span><span class="lbl">Employés étudiés (analyse RH)</span></div>
+      <div class="stat"><span class="num" data-count="4">0</span><span class="lbl">Tests d'hypothèses menés</span></div>
+    </div>
+  </section>
+
+  <section id="apropos">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">01 — Profil</p>
+        <h2>Du terrain commercial à l'analyse de données</h2>
+      </div>
+      <div class="about-grid">
+        <div data-reveal>
+          <p>Mon parcours en <strong>Gestion de Commerce</strong> m'a donné une compréhension fine des enjeux business — marge, rentabilité, performance opérationnelle. Je complète cette base par des compétences en <strong>analyse de données</strong> : Excel avancé, Python, SQL, Power BI/Tableau et statistiques appliquées.</p>
+          <p>Je conçois des outils d'aide à la décision — tableaux de bord interactifs, analyses statistiques, requêtes SQL — qui transforment des données brutes en informations exploitables, du nettoyage des données jusqu'au livrable final documenté.</p>
+        </div>
+        <div data-reveal>
+          <p>Chaque projet du portfolio est indépendant : données, méthode et résultats sont documentés dans un README dédié, avec le contexte métier qui justifie chaque choix d'analyse.</p>
+          <div class="status-line">Je recherche activement un <strong>stage ou une alternance en analyse de données</strong>, ainsi que des <strong>missions freelance</strong> ponctuelles.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projets">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">02 — Portfolio</p>
+        <h2>Cinq projets, cinq problèmes métier</h2>
+        <p>Chaque lien mène vers le dossier complet du projet : données, code et README détaillé.</p>
+      </div>
+      <div class="project-list" data-reveal>
+        <a class="project" href="./geomarketing-quebec/">
+          <span class="idx mono">01</span>
+          <h3>Geomarketing Québec</h3>
+          <span class="desc">Score d'opportunité commerciale par région (population, revenu, croissance, concurrence) à partir de 257 755 établissements et des données ISQ.</span>
+          <span class="skills">Python · pandas · web scraping · SQL · modélisation de score</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="project" href="./dashboard-ventes-performance/">
+          <span class="idx mono">02</span>
+          <h3>Dashboard Ventes &amp; Performance</h3>
+          <span class="desc">Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie.</span>
+          <span class="skills">Excel avancé · Python (pandas/openpyxl) · nettoyage de données</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="project" href="./analyse-performances-rh/">
+          <span class="idx mono">03</span>
+          <h3>Analyse des performances RH</h3>
+          <span class="desc">Statistiques descriptives et détection d'outliers (règle 1,5×IQR) sur 311 employés pour identifier les vrais facteurs de performance.</span>
+          <span class="skills">Python (pandas/matplotlib) · statistiques descriptives · outliers</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="project" href="./analyse-financiere-demarrage/">
+          <span class="idx mono">04</span>
+          <h3>Bilan de démarrage &amp; analyse financière</h3>
+          <span class="desc">Modélisation financière complète du lancement d'une entreprise : montage financier, états financiers, ratios, seuil de rentabilité, rentabilité par produit.</span>
+          <span class="skills">Analyse financière · ratios &amp; DuPont · Python · Acomba</span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="project" href="./analyse-statistique-inferentielle/">
+          <span class="idx mono">05</span>
+          <h3>Analyse statistique et tests d'hypothèses</h3>
+          <span class="desc">Trois échantillons (225 employés, 150 salaires, 2 330 pièces) : distribution, corrélation, intervalle de confiance et quatre tests d'hypothèses.</span>
+          <span class="skills">Statistiques inférentielles · khi-deux · régression · Python</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">03 — Compétences</p>
+        <h2>Outils et méthodes</h2>
+      </div>
+      <div class="skills-grid" data-reveal>
+        <div class="skill-cell">
+          <p class="cat">Tableurs &amp; BI</p>
+          <ul><li>Excel avancé (TCD, macros)</li><li>Power BI</li><li>Tableau</li><li>Acomba</li></ul>
+        </div>
+        <div class="skill-cell">
+          <p class="cat">Programmation</p>
+          <ul><li>Python (pandas, matplotlib)</li><li>SQL</li><li>openpyxl</li></ul>
+        </div>
+        <div class="skill-cell">
+          <p class="cat">Statistiques</p>
+          <ul><li>Statistiques inférentielles</li><li>Tests d'hypothèses, khi-deux</li><li>Régression, corrélation</li></ul>
+        </div>
+        <div class="skill-cell">
+          <p class="cat">Analyse financière</p>
+          <ul><li>États financiers &amp; ratios</li><li>Modèle DuPont</li><li>Seuil de rentabilité</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="site-footer">
+    <div class="wrap">
+      <div class="contact-row" data-reveal>
+        <h2>Discutons de votre prochain projet data.</h2>
+        <div class="contact-links">
+          <a href="mailto:issaouedraogo0900@gmail.com">issaouedraogo0900@gmail.com</a>
+          <a href="https://www.linkedin.com/in/issa-ouedraogo-34b146332/" target="_blank" rel="noopener">LinkedIn →</a>
+        </div>
+      </div>
+      <div class="foot-meta wrap" style="padding-left:0;padding-right:0;">
+        <span>Issa Ouedraogo — Portfolio Data Analyst</span>
+        <span>Montréal, Québec</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+(function(){
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Hero entrance
+  var heroEls = ['#kicker','#h1','#lead','#hero-actions','#portrait'];
+  heroEls.forEach(function(sel, i){
+    var el = document.querySelector(sel);
+    if(!el) return;
+    if(reduced){ el.style.opacity = 1; return; }
+    el.style.transition = 'opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)';
+    el.style.transform = 'translateY(14px)';
+    setTimeout(function(){
+      el.style.opacity = 1;
+      el.style.transform = 'translateY(0)';
+    }, 120 + i*110);
+  });
+
+  // Hero data line draw-in
+  var line = document.querySelector('.hero-chart path.line');
+  var area = document.querySelector('.hero-chart path.area');
+  if(line && !reduced){
+    setTimeout(function(){
+      line.style.transition = 'stroke-dashoffset 1.6s cubic-bezier(.2,.7,.2,1)';
+      line.style.strokeDashoffset = '0';
+      area.style.transition = 'opacity 1.2s ease 0.6s';
+      area.style.opacity = '1';
+    }, 200);
+  } else if(line){
+    line.style.strokeDashoffset = '0';
+    area.style.opacity = '1';
+  }
+})();
+</script>
+<script src="assets/js/site.js"></script>
+
+</body>
+</html>
