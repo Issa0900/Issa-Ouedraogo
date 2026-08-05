@@ -17,3 +17,4 @@ exclude:
   - "analyse-financiere-demarrage/README.md"
   - "analyse-financiere-demarrage/data/"
   - "analyse-financiere-demarrage/scripts/"
+  - "geomarketing-quebec/data/"
