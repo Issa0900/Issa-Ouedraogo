@@ -14,3 +14,4 @@ exclude:
   - METHODE-PORTFOLIO.md
   - "dashboard-ventes-performance/README.md"
   - "dashboard-ventes-performance/data/"
+  - "geomarketing-quebec/data/"
