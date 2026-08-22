@@ -148,6 +148,12 @@
     transition: transform .25s ease;
   }
   .project:hover .arrow{ transform:translateX(6px); }
+  .project-thumb{
+    grid-column: 1 / -1;
+    margin-top:18px; border-radius:8px; overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .project-thumb img{ width:100%; display:block; }
 
   /* ---------- Skills (bande sombre pour rompre le rythme clair/clair) ---------- */
   :root{ --accent-bright:#4fcf95; }
@@ -278,6 +284,7 @@
           <span class="desc">SaaS de pilotage et d'aide à la décision pour PME : ingestion multi-format (CSV/Excel/PDF, OCR), détection d'anomalies, alertes et recommandations automatiques.</span>
           <span class="skills">Next.js (TypeScript) · FastAPI (Python) · PostgreSQL · pipeline d'ingestion</span>
           <span class="arrow">→</span>
+          <span class="project-thumb"><img src="assets/copilote-pme-dashboard.png" alt="Dashboard Copilote PME : revenus, dépenses, répartition par catégorie et anomalies détectées" loading="lazy" /></span>
         </a>
         <a class="project" href="./geomarketing-quebec/">
           <span class="idx"><span class="n mono">02</span><span class="domain">Marketing</span></span>
