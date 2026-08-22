@@ -30,6 +30,7 @@ Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un
 
 | Projet | Description | Compétences | Lien |
 |---|---|---|---|
+| 🧭 **Copilote PME** *(app full-stack)* | SaaS de pilotage et d'aide à la décision pour PME : ingestion multi-format (CSV/Excel/ODS/JSON/XML/PDF, OCR pour PDF scannés), détection d'anomalies par catégorie, alertes et recommandations automatiques | Next.js (TypeScript, Tailwind), FastAPI (Python), PostgreSQL, pipeline d'ingestion multi-format, détection d'anomalies | [Voir le repo →](https://github.com/Issa0900/copilote-pme) |
 | 🗺️ **Geomarketing Québec** | Score d'opportunité commerciale par région (population, revenu, croissance, concurrence) à partir de 257 755 établissements et des données ISQ | Python (pandas), web scraping, SQL, modélisation de score | [Voir le projet →](./geomarketing-quebec/) |
 | 📊 **Dashboard Ventes & Performance** | Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie | Excel avancé, Python (pandas/openpyxl), nettoyage de données | [Voir le projet →](./dashboard-ventes-performance/) |
 | 📈 **Analyse des performances RH** | Statistiques descriptives et détection d'outliers (règle 1,5×IQR) sur 311 employés pour identifier les vrais facteurs de performance | Python (pandas, matplotlib), statistiques descriptives, détection d'outliers | [Voir le projet →](./analyse-performances-rh/) |
