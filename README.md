@@ -3,7 +3,7 @@
 
   # Issa Ouedraogo
 
-  *Analyse de données · IA appliquée · Gestion de Commerce*
+  *Gestion de commerce · IA générative & automatisation · Analyse de données*
 
   📧 [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
 </div>
