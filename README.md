@@ -22,7 +22,7 @@ Je recherche activement des **missions freelance** en analyse de données.
 
 Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un README détaillé expliquant le contexte métier, la méthode et les résultats.
 
-> 🌐 Version web avec présentation complète : **[page portfolio](https://issa0900.github.io/Issa-Ouedraogo/)** *(une fois GitHub Pages activé)*
+> 🌐 Version web avec présentation complète : **[page portfolio](https://issa0900.github.io/Issa-Ouedraogo/)**
 
 ---
 
