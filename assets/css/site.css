@@ -70,6 +70,15 @@ nav.links a.back{
   text-transform:none; letter-spacing:0; font-size:0.88rem;
 }
 
+@media (max-width: 640px){
+  .nav-row{
+    flex-direction:column; align-items:flex-start; gap:10px;
+    padding:14px 20px;
+  }
+  nav.links{ gap:16px; flex-wrap:wrap; }
+  nav.links a{ font-size:0.78rem; }
+}
+
 /* ---------- Buttons ---------- */
 .btn{
   display:inline-flex; align-items:center; gap:8px;

@@ -18,7 +18,7 @@ Je conçois des outils d'aide à la décision, comme des tableaux de bord intera
 
 Je vais plus loin en intégrant l'**IA à mon flux de travail** : automatisation de tâches répétitives, génération assistée de scripts Python, structuration de rapports par prompts. L'objectif est concret — réduire les délais de production pour concentrer le temps sur l'interprétation et la recommandation, là où se trouve la vraie valeur ajoutée pour l'entreprise.
 
-Je recherche activement des **missions freelance** en analyse de données.
+Je recherche activement un **stage en analyse de données**.
 
 Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un README détaillé expliquant le contexte métier, la méthode et les résultats.
 
