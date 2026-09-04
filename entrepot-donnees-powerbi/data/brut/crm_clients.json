@@ -1,0 +1,4452 @@
+{
+ "exporte_le": "2025-12-31",
+ "source": "CRM Boréal v4",
+ "clients": [
+  {
+   "identification": {
+    "code": "CLI-0073",
+    "raison_sociale": "Aventure Hull Mauricie",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2021-11-14"
+   },
+   "adresse": {
+    "ville": "Terrebonne",
+    "province": "Québec",
+    "code_postal": "J6B 0Y3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@aventurehullmauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-913",
+    "raison_sociale": "NATURE SAINT-LAURENT",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2016-02-24"
+   },
+   "adresse": {
+    "ville": "Val-d'Or ",
+    "province": "qc",
+    "code_postal": "K0Y 0R6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@naturesaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0128",
+    "raison_sociale": "Cap Nord Beauport Laurentides",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-06-26"
+   },
+   "adresse": {
+    "ville": "rimouski",
+    "province": "Québec",
+    "code_postal": "N2P 8J1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@capnordbeauportlaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0132",
+    "raison_sociale": "Le Portage Mauricie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-03-12"
+   },
+   "adresse": {
+    "ville": "sudbury",
+    "province": "ON",
+    "code_postal": "M1N 9P8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@leportagemauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0083",
+    "raison_sociale": "Chalet Laurentides",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-10-03"
+   },
+   "adresse": {
+    "ville": "KINGSTON",
+    "province": "on",
+    "code_postal": "H5C 1Y3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@chaletlaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0106",
+    "raison_sociale": "Chalet Longueuil Enr.",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-07-28"
+   },
+   "adresse": {
+    "ville": "Drummondville ",
+    "province": "Québec",
+    "code_postal": "L1B 1X2"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@chaletlongueuilenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0170",
+    "raison_sociale": "Grand Air Charlevoix",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-10-24"
+   },
+   "adresse": {
+    "ville": "MONTRÉAL",
+    "province": "qc",
+    "code_postal": "H1H 8G6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@grandaircharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0153",
+    "raison_sociale": "Expédition Lachine du Nord",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-01-08"
+   },
+   "adresse": {
+    "ville": "québec",
+    "province": "Québec",
+    "code_postal": "N4Y 9J4"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@expeditionlachinedunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0213",
+    "raison_sociale": "Grand Air Verdun Cantons",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-06-20"
+   },
+   "adresse": {
+    "ville": "FREDERICTON",
+    "province": "Nouveau-Brunswick",
+    "code_postal": "N2L 2N9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@grandairverduncantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0180",
+    "raison_sociale": "Sports Jonquière ltée",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-02-25"
+   },
+   "adresse": {
+    "ville": "Victoriaville",
+    "province": "Quebec",
+    "code_postal": "R4R 4V2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@sportsjonquiereltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0206",
+    "raison_sociale": "Base Camp Enr.",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2023-02-20"
+   },
+   "adresse": {
+    "ville": "Rimouski ",
+    "province": "QC",
+    "code_postal": "J2H 4N9"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@basecampenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0162",
+    "raison_sociale": "Chalet Chicoutimi Mauricie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2023-04-17"
+   },
+   "adresse": {
+    "ville": "SHAWINIGAN",
+    "province": "qc",
+    "code_postal": "M1R 4P1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@chaletchicoutimimauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-902",
+    "raison_sociale": "CHALET BLAINVILLE LTÉE",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-10-04"
+   },
+   "adresse": {
+    "ville": "Val-d'Or ",
+    "province": "Quebec",
+    "code_postal": "N6J 4S0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@chaletblainvilleltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0108",
+    "raison_sociale": "Sentiers Mirabel Boréal",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2016-11-28"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau ",
+    "province": "qc",
+    "code_postal": "N2C 7B7"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@sentiersmirabelboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0119",
+    "raison_sociale": "Grand Air inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2023-01-05"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau ",
+    "province": "Quebec",
+    "code_postal": "J3K 6V8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": ""
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0054",
+    "raison_sociale": "Plein Air Appalaches",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-06-10"
+   },
+   "adresse": {
+    "ville": "Laval ",
+    "province": "Quebec",
+    "code_postal": "J6M 1K0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@pleinairappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0056",
+    "raison_sociale": "Nature Gaspésie",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-08-17"
+   },
+   "adresse": {
+    "ville": "Val-d'Or ",
+    "province": "Quebec",
+    "code_postal": "R0L 9A2"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@naturegaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0023",
+    "raison_sociale": "Expédition ltée",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2023-06-12"
+   },
+   "adresse": {
+    "ville": "MONCTON",
+    "province": "NB",
+    "code_postal": "K8V 2C3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@expeditionltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0100",
+    "raison_sociale": "Grand Air Mauricie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2022-04-20"
+   },
+   "adresse": {
+    "ville": "thunder bay",
+    "province": "on",
+    "code_postal": "R4H 6J4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@grandairmauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0006",
+    "raison_sociale": "Sentiers Enr.",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-02-18"
+   },
+   "adresse": {
+    "ville": "Sudbury",
+    "province": "Ontario",
+    "code_postal": "L1K 9P3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@sentiersenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0070",
+    "raison_sociale": "Grand Air Lachine Gaspésie",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2016-12-06"
+   },
+   "adresse": {
+    "ville": "Kingston ",
+    "province": "on",
+    "code_postal": "M7V 2R1"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@grandairlachinegaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0146",
+    "raison_sociale": "Boutique ltée",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-05-08"
+   },
+   "adresse": {
+    "ville": "Rouyn-Noranda",
+    "province": "Quebec",
+    "code_postal": "R8H 9J4"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@boutiqueltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0109",
+    "raison_sociale": "Le Portage ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-08-12"
+   },
+   "adresse": {
+    "ville": "Val-d'Or",
+    "province": "Quebec",
+    "code_postal": "H8T 0M5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@leportageltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-906",
+    "raison_sociale": "BOUTIQUE BOUCHERVILLE CHARLEVOIX",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-07-05"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "qc",
+    "code_postal": "G3R 7C2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@boutiquebouchervillecharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0081",
+    "raison_sociale": "Plein Air Repentigny inc.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-07-15"
+   },
+   "adresse": {
+    "ville": "laval",
+    "province": "qc",
+    "code_postal": ""
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@pleinairrepentignyinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0022",
+    "raison_sociale": "Coopérative Mauricie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-01-22"
+   },
+   "adresse": {
+    "ville": "Fredericton",
+    "province": "Nouveau-Brunswick",
+    "code_postal": "  "
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@cooperativemauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0131",
+    "raison_sociale": "Nature Beauport Charlevoix",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-09-28"
+   },
+   "adresse": {
+    "ville": "Bathurst",
+    "province": "Nouveau-Brunswick",
+    "code_postal": "H7T 5X4"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@naturebeauportcharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0028",
+    "raison_sociale": "Sentiers Charlevoix",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2018-12-05"
+   },
+   "adresse": {
+    "ville": "Trois-Rivières ",
+    "province": "QC",
+    "code_postal": "K5R 9S4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@sentierscharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-901",
+    "raison_sociale": "CHALET SAINT-LAURENT",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-04-14"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "Québec",
+    "code_postal": "K7N 6M5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@chaletsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0138",
+    "raison_sociale": "Expédition Enr.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-07-17"
+   },
+   "adresse": {
+    "ville": "sherbrooke",
+    "province": "Quebec",
+    "code_postal": "M4P 4X2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@expeditionenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0220",
+    "raison_sociale": "Randonneurs Lennoxville Cantons",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2018-08-24"
+   },
+   "adresse": {
+    "ville": "Victoriaville ",
+    "province": "Quebec",
+    "code_postal": "L7L 6R5"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@randonneurslennoxvillecantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0060",
+    "raison_sociale": "Aventure inc.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2022-06-09"
+   },
+   "adresse": {
+    "ville": "Shawinigan ",
+    "province": "Québec",
+    "code_postal": "R7E 8K7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@aventureinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0069",
+    "raison_sociale": "Coopérative Lennoxville Charlevoix",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-08-28"
+   },
+   "adresse": {
+    "ville": "Charlottetown",
+    "province": "Île-du-Prince-Édouard",
+    "code_postal": "H8V 3K8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@cooperativelennoxvillecharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0157",
+    "raison_sociale": "Plein Air Anjou inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2016-10-24"
+   },
+   "adresse": {
+    "ville": "laval",
+    "province": "Quebec",
+    "code_postal": "G1A 2M7"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "a completer"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0071",
+    "raison_sociale": "Base Camp Cantons",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-11-21"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau ",
+    "province": "QC",
+    "code_postal": "M9B 8E4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@basecampcantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0136",
+    "raison_sociale": "Cap Nord Chicoutimi du Nord",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-08-22"
+   },
+   "adresse": {
+    "ville": "Terrebonne",
+    "province": "Québec",
+    "code_postal": "M7E 7C1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@capnordchicoutimidunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0026",
+    "raison_sociale": "Expédition inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-01-28"
+   },
+   "adresse": {
+    "ville": "Trois-Rivières",
+    "province": "QC",
+    "code_postal": "H6B 4G0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@expeditioninc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-908",
+    "raison_sociale": "PLEIN AIR VAUDREUIL DU NORD",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-07-04"
+   },
+   "adresse": {
+    "ville": "NORTH BAY",
+    "province": "Ontario",
+    "code_postal": "M7X 1P8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@pleinairvaudreuildunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0050",
+    "raison_sociale": "Nature ltée",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2016-06-12"
+   },
+   "adresse": {
+    "ville": "Laval ",
+    "province": "QC",
+    "code_postal": "G4R 4V0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@natureltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0185",
+    "raison_sociale": "Coopérative du Nord",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-01-05"
+   },
+   "adresse": {
+    "ville": "SUDBURY",
+    "province": "ON",
+    "code_postal": "G3V 3P3"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@cooperativedunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0047",
+    "raison_sociale": "Grand Air Outaouais",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-09-20"
+   },
+   "adresse": {
+    "ville": "SHAWINIGAN",
+    "province": "Quebec",
+    "code_postal": "H1L 2V6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@grandairoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0027",
+    "raison_sociale": "Chalet Saint-Laurent",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-04-14"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "Québec",
+    "code_postal": "K7N 6M5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@chaletsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0168",
+    "raison_sociale": "Boutique Lachine Charlevoix",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-04-29"
+   },
+   "adresse": {
+    "ville": "baie-comeau",
+    "province": "qc",
+    "code_postal": "L7P 4G2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@boutiquelachinecharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-911",
+    "raison_sociale": "COOPÉRATIVE ABITIBI",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2022-05-15"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "Quebec",
+    "code_postal": "J0Y 9G8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@cooperativeabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0041",
+    "raison_sociale": "Chalet inc.",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-02-03"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau",
+    "province": "Quebec",
+    "code_postal": "R8V 2M6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@chaletinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0113",
+    "raison_sociale": "Expédition Sainte-Foy Mauricie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-05-10"
+   },
+   "adresse": {
+    "ville": "granby",
+    "province": "Québec",
+    "code_postal": "R3B 5T8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@expeditionsainte-foymauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0062",
+    "raison_sociale": "Cap Nord et Fils",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-07-13"
+   },
+   "adresse": {
+    "ville": "saguenay",
+    "province": "qc",
+    "code_postal": "L2L 8R2"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@capnordetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0043",
+    "raison_sociale": "Plein Air et Fils",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2023-04-28"
+   },
+   "adresse": {
+    "ville": "Val-d'Or",
+    "province": "Quebec",
+    "code_postal": "K9X 6T6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-506",
+    "courriel": null
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0058",
+    "raison_sociale": "Cap Nord Cantons",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2022-01-08"
+   },
+   "adresse": {
+    "ville": "sudbury",
+    "province": "ON",
+    "code_postal": "R9E 4G6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@capnordcantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0118",
+    "raison_sociale": "Cap Nord ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-08-30"
+   },
+   "adresse": {
+    "ville": "Saguenay ",
+    "province": "QC",
+    "code_postal": "M7N 8M1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@capnordltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0188",
+    "raison_sociale": "Plein Air ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-01-12"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau",
+    "province": "qc",
+    "code_postal": "H3E 9S8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@pleinairltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0195",
+    "raison_sociale": "Cap Nord Saint-Laurent",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2022-12-19"
+   },
+   "adresse": {
+    "ville": "SAINT-JEAN-SUR-RICHELIEU",
+    "province": "Québec",
+    "code_postal": "K5S 8Y0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@capnordsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0084",
+    "raison_sociale": "Grand Air Anjou Saint-Laurent",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-07-18"
+   },
+   "adresse": {
+    "ville": "QUÉBEC",
+    "province": "qc",
+    "code_postal": "M8S 4K1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@grandairanjousaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0057",
+    "raison_sociale": "Expédition Outaouais",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-11-19"
+   },
+   "adresse": {
+    "ville": "Rimouski ",
+    "province": "QC",
+    "code_postal": "K8V 0E4"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "n/a"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0077",
+    "raison_sociale": "Expédition Boréal",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-12-15"
+   },
+   "adresse": {
+    "ville": "TROIS-RIVIÈRES",
+    "province": "Québec",
+    "code_postal": "M7V 2E4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "n/a"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0082",
+    "raison_sociale": "Cap Nord Beauport Gaspésie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-04-13"
+   },
+   "adresse": {
+    "ville": "SAINT-JEAN-SUR-RICHELIEU",
+    "province": "Québec",
+    "code_postal": "L6S 0L3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-504",
+    "courriel": "n/a"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0045",
+    "raison_sociale": "Grand Air Vaudreuil Enr.",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-01-07"
+   },
+   "adresse": {
+    "ville": "Sept-Îles",
+    "province": "QC",
+    "code_postal": "H3N 0M8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@grandairvaudreuilenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0048",
+    "raison_sociale": "Aventure Outaouais",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2022-03-23"
+   },
+   "adresse": {
+    "ville": "Drummondville ",
+    "province": "QC",
+    "code_postal": "L4H 3S3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@aventureoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0101",
+    "raison_sociale": "Sentiers Laurentides",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-08-08"
+   },
+   "adresse": {
+    "ville": "Victoriaville",
+    "province": "Québec",
+    "code_postal": "L9S 1P0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@sentierslaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0161",
+    "raison_sociale": "Sports Pointe-Claire Abitibi",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2016-03-26"
+   },
+   "adresse": {
+    "ville": "Ottawa",
+    "province": "ON",
+    "code_postal": "R7G 6S5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@sportspointe-claireabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0183",
+    "raison_sociale": "Le Refuge Repentigny Cantons",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2016-12-20"
+   },
+   "adresse": {
+    "ville": "ottawa",
+    "province": "ON",
+    "code_postal": null
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@lerefugerepentignycantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0134",
+    "raison_sociale": "Chalet Gaspésie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-04-11"
+   },
+   "adresse": {
+    "ville": "Sherbrooke ",
+    "province": "qc",
+    "code_postal": "G6G 3P9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@chaletgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0110",
+    "raison_sociale": "Expédition Charlevoix",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-08-01"
+   },
+   "adresse": {
+    "ville": "Victoriaville ",
+    "province": "qc",
+    "code_postal": "H2L 2S6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": ""
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0065",
+    "raison_sociale": "Grand Air Vaudreuil inc.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-12-28"
+   },
+   "adresse": {
+    "ville": "moncton",
+    "province": "NB",
+    "code_postal": "N4J 3K0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@grandairvaudreuilinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0008",
+    "raison_sociale": "Sentiers Saint-Laurent",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-03-09"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "Québec",
+    "code_postal": "N2M 1J4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@sentierssaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0042",
+    "raison_sociale": "Sports Cantons",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2022-06-07"
+   },
+   "adresse": {
+    "ville": "ottawa",
+    "province": "ON",
+    "code_postal": "M6N 3C1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@sportscantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0178",
+    "raison_sociale": "Coopérative Mirabel Gaspésie",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-05-17"
+   },
+   "adresse": {
+    "ville": "Sept-Îles",
+    "province": "Québec",
+    "code_postal": "L6J 2B3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@cooperativemirabelgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0092",
+    "raison_sociale": "Chalet Blainville ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-10-04"
+   },
+   "adresse": {
+    "ville": "Val-d'Or ",
+    "province": "Quebec",
+    "code_postal": "N6J 4S0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@chaletblainvilleltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0160",
+    "raison_sociale": "Le Portage Boréal",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-02-21"
+   },
+   "adresse": {
+    "ville": "KINGSTON",
+    "province": "on",
+    "code_postal": "K3C 8X4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@leportageboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0189",
+    "raison_sociale": "Sports Lachine Enr.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-12-24"
+   },
+   "adresse": {
+    "ville": "Drummondville ",
+    "province": "qc",
+    "code_postal": "L4P 6J8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@sportslachineenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-909",
+    "raison_sociale": "PLEIN AIR DU NORD",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-12-15"
+   },
+   "adresse": {
+    "ville": "OTTAWA",
+    "province": "Ontario",
+    "code_postal": "G8B 1L1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@pleinairdunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0216",
+    "raison_sociale": "Plein Air Charlevoix",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-03-09"
+   },
+   "adresse": {
+    "ville": "laval",
+    "province": "Quebec",
+    "code_postal": "M4S 2B6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@pleinaircharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0210",
+    "raison_sociale": "Le Refuge Hull Boréal",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-04-16"
+   },
+   "adresse": {
+    "ville": "Montréal",
+    "province": "Québec",
+    "code_postal": "H4L 4Y4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@lerefugehullboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0150",
+    "raison_sociale": "Expédition Lennoxville inc.",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-06-17"
+   },
+   "adresse": {
+    "ville": "Saint-Jean-sur-Richelieu",
+    "province": "Quebec",
+    "code_postal": "K4N 4X9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@expeditionlennoxvilleinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0072",
+    "raison_sociale": "Base Camp Verdun Abitibi",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-06-04"
+   },
+   "adresse": {
+    "ville": "Laval ",
+    "province": "Quebec",
+    "code_postal": "R1E 9V8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@basecampverdunabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0016",
+    "raison_sociale": "Base Camp Abitibi",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-02-07"
+   },
+   "adresse": {
+    "ville": "sept-îles",
+    "province": "QC",
+    "code_postal": ""
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@basecampabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0014",
+    "raison_sociale": "Boutique Beauport Abitibi",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-08-20"
+   },
+   "adresse": {
+    "ville": "Montréal",
+    "province": "QC",
+    "code_postal": "K1P 0B0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@boutiquebeauportabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0064",
+    "raison_sociale": "Grand Air Saint-Laurent",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-09-25"
+   },
+   "adresse": {
+    "ville": "QUÉBEC",
+    "province": "QC",
+    "code_postal": "J1X 9M2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@grandairsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0177",
+    "raison_sociale": "Plein Air inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-03-10"
+   },
+   "adresse": {
+    "ville": "Terrebonne",
+    "province": "Quebec",
+    "code_postal": "N6M 4J6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@pleinairinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0145",
+    "raison_sociale": "Sports Repentigny Charlevoix",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-02-06"
+   },
+   "adresse": {
+    "ville": "Drummondville",
+    "province": "qc",
+    "code_postal": "N3V 9K5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "a completer"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0167",
+    "raison_sociale": "Cap Nord Sainte-Foy Boréal",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2023-05-13"
+   },
+   "adresse": {
+    "ville": "kingston",
+    "province": "Ontario",
+    "code_postal": null
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@capnordsainte-foyboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0037",
+    "raison_sociale": "Expédition Abitibi",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-02-11"
+   },
+   "adresse": {
+    "ville": "BATHURST",
+    "province": "Nouveau-Brunswick",
+    "code_postal": "H6A 2P7"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@expeditionabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0194",
+    "raison_sociale": "Expédition Beauport Outaouais",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2022-02-23"
+   },
+   "adresse": {
+    "ville": "Charlottetown",
+    "province": "Île-du-Prince-Édouard",
+    "code_postal": "N5B 8N6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@expeditionbeauportoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0096",
+    "raison_sociale": "Cap Nord Abitibi",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-09-22"
+   },
+   "adresse": {
+    "ville": "Fredericton ",
+    "province": "NB",
+    "code_postal": ""
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@capnordabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0126",
+    "raison_sociale": "Base Camp Appalaches",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-05-24"
+   },
+   "adresse": {
+    "ville": "Saint-Jean-sur-Richelieu ",
+    "province": "qc",
+    "code_postal": "L9V 3Y6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@basecampappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0203",
+    "raison_sociale": "Le Portage Charlevoix",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-07-14"
+   },
+   "adresse": {
+    "ville": "LÉVIS",
+    "province": "qc",
+    "code_postal": "N6A 8S5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@leportagecharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0217",
+    "raison_sociale": "Base Camp Chicoutimi et Fils",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2022-07-30"
+   },
+   "adresse": {
+    "ville": "MONTRÉAL",
+    "province": "Quebec",
+    "code_postal": "R7P 0X6"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@basecampchicoutimietfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-905",
+    "raison_sociale": "NATURE HULL LTÉE",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-04-09"
+   },
+   "adresse": {
+    "ville": "Sherbrooke",
+    "province": "Quebec",
+    "code_postal": "K5E 6A5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@naturehullltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0086",
+    "raison_sociale": "Plein Air Mirabel et Fils",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-12-09"
+   },
+   "adresse": {
+    "ville": "Sept-Îles",
+    "province": "QC",
+    "code_postal": "J5P 0T4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@pleinairmirabeletfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0019",
+    "raison_sociale": "Le Refuge et Fils",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2018-10-27"
+   },
+   "adresse": {
+    "ville": "NORTH BAY",
+    "province": "Ontario",
+    "code_postal": "L8R 1B0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": null
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0099",
+    "raison_sociale": "Nature Cantons",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2022-09-04"
+   },
+   "adresse": {
+    "ville": "North Bay ",
+    "province": "ON",
+    "code_postal": "N0K 4V7"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@naturecantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0191",
+    "raison_sociale": "Le Portage Gaspésie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-06-28"
+   },
+   "adresse": {
+    "ville": "Saint-Jean-sur-Richelieu",
+    "province": "Québec",
+    "code_postal": "L6G 5X7"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@leportagegaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0078",
+    "raison_sociale": "Le Refuge du Nord",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-08-03"
+   },
+   "adresse": {
+    "ville": "Saint-Jérôme ",
+    "province": "Québec",
+    "code_postal": "J6R 4K8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@lerefugedunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0130",
+    "raison_sociale": "Expédition Appalaches",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2020-08-02"
+   },
+   "adresse": {
+    "ville": "shawinigan",
+    "province": "QC",
+    "code_postal": "G6E 0H6"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@expeditionappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0190",
+    "raison_sociale": "Base Camp et Fils",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2018-01-19"
+   },
+   "adresse": {
+    "ville": "Saint-Jérôme",
+    "province": "Quebec",
+    "code_postal": "H5V 9X4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@basecampetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0053",
+    "raison_sociale": "Aventure et Fils",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2022-07-22"
+   },
+   "adresse": {
+    "ville": "Bathurst ",
+    "province": "NB",
+    "code_postal": "M6R 3P2"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@aventureetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0174",
+    "raison_sociale": "Coopérative Longueuil inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2021-11-27"
+   },
+   "adresse": {
+    "ville": "Saguenay ",
+    "province": "qc",
+    "code_postal": "L8H 7M0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@cooperativelongueuilinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0001",
+    "raison_sociale": "Le Refuge Boréal",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-01-18"
+   },
+   "adresse": {
+    "ville": "Victoriaville ",
+    "province": "Québec",
+    "code_postal": "H5H 7R2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@lerefugeboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0139",
+    "raison_sociale": "Cap Nord Laurentides",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-03-21"
+   },
+   "adresse": {
+    "ville": "Moncton ",
+    "province": "Nouveau-Brunswick",
+    "code_postal": "K8N 8K5"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@capnordlaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0005",
+    "raison_sociale": "Le Refuge Abitibi",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-08-25"
+   },
+   "adresse": {
+    "ville": "baie-comeau",
+    "province": "Québec",
+    "code_postal": "R1P 0C2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@lerefugeabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0009",
+    "raison_sociale": "Le Refuge inc.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-12-23"
+   },
+   "adresse": {
+    "ville": "VAL-D'OR",
+    "province": "Quebec",
+    "code_postal": "M3R 7C8"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@lerefugeinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0080",
+    "raison_sociale": "Randonneurs Verdun Abitibi",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-06-04"
+   },
+   "adresse": {
+    "ville": "Drummondville ",
+    "province": "Québec",
+    "code_postal": "R7E 2R7"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-506",
+    "courriel": "n/a"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0120",
+    "raison_sociale": "Chalet Lennoxville ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-04-04"
+   },
+   "adresse": {
+    "ville": "lévis",
+    "province": "Québec",
+    "code_postal": "G9L 4C6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@chaletlennoxvilleltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0147",
+    "raison_sociale": "Le Refuge Blainville Abitibi",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-02-17"
+   },
+   "adresse": {
+    "ville": "Saint-Jean-sur-Richelieu",
+    "province": "qc",
+    "code_postal": "R4K 5S9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@lerefugeblainvilleabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0199",
+    "raison_sociale": "Expédition Brossard Saint-Laurent",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-06-17"
+   },
+   "adresse": {
+    "ville": "Shawinigan ",
+    "province": "Québec",
+    "code_postal": "H7R 2A1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@expeditionbrossardsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0135",
+    "raison_sociale": "Le Refuge Pointe-Claire Gaspésie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-11-10"
+   },
+   "adresse": {
+    "ville": "Ottawa",
+    "province": "ON",
+    "code_postal": "M8E 5H5"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@lerefugepointe-clairegaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0091",
+    "raison_sociale": "Boutique Boucherville Charlevoix",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-07-05"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "qc",
+    "code_postal": "G3R 7C2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@boutiquebouchervillecharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0003",
+    "raison_sociale": "Nature Saint-Laurent",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2016-02-24"
+   },
+   "adresse": {
+    "ville": "Val-d'Or ",
+    "province": "qc",
+    "code_postal": "K0Y 0R6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@naturesaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0165",
+    "raison_sociale": "Base Camp inc.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-03-05"
+   },
+   "adresse": {
+    "ville": "Shawinigan",
+    "province": "Québec",
+    "code_postal": "L7J 3J0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@basecampinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0117",
+    "raison_sociale": "Plein Air Saint-Hubert Appalaches",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-07-29"
+   },
+   "adresse": {
+    "ville": "saguenay",
+    "province": "qc",
+    "code_postal": "N7K 2B0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@pleinairsaint-hubertappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-914",
+    "raison_sociale": "BASE CAMP LAURENTIDES",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-01-05"
+   },
+   "adresse": {
+    "ville": "SHAWINIGAN",
+    "province": "Quebec",
+    "code_postal": "M8V 2S5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@basecamplaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0025",
+    "raison_sociale": "Coopérative et Fils",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-02-25"
+   },
+   "adresse": {
+    "ville": "Sudbury ",
+    "province": "ON",
+    "code_postal": null
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@cooperativeetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0204",
+    "raison_sociale": "Expédition Vaudreuil inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2021-08-14"
+   },
+   "adresse": {
+    "ville": "SEPT-ÎLES",
+    "province": "Quebec",
+    "code_postal": "K4P 9C8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@expeditionvaudreuilinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0075",
+    "raison_sociale": "Nature Abitibi",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-09-26"
+   },
+   "adresse": {
+    "ville": "terrebonne",
+    "province": "Québec",
+    "code_postal": "L6N 4L0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@natureabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-910",
+    "raison_sociale": "AVENTURE JONQUIÈRE ABITIBI",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-12-07"
+   },
+   "adresse": {
+    "ville": "Montréal",
+    "province": "Québec",
+    "code_postal": "L2A 6C7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@aventurejonquiereabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0015",
+    "raison_sociale": "Boutique Gaspésie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-11-16"
+   },
+   "adresse": {
+    "ville": "Thunder Bay",
+    "province": "Ontario",
+    "code_postal": "H1H 3A3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": null
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0104",
+    "raison_sociale": "Cap Nord Charlevoix",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-07-17"
+   },
+   "adresse": {
+    "ville": "SEPT-ÎLES",
+    "province": "qc",
+    "code_postal": "K8K 2N6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@capnordcharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0013",
+    "raison_sociale": "Le Portage Outaouais",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-03-18"
+   },
+   "adresse": {
+    "ville": "Rimouski ",
+    "province": "Québec",
+    "code_postal": "M4Y 6K3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@leportageoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0219",
+    "raison_sociale": "Boutique Boréal",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-02-13"
+   },
+   "adresse": {
+    "ville": "Montréal",
+    "province": "Québec",
+    "code_postal": "N6R 1B4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@boutiqueboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0200",
+    "raison_sociale": "Randonneurs Repentigny inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2016-12-26"
+   },
+   "adresse": {
+    "ville": "LAVAL",
+    "province": "Québec",
+    "code_postal": "N8A 0R1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@randonneursrepentignyinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0193",
+    "raison_sociale": "Cap Nord Longueuil Appalaches",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2018-03-26"
+   },
+   "adresse": {
+    "ville": "Gatineau",
+    "province": "qc",
+    "code_postal": "M3A 2A6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@capnordlongueuilappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0211",
+    "raison_sociale": "Plein Air Abitibi",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-10-23"
+   },
+   "adresse": {
+    "ville": "québec",
+    "province": "Quebec",
+    "code_postal": "M1P 9S5"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@pleinairabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0088",
+    "raison_sociale": "Cap Nord Sillery du Nord",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-07-02"
+   },
+   "adresse": {
+    "ville": "Gatineau ",
+    "province": "Quebec",
+    "code_postal": "G4K 3P6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@capnordsillerydunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0182",
+    "raison_sociale": "Grand Air Lennoxville Laurentides",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-04-13"
+   },
+   "adresse": {
+    "ville": "laval",
+    "province": "Quebec",
+    "code_postal": "M8R 7A2"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@grandairlennoxvillelaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0172",
+    "raison_sociale": "Sentiers Mirabel Outaouais",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2018-06-04"
+   },
+   "adresse": {
+    "ville": "Rimouski ",
+    "province": "qc",
+    "code_postal": "H5G 8N8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@sentiersmirabeloutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0187",
+    "raison_sociale": "Plein Air Vaudreuil du Nord",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-07-04"
+   },
+   "adresse": {
+    "ville": "NORTH BAY",
+    "province": "Ontario",
+    "code_postal": "M7X 1P8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@pleinairvaudreuildunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0032",
+    "raison_sociale": "Base Camp Laurentides",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-01-05"
+   },
+   "adresse": {
+    "ville": "SHAWINIGAN",
+    "province": "Quebec",
+    "code_postal": "M8V 2S5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@basecamplaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0171",
+    "raison_sociale": "Sports Laurentides",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2022-12-10"
+   },
+   "adresse": {
+    "ville": "Victoriaville",
+    "province": "Québec",
+    "code_postal": null
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@sportslaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0046",
+    "raison_sociale": "Randonneurs Enr.",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2023-10-26"
+   },
+   "adresse": {
+    "ville": "sept-îles",
+    "province": "qc",
+    "code_postal": "G8J 5N1"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@randonneursenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0011",
+    "raison_sociale": "Aventure Mauricie",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-12-05"
+   },
+   "adresse": {
+    "ville": "Sept-Îles",
+    "province": "Quebec",
+    "code_postal": "J3P 6V0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@aventuremauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0186",
+    "raison_sociale": "Le Portage Enr.",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-02-12"
+   },
+   "adresse": {
+    "ville": "Rouyn-Noranda ",
+    "province": "Québec",
+    "code_postal": "L6H 8K9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@leportageenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0133",
+    "raison_sociale": "Plein Air du Nord",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-12-15"
+   },
+   "adresse": {
+    "ville": "OTTAWA",
+    "province": "Ontario",
+    "code_postal": "G8B 1L1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@pleinairdunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-907",
+    "raison_sociale": "GRAND AIR GASPÉSIE",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2016-11-17"
+   },
+   "adresse": {
+    "ville": "Sherbrooke",
+    "province": "QC",
+    "code_postal": "L9R 8B4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@grandairgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0123",
+    "raison_sociale": "Plein Air Verdun Charlevoix",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2018-03-19"
+   },
+   "adresse": {
+    "ville": "Shawinigan ",
+    "province": "Quebec",
+    "code_postal": "L4G 0C3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": ""
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0068",
+    "raison_sociale": "Nature Repentigny ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-10-30"
+   },
+   "adresse": {
+    "ville": "saguenay",
+    "province": "qc",
+    "code_postal": "N4V 2Y2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@naturerepentignyltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0031",
+    "raison_sociale": "Grand Air Enr.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-09-19"
+   },
+   "adresse": {
+    "ville": "VAL-D'OR",
+    "province": "qc",
+    "code_postal": "N2H 1K3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@grandairenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0049",
+    "raison_sociale": "Sports Enr.",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-01-26"
+   },
+   "adresse": {
+    "ville": "TORONTO",
+    "province": "on",
+    "code_postal": "M4M 2S5"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@sportsenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0044",
+    "raison_sociale": "Boutique Laurentides",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-05-10"
+   },
+   "adresse": {
+    "ville": "OTTAWA",
+    "province": "Ontario",
+    "code_postal": "J5C 1V1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@boutiquelaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0112",
+    "raison_sociale": "Sentiers du Nord",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-08-04"
+   },
+   "adresse": {
+    "ville": "Moncton",
+    "province": "NB",
+    "code_postal": "H0Y 5X6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@sentiersdunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0115",
+    "raison_sociale": "Expédition Hull Laurentides",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-05-10"
+   },
+   "adresse": {
+    "ville": "shawinigan",
+    "province": "QC",
+    "code_postal": "R5A 0E8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@expeditionhulllaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0192",
+    "raison_sociale": "Coopérative Laurentides",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-09-06"
+   },
+   "adresse": {
+    "ville": "Laval",
+    "province": "qc",
+    "code_postal": "R2S 8A7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@cooperativelaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0196",
+    "raison_sociale": "Plein Air Jonquière et Fils",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2020-08-05"
+   },
+   "adresse": {
+    "ville": "LAVAL",
+    "province": "QC",
+    "code_postal": "M8L 3V7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@pleinairjonquiereetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0040",
+    "raison_sociale": "Sports Appalaches",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-10-14"
+   },
+   "adresse": {
+    "ville": "Montréal",
+    "province": "Quebec",
+    "code_postal": "K2N 1E6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@sportsappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0164",
+    "raison_sociale": "Cap Nord Enr.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-08-28"
+   },
+   "adresse": {
+    "ville": "GATINEAU",
+    "province": "Quebec",
+    "code_postal": "R8X 4E1"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0151",
+    "raison_sociale": "Randonneurs Repentigny Outaouais",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-06-02"
+   },
+   "adresse": {
+    "ville": "Charlottetown",
+    "province": "Île-du-Prince-Édouard",
+    "code_postal": "L9C 7E4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@randonneursrepentignyoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0215",
+    "raison_sociale": "Sentiers Cantons",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-03-18"
+   },
+   "adresse": {
+    "ville": "Victoriaville ",
+    "province": "Quebec",
+    "code_postal": "  "
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@sentierscantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0039",
+    "raison_sociale": "Le Portage Abitibi",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-11-29"
+   },
+   "adresse": {
+    "ville": "QUÉBEC",
+    "province": "QC",
+    "code_postal": "L8X 5S1"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@leportageabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0129",
+    "raison_sociale": "Randonneurs Chicoutimi Gaspésie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2023-04-21"
+   },
+   "adresse": {
+    "ville": "rimouski",
+    "province": "qc",
+    "code_postal": "M5C 9P0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@randonneurschicoutimigaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0010",
+    "raison_sociale": "Chalet Boréal",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-07-25"
+   },
+   "adresse": {
+    "ville": "Trois-Rivières",
+    "province": "Quebec",
+    "code_postal": "M1R 4K9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": ""
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0085",
+    "raison_sociale": "Grand Air Brossard du Nord",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2020-04-09"
+   },
+   "adresse": {
+    "ville": "SAINT-JEAN-SUR-RICHELIEU",
+    "province": "Québec",
+    "code_postal": "J7E 4X0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@grandairbrossarddunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0105",
+    "raison_sociale": "Aventure Boréal",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-05-21"
+   },
+   "adresse": {
+    "ville": "Kingston ",
+    "province": "on",
+    "code_postal": null
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@aventureboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0090",
+    "raison_sociale": "Randonneurs du Nord",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-02-12"
+   },
+   "adresse": {
+    "ville": "saint-jean-sur-richelieu",
+    "province": "qc",
+    "code_postal": "G1J 8B7"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@randonneursdunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-904",
+    "raison_sociale": "RANDONNEURS VERDUN ABITIBI",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2022-06-04"
+   },
+   "adresse": {
+    "ville": "Drummondville ",
+    "province": "Québec",
+    "code_postal": "R7E 2R7"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-506",
+    "courriel": "n/a"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0122",
+    "raison_sociale": "Le Refuge Jonquière Outaouais",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2021-12-08"
+   },
+   "adresse": {
+    "ville": "SAINT-JEAN-SUR-RICHELIEU",
+    "province": "Québec",
+    "code_postal": "K0G 4R1"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@lerefugejonquiereoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0159",
+    "raison_sociale": "Sentiers Brossard Laurentides",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-10-09"
+   },
+   "adresse": {
+    "ville": "Toronto",
+    "province": "ON",
+    "code_postal": "K5S 6K7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@sentiersbrossardlaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0066",
+    "raison_sociale": "Grand Air Appalaches",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-01-17"
+   },
+   "adresse": {
+    "ville": "Bathurst ",
+    "province": "NB",
+    "code_postal": "L4G 4R3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@grandairappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0184",
+    "raison_sociale": "Grand Air Boréal",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2021-03-29"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "Québec",
+    "code_postal": "K5R 3V7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@grandairboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0116",
+    "raison_sociale": "Nature Blainville Boréal",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-10-25"
+   },
+   "adresse": {
+    "ville": "trois-rivières",
+    "province": "Québec",
+    "code_postal": "H7G 7X6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@natureblainvilleboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0176",
+    "raison_sociale": "Grand Air Rosemont Charlevoix",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-07-26"
+   },
+   "adresse": {
+    "ville": "Sudbury",
+    "province": "ON",
+    "code_postal": "G8B 7X3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@grandairrosemontcharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-903",
+    "raison_sociale": "GRAND AIR APPALACHES",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-01-17"
+   },
+   "adresse": {
+    "ville": "Bathurst ",
+    "province": "NB",
+    "code_postal": "L4G 4R3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@grandairappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0094",
+    "raison_sociale": "Nature Laurentides",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-11-06"
+   },
+   "adresse": {
+    "ville": "Gatineau",
+    "province": "qc",
+    "code_postal": "G2E 7P9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@naturelaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0051",
+    "raison_sociale": "Le Refuge ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-12-21"
+   },
+   "adresse": {
+    "ville": "gatineau",
+    "province": "QC",
+    "code_postal": "K8L 3M0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@lerefugeltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0209",
+    "raison_sociale": "Aventure Vaudreuil ltée",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-11-30"
+   },
+   "adresse": {
+    "ville": "Val-d'Or ",
+    "province": "QC",
+    "code_postal": "G2T 2J4"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@aventurevaudreuilltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0218",
+    "raison_sociale": "Cap Nord Mauricie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-03-09"
+   },
+   "adresse": {
+    "ville": "saguenay",
+    "province": "Québec",
+    "code_postal": "J2G 3M4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-503",
+    "courriel": ""
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0007",
+    "raison_sociale": "Sentiers Gaspésie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2023-01-17"
+   },
+   "adresse": {
+    "ville": "MONCTON",
+    "province": "Nouveau-Brunswick",
+    "code_postal": "L4M 8C8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@sentiersgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0169",
+    "raison_sociale": "Nature Pointe-Claire Appalaches",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-09-03"
+   },
+   "adresse": {
+    "ville": "Lévis ",
+    "province": "QC",
+    "code_postal": "M9X 9T3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@naturepointe-claireappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0173",
+    "raison_sociale": "Expédition et Fils",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-07-25"
+   },
+   "adresse": {
+    "ville": "TROIS-RIVIÈRES",
+    "province": "Quebec",
+    "code_postal": "N5L 8S2"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@expeditionetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0124",
+    "raison_sociale": "Grand Air Brossard Saint-Laurent",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-04-14"
+   },
+   "adresse": {
+    "ville": "Drummondville",
+    "province": "QC",
+    "code_postal": "K3L 0L4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@grandairbrossardsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0021",
+    "raison_sociale": "Expédition Laurentides",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2021-12-19"
+   },
+   "adresse": {
+    "ville": "Trois-Rivières ",
+    "province": "QC",
+    "code_postal": "G6T 8V4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@expeditionlaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0142",
+    "raison_sociale": "Nature Jonquière Appalaches",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2016-11-19"
+   },
+   "adresse": {
+    "ville": "lévis",
+    "province": "qc",
+    "code_postal": "N8S 7P9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-508",
+    "courriel": ""
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0152",
+    "raison_sociale": "Grand Air du Nord",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-08-08"
+   },
+   "adresse": {
+    "ville": "Laval ",
+    "province": "Quebec",
+    "code_postal": "R5V 7C8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@grandairdunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0055",
+    "raison_sociale": "Sentiers Outaouais",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-11-10"
+   },
+   "adresse": {
+    "ville": "drummondville",
+    "province": "qc",
+    "code_postal": "L2J 8R6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-506",
+    "courriel": "n/a"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0087",
+    "raison_sociale": "Nature Sainte-Foy inc.",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-11-18"
+   },
+   "adresse": {
+    "ville": "LAVAL",
+    "province": "qc",
+    "code_postal": "H1J 4Y9"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@naturesainte-foyinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0179",
+    "raison_sociale": "Grand Air Cantons",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2018-12-14"
+   },
+   "adresse": {
+    "ville": "saint-jean-sur-richelieu",
+    "province": "QC",
+    "code_postal": "  "
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@grandaircantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0198",
+    "raison_sociale": "Randonneurs Lennoxville Charlevoix",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-06-26"
+   },
+   "adresse": {
+    "ville": "MONTRÉAL",
+    "province": "Québec",
+    "code_postal": "J0K 4M3"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@randonneurslennoxvillecharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0089",
+    "raison_sociale": "Nature Blainville Gaspésie",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-04-27"
+   },
+   "adresse": {
+    "ville": "SAINT-JEAN-SUR-RICHELIEU",
+    "province": "qc",
+    "code_postal": "H2S 4S7"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@natureblainvillegaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0143",
+    "raison_sociale": "Chalet Appalaches",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2017-07-16"
+   },
+   "adresse": {
+    "ville": "DRUMMONDVILLE",
+    "province": "QC",
+    "code_postal": "L6K 0L7"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@chaletappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0141",
+    "raison_sociale": "Base Camp Outaouais",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2022-08-10"
+   },
+   "adresse": {
+    "ville": "rouyn-noranda",
+    "province": "qc",
+    "code_postal": "R7J 0G1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@basecampoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0154",
+    "raison_sociale": "Cap Nord Pointe-Claire Outaouais",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2021-06-10"
+   },
+   "adresse": {
+    "ville": "val-d'or",
+    "province": "Quebec",
+    "code_postal": "N8S 0J2"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@capnordpointe-claireoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0166",
+    "raison_sociale": "Base Camp Pointe-Claire et Fils",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-12-19"
+   },
+   "adresse": {
+    "ville": "DRUMMONDVILLE",
+    "province": "qc",
+    "code_postal": ""
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@basecamppointe-claireetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0175",
+    "raison_sociale": "Chalet Blainville Charlevoix",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2016-02-18"
+   },
+   "adresse": {
+    "ville": "Laval ",
+    "province": "Québec",
+    "code_postal": "J4X 5X9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@chaletblainvillecharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0140",
+    "raison_sociale": "Cap Nord inc.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2018-01-26"
+   },
+   "adresse": {
+    "ville": "Saguenay",
+    "province": "Quebec",
+    "code_postal": "M7A 2T0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@capnordinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0018",
+    "raison_sociale": "Cap Nord Boréal",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-11-14"
+   },
+   "adresse": {
+    "ville": "Rimouski ",
+    "province": "Québec",
+    "code_postal": "J0G 0R0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@capnordboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0158",
+    "raison_sociale": "Aventure Cantons",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-07-28"
+   },
+   "adresse": {
+    "ville": "Saguenay",
+    "province": "Québec",
+    "code_postal": "R4A 3G0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@aventurecantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0030",
+    "raison_sociale": "Le Refuge Beauport Outaouais",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-06-13"
+   },
+   "adresse": {
+    "ville": "Lévis ",
+    "province": "qc",
+    "code_postal": "K6E 4N6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@lerefugebeauportoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0098",
+    "raison_sociale": "Cap Nord Gaspésie",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-01-16"
+   },
+   "adresse": {
+    "ville": "Drummondville ",
+    "province": "Quebec",
+    "code_postal": "J7S 7V5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@capnordgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0052",
+    "raison_sociale": "Chalet Lachine Cantons",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2021-10-08"
+   },
+   "adresse": {
+    "ville": "NORTH BAY",
+    "province": "ON",
+    "code_postal": "K8M 0X1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@chaletlachinecantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0156",
+    "raison_sociale": "Aventure ltée",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2017-07-14"
+   },
+   "adresse": {
+    "ville": "bathurst",
+    "province": "NB",
+    "code_postal": "H2Y 5K2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@aventureltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0144",
+    "raison_sociale": "Chalet Rosemont Outaouais",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2022-01-12"
+   },
+   "adresse": {
+    "ville": "QUÉBEC",
+    "province": "QC",
+    "code_postal": "K0P 6R8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@chaletrosemontoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0012",
+    "raison_sociale": "Randonneurs Appalaches",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-05-17"
+   },
+   "adresse": {
+    "ville": "Sept-Îles ",
+    "province": "Quebec",
+    "code_postal": "J1J 1V0"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@randonneursappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0155",
+    "raison_sociale": "Sentiers Appalaches",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-04-23"
+   },
+   "adresse": {
+    "ville": "SEPT-ÎLES",
+    "province": "Quebec",
+    "code_postal": "N5R 5C3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@sentiersappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0095",
+    "raison_sociale": "Nature Chicoutimi Appalaches",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-11-18"
+   },
+   "adresse": {
+    "ville": "rouyn-noranda",
+    "province": "qc",
+    "code_postal": "L7C 5L1"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@naturechicoutimiappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0017",
+    "raison_sociale": "Le Portage Saint-Laurent",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-11-12"
+   },
+   "adresse": {
+    "ville": "Drummondville ",
+    "province": "QC",
+    "code_postal": "G9V 8Y0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@leportagesaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0201",
+    "raison_sociale": "Base Camp Sainte-Foy Enr.",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2023-10-19"
+   },
+   "adresse": {
+    "ville": "KINGSTON",
+    "province": "Ontario",
+    "code_postal": "L7X 7K9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@basecampsainte-foyenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0163",
+    "raison_sociale": "Nature Longueuil Mauricie",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2022-02-10"
+   },
+   "adresse": {
+    "ville": "SHERBROOKE",
+    "province": "Québec",
+    "code_postal": "L3R 3C5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@naturelongueuilmauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0038",
+    "raison_sociale": "Sports Sillery Charlevoix",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2020-11-11"
+   },
+   "adresse": {
+    "ville": "montréal",
+    "province": "Québec",
+    "code_postal": "K7M 2H0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@sportssillerycharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0125",
+    "raison_sociale": "Nature inc.",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-07-22"
+   },
+   "adresse": {
+    "ville": "gatineau",
+    "province": "Québec",
+    "code_postal": "J4M 2P9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@natureinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0127",
+    "raison_sociale": "Chalet Abitibi",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2018-04-13"
+   },
+   "adresse": {
+    "ville": "Sept-Îles ",
+    "province": "Québec",
+    "code_postal": "N8P 7X0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-503",
+    "courriel": "a completer"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0002",
+    "raison_sociale": "Nature Enr.",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-03-01"
+   },
+   "adresse": {
+    "ville": "Thunder Bay",
+    "province": "ON",
+    "code_postal": "N8K 4P7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@natureenr.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0202",
+    "raison_sociale": "Le Refuge Mauricie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-12-25"
+   },
+   "adresse": {
+    "ville": "Victoriaville ",
+    "province": "Québec",
+    "code_postal": "H6V 5S6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-504",
+    "courriel": null
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0035",
+    "raison_sociale": "Randonneurs Mauricie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2023-04-29"
+   },
+   "adresse": {
+    "ville": "Saint-Jean-sur-Richelieu",
+    "province": "Québec",
+    "code_postal": "R2R 9R6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@randonneursmauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0181",
+    "raison_sociale": "Sentiers Lachine Gaspésie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2016-06-28"
+   },
+   "adresse": {
+    "ville": "Sudbury ",
+    "province": "ON",
+    "code_postal": "J8R 0P0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@sentierslachinegaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0076",
+    "raison_sociale": "Coopérative Cantons",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2023-05-20"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau",
+    "province": "QC",
+    "code_postal": "K6M 1L9"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@cooperativecantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0033",
+    "raison_sociale": "Le Portage et Fils",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2022-11-07"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau",
+    "province": "QC",
+    "code_postal": "N1J 2P5"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@leportageetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0212",
+    "raison_sociale": "Grand Air Rosemont Mauricie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-02-24"
+   },
+   "adresse": {
+    "ville": "Rouyn-Noranda ",
+    "province": "qc",
+    "code_postal": "N2H 6R1"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@grandairrosemontmauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0024",
+    "raison_sociale": "Randonneurs Outaouais",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-04-09"
+   },
+   "adresse": {
+    "ville": "Granby",
+    "province": "QC",
+    "code_postal": "R5B 6N6"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@randonneursoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0114",
+    "raison_sociale": "Expédition Saint-Laurent",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2020-05-28"
+   },
+   "adresse": {
+    "ville": "lévis",
+    "province": "Québec",
+    "code_postal": "K7P 9Y7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@expeditionsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0063",
+    "raison_sociale": "Plein Air Gaspésie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2022-06-30"
+   },
+   "adresse": {
+    "ville": "Granby ",
+    "province": "Quebec",
+    "code_postal": "J4X 0S3"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@pleinairgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0102",
+    "raison_sociale": "Nature du Nord",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-09-17"
+   },
+   "adresse": {
+    "ville": "montréal",
+    "province": "QC",
+    "code_postal": "M5J 4X8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@naturedunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-912",
+    "raison_sociale": "NATURE DU NORD",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2020-09-17"
+   },
+   "adresse": {
+    "ville": "montréal",
+    "province": "QC",
+    "code_postal": "M5J 4X8"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@naturedunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0205",
+    "raison_sociale": "Coopérative Boréal",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2016-02-01"
+   },
+   "adresse": {
+    "ville": "val-d'or",
+    "province": "Quebec",
+    "code_postal": "L5V 5A2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@cooperativeboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0097",
+    "raison_sociale": "Randonneurs Sainte-Foy Outaouais",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-10-07"
+   },
+   "adresse": {
+    "ville": "baie-comeau",
+    "province": "qc",
+    "code_postal": "L4L 4R0"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@randonneurssainte-foyoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0137",
+    "raison_sociale": "Le Refuge Cantons",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2016-10-17"
+   },
+   "adresse": {
+    "ville": "Charlottetown ",
+    "province": "Île-du-Prince-Édouard",
+    "code_postal": "N9X 3E5"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@lerefugecantons.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0148",
+    "raison_sociale": "Cap Nord Vaudreuil Laurentides",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-10-22"
+   },
+   "adresse": {
+    "ville": "Gatineau ",
+    "province": "Quebec",
+    "code_postal": "L8S 7T4"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@capnordvaudreuillaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0207",
+    "raison_sociale": "Nature Hull ltée",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-04-09"
+   },
+   "adresse": {
+    "ville": "Sherbrooke",
+    "province": "Quebec",
+    "code_postal": "K5E 6A5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@naturehullltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0020",
+    "raison_sociale": "Boutique du Nord",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2019-10-25"
+   },
+   "adresse": {
+    "ville": "Halifax",
+    "province": "NS",
+    "code_postal": "M4N 1H9"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@boutiquedunord.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0103",
+    "raison_sociale": "Boutique Boucherville ltée",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2019-09-12"
+   },
+   "adresse": {
+    "ville": "MONCTON",
+    "province": "Nouveau-Brunswick",
+    "code_postal": "M6G 1V5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@boutiquebouchervilleltee.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0149",
+    "raison_sociale": "Aventure Jonquière Abitibi",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2021-12-07"
+   },
+   "adresse": {
+    "ville": "Montréal",
+    "province": "Québec",
+    "code_postal": "L2A 6C7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-501",
+    "courriel": "achats@aventurejonquiereabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0197",
+    "raison_sociale": "Plein Air Brossard Gaspésie",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2021-11-27"
+   },
+   "adresse": {
+    "ville": "Saguenay ",
+    "province": "Quebec",
+    "code_postal": "R3Y 9H5"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@pleinairbrossardgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0004",
+    "raison_sociale": "Aventure Gaspésie",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2016-06-20"
+   },
+   "adresse": {
+    "ville": "Trois-Rivières ",
+    "province": "Quebec",
+    "code_postal": "J7A 9X2"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@aventuregaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0036",
+    "raison_sociale": "Randonneurs Charlevoix",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2016-11-08"
+   },
+   "adresse": {
+    "ville": "Sept-Îles",
+    "province": "QC",
+    "code_postal": "J7L 3G4"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-505",
+    "courriel": "achats@randonneurscharlevoix.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0029",
+    "raison_sociale": "Sentiers Boréal",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-12-02"
+   },
+   "adresse": {
+    "ville": "Baie-Comeau",
+    "province": "Québec",
+    "code_postal": "M8V 8P5"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@sentiersboreal.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0067",
+    "raison_sociale": "Coopérative Abitibi",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2022-05-15"
+   },
+   "adresse": {
+    "ville": "victoriaville",
+    "province": "Quebec",
+    "code_postal": "J0Y 9G8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-502",
+    "courriel": "achats@cooperativeabitibi.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0093",
+    "raison_sociale": "Randonneurs Brossard Appalaches",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2023-08-26"
+   },
+   "adresse": {
+    "ville": "trois-rivières",
+    "province": "Quebec",
+    "code_postal": "K1N 4V0"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@randonneursbrossardappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0208",
+    "raison_sociale": "Plein Air Verdun Mauricie",
+    "type_commerce": "Boutique en ligne",
+    "date_ouverture_compte": "2019-02-21"
+   },
+   "adresse": {
+    "ville": "Rimouski",
+    "province": "qc",
+    "code_postal": "  "
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@pleinairverdunmauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0214",
+    "raison_sociale": "Le Portage Jonquière Outaouais",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2016-09-16"
+   },
+   "adresse": {
+    "ville": "Halifax",
+    "province": "Nouvelle-Écosse",
+    "code_postal": "G4A 3H7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@leportagejonquiereoutaouais.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0111",
+    "raison_sociale": "Grand Air Gaspésie",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2016-11-17"
+   },
+   "adresse": {
+    "ville": "Sherbrooke",
+    "province": "QC",
+    "code_postal": "L9R 8B4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@grandairgaspesie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0074",
+    "raison_sociale": "Randonneurs et Fils",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2017-10-28"
+   },
+   "adresse": {
+    "ville": "SAGUENAY",
+    "province": "qc",
+    "code_postal": "G1Y 2T6"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@randonneursetfils.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0034",
+    "raison_sociale": "Sentiers Mauricie",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2020-03-09"
+   },
+   "adresse": {
+    "ville": "North Bay",
+    "province": "on",
+    "code_postal": "L1G 0H8"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 60",
+    "representant_matricule": "EMP-507",
+    "courriel": "achats@sentiersmauricie.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0107",
+    "raison_sociale": "Le Refuge Appalaches",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-03-28"
+   },
+   "adresse": {
+    "ville": "Granby ",
+    "province": "Quebec",
+    "code_postal": "R9J 6M4"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-506",
+    "courriel": "achats@lerefugeappalaches.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0121",
+    "raison_sociale": "Le Refuge Laurentides",
+    "type_commerce": "Chaîne régionale",
+    "date_ouverture_compte": "2018-04-15"
+   },
+   "adresse": {
+    "ville": "SAGUENAY",
+    "province": "QC",
+    "code_postal": "N0K 6A1"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 45",
+    "representant_matricule": "EMP-508",
+    "courriel": "achats@lerefugelaurentides.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0059",
+    "raison_sociale": "Coopérative Saint-Hubert Saint-Laurent",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2019-05-29"
+   },
+   "adresse": {
+    "ville": "ROUYN-NORANDA",
+    "province": "Québec",
+    "code_postal": "M5E 2E8"
+   },
+   "commercial": {
+    "segment": "A",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-504",
+    "courriel": "achats@cooperativesaint-hubertsaint-laurent.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0079",
+    "raison_sociale": "Base Camp Jonquière inc.",
+    "type_commerce": "Détaillant indépendant",
+    "date_ouverture_compte": "2018-12-25"
+   },
+   "adresse": {
+    "ville": "drummondville",
+    "province": "QC",
+    "code_postal": "H1T 1R7"
+   },
+   "commercial": {
+    "segment": "C",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-509",
+    "courriel": "achats@basecampjonquiereinc.ca"
+   }
+  },
+  {
+   "identification": {
+    "code": "CLI-0061",
+    "raison_sociale": "Plein Air Cantons",
+    "type_commerce": "Coopérative de plein air",
+    "date_ouverture_compte": "2017-12-04"
+   },
+   "adresse": {
+    "ville": "Drummondville",
+    "province": "Québec",
+    "code_postal": "K4B 5R6"
+   },
+   "commercial": {
+    "segment": "B",
+    "conditions_paiement": "Net 30",
+    "representant_matricule": "EMP-503",
+    "courriel": "achats@pleinaircantons.ca"
+   }
+  }
+ ]
+}

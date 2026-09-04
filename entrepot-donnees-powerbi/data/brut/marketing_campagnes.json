@@ -1,0 +1,677 @@
+{
+ "systeme": "Suivi campagnes - export manuel",
+ "campagnes": [
+  {
+   "periode": "2024-01-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": null,
+   "depense_reelle": "4 509,34 $",
+   "prospects_generes": 99,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-01-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1256.23,
+   "depense_reelle": "1 229,64 $",
+   "prospects_generes": 68,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2024-01-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1214.33,
+   "depense_reelle": "1 126,29 $",
+   "prospects_generes": 4,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-02-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 5969.87,
+   "depense_reelle": "5 859,18 $",
+   "prospects_generes": 125,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-02-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1474.08,
+   "depense_reelle": "1 569,68 $",
+   "prospects_generes": 94,
+   "nouveaux_clients": 8
+  },
+  {
+   "periode": "2024-02-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": 19803.86,
+   "depense_reelle": "21 484,62 $",
+   "prospects_generes": 47,
+   "nouveaux_clients": 3
+  },
+  {
+   "periode": "2024-02-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2217.63,
+   "depense_reelle": "2 379,80 $",
+   "prospects_generes": 19,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2024-03-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 6671.45,
+   "depense_reelle": "7 164,04 $",
+   "prospects_generes": 152,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-03-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1409.53,
+   "depense_reelle": "1 520,03 $",
+   "prospects_generes": 87,
+   "nouveaux_clients": 8
+  },
+  {
+   "periode": "2024-03-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": 21128.78,
+   "depense_reelle": "18 235,97 $",
+   "prospects_generes": 42,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2024-03-01T00:00:00-05:00",
+   "canal": "Catalogue imprimé",
+   "budget_prevu": 10648.87,
+   "depense_reelle": "11 038,48 $",
+   "prospects_generes": 65,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-03-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2281.13,
+   "depense_reelle": "2 155,34 $",
+   "prospects_generes": 9,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-04-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 5839.8,
+   "depense_reelle": "5 702,08 $",
+   "prospects_generes": 127,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-04-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1348.56,
+   "depense_reelle": "1 272,11 $",
+   "prospects_generes": 70,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-04-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2454.33,
+   "depense_reelle": "2 508,35 $",
+   "prospects_generes": 14,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2024-05-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 4450.4,
+   "depense_reelle": "4 119,19 $",
+   "prospects_generes": 89,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-05-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 827.48,
+   "depense_reelle": "928,70 $",
+   "prospects_generes": 53,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-05-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": null,
+   "depense_reelle": "1 168,39 $",
+   "prospects_generes": 1,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-06-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 6861.36,
+   "depense_reelle": "6 521,37 $",
+   "prospects_generes": 137,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-06-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1184.87,
+   "depense_reelle": "1 258,08 $",
+   "prospects_generes": 79,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-06-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1109.08,
+   "depense_reelle": "1 050,86 $",
+   "prospects_generes": 6,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-07-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 5380.06,
+   "depense_reelle": "5 356,81 $",
+   "prospects_generes": 118,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-07-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1337.65,
+   "depense_reelle": "1 208,38 $",
+   "prospects_generes": 73,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-07-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1554.87,
+   "depense_reelle": "1 617,74 $",
+   "prospects_generes": 12,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-08-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 4877.76,
+   "depense_reelle": "4 729,36 $",
+   "prospects_generes": 99,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-08-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1051.42,
+   "depense_reelle": "988,95 $",
+   "prospects_generes": 54,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-08-01T00:00:00-05:00",
+   "canal": "Catalogue imprimé",
+   "budget_prevu": 13716.06,
+   "depense_reelle": "12 785,65 $",
+   "prospects_generes": 71,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2024-08-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2095.51,
+   "depense_reelle": "2 106,83 $",
+   "prospects_generes": 13,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-09-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 4264.86,
+   "depense_reelle": "3 717,91 $",
+   "prospects_generes": 84,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-09-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1280.53,
+   "depense_reelle": "1 277,27 $",
+   "prospects_generes": 71,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2024-09-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": 25388.16,
+   "depense_reelle": "25 994,12 $",
+   "prospects_generes": 51,
+   "nouveaux_clients": 2
+  },
+  {
+   "periode": "2024-09-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1300.33,
+   "depense_reelle": "1 364,48 $",
+   "prospects_generes": 10,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2024-10-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 7217.06,
+   "depense_reelle": "8 192,25 $",
+   "prospects_generes": 182,
+   "nouveaux_clients": 10
+  },
+  {
+   "periode": "2024-10-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1384.89,
+   "depense_reelle": "1 377,75 $",
+   "prospects_generes": 79,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-10-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": null,
+   "depense_reelle": "18 414,88 $",
+   "prospects_generes": 32,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2024-10-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2068.08,
+   "depense_reelle": "1 878,19 $",
+   "prospects_generes": 9,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-11-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 5510.94,
+   "depense_reelle": "5 015,20 $",
+   "prospects_generes": 106,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2024-11-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 777.34,
+   "depense_reelle": "776,05 $",
+   "prospects_generes": 47,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2024-11-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1512.62,
+   "depense_reelle": "1 544,49 $",
+   "prospects_generes": 11,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2024-12-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 6248.29,
+   "depense_reelle": "6 399,97 $",
+   "prospects_generes": 140,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2024-12-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1241.35,
+   "depense_reelle": "1 339,28 $",
+   "prospects_generes": 78,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2024-12-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1266.63,
+   "depense_reelle": "1 285,84 $",
+   "prospects_generes": 4,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-01-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 6552.65,
+   "depense_reelle": "6 365,12 $",
+   "prospects_generes": 138,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2025-01-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 842.44,
+   "depense_reelle": "916,53 $",
+   "prospects_generes": 54,
+   "nouveaux_clients": 5
+  },
+  {
+   "periode": "2025-01-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2590.02,
+   "depense_reelle": "2 756,18 $",
+   "prospects_generes": 14,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-02-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 5389.92,
+   "depense_reelle": "6 036,60 $",
+   "prospects_generes": 130,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2025-02-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 849.75,
+   "depense_reelle": "881,74 $",
+   "prospects_generes": 56,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2025-02-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": 29323.94,
+   "depense_reelle": "28 547,47 $",
+   "prospects_generes": 63,
+   "nouveaux_clients": 5
+  },
+  {
+   "periode": "2025-02-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1729.81,
+   "depense_reelle": "1 649,89 $",
+   "prospects_generes": 0,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-03-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 6839.75,
+   "depense_reelle": "7 155,07 $",
+   "prospects_generes": 160,
+   "nouveaux_clients": 8
+  },
+  {
+   "periode": "2025-03-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 818.61,
+   "depense_reelle": "774,93 $",
+   "prospects_generes": 39,
+   "nouveaux_clients": 3
+  },
+  {
+   "periode": "2025-03-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": null,
+   "depense_reelle": "24 966,50 $",
+   "prospects_generes": 55,
+   "nouveaux_clients": 3
+  },
+  {
+   "periode": "2025-03-01T00:00:00-05:00",
+   "canal": "Catalogue imprimé",
+   "budget_prevu": 9302.42,
+   "depense_reelle": "8 662,51 $",
+   "prospects_generes": 43,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-03-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1203.67,
+   "depense_reelle": "1 045,75 $",
+   "prospects_generes": 9,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2025-04-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 6954.23,
+   "depense_reelle": "6 274,51 $",
+   "prospects_generes": 142,
+   "nouveaux_clients": 9
+  },
+  {
+   "periode": "2025-04-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1384.99,
+   "depense_reelle": "1 342,52 $",
+   "prospects_generes": 75,
+   "nouveaux_clients": 5
+  },
+  {
+   "periode": "2025-04-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1693.55,
+   "depense_reelle": "1 767,47 $",
+   "prospects_generes": 10,
+   "nouveaux_clients": 1
+  },
+  {
+   "periode": "2025-05-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 4293.49,
+   "depense_reelle": "3 711,21 $",
+   "prospects_generes": 83,
+   "nouveaux_clients": 3
+  },
+  {
+   "periode": "2025-05-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1267.42,
+   "depense_reelle": "1 130,89 $",
+   "prospects_generes": 57,
+   "nouveaux_clients": 5
+  },
+  {
+   "periode": "2025-05-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1211.62,
+   "depense_reelle": "1 236,00 $",
+   "prospects_generes": 10,
+   "nouveaux_clients": 2
+  },
+  {
+   "periode": "2025-06-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 6736.5,
+   "depense_reelle": "7 358,09 $",
+   "prospects_generes": 158,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2025-06-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 882.83,
+   "depense_reelle": "912,65 $",
+   "prospects_generes": 48,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2025-06-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2195.61,
+   "depense_reelle": "2 431,51 $",
+   "prospects_generes": 19,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-07-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 5385.75,
+   "depense_reelle": "5 070,02 $",
+   "prospects_generes": 114,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2025-07-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1150.53,
+   "depense_reelle": "1 204,62 $",
+   "prospects_generes": 64,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2025-07-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1849.36,
+   "depense_reelle": "1 956,39 $",
+   "prospects_generes": 2,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-08-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 4499.87,
+   "depense_reelle": "4 657,60 $",
+   "prospects_generes": 105,
+   "nouveaux_clients": 6
+  },
+  {
+   "periode": "2025-08-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1200.61,
+   "depense_reelle": "1 062,31 $",
+   "prospects_generes": 63,
+   "nouveaux_clients": 5
+  },
+  {
+   "periode": "2025-08-01T00:00:00-05:00",
+   "canal": "Catalogue imprimé",
+   "budget_prevu": null,
+   "depense_reelle": "14 519,52 $",
+   "prospects_generes": 83,
+   "nouveaux_clients": 2
+  },
+  {
+   "periode": "2025-08-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1754.35,
+   "depense_reelle": "1 603,00 $",
+   "prospects_generes": 4,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-09-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 7003.13,
+   "depense_reelle": "7 935,90 $",
+   "prospects_generes": 172,
+   "nouveaux_clients": 9
+  },
+  {
+   "periode": "2025-09-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 799.84,
+   "depense_reelle": "878,07 $",
+   "prospects_generes": 58,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2025-09-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": 19122.79,
+   "depense_reelle": "18 535,19 $",
+   "prospects_generes": 32,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-09-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2498.53,
+   "depense_reelle": "2 206,35 $",
+   "prospects_generes": 13,
+   "nouveaux_clients": 2
+  },
+  {
+   "periode": "2025-10-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 5895.29,
+   "depense_reelle": "5 849,87 $",
+   "prospects_generes": 129,
+   "nouveaux_clients": 8
+  },
+  {
+   "periode": "2025-10-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 1221.9,
+   "depense_reelle": "1 249,85 $",
+   "prospects_generes": 73,
+   "nouveaux_clients": 7
+  },
+  {
+   "periode": "2025-10-01T00:00:00-05:00",
+   "canal": "Salons professionnels",
+   "budget_prevu": 24034.36,
+   "depense_reelle": "21 442,23 $",
+   "prospects_generes": 44,
+   "nouveaux_clients": 3
+  },
+  {
+   "periode": "2025-10-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2586.21,
+   "depense_reelle": "2 224,78 $",
+   "prospects_generes": 13,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-11-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 7019.71,
+   "depense_reelle": "6 940,44 $",
+   "prospects_generes": 157,
+   "nouveaux_clients": 8
+  },
+  {
+   "periode": "2025-11-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 968.32,
+   "depense_reelle": "850,49 $",
+   "prospects_generes": 43,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2025-11-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 2078.17,
+   "depense_reelle": "2 320,72 $",
+   "prospects_generes": 12,
+   "nouveaux_clients": 0
+  },
+  {
+   "periode": "2025-12-01T00:00:00-05:00",
+   "canal": "Publicité numérique",
+   "budget_prevu": 7002.58,
+   "depense_reelle": "7 903,81 $",
+   "prospects_generes": 174,
+   "nouveaux_clients": 9
+  },
+  {
+   "periode": "2025-12-01T00:00:00-05:00",
+   "canal": "Courriel",
+   "budget_prevu": 976.26,
+   "depense_reelle": "983,87 $",
+   "prospects_generes": 54,
+   "nouveaux_clients": 4
+  },
+  {
+   "periode": "2025-12-01T00:00:00-05:00",
+   "canal": "Commandite locale",
+   "budget_prevu": 1626.54,
+   "depense_reelle": "1 561,06 $",
+   "prospects_generes": 12,
+   "nouveaux_clients": 0
+  }
+ ]
+}

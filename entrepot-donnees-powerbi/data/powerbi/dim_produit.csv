@@ -1,0 +1,183 @@
+﻿produit_id,sku,designation,famille,fournisseur_code,cout_standard,prix_liste,poids_kg
+1,BD-1001,Chaise pliante Taiga XT,Camping,FRN-001,182.3,335.22,6.15
+2,BD-1002,Lanterne Alpin 300,Camping,FRN-012,292.58,468.48,3.94
+3,BD-1003,Glaciere Expedition Pro,Camping,FRN-001,188.61,298.18,13.14
+4,BD-1004,Chaise pliante Grand-Nord Lite,Camping,FRN-021,155.56,274.1,7.82
+5,BD-1005,Rechaud Sentier 100,Camping,FRN-012,204.06,326.96,6.42
+6,BD-1006,Rechaud Escarpement Lite,Camping,FRN-002,178.72,334.77,7.11
+7,BD-1007,Matelas gonflable Nordet 200,Camping,FRN-012,55.96,103.33,9.23
+8,BD-1008,Lanterne Cap-Nord XT,Camping,FRN-001,128.94,233.87,4.61
+9,BD-1009,Sac de couchage Cap-Nord XT,Camping,FRN-015,66.28,105.17,5.93
+10,BD-1010,Hamac Alpin Lite,Camping,FRN-015,87.08,163.01,7.88
+11,BD-1011,Popote Sentier 300,Camping,FRN-002,288.46,525.21,1.87
+12,BD-1012,Rechaud Nordet 300,Camping,FRN-012,68.19,121.72,0.1
+13,BD-1013,Bache Sommet 100,Camping,FRN-002,308.85,516.23,2.91
+14,BD-1014,Glaciere Grand-Nord XT,Camping,FRN-012,26.62,44.69,0.28
+15,BD-1015,Glaciere Portage Pro,Camping,FRN-012,318.69,531.03,12.34
+16,BD-1016,Tente Sommet XT,Camping,FRN-021,219.41,413.29,8.92
+17,BD-1017,Chaise pliante Alpin Pro,Camping,FRN-015,307.26,563.77,1.2
+18,BD-1018,Hamac Nordet Pro,Camping,FRN-012,242.09,464.83,6.92
+19,BD-1019,Popote Nordet Pro,Camping,FRN-001,170.21,301.03,5.91
+20,BD-1020,Chaise pliante Portage Pro,Camping,FRN-012,32.44,57.47,2.11
+21,BD-1021,Lanterne Alpin 200,Camping,FRN-001,201.55,363.7,6.6
+22,BD-1022,Popote Expedition 100,Camping,FRN-001,247.74,454.46,6.02
+23,BD-1023,Glaciere Escarpement Pro,Camping,FRN-021,239.29,377.47,2.48
+24,BD-1024,Sac de couchage Boreal Pro,Camping,FRN-015,185.46,334.16,11.84
+25,BD-1025,Lanterne Expedition Pro,Camping,FRN-002,146.28,233.82,2.92
+26,BD-1026,Lanterne Escarpement 300,Camping,FRN-021,241.74,438.34,12.09
+27,BD-1027,Bache Sommet 200,Camping,FRN-002,249.72,458.11,13.08
+28,BD-1028,Glaciere Escarpement Pro,Camping,FRN-015,140.77,236.43,7.42
+29,BD-1029,Sac de couchage Alpin XT,Camping,FRN-002,238.44,391.87,12.4
+30,BD-1030,Popote Sentier Lite,Camping,FRN-001,98.88,183.05,2.98
+31,BD-1031,Bache Sentier XT,Camping,FRN-002,294.44,519.45,5.95
+32,BD-1032,Popote Nordet Pro,Camping,FRN-001,339.97,547.39,0.56
+33,BD-1033,Lanterne Sentier 100,Camping,FRN-021,,187.38,1.99
+34,BD-1034,Sac de couchage Nordet XT,Camping,FRN-001,151.89,237.54,12.96
+35,BD-1035,Trousse premiers soins Boreal 200,Randonnée,FRN-019,30.0,48.38,9.13
+36,BD-1036,Gourde Sommet 300,Randonnée,FRN-001,159.06,256.78,11.52
+37,BD-1037,Lampe frontale Expedition XT,Randonnée,FRN-014,16.31,29.92,2.35
+38,BD-1038,Trousse premiers soins Expedition XT,Randonnée,FRN-014,313.36,551.8,12.97
+39,BD-1039,Boussole Escarpement 200,Randonnée,FRN-014,119.66,197.97,6.67
+40,BD-1040,Sac a dos Nordet XT,Randonnée,FRN-019,268.77,440.75,12.42
+41,BD-1041,Bottes Alpin 200,Randonnée,FRN-014,159.88,253.51,11.38
+42,BD-1042,Boussole Grand-Nord Lite,Randonnée,FRN-005,261.53,441.32,3.79
+43,BD-1043,Batons Taiga Lite,Randonnée,FRN-019,294.1,527.77,13.58
+44,BD-1044,Batons Boreal 300,Randonnée,FRN-005,195.45,323.04,4.2
+45,BD-1045,Gourde Portage XT,Randonnée,FRN-014,76.76,131.07,9.03
+46,BD-1046,Bottes Traverse XT,Randonnée,FRN-001,308.91,477.29,3.62
+47,BD-1047,Trousse premiers soins Escarpement 200,Randonnée,FRN-019,70.06,106.59,9.05
+48,BD-1048,Gourde Taiga Pro,Randonnée,FRN-019,32.82,51.2,6.62
+49,BD-1049,Lampe frontale Sommet Pro,Randonnée,FRN-014,30.58,54.64,4.51
+50,BD-1050,Boussole Grand-Nord Pro,Randonnée,FRN-005,291.69,504.13,11.1
+51,BD-1051,Bottes Sommet Lite,Randonnée,FRN-019,78.12,129.68,13.08
+52,BD-1052,Sac a dos Taiga Lite,Randonnée,FRN-005,179.27,307.06,5.65
+53,BD-1053,Guetres Taiga XT,Randonnée,FRN-014,176.84,327.17,2.65
+54,BD-1054,Bottes Nordet Lite,Randonnée,FRN-005,257.53,465.9,4.78
+55,BD-1055,Gourde Traverse 100,Randonnée,FRN-005,209.35,328.43,2.72
+56,BD-1056,Sac a dos Escarpement 100,Randonnée,FRN-019,287.11,491.84,5.97
+57,BD-1057,Batons Traverse 300,Randonnée,FRN-001,19.26,29.84,0.69
+58,BD-1058,Batons Expedition 300,Randonnée,FRN-019,146.46,244.83,6.97
+59,BD-1059,Trousse premiers soins Escarpement Lite,Randonnée,FRN-001,324.94,527.33,12.98
+60,BD-1060,Sac a dos Traverse 100,Randonnée,FRN-001,241.9,395.77,10.18
+61,BD-1061,Boussole Escarpement Lite,Randonnée,FRN-019,75.23,118.13,4.83
+62,BD-1062,Boussole Boreal XT,Randonnée,FRN-001,112.54,179.69,6.92
+63,BD-1063,Guetres Sommet 100,Randonnée,FRN-014,242.15,368.34,0.55
+64,BD-1064,Trousse premiers soins Taiga XT,Randonnée,FRN-005,69.43,125.27,12.62
+65,BD-1065,Cagoule Escarpement 300,Vêtements techniques,FRN-001,128.81,249.38,4.48
+66,BD-1066,Coquille impermeable Alpin Lite,Vêtements techniques,FRN-001,199.26,344.47,11.07
+67,BD-1067,Manteau isole Traverse XT,Vêtements techniques,FRN-001,23.77,41.6,12.07
+68,BD-1068,Pantalon coque Sommet XT,Vêtements techniques,FRN-001,284.28,563.92,3.53
+69,BD-1069,Gants isoles Expedition 200,Vêtements techniques,FRN-001,198.5,398.77,9.14
+70,BD-1070,Pantalon coque Alpin XT,Vêtements techniques,FRN-001,39.88,76.19,1.44
+71,BD-1071,Pantalon coque Expedition Pro,Vêtements techniques,FRN-001,301.72,533.74,5.23
+72,BD-1072,Coquille impermeable Alpin 100,Vêtements techniques,FRN-001,196.62,395.76,13.22
+73,BD-1073,Sous-vetement merinos Cap-Nord 300,Vêtements techniques,FRN-001,255.0,449.77,10.97
+74,BD-1074,Manteau isole Escarpement XT,Vêtements techniques,FRN-001,108.27,194.17,2.3
+75,BD-1075,Chandail polaire Portage XT,Vêtements techniques,FRN-001,,100.76,11.83
+76,BD-1076,Coquille impermeable Portage 300,Vêtements techniques,FRN-001,281.11,561.0,6.26
+77,BD-1077,Sous-vetement merinos Cap-Nord 200,Vêtements techniques,FRN-018,167.57,341.88,5.62
+78,BD-1078,Manteau isole Alpin 300,Vêtements techniques,FRN-001,197.64,383.4,10.13
+79,BD-1079,Manteau isole Cap-Nord Lite,Vêtements techniques,FRN-018,144.83,263.7,7.46
+80,BD-1080,Cagoule Taiga Pro,Vêtements techniques,FRN-001,173.12,330.63,8.03
+81,BD-1081,Gants isoles Expedition XT,Vêtements techniques,FRN-001,302.82,593.11,12.4
+82,BD-1082,Coquille impermeable Portage XT,Vêtements techniques,FRN-001,278.39,475.26,8.25
+83,BD-1083,Gants isoles Expedition XT,Vêtements techniques,FRN-001,157.14,307.2,9.16
+84,BD-1084,Cagoule Escarpement Pro,Vêtements techniques,FRN-001,312.0,580.62,5.14
+85,BD-1085,Cagoule Sentier 200,Vêtements techniques,FRN-001,40.9,67.2,7.33
+86,BD-1086,Cagoule Taiga 100,Vêtements techniques,FRN-001,80.72,137.75,6.17
+87,BD-1087,Coquille impermeable Cap-Nord Pro,Vêtements techniques,FRN-018,211.22,385.75,2.82
+88,BD-1088,Gants isoles Escarpement XT,Vêtements techniques,FRN-001,335.85,629.82,2.14
+89,BD-1089,Cagoule Sentier 200,Vêtements techniques,FRN-001,157.64,316.59,11.22
+90,BD-1090,Chandail polaire Boreal 100,Vêtements techniques,FRN-001,57.58,95.85,7.46
+91,BD-1091,Manteau isole Grand-Nord Pro,Vêtements techniques,FRN-001,279.07,568.02,12.45
+92,BD-1092,Tuque technique Boreal 100,Vêtements techniques,FRN-001,140.04,282.22,2.47
+93,BD-1093,Sous-vetement merinos Sommet 300,Vêtements techniques,FRN-001,132.18,223.79,4.45
+94,BD-1094,Chandail polaire Alpin Lite,Vêtements techniques,FRN-020,121.74,203.86,1.33
+95,BD-1095,Sous-vetement merinos Boreal 200,Vêtements techniques,FRN-001,53.64,103.68,3.38
+96,BD-1096,Tuque technique Sentier Lite,Vêtements techniques,FRN-001,170.74,296.14,10.11
+97,BD-1097,Chandail polaire Taiga 300,Vêtements techniques,FRN-001,210.05,367.98,2.1
+98,BD-1098,Cagoule Sentier 300,Vêtements techniques,FRN-001,257.11,440.88,11.83
+99,BD-1099,Manteau isole Sommet 100,Vêtements techniques,FRN-001,287.66,496.5,8.36
+100,BD-1100,Coquille impermeable Grand-Nord XT,Vêtements techniques,FRN-001,306.44,536.54,6.88
+101,BD-1101,Cagoule Cap-Nord XT,Vêtements techniques,FRN-001,62.94,108.49,1.83
+102,BD-1102,Pantalon coque Cap-Nord Lite,Vêtements techniques,FRN-018,255.33,484.77,5.97
+103,BD-1103,Epuisette Cap-Nord 100,Pêche,FRN-017,151.66,227.79,7.49
+104,BD-1104,Boite de mouches Taiga Pro,Pêche,FRN-021,75.12,110.67,4.17
+105,BD-1105,Canne a peche Sommet XT,Pêche,FRN-005,166.12,259.07,9.1
+106,BD-1106,Boite de mouches Portage 200,Pêche,FRN-006,333.09,530.57,10.39
+107,BD-1107,Canne a peche Boreal Lite,Pêche,FRN-021,147.44,220.27,1.76
+108,BD-1108,Epuisette Sentier 100,Pêche,FRN-013,166.46,273.18,1.21
+109,BD-1109,Ligne tressee Alpin 300,Pêche,FRN-017,303.82,460.06,2.95
+110,BD-1110,Coffre a leurres Sommet Lite,Pêche,FRN-021,178.91,283.92,13.41
+111,BD-1111,Boite de mouches Taiga 300,Pêche,FRN-013,145.84,221.58,11.29
+112,BD-1112,Waders Portage Lite,Pêche,FRN-013,65.64,114.87,1.73
+113,BD-1113,Ligne tressee Nordet 100,Pêche,FRN-021,276.01,427.02,11.97
+114,BD-1114,Waders Portage 200,Pêche,FRN-013,149.59,252.6,9.67
+115,BD-1115,Coffre a leurres Taiga 200,Pêche,FRN-021,46.26,74.68,2.06
+116,BD-1116,Boite de mouches Sommet Lite,Pêche,FRN-021,58.93,88.67,11.38
+117,BD-1117,Moulinet Sommet XT,Pêche,FRN-006,98.28,148.16,12.14
+118,BD-1118,Boite de mouches Sommet XT,Pêche,FRN-017,336.11,497.08,7.45
+119,BD-1119,Boite de mouches Portage Lite,Pêche,FRN-005,58.44,91.82,6.04
+120,BD-1120,Coffre a leurres Expedition XT,Pêche,FRN-017,182.88,296.82,11.66
+121,BD-1121,Moulinet Escarpement 300,Pêche,FRN-013,43.73,77.85,9.92
+122,BD-1122,Coffre a leurres Escarpement Pro,Pêche,FRN-005,208.3,341.21,11.1
+123,BD-1123,Boite de mouches Boreal 300,Pêche,FRN-005,129.56,217.51,13.61
+124,BD-1124,Moulinet Boreal 200,Pêche,FRN-021,150.61,254.97,12.8
+125,BD-1125,Canne a peche Boreal Lite,Pêche,FRN-006,285.25,439.91,11.26
+126,BD-1126,Waders Cap-Nord XT,Pêche,FRN-013,130.29,202.42,3.92
+127,BD-1127,Crampons Traverse 200,Sports d'hiver,FRN-014,170.72,301.26,7.87
+128,BD-1128,Raquettes Sentier 200,Sports d'hiver,FRN-016,77.25,144.86,7.23
+129,BD-1129,Peaux d'ascension Boreal XT,Sports d'hiver,FRN-014,45.49,71.89,3.32
+130,BD-1130,Traineau Alpin Lite,Sports d'hiver,FRN-014,317.23,564.39,7.48
+131,BD-1131,Crampons Grand-Nord 200,Sports d'hiver,FRN-015,36.32,67.04,2.81
+132,BD-1132,Traineau Portage Pro,Sports d'hiver,FRN-016,125.81,198.61,7.06
+133,BD-1133,Traineau Alpin 200,Sports d'hiver,FRN-015,61.66,101.38,5.33
+134,BD-1134,Lunettes de ski Expedition Pro,Sports d'hiver,FRN-016,60.5,109.96,7.23
+135,BD-1135,Peaux d'ascension Grand-Nord Lite,Sports d'hiver,FRN-016,39.89,73.31,7.33
+136,BD-1136,Fixations Escarpement 300,Sports d'hiver,FRN-015,110.14,207.63,11.62
+137,BD-1137,Lunettes de ski Taiga Pro,Sports d'hiver,FRN-016,25.06,42.81,10.98
+138,BD-1138,Skis de fond Escarpement Pro,Sports d'hiver,FRN-014,86.38,147.3,8.55
+139,BD-1139,Skis de fond Taiga 100,Sports d'hiver,FRN-014,198.93,358.71,6.0
+140,BD-1140,Peaux d'ascension Cap-Nord XT,Sports d'hiver,FRN-016,40.41,63.53,0.83
+141,BD-1141,Skis de fond Portage Pro,Sports d'hiver,FRN-015,307.78,499.22,4.04
+142,BD-1142,Skis de fond Sommet 200,Sports d'hiver,FRN-015,98.85,163.08,8.47
+143,BD-1143,Skis de fond Expedition Lite,Sports d'hiver,FRN-015,215.92,375.14,6.56
+144,BD-1144,Skis de fond Boreal Pro,Sports d'hiver,FRN-016,96.31,178.52,10.61
+145,BD-1145,Crampons Portage XT,Sports d'hiver,FRN-016,108.83,184.14,3.09
+146,BD-1146,Lunettes de ski Grand-Nord 300,Sports d'hiver,FRN-016,220.88,375.57,11.06
+147,BD-1147,Traineau Expedition Lite,Sports d'hiver,FRN-016,339.78,598.15,13.26
+148,BD-1148,Fixations Expedition Pro,Sports d'hiver,FRN-015,,459.89,8.22
+149,BD-1149,Skis de fond Nordet 100,Sports d'hiver,FRN-015,108.85,183.13,3.52
+150,BD-1150,Peaux d'ascension Sentier Lite,Sports d'hiver,FRN-015,339.92,625.88,0.79
+151,BD-1151,Crampons Boreal Pro,Sports d'hiver,FRN-016,90.35,158.99,1.41
+152,BD-1152,Casque Taiga XT,Sports d'hiver,FRN-015,265.82,480.97,5.39
+153,BD-1153,Fixations Grand-Nord 200,Sports d'hiver,FRN-015,113.61,200.63,0.37
+154,BD-1154,Lunettes de ski Expedition Pro,Sports d'hiver,FRN-015,,534.55,9.8
+155,BD-1155,Crampons Boreal Lite,Sports d'hiver,FRN-014,322.38,541.86,7.16
+156,BD-1156,Fixations Taiga Pro,Sports d'hiver,FRN-016,161.25,302.11,9.49
+157,BD-1157,Sangle Cap-Nord 100,Accessoires,FRN-002,24.69,52.35,7.2
+158,BD-1158,Couteau multifonction Grand-Nord 300,Accessoires,FRN-002,180.81,349.5,6.03
+159,BD-1159,Trousse de reparation Alpin 300,Accessoires,FRN-014,166.16,288.97,10.55
+160,BD-1160,Sac etanche Escarpement Pro,Accessoires,FRN-014,40.71,78.76,12.24
+161,BD-1161,Trousse de reparation Sommet 100,Accessoires,FRN-014,62.84,135.05,0.34
+162,BD-1162,Filtre a eau Expedition Pro,Accessoires,FRN-002,66.97,137.06,6.24
+163,BD-1163,Trousse de reparation Sentier 200,Accessoires,FRN-002,294.58,613.28,10.89
+164,BD-1164,Corde Cap-Nord 200,Accessoires,FRN-002,98.38,194.97,13.97
+165,BD-1165,Mousqueton Nordet 200,Accessoires,FRN-020,105.7,184.03,5.03
+166,BD-1166,Sangle Cap-Nord 200,Accessoires,FRN-002,212.88,415.48,6.34
+167,BD-1167,Filtre a eau Portage 300,Accessoires,FRN-002,205.42,371.21,9.8
+168,BD-1168,Filtre a eau Traverse 300,Accessoires,FRN-020,224.71,400.0,0.11
+169,BD-1169,Sac etanche Grand-Nord Pro,Accessoires,FRN-014,276.47,576.68,13.4
+170,BD-1170,Corde Portage XT,Accessoires,FRN-002,16.6,35.16,10.32
+171,BD-1171,Filtre a eau Nordet 300,Accessoires,FRN-014,83.7,158.31,7.28
+172,BD-1172,Mousqueton Traverse 300,Accessoires,FRN-014,216.67,418.59,7.22
+173,BD-1173,Couteau multifonction Alpin Lite,Accessoires,FRN-020,207.98,398.67,13.11
+174,BD-1174,Sifflet de securite Boreal Pro,Accessoires,FRN-020,165.53,295.12,8.94
+175,BD-1175,Sangle Taiga 300,Accessoires,FRN-014,94.86,169.75,4.87
+176,BD-1176,Filtre a eau Nordet 300,Accessoires,FRN-020,322.02,630.5,13.84
+177,BD-1177,Mousqueton Grand-Nord 100,Accessoires,FRN-002,211.22,407.62,7.77
+178,BD-1178,Sac etanche Traverse Pro,Accessoires,FRN-014,116.97,205.3,4.43
+179,BD-1179,Corde Sentier 200,Accessoires,FRN-020,,431.57,7.19
+180,BD-1180,Sac etanche Boreal 200,Accessoires,FRN-002,93.34,189.34,10.21
+181,BD-1181,Trousse de reparation Nordet XT,Accessoires,FRN-014,305.97,624.82,10.18
+182,BD-1182,Sac etanche Escarpement 300,Accessoires,FRN-014,56.87,108.87,7.99

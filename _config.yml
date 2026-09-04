@@ -17,3 +17,8 @@ exclude:
   - "analyse-financiere-demarrage/data/"
   - "analyse-financiere-demarrage/scripts/"
   - "geomarketing-quebec/data/"
+  - "entrepot-donnees-powerbi/README.md"
+  - "entrepot-donnees-powerbi/data/"
+  - "entrepot-donnees-powerbi/Python/"
+  - "entrepot-donnees-powerbi/SQL/"
+  - "entrepot-donnees-powerbi/PowerBI/"

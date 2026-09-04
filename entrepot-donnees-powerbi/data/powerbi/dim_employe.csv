@@ -1,0 +1,48 @@
+﻿employe_id,matricule,prenom,nom,nom_complet,poste,departement,entrepot_code,date_embauche,date_depart,salaire_annuel,statut,est_actif
+1,EMP-523,Chantal,Lachance,Chantal Lachance,Chef d'équipe entrepôt,Entrepôt,ENT-QC,2015-03-18,2025-02-01,58000.0,Temps partiel,0
+2,EMP-512,Simon,Grenier,Simon Grenier,Commis d'entrepôt,Entrepôt,ENT-SAG,2022-06-24,,47000.0,Temps plein,1
+3,EMP-543,Isabelle,Bouchard,Isabelle Bouchard,Livreur,Entrepôt,ENT-MTL,2018-10-18,,49000.0,Temps plein,1
+4,EMP-547,Catherine,Lefebvre,Catherine Lefebvre,Livreur,Entrepôt,ENT-QC,2025-08-19,,50000.0,Temps plein,1
+5,EMP-544,Simon,Bélanger,Simon Bélanger,Commis d'entrepôt,Entrepôt,ENT-MTL,2025-10-23,,46000.0,Temps plein,1
+6,EMP-545,Martin,Bérubé,Martin Bérubé,Chef d'équipe entrepôt,Entrepôt,ENT-QC,2025-03-15,,56000.0,Temps partiel,1
+7,EMP-525,Daniel,Paquette,Daniel Paquette,Chef d'équipe entrepôt,Entrepôt,ENT-QC,2013-11-04,,60000.0,Temps plein,1
+8,EMP-507,Éric,Leclerc,Éric Leclerc,Représentant des ventes,Ventes,ENT-MTL,2019-11-07,,54000.0,Temps plein,1
+9,EMP-522,Olivier,Gagné,Olivier Gagné,Commis d'entrepôt,Entrepôt,ENT-MTL,2019-10-05,2025-09-16,43000.0,Temps plein,0
+10,EMP-505,Mathieu,Fortin,Mathieu Fortin,Représentant des ventes,Ventes,ENT-SAG,2019-06-03,,60000.0,Temps partiel,1
+11,EMP-511,Olivier,Tremblay,Olivier Tremblay,Commis d'entrepôt,Entrepôt,ENT-QC,2019-05-19,,47000.0,Temps plein,1
+12,EMP-546,Vincent,Gauthier,Vincent Gauthier,Coordonnateur marketing,Marketing,ENT-QC,2024-08-08,,53000.0,Temps plein,1
+13,EMP-501,Julien,Desjardins,Julien Desjardins,Représentant des ventes,Ventes,ENT-QC,2022-05-06,,67000.0,Temps plein,1
+14,EMP-515,Pascale,Martel,Pascale Martel,Commis d'entrepôt,Entrepôt,ENT-QC,2016-04-04,,44000.0,Temps plein,1
+15,EMP-502,David,Desjardins,David Desjardins,Représentant des ventes,Ventes,ENT-MTL,2014-10-29,,62000.0,Temps plein,1
+16,EMP-532,Catherine,Lachance,Catherine Lachance,Coordonnateur marketing,Marketing,ENT-QC,2018-11-01,2024-07-08,54000.0,Temps plein,0
+17,EMP-528,Maxime,Gagné,Maxime Gagné,Acheteur,Approvisionnement,ENT-QC,2013-02-12,,64000.0,Temps plein,1
+18,EMP-509,Pascale,Beaulieu,Pascale Beaulieu,Représentant des ventes,Ventes,ENT-SAG,2015-10-10,,65000.0,Temps plein,1
+19,EMP-503,Jean-Philippe,Desjardins,Jean-Philippe Desjardins,Représentant des ventes,Ventes,ENT-MTL,2013-01-26,,61000.0,Temps plein,1
+20,EMP-540,Nathalie,Gauthier,Nathalie Gauthier,Directeur général,Direction,ENT-QC,2015-03-16,,125000.0,Temps plein,1
+21,EMP-541,François,Dubé,François Dubé,Contrôleur financier,Direction,ENT-MTL,2020-05-11,,99000.0,Temps plein,1
+22,EMP-519,Véronique,Nadeau,Véronique Nadeau,Commis d'entrepôt,Entrepôt,ENT-QC,2020-04-11,,48000.0,Temps plein,1
+23,EMP-534,Vincent,Poirier,Vincent Poirier,Coordonnateur marketing,Marketing,ENT-QC,2016-01-27,,58000.0,Temps partiel,1
+24,EMP-504,Caroline,Leblanc,Caroline Leblanc,Représentant des ventes,Ventes,ENT-MTL,2023-08-24,,54000.0,Temps plein,1
+25,EMP-513,Sylvie,Tremblay,Sylvie Tremblay,Commis d'entrepôt,Entrepôt,ENT-SAG,2012-10-10,,46000.0,Temps plein,1
+26,EMP-542,Chantal,Bouchard,Chantal Bouchard,Livreur,Entrepôt,ENT-QC,2015-05-30,2025-07-27,50000.0,Temps plein,0
+27,EMP-521,Chantal,Morin,Chantal Morin,Commis d'entrepôt,Entrepôt,ENT-QC,2021-11-22,,42000.0,Temps plein,1
+28,EMP-538,Sébastien,Gauthier,Sébastien Gauthier,Adjointe administrative,Administration,ENT-SAG,2016-08-20,,45000.0,Temps plein,1
+29,EMP-506,Stéphanie,Gagné,Stéphanie Gagné,Représentant des ventes,Ventes,ENT-MTL,2020-08-07,,58000.0,Temps partiel,1
+30,EMP-527,Julien,Grenier,Julien Grenier,Acheteur,Approvisionnement,ENT-MTL,2022-06-24,,69000.0,Temps plein,1
+31,EMP-529,Amélie,Poulin,Amélie Poulin,Technicien comptable,Administration,ENT-QC,2022-12-10,,58000.0,Temps plein,1
+32,EMP-536,David,Lachance,David Lachance,Adjointe administrative,Administration,ENT-QC,2021-06-15,,52000.0,Temps plein,1
+33,EMP-535,Marie,Grenier,Marie Grenier,Adjointe administrative,Administration,ENT-MTL,2023-06-26,,47000.0,Temps plein,1
+34,EMP-530,Alexandre,Fortin,Alexandre Fortin,Technicien comptable,Administration,ENT-QC,2021-03-24,,51000.0,Temps partiel,1
+35,EMP-517,Sylvie,Dufour,Sylvie Dufour,Commis d'entrepôt,Entrepôt,ENT-QC,2020-09-08,,45000.0,Temps plein,1
+36,EMP-533,Nathalie,Gagnon,Nathalie Gagnon,Coordonnateur marketing,Marketing,ENT-SAG,2015-08-25,,53000.0,Temps partiel,1
+37,EMP-520,Jean-Philippe,Boucher,Jean-Philippe Boucher,Commis d'entrepôt,Entrepôt,ENT-MTL,2023-01-30,,45000.0,Temps plein,1
+38,EMP-531,Annie,Pelletier,Annie Pelletier,Technicien comptable,Administration,ENT-MTL,2023-04-01,,59000.0,Temps partiel,1
+39,EMP-508,Chantal,Cloutier,Chantal Cloutier,Représentant des ventes,Ventes,ENT-MTL,2021-02-06,,52000.0,Temps plein,1
+40,EMP-516,Amélie,Caron,Amélie Caron,Commis d'entrepôt,Entrepôt,ENT-SAG,2023-05-03,,49000.0,Temps plein,1
+41,EMP-510,Catherine,Roy,Catherine Roy,Directeur des ventes,Ventes,ENT-MTL,2015-12-04,,91000.0,Temps plein,1
+42,EMP-526,Daniel,Tremblay,Daniel Tremblay,Acheteur,Approvisionnement,ENT-QC,2014-06-24,,60000.0,Temps plein,1
+43,EMP-539,Chantal,Bergeron,Chantal Bergeron,Analyste d'affaires,Administration,ENT-QC,2015-08-16,,64000.0,Temps plein,1
+44,EMP-524,Étienne,Bouchard,Étienne Bouchard,Chef d'équipe entrepôt,Entrepôt,ENT-QC,2022-11-11,,61000.0,Temps plein,1
+45,EMP-514,Manon,Beaulieu,Manon Beaulieu,Commis d'entrepôt,Entrepôt,ENT-SAG,2019-02-02,2024-11-21,42000.0,Temps plein,0
+46,EMP-537,Nathalie,Cloutier,Nathalie Cloutier,Adjointe administrative,Administration,ENT-QC,2020-03-20,2024-11-28,50000.0,Temps plein,0
+47,EMP-518,Julie,Lefebvre,Julie Lefebvre,Commis d'entrepôt,Entrepôt,ENT-SAG,2019-05-31,,44000.0,Temps plein,1

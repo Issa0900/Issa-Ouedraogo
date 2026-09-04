@@ -1,0 +1,1824 @@
+﻿rejet_id,source,cle,champ,valeur,motif,action
+1,catalogue_produits.csv,BD-1033,cout_standard,"0,00",cout_standard_absent,signalee
+2,catalogue_produits.csv,BD-1075,cout_standard,"0,00",cout_standard_absent,signalee
+3,catalogue_produits.csv,BD-1148,cout_standard,"0,00",cout_standard_absent,signalee
+4,catalogue_produits.csv,BD-1154,cout_standard,"0,00",cout_standard_absent,signalee
+5,catalogue_produits.csv,BD-1179,cout_standard,"0,00",cout_standard_absent,signalee
+6,catalogue_produits.csv,BD-1182,sku,BD-1182,doublon_exact,rejetee
+7,catalogue_produits.csv,BD-1160,sku,BD-1160,doublon_exact,rejetee
+8,catalogue_produits.csv,BD-1101,sku,BD-1101,doublon_exact,rejetee
+9,catalogue_produits.csv,BD-1127,sku,BD-1127,doublon_exact,rejetee
+10,catalogue_produits.csv,BD-1035,sku,BD-1035,doublon_exact,rejetee
+11,catalogue_produits.csv,BD-1107,sku,BD-1107,doublon_exact,rejetee
+12,catalogue_produits.csv,BD-1154,sku,BD-1154,doublon_exact,rejetee
+13,catalogue_produits.csv,BD-1166,sku,BD-1166,doublon_exact,rejetee
+14,crm_clients.json,CLI-0073,province,Québec,variante_ecriture,corrigee
+15,crm_clients.json,CLI-0003,province,qc,variante_ecriture,corrigee
+16,crm_clients.json,CLI-0003,ville,Val-d'Or ,casse_ou_espaces,corrigee
+17,crm_clients.json,CLI-913,raison_sociale,NATURE SAINT-LAURENT,doublon_metier,fusionnee vers CLI-0003
+18,crm_clients.json,CLI-0128,province,Québec,variante_ecriture,corrigee
+19,crm_clients.json,CLI-0128,ville,rimouski,casse_ou_espaces,corrigee
+20,crm_clients.json,CLI-0132,ville,sudbury,casse_ou_espaces,corrigee
+21,crm_clients.json,CLI-0083,province,on,variante_ecriture,corrigee
+22,crm_clients.json,CLI-0083,ville,KINGSTON,casse_ou_espaces,corrigee
+23,crm_clients.json,CLI-0106,province,Québec,variante_ecriture,corrigee
+24,crm_clients.json,CLI-0106,ville,Drummondville ,casse_ou_espaces,corrigee
+25,crm_clients.json,CLI-0170,province,qc,variante_ecriture,corrigee
+26,crm_clients.json,CLI-0170,ville,MONTRÉAL,casse_ou_espaces,corrigee
+27,crm_clients.json,CLI-0153,province,Québec,variante_ecriture,corrigee
+28,crm_clients.json,CLI-0153,ville,québec,casse_ou_espaces,corrigee
+29,crm_clients.json,CLI-0213,province,Nouveau-Brunswick,variante_ecriture,corrigee
+30,crm_clients.json,CLI-0213,ville,FREDERICTON,casse_ou_espaces,corrigee
+31,crm_clients.json,CLI-0180,province,Quebec,variante_ecriture,corrigee
+32,crm_clients.json,CLI-0206,ville,Rimouski ,casse_ou_espaces,corrigee
+33,crm_clients.json,CLI-0162,province,qc,variante_ecriture,corrigee
+34,crm_clients.json,CLI-0162,ville,SHAWINIGAN,casse_ou_espaces,corrigee
+35,crm_clients.json,CLI-0092,province,Quebec,variante_ecriture,corrigee
+36,crm_clients.json,CLI-0092,ville,Val-d'Or ,casse_ou_espaces,corrigee
+37,crm_clients.json,CLI-902,raison_sociale,CHALET BLAINVILLE LTÉE,doublon_metier,fusionnee vers CLI-0092
+38,crm_clients.json,CLI-0108,province,qc,variante_ecriture,corrigee
+39,crm_clients.json,CLI-0108,ville,Baie-Comeau ,casse_ou_espaces,corrigee
+40,crm_clients.json,CLI-0119,province,Quebec,variante_ecriture,corrigee
+41,crm_clients.json,CLI-0119,ville,Baie-Comeau ,casse_ou_espaces,corrigee
+42,crm_clients.json,CLI-0119,courriel,,valeur_manquante,corrigee
+43,crm_clients.json,CLI-0054,province,Quebec,variante_ecriture,corrigee
+44,crm_clients.json,CLI-0054,ville,Laval ,casse_ou_espaces,corrigee
+45,crm_clients.json,CLI-0056,province,Quebec,variante_ecriture,corrigee
+46,crm_clients.json,CLI-0056,ville,Val-d'Or ,casse_ou_espaces,corrigee
+47,crm_clients.json,CLI-0023,ville,MONCTON,casse_ou_espaces,corrigee
+48,crm_clients.json,CLI-0100,province,on,variante_ecriture,corrigee
+49,crm_clients.json,CLI-0100,ville,thunder bay,casse_ou_espaces,corrigee
+50,crm_clients.json,CLI-0006,province,Ontario,variante_ecriture,corrigee
+51,crm_clients.json,CLI-0070,province,on,variante_ecriture,corrigee
+52,crm_clients.json,CLI-0070,ville,Kingston ,casse_ou_espaces,corrigee
+53,crm_clients.json,CLI-0146,province,Quebec,variante_ecriture,corrigee
+54,crm_clients.json,CLI-0109,province,Quebec,variante_ecriture,corrigee
+55,crm_clients.json,CLI-0091,province,qc,variante_ecriture,corrigee
+56,crm_clients.json,CLI-0091,ville,victoriaville,casse_ou_espaces,corrigee
+57,crm_clients.json,CLI-906,raison_sociale,BOUTIQUE BOUCHERVILLE CHARLEVOIX,doublon_metier,fusionnee vers CLI-0091
+58,crm_clients.json,CLI-0081,province,qc,variante_ecriture,corrigee
+59,crm_clients.json,CLI-0081,ville,laval,casse_ou_espaces,corrigee
+60,crm_clients.json,CLI-0081,code_postal,,valeur_manquante,corrigee
+61,crm_clients.json,CLI-0022,province,Nouveau-Brunswick,variante_ecriture,corrigee
+62,crm_clients.json,CLI-0022,code_postal,  ,valeur_manquante,corrigee
+63,crm_clients.json,CLI-0131,province,Nouveau-Brunswick,variante_ecriture,corrigee
+64,crm_clients.json,CLI-0028,ville,Trois-Rivières ,casse_ou_espaces,corrigee
+65,crm_clients.json,CLI-0027,province,Québec,variante_ecriture,corrigee
+66,crm_clients.json,CLI-0027,ville,victoriaville,casse_ou_espaces,corrigee
+67,crm_clients.json,CLI-901,raison_sociale,CHALET SAINT-LAURENT,doublon_metier,fusionnee vers CLI-0027
+68,crm_clients.json,CLI-0138,province,Quebec,variante_ecriture,corrigee
+69,crm_clients.json,CLI-0138,ville,sherbrooke,casse_ou_espaces,corrigee
+70,crm_clients.json,CLI-0220,province,Quebec,variante_ecriture,corrigee
+71,crm_clients.json,CLI-0220,ville,Victoriaville ,casse_ou_espaces,corrigee
+72,crm_clients.json,CLI-0060,province,Québec,variante_ecriture,corrigee
+73,crm_clients.json,CLI-0060,ville,Shawinigan ,casse_ou_espaces,corrigee
+74,crm_clients.json,CLI-0069,province,Île-du-Prince-Édouard,variante_ecriture,corrigee
+75,crm_clients.json,CLI-0157,province,Quebec,variante_ecriture,corrigee
+76,crm_clients.json,CLI-0157,ville,laval,casse_ou_espaces,corrigee
+77,crm_clients.json,CLI-0157,courriel,a completer,courriel_invalide,corrigee
+78,crm_clients.json,CLI-0071,ville,Baie-Comeau ,casse_ou_espaces,corrigee
+79,crm_clients.json,CLI-0136,province,Québec,variante_ecriture,corrigee
+80,crm_clients.json,CLI-0187,province,Ontario,variante_ecriture,corrigee
+81,crm_clients.json,CLI-0187,ville,NORTH BAY,casse_ou_espaces,corrigee
+82,crm_clients.json,CLI-908,raison_sociale,PLEIN AIR VAUDREUIL DU NORD,doublon_metier,fusionnee vers CLI-0187
+83,crm_clients.json,CLI-0050,ville,Laval ,casse_ou_espaces,corrigee
+84,crm_clients.json,CLI-0185,ville,SUDBURY,casse_ou_espaces,corrigee
+85,crm_clients.json,CLI-0047,province,Quebec,variante_ecriture,corrigee
+86,crm_clients.json,CLI-0047,ville,SHAWINIGAN,casse_ou_espaces,corrigee
+87,crm_clients.json,CLI-0168,province,qc,variante_ecriture,corrigee
+88,crm_clients.json,CLI-0168,ville,baie-comeau,casse_ou_espaces,corrigee
+89,crm_clients.json,CLI-0067,province,Quebec,variante_ecriture,corrigee
+90,crm_clients.json,CLI-0067,ville,victoriaville,casse_ou_espaces,corrigee
+91,crm_clients.json,CLI-911,raison_sociale,COOPÉRATIVE ABITIBI,doublon_metier,fusionnee vers CLI-0067
+92,crm_clients.json,CLI-0041,province,Quebec,variante_ecriture,corrigee
+93,crm_clients.json,CLI-0113,province,Québec,variante_ecriture,corrigee
+94,crm_clients.json,CLI-0113,ville,granby,casse_ou_espaces,corrigee
+95,crm_clients.json,CLI-0062,province,qc,variante_ecriture,corrigee
+96,crm_clients.json,CLI-0062,ville,saguenay,casse_ou_espaces,corrigee
+97,crm_clients.json,CLI-0043,province,Quebec,variante_ecriture,corrigee
+98,crm_clients.json,CLI-0043,courriel,None,valeur_manquante,corrigee
+99,crm_clients.json,CLI-0058,ville,sudbury,casse_ou_espaces,corrigee
+100,crm_clients.json,CLI-0118,ville,Saguenay ,casse_ou_espaces,corrigee
+101,crm_clients.json,CLI-0188,province,qc,variante_ecriture,corrigee
+102,crm_clients.json,CLI-0195,province,Québec,variante_ecriture,corrigee
+103,crm_clients.json,CLI-0195,ville,SAINT-JEAN-SUR-RICHELIEU,casse_ou_espaces,corrigee
+104,crm_clients.json,CLI-0084,province,qc,variante_ecriture,corrigee
+105,crm_clients.json,CLI-0084,ville,QUÉBEC,casse_ou_espaces,corrigee
+106,crm_clients.json,CLI-0057,ville,Rimouski ,casse_ou_espaces,corrigee
+107,crm_clients.json,CLI-0057,courriel,n/a,courriel_invalide,corrigee
+108,crm_clients.json,CLI-0077,province,Québec,variante_ecriture,corrigee
+109,crm_clients.json,CLI-0077,ville,TROIS-RIVIÈRES,casse_ou_espaces,corrigee
+110,crm_clients.json,CLI-0077,courriel,n/a,courriel_invalide,corrigee
+111,crm_clients.json,CLI-0082,province,Québec,variante_ecriture,corrigee
+112,crm_clients.json,CLI-0082,ville,SAINT-JEAN-SUR-RICHELIEU,casse_ou_espaces,corrigee
+113,crm_clients.json,CLI-0082,courriel,n/a,courriel_invalide,corrigee
+114,crm_clients.json,CLI-0048,ville,Drummondville ,casse_ou_espaces,corrigee
+115,crm_clients.json,CLI-0101,province,Québec,variante_ecriture,corrigee
+116,crm_clients.json,CLI-0183,ville,ottawa,casse_ou_espaces,corrigee
+117,crm_clients.json,CLI-0183,code_postal,None,valeur_manquante,corrigee
+118,crm_clients.json,CLI-0134,province,qc,variante_ecriture,corrigee
+119,crm_clients.json,CLI-0134,ville,Sherbrooke ,casse_ou_espaces,corrigee
+120,crm_clients.json,CLI-0110,province,qc,variante_ecriture,corrigee
+121,crm_clients.json,CLI-0110,ville,Victoriaville ,casse_ou_espaces,corrigee
+122,crm_clients.json,CLI-0110,courriel,,valeur_manquante,corrigee
+123,crm_clients.json,CLI-0065,ville,moncton,casse_ou_espaces,corrigee
+124,crm_clients.json,CLI-0008,province,Québec,variante_ecriture,corrigee
+125,crm_clients.json,CLI-0008,ville,victoriaville,casse_ou_espaces,corrigee
+126,crm_clients.json,CLI-0042,ville,ottawa,casse_ou_espaces,corrigee
+127,crm_clients.json,CLI-0178,province,Québec,variante_ecriture,corrigee
+128,crm_clients.json,CLI-0160,province,on,variante_ecriture,corrigee
+129,crm_clients.json,CLI-0160,ville,KINGSTON,casse_ou_espaces,corrigee
+130,crm_clients.json,CLI-0189,province,qc,variante_ecriture,corrigee
+131,crm_clients.json,CLI-0189,ville,Drummondville ,casse_ou_espaces,corrigee
+132,crm_clients.json,CLI-0133,province,Ontario,variante_ecriture,corrigee
+133,crm_clients.json,CLI-0133,ville,OTTAWA,casse_ou_espaces,corrigee
+134,crm_clients.json,CLI-909,raison_sociale,PLEIN AIR DU NORD,doublon_metier,fusionnee vers CLI-0133
+135,crm_clients.json,CLI-0216,province,Quebec,variante_ecriture,corrigee
+136,crm_clients.json,CLI-0216,ville,laval,casse_ou_espaces,corrigee
+137,crm_clients.json,CLI-0210,province,Québec,variante_ecriture,corrigee
+138,crm_clients.json,CLI-0150,province,Quebec,variante_ecriture,corrigee
+139,crm_clients.json,CLI-0072,province,Quebec,variante_ecriture,corrigee
+140,crm_clients.json,CLI-0072,ville,Laval ,casse_ou_espaces,corrigee
+141,crm_clients.json,CLI-0016,ville,sept-îles,casse_ou_espaces,corrigee
+142,crm_clients.json,CLI-0016,code_postal,,valeur_manquante,corrigee
+143,crm_clients.json,CLI-0064,ville,QUÉBEC,casse_ou_espaces,corrigee
+144,crm_clients.json,CLI-0177,province,Quebec,variante_ecriture,corrigee
+145,crm_clients.json,CLI-0145,province,qc,variante_ecriture,corrigee
+146,crm_clients.json,CLI-0145,courriel,a completer,courriel_invalide,corrigee
+147,crm_clients.json,CLI-0167,province,Ontario,variante_ecriture,corrigee
+148,crm_clients.json,CLI-0167,ville,kingston,casse_ou_espaces,corrigee
+149,crm_clients.json,CLI-0167,code_postal,None,valeur_manquante,corrigee
+150,crm_clients.json,CLI-0037,province,Nouveau-Brunswick,variante_ecriture,corrigee
+151,crm_clients.json,CLI-0037,ville,BATHURST,casse_ou_espaces,corrigee
+152,crm_clients.json,CLI-0194,province,Île-du-Prince-Édouard,variante_ecriture,corrigee
+153,crm_clients.json,CLI-0096,ville,Fredericton ,casse_ou_espaces,corrigee
+154,crm_clients.json,CLI-0096,code_postal,,valeur_manquante,corrigee
+155,crm_clients.json,CLI-0126,province,qc,variante_ecriture,corrigee
+156,crm_clients.json,CLI-0126,ville,Saint-Jean-sur-Richelieu ,casse_ou_espaces,corrigee
+157,crm_clients.json,CLI-0203,province,qc,variante_ecriture,corrigee
+158,crm_clients.json,CLI-0203,ville,LÉVIS,casse_ou_espaces,corrigee
+159,crm_clients.json,CLI-0217,province,Quebec,variante_ecriture,corrigee
+160,crm_clients.json,CLI-0217,ville,MONTRÉAL,casse_ou_espaces,corrigee
+161,crm_clients.json,CLI-0207,province,Quebec,variante_ecriture,corrigee
+162,crm_clients.json,CLI-905,raison_sociale,NATURE HULL LTÉE,doublon_metier,fusionnee vers CLI-0207
+163,crm_clients.json,CLI-0019,province,Ontario,variante_ecriture,corrigee
+164,crm_clients.json,CLI-0019,ville,NORTH BAY,casse_ou_espaces,corrigee
+165,crm_clients.json,CLI-0019,courriel,None,valeur_manquante,corrigee
+166,crm_clients.json,CLI-0099,ville,North Bay ,casse_ou_espaces,corrigee
+167,crm_clients.json,CLI-0191,province,Québec,variante_ecriture,corrigee
+168,crm_clients.json,CLI-0078,province,Québec,variante_ecriture,corrigee
+169,crm_clients.json,CLI-0078,ville,Saint-Jérôme ,casse_ou_espaces,corrigee
+170,crm_clients.json,CLI-0130,ville,shawinigan,casse_ou_espaces,corrigee
+171,crm_clients.json,CLI-0190,province,Quebec,variante_ecriture,corrigee
+172,crm_clients.json,CLI-0053,ville,Bathurst ,casse_ou_espaces,corrigee
+173,crm_clients.json,CLI-0174,province,qc,variante_ecriture,corrigee
+174,crm_clients.json,CLI-0174,ville,Saguenay ,casse_ou_espaces,corrigee
+175,crm_clients.json,CLI-0001,province,Québec,variante_ecriture,corrigee
+176,crm_clients.json,CLI-0001,ville,Victoriaville ,casse_ou_espaces,corrigee
+177,crm_clients.json,CLI-0139,province,Nouveau-Brunswick,variante_ecriture,corrigee
+178,crm_clients.json,CLI-0139,ville,Moncton ,casse_ou_espaces,corrigee
+179,crm_clients.json,CLI-0005,province,Québec,variante_ecriture,corrigee
+180,crm_clients.json,CLI-0005,ville,baie-comeau,casse_ou_espaces,corrigee
+181,crm_clients.json,CLI-0009,province,Quebec,variante_ecriture,corrigee
+182,crm_clients.json,CLI-0009,ville,VAL-D'OR,casse_ou_espaces,corrigee
+183,crm_clients.json,CLI-0080,province,Québec,variante_ecriture,corrigee
+184,crm_clients.json,CLI-0080,ville,Drummondville ,casse_ou_espaces,corrigee
+185,crm_clients.json,CLI-0080,courriel,n/a,courriel_invalide,corrigee
+186,crm_clients.json,CLI-904,raison_sociale,RANDONNEURS VERDUN ABITIBI,doublon_metier,fusionnee vers CLI-0080
+187,crm_clients.json,CLI-0120,province,Québec,variante_ecriture,corrigee
+188,crm_clients.json,CLI-0120,ville,lévis,casse_ou_espaces,corrigee
+189,crm_clients.json,CLI-0147,province,qc,variante_ecriture,corrigee
+190,crm_clients.json,CLI-0199,province,Québec,variante_ecriture,corrigee
+191,crm_clients.json,CLI-0199,ville,Shawinigan ,casse_ou_espaces,corrigee
+192,crm_clients.json,CLI-0165,province,Québec,variante_ecriture,corrigee
+193,crm_clients.json,CLI-0117,province,qc,variante_ecriture,corrigee
+194,crm_clients.json,CLI-0117,ville,saguenay,casse_ou_espaces,corrigee
+195,crm_clients.json,CLI-0032,province,Quebec,variante_ecriture,corrigee
+196,crm_clients.json,CLI-0032,ville,SHAWINIGAN,casse_ou_espaces,corrigee
+197,crm_clients.json,CLI-914,raison_sociale,BASE CAMP LAURENTIDES,doublon_metier,fusionnee vers CLI-0032
+198,crm_clients.json,CLI-0025,ville,Sudbury ,casse_ou_espaces,corrigee
+199,crm_clients.json,CLI-0025,code_postal,None,valeur_manquante,corrigee
+200,crm_clients.json,CLI-0204,province,Quebec,variante_ecriture,corrigee
+201,crm_clients.json,CLI-0204,ville,SEPT-ÎLES,casse_ou_espaces,corrigee
+202,crm_clients.json,CLI-0075,province,Québec,variante_ecriture,corrigee
+203,crm_clients.json,CLI-0075,ville,terrebonne,casse_ou_espaces,corrigee
+204,crm_clients.json,CLI-0149,province,Québec,variante_ecriture,corrigee
+205,crm_clients.json,CLI-910,raison_sociale,AVENTURE JONQUIÈRE ABITIBI,doublon_metier,fusionnee vers CLI-0149
+206,crm_clients.json,CLI-0015,province,Ontario,variante_ecriture,corrigee
+207,crm_clients.json,CLI-0015,courriel,None,valeur_manquante,corrigee
+208,crm_clients.json,CLI-0104,province,qc,variante_ecriture,corrigee
+209,crm_clients.json,CLI-0104,ville,SEPT-ÎLES,casse_ou_espaces,corrigee
+210,crm_clients.json,CLI-0013,province,Québec,variante_ecriture,corrigee
+211,crm_clients.json,CLI-0013,ville,Rimouski ,casse_ou_espaces,corrigee
+212,crm_clients.json,CLI-0219,province,Québec,variante_ecriture,corrigee
+213,crm_clients.json,CLI-0200,province,Québec,variante_ecriture,corrigee
+214,crm_clients.json,CLI-0200,ville,LAVAL,casse_ou_espaces,corrigee
+215,crm_clients.json,CLI-0193,province,qc,variante_ecriture,corrigee
+216,crm_clients.json,CLI-0211,province,Quebec,variante_ecriture,corrigee
+217,crm_clients.json,CLI-0211,ville,québec,casse_ou_espaces,corrigee
+218,crm_clients.json,CLI-0088,province,Quebec,variante_ecriture,corrigee
+219,crm_clients.json,CLI-0088,ville,Gatineau ,casse_ou_espaces,corrigee
+220,crm_clients.json,CLI-0182,province,Quebec,variante_ecriture,corrigee
+221,crm_clients.json,CLI-0182,ville,laval,casse_ou_espaces,corrigee
+222,crm_clients.json,CLI-0172,province,qc,variante_ecriture,corrigee
+223,crm_clients.json,CLI-0172,ville,Rimouski ,casse_ou_espaces,corrigee
+224,crm_clients.json,CLI-0171,province,Québec,variante_ecriture,corrigee
+225,crm_clients.json,CLI-0171,code_postal,None,valeur_manquante,corrigee
+226,crm_clients.json,CLI-0046,province,qc,variante_ecriture,corrigee
+227,crm_clients.json,CLI-0046,ville,sept-îles,casse_ou_espaces,corrigee
+228,crm_clients.json,CLI-0011,province,Quebec,variante_ecriture,corrigee
+229,crm_clients.json,CLI-0186,province,Québec,variante_ecriture,corrigee
+230,crm_clients.json,CLI-0186,ville,Rouyn-Noranda ,casse_ou_espaces,corrigee
+231,crm_clients.json,CLI-907,raison_sociale,GRAND AIR GASPÉSIE,doublon_metier,fusionnee vers CLI-0111
+232,crm_clients.json,CLI-0123,province,Quebec,variante_ecriture,corrigee
+233,crm_clients.json,CLI-0123,ville,Shawinigan ,casse_ou_espaces,corrigee
+234,crm_clients.json,CLI-0123,courriel,,valeur_manquante,corrigee
+235,crm_clients.json,CLI-0068,province,qc,variante_ecriture,corrigee
+236,crm_clients.json,CLI-0068,ville,saguenay,casse_ou_espaces,corrigee
+237,crm_clients.json,CLI-0031,province,qc,variante_ecriture,corrigee
+238,crm_clients.json,CLI-0031,ville,VAL-D'OR,casse_ou_espaces,corrigee
+239,crm_clients.json,CLI-0049,province,on,variante_ecriture,corrigee
+240,crm_clients.json,CLI-0049,ville,TORONTO,casse_ou_espaces,corrigee
+241,crm_clients.json,CLI-0044,province,Ontario,variante_ecriture,corrigee
+242,crm_clients.json,CLI-0044,ville,OTTAWA,casse_ou_espaces,corrigee
+243,crm_clients.json,CLI-0115,ville,shawinigan,casse_ou_espaces,corrigee
+244,crm_clients.json,CLI-0192,province,qc,variante_ecriture,corrigee
+245,crm_clients.json,CLI-0196,ville,LAVAL,casse_ou_espaces,corrigee
+246,crm_clients.json,CLI-0040,province,Quebec,variante_ecriture,corrigee
+247,crm_clients.json,CLI-0164,province,Quebec,variante_ecriture,corrigee
+248,crm_clients.json,CLI-0164,ville,GATINEAU,casse_ou_espaces,corrigee
+249,crm_clients.json,CLI-0164,courriel,achats@,courriel_invalide,corrigee
+250,crm_clients.json,CLI-0151,province,Île-du-Prince-Édouard,variante_ecriture,corrigee
+251,crm_clients.json,CLI-0215,province,Quebec,variante_ecriture,corrigee
+252,crm_clients.json,CLI-0215,ville,Victoriaville ,casse_ou_espaces,corrigee
+253,crm_clients.json,CLI-0215,code_postal,  ,valeur_manquante,corrigee
+254,crm_clients.json,CLI-0039,ville,QUÉBEC,casse_ou_espaces,corrigee
+255,crm_clients.json,CLI-0129,province,qc,variante_ecriture,corrigee
+256,crm_clients.json,CLI-0129,ville,rimouski,casse_ou_espaces,corrigee
+257,crm_clients.json,CLI-0010,province,Quebec,variante_ecriture,corrigee
+258,crm_clients.json,CLI-0010,courriel,,valeur_manquante,corrigee
+259,crm_clients.json,CLI-0085,province,Québec,variante_ecriture,corrigee
+260,crm_clients.json,CLI-0085,ville,SAINT-JEAN-SUR-RICHELIEU,casse_ou_espaces,corrigee
+261,crm_clients.json,CLI-0105,province,on,variante_ecriture,corrigee
+262,crm_clients.json,CLI-0105,ville,Kingston ,casse_ou_espaces,corrigee
+263,crm_clients.json,CLI-0105,code_postal,None,valeur_manquante,corrigee
+264,crm_clients.json,CLI-0090,province,qc,variante_ecriture,corrigee
+265,crm_clients.json,CLI-0090,ville,saint-jean-sur-richelieu,casse_ou_espaces,corrigee
+266,crm_clients.json,CLI-0122,province,Québec,variante_ecriture,corrigee
+267,crm_clients.json,CLI-0122,ville,SAINT-JEAN-SUR-RICHELIEU,casse_ou_espaces,corrigee
+268,crm_clients.json,CLI-0066,ville,Bathurst ,casse_ou_espaces,corrigee
+269,crm_clients.json,CLI-903,raison_sociale,GRAND AIR APPALACHES,doublon_metier,fusionnee vers CLI-0066
+270,crm_clients.json,CLI-0184,province,Québec,variante_ecriture,corrigee
+271,crm_clients.json,CLI-0184,ville,victoriaville,casse_ou_espaces,corrigee
+272,crm_clients.json,CLI-0116,province,Québec,variante_ecriture,corrigee
+273,crm_clients.json,CLI-0116,ville,trois-rivières,casse_ou_espaces,corrigee
+274,crm_clients.json,CLI-0094,province,qc,variante_ecriture,corrigee
+275,crm_clients.json,CLI-0051,ville,gatineau,casse_ou_espaces,corrigee
+276,crm_clients.json,CLI-0209,ville,Val-d'Or ,casse_ou_espaces,corrigee
+277,crm_clients.json,CLI-0218,province,Québec,variante_ecriture,corrigee
+278,crm_clients.json,CLI-0218,ville,saguenay,casse_ou_espaces,corrigee
+279,crm_clients.json,CLI-0218,courriel,,valeur_manquante,corrigee
+280,crm_clients.json,CLI-0007,province,Nouveau-Brunswick,variante_ecriture,corrigee
+281,crm_clients.json,CLI-0007,ville,MONCTON,casse_ou_espaces,corrigee
+282,crm_clients.json,CLI-0169,ville,Lévis ,casse_ou_espaces,corrigee
+283,crm_clients.json,CLI-0173,province,Quebec,variante_ecriture,corrigee
+284,crm_clients.json,CLI-0173,ville,TROIS-RIVIÈRES,casse_ou_espaces,corrigee
+285,crm_clients.json,CLI-0021,ville,Trois-Rivières ,casse_ou_espaces,corrigee
+286,crm_clients.json,CLI-0142,province,qc,variante_ecriture,corrigee
+287,crm_clients.json,CLI-0142,ville,lévis,casse_ou_espaces,corrigee
+288,crm_clients.json,CLI-0142,courriel,,valeur_manquante,corrigee
+289,crm_clients.json,CLI-0152,province,Quebec,variante_ecriture,corrigee
+290,crm_clients.json,CLI-0152,ville,Laval ,casse_ou_espaces,corrigee
+291,crm_clients.json,CLI-0055,province,qc,variante_ecriture,corrigee
+292,crm_clients.json,CLI-0055,ville,drummondville,casse_ou_espaces,corrigee
+293,crm_clients.json,CLI-0055,courriel,n/a,courriel_invalide,corrigee
+294,crm_clients.json,CLI-0087,province,qc,variante_ecriture,corrigee
+295,crm_clients.json,CLI-0087,ville,LAVAL,casse_ou_espaces,corrigee
+296,crm_clients.json,CLI-0179,ville,saint-jean-sur-richelieu,casse_ou_espaces,corrigee
+297,crm_clients.json,CLI-0179,code_postal,  ,valeur_manquante,corrigee
+298,crm_clients.json,CLI-0198,province,Québec,variante_ecriture,corrigee
+299,crm_clients.json,CLI-0198,ville,MONTRÉAL,casse_ou_espaces,corrigee
+300,crm_clients.json,CLI-0089,province,qc,variante_ecriture,corrigee
+301,crm_clients.json,CLI-0089,ville,SAINT-JEAN-SUR-RICHELIEU,casse_ou_espaces,corrigee
+302,crm_clients.json,CLI-0143,ville,DRUMMONDVILLE,casse_ou_espaces,corrigee
+303,crm_clients.json,CLI-0141,province,qc,variante_ecriture,corrigee
+304,crm_clients.json,CLI-0141,ville,rouyn-noranda,casse_ou_espaces,corrigee
+305,crm_clients.json,CLI-0154,province,Quebec,variante_ecriture,corrigee
+306,crm_clients.json,CLI-0154,ville,val-d'or,casse_ou_espaces,corrigee
+307,crm_clients.json,CLI-0166,province,qc,variante_ecriture,corrigee
+308,crm_clients.json,CLI-0166,ville,DRUMMONDVILLE,casse_ou_espaces,corrigee
+309,crm_clients.json,CLI-0166,code_postal,,valeur_manquante,corrigee
+310,crm_clients.json,CLI-0175,province,Québec,variante_ecriture,corrigee
+311,crm_clients.json,CLI-0175,ville,Laval ,casse_ou_espaces,corrigee
+312,crm_clients.json,CLI-0140,province,Quebec,variante_ecriture,corrigee
+313,crm_clients.json,CLI-0018,province,Québec,variante_ecriture,corrigee
+314,crm_clients.json,CLI-0018,ville,Rimouski ,casse_ou_espaces,corrigee
+315,crm_clients.json,CLI-0158,province,Québec,variante_ecriture,corrigee
+316,crm_clients.json,CLI-0030,province,qc,variante_ecriture,corrigee
+317,crm_clients.json,CLI-0030,ville,Lévis ,casse_ou_espaces,corrigee
+318,crm_clients.json,CLI-0098,province,Quebec,variante_ecriture,corrigee
+319,crm_clients.json,CLI-0098,ville,Drummondville ,casse_ou_espaces,corrigee
+320,crm_clients.json,CLI-0052,ville,NORTH BAY,casse_ou_espaces,corrigee
+321,crm_clients.json,CLI-0156,ville,bathurst,casse_ou_espaces,corrigee
+322,crm_clients.json,CLI-0144,ville,QUÉBEC,casse_ou_espaces,corrigee
+323,crm_clients.json,CLI-0012,province,Quebec,variante_ecriture,corrigee
+324,crm_clients.json,CLI-0012,ville,Sept-Îles ,casse_ou_espaces,corrigee
+325,crm_clients.json,CLI-0155,province,Quebec,variante_ecriture,corrigee
+326,crm_clients.json,CLI-0155,ville,SEPT-ÎLES,casse_ou_espaces,corrigee
+327,crm_clients.json,CLI-0095,province,qc,variante_ecriture,corrigee
+328,crm_clients.json,CLI-0095,ville,rouyn-noranda,casse_ou_espaces,corrigee
+329,crm_clients.json,CLI-0017,ville,Drummondville ,casse_ou_espaces,corrigee
+330,crm_clients.json,CLI-0201,province,Ontario,variante_ecriture,corrigee
+331,crm_clients.json,CLI-0201,ville,KINGSTON,casse_ou_espaces,corrigee
+332,crm_clients.json,CLI-0163,province,Québec,variante_ecriture,corrigee
+333,crm_clients.json,CLI-0163,ville,SHERBROOKE,casse_ou_espaces,corrigee
+334,crm_clients.json,CLI-0038,province,Québec,variante_ecriture,corrigee
+335,crm_clients.json,CLI-0038,ville,montréal,casse_ou_espaces,corrigee
+336,crm_clients.json,CLI-0125,province,Québec,variante_ecriture,corrigee
+337,crm_clients.json,CLI-0125,ville,gatineau,casse_ou_espaces,corrigee
+338,crm_clients.json,CLI-0127,province,Québec,variante_ecriture,corrigee
+339,crm_clients.json,CLI-0127,ville,Sept-Îles ,casse_ou_espaces,corrigee
+340,crm_clients.json,CLI-0127,courriel,a completer,courriel_invalide,corrigee
+341,crm_clients.json,CLI-0202,province,Québec,variante_ecriture,corrigee
+342,crm_clients.json,CLI-0202,ville,Victoriaville ,casse_ou_espaces,corrigee
+343,crm_clients.json,CLI-0202,courriel,None,valeur_manquante,corrigee
+344,crm_clients.json,CLI-0035,province,Québec,variante_ecriture,corrigee
+345,crm_clients.json,CLI-0181,ville,Sudbury ,casse_ou_espaces,corrigee
+346,crm_clients.json,CLI-0212,province,qc,variante_ecriture,corrigee
+347,crm_clients.json,CLI-0212,ville,Rouyn-Noranda ,casse_ou_espaces,corrigee
+348,crm_clients.json,CLI-0114,province,Québec,variante_ecriture,corrigee
+349,crm_clients.json,CLI-0114,ville,lévis,casse_ou_espaces,corrigee
+350,crm_clients.json,CLI-0063,province,Quebec,variante_ecriture,corrigee
+351,crm_clients.json,CLI-0063,ville,Granby ,casse_ou_espaces,corrigee
+352,crm_clients.json,CLI-0102,ville,montréal,casse_ou_espaces,corrigee
+353,crm_clients.json,CLI-912,raison_sociale,NATURE DU NORD,doublon_metier,fusionnee vers CLI-0102
+354,crm_clients.json,CLI-0205,province,Quebec,variante_ecriture,corrigee
+355,crm_clients.json,CLI-0205,ville,val-d'or,casse_ou_espaces,corrigee
+356,crm_clients.json,CLI-0097,province,qc,variante_ecriture,corrigee
+357,crm_clients.json,CLI-0097,ville,baie-comeau,casse_ou_espaces,corrigee
+358,crm_clients.json,CLI-0137,province,Île-du-Prince-Édouard,variante_ecriture,corrigee
+359,crm_clients.json,CLI-0137,ville,Charlottetown ,casse_ou_espaces,corrigee
+360,crm_clients.json,CLI-0148,province,Quebec,variante_ecriture,corrigee
+361,crm_clients.json,CLI-0148,ville,Gatineau ,casse_ou_espaces,corrigee
+362,crm_clients.json,CLI-0103,province,Nouveau-Brunswick,variante_ecriture,corrigee
+363,crm_clients.json,CLI-0103,ville,MONCTON,casse_ou_espaces,corrigee
+364,crm_clients.json,CLI-0197,province,Quebec,variante_ecriture,corrigee
+365,crm_clients.json,CLI-0197,ville,Saguenay ,casse_ou_espaces,corrigee
+366,crm_clients.json,CLI-0004,province,Quebec,variante_ecriture,corrigee
+367,crm_clients.json,CLI-0004,ville,Trois-Rivières ,casse_ou_espaces,corrigee
+368,crm_clients.json,CLI-0029,province,Québec,variante_ecriture,corrigee
+369,crm_clients.json,CLI-0093,province,Quebec,variante_ecriture,corrigee
+370,crm_clients.json,CLI-0093,ville,trois-rivières,casse_ou_espaces,corrigee
+371,crm_clients.json,CLI-0208,province,qc,variante_ecriture,corrigee
+372,crm_clients.json,CLI-0208,code_postal,  ,valeur_manquante,corrigee
+373,crm_clients.json,CLI-0214,province,Nouvelle-Écosse,variante_ecriture,corrigee
+374,crm_clients.json,CLI-0074,province,qc,variante_ecriture,corrigee
+375,crm_clients.json,CLI-0074,ville,SAGUENAY,casse_ou_espaces,corrigee
+376,crm_clients.json,CLI-0034,province,on,variante_ecriture,corrigee
+377,crm_clients.json,CLI-0107,province,Quebec,variante_ecriture,corrigee
+378,crm_clients.json,CLI-0107,ville,Granby ,casse_ou_espaces,corrigee
+379,crm_clients.json,CLI-0121,ville,SAGUENAY,casse_ou_espaces,corrigee
+380,crm_clients.json,CLI-0059,province,Québec,variante_ecriture,corrigee
+381,crm_clients.json,CLI-0059,ville,ROUYN-NORANDA,casse_ou_espaces,corrigee
+382,crm_clients.json,CLI-0079,ville,drummondville,casse_ou_espaces,corrigee
+383,crm_clients.json,CLI-0061,province,Québec,variante_ecriture,corrigee
+384,rh_employes.xlsx,EMP-512,Salaire annuel,47 000 $,nombre_en_texte,corrigee
+385,rh_employes.xlsx,EMP-543,Salaire annuel,49 000 $,nombre_en_texte,corrigee
+386,rh_employes.xlsx,EMP-544,Salaire annuel,46 000 $,nombre_en_texte,corrigee
+387,rh_employes.xlsx,EMP-545,Salaire annuel,56 000 $,nombre_en_texte,corrigee
+388,rh_employes.xlsx,EMP-507,Salaire annuel,54 000 $,nombre_en_texte,corrigee
+389,rh_employes.xlsx,EMP-522,Salaire annuel,43 000 $,nombre_en_texte,corrigee
+390,rh_employes.xlsx,EMP-511,Salaire annuel,47 000 $,nombre_en_texte,corrigee
+391,rh_employes.xlsx,EMP-546,Salaire annuel,53 000 $,nombre_en_texte,corrigee
+392,rh_employes.xlsx,EMP-515,Salaire annuel,44 000 $,nombre_en_texte,corrigee
+393,rh_employes.xlsx,EMP-502,Salaire annuel,62 000 $,nombre_en_texte,corrigee
+394,rh_employes.xlsx,EMP-528,Salaire annuel,64 000 $,nombre_en_texte,corrigee
+395,rh_employes.xlsx,EMP-509,Salaire annuel,65 000 $,nombre_en_texte,corrigee
+396,rh_employes.xlsx,EMP-540,Salaire annuel,125 000 $,nombre_en_texte,corrigee
+397,rh_employes.xlsx,EMP-541,Salaire annuel,99 000 $,nombre_en_texte,corrigee
+398,rh_employes.xlsx,EMP-534,Salaire annuel,58 000 $,nombre_en_texte,corrigee
+399,rh_employes.xlsx,EMP-504,Salaire annuel,54 000 $,nombre_en_texte,corrigee
+400,rh_employes.xlsx,EMP-542,Salaire annuel,50 000 $,nombre_en_texte,corrigee
+401,rh_employes.xlsx,EMP-521,Salaire annuel,42 000 $,nombre_en_texte,corrigee
+402,rh_employes.xlsx,EMP-538,matricule,EMP-538,doublon_exact,rejetee
+403,rh_employes.xlsx,EMP-506,Salaire annuel,58 000 $,nombre_en_texte,corrigee
+404,rh_employes.xlsx,EMP-529,Salaire annuel,58 000 $,nombre_en_texte,corrigee
+405,rh_employes.xlsx,EMP-536,Salaire annuel,52 000 $,nombre_en_texte,corrigee
+406,rh_employes.xlsx,EMP-530,Salaire annuel,51 000 $,nombre_en_texte,corrigee
+407,rh_employes.xlsx,EMP-517,Salaire annuel,45 000 $,nombre_en_texte,corrigee
+408,rh_employes.xlsx,EMP-520,Salaire annuel,45 000 $,nombre_en_texte,corrigee
+409,rh_employes.xlsx,EMP-531,Salaire annuel,59 000 $,nombre_en_texte,corrigee
+410,rh_employes.xlsx,EMP-516,Salaire annuel,49 000 $,nombre_en_texte,corrigee
+411,rh_employes.xlsx,EMP-510,Salaire annuel,91 000 $,nombre_en_texte,corrigee
+412,rh_employes.xlsx,EMP-505,matricule,EMP-505,doublon_exact,rejetee
+413,rh_employes.xlsx,EMP-526,Salaire annuel,60 000 $,nombre_en_texte,corrigee
+414,rh_employes.xlsx,EMP-539,Salaire annuel,64 000 $,nombre_en_texte,corrigee
+415,rh_employes.xlsx,EMP-514,Salaire annuel,42 000 $,nombre_en_texte,corrigee
+416,rh_employes.xlsx,EMP-537,Salaire annuel,50 000 $,nombre_en_texte,corrigee
+417,rh_employes.xlsx,TOTAL,-,ligne de totaux,ligne_technique,rejetee
+418,erp_ventes_2024.csv,CMD-101528,CODE CLIENT,cli-0047,casse_ou_espaces,corrigee
+419,erp_ventes_2024.csv,CMD-101278,DATE COMMANDE,n/d,date_illisible,rejetee
+420,erp_ventes_2024.csv,CMD-101587,CODE CLIENT,CLI-0037 ,casse_ou_espaces,corrigee
+421,erp_ventes_2024.csv,CMD-100329,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+422,erp_ventes_2024.csv,CMD-100674,CODE CLIENT,cli-0083,casse_ou_espaces,corrigee
+423,erp_ventes_2024.csv,CMD-102031,QTE,-2,quantite_invalide,rejetee
+424,erp_ventes_2024.csv,CMD-101304,CODE CLIENT,cli-0012,casse_ou_espaces,corrigee
+425,erp_ventes_2024.csv,CMD-100081,CODE CLIENT,cli-0207,casse_ou_espaces,corrigee
+426,erp_ventes_2024.csv,CMD-100694,CODE CLIENT,cli-0062,casse_ou_espaces,corrigee
+427,erp_ventes_2024.csv,CMD-101024,CODE CLIENT,cli-0055,casse_ou_espaces,corrigee
+428,erp_ventes_2024.csv,CMD-100063,CODE CLIENT,CLI-0011 ,casse_ou_espaces,corrigee
+429,erp_ventes_2024.csv,CMD-102206,CODE CLIENT,cli-0088,casse_ou_espaces,corrigee
+430,erp_ventes_2024.csv,CMD-100823,QTE,0,quantite_invalide,rejetee
+431,erp_ventes_2024.csv,CMD-101165,CANAL DE VENTE,,valeur_manquante,corrigee
+432,erp_ventes_2024.csv,CMD-100671,CODE ARTICLE,BD-9165,article_inconnu,rejetee
+433,erp_ventes_2024.csv,CMD-100652,CANAL DE VENTE,,valeur_manquante,corrigee
+434,erp_ventes_2024.csv,CMD-101450,CODE CLIENT,cli-0209,casse_ou_espaces,corrigee
+435,erp_ventes_2024.csv,CMD-100392,CODE CLIENT,  CLI-0004,casse_ou_espaces,corrigee
+436,erp_ventes_2024.csv,CMD-100642,CODE CLIENT,cli-0089,casse_ou_espaces,corrigee
+437,erp_ventes_2024.csv,CMD-101088,CANAL DE VENTE,,valeur_manquante,corrigee
+438,erp_ventes_2024.csv,CMD-101708,CODE ARTICLE,BD-9283,article_inconnu,rejetee
+439,erp_ventes_2024.csv,CMD-100977,CODE CLIENT,  CLI-0009,casse_ou_espaces,corrigee
+440,erp_ventes_2024.csv,CMD-101418,CANAL DE VENTE,,valeur_manquante,corrigee
+441,erp_ventes_2024.csv,CMD-101493,CODE CLIENT,  CLI-0137,casse_ou_espaces,corrigee
+442,erp_ventes_2024.csv,CMD-101396,CODE CLIENT,CLI-0087 ,casse_ou_espaces,corrigee
+443,erp_ventes_2024.csv,CMD-101921,CANAL DE VENTE,,valeur_manquante,corrigee
+444,erp_ventes_2024.csv,CMD-102011,DATE COMMANDE,,date_illisible,rejetee
+445,erp_ventes_2024.csv,CMD-100171,DATE COMMANDE,,date_illisible,rejetee
+446,erp_ventes_2024.csv,CMD-101337,CODE ARTICLE,BD-9877,article_inconnu,rejetee
+447,erp_ventes_2024.csv,CMD-101621,CODE CLIENT,CLI-0014 ,casse_ou_espaces,corrigee
+448,erp_ventes_2024.csv,CMD-101210,CODE CLIENT,cli-0004,casse_ou_espaces,corrigee
+449,erp_ventes_2024.csv,CMD-102018,DATE COMMANDE,n/d,date_illisible,rejetee
+450,erp_ventes_2024.csv,CMD-102222,PRIX UNITAIRE,"188820,00",prix_aberrant,rejetee
+451,erp_ventes_2024.csv,CMD-101961,CODE CLIENT,  CLI-0118,casse_ou_espaces,corrigee
+452,erp_ventes_2024.csv,CMD-101240,CODE CLIENT,  CLI-0150,casse_ou_espaces,corrigee
+453,erp_ventes_2024.csv,CMD-101546,CODE CLIENT,cli-0188,casse_ou_espaces,corrigee
+454,erp_ventes_2024.csv,CMD-100071,CODE ARTICLE,BD-9825,article_inconnu,rejetee
+455,erp_ventes_2024.csv,CMD-100169,CODE CLIENT,CLI-0191 ,casse_ou_espaces,corrigee
+456,erp_ventes_2024.csv,CMD-101793,CODE CLIENT,  CLI-0087,casse_ou_espaces,corrigee
+457,erp_ventes_2024.csv,CMD-102206,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+458,erp_ventes_2024.csv,CMD-100513,CANAL DE VENTE, ,valeur_manquante,corrigee
+459,erp_ventes_2024.csv,CMD-100666,CODE CLIENT,  CLI-0203,casse_ou_espaces,corrigee
+460,erp_ventes_2024.csv,CMD-101964,CODE CLIENT,cli-0212,casse_ou_espaces,corrigee
+461,erp_ventes_2024.csv,CMD-101813,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+462,erp_ventes_2024.csv,CMD-100302,CODE CLIENT,  CLI-0220,casse_ou_espaces,corrigee
+463,erp_ventes_2024.csv,CMD-100010,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+464,erp_ventes_2024.csv,CMD-100730,CODE CLIENT,CLI-0055 ,casse_ou_espaces,corrigee
+465,erp_ventes_2024.csv,CMD-101538,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+466,erp_ventes_2024.csv,CMD-101367,CANAL DE VENTE, ,valeur_manquante,corrigee
+467,erp_ventes_2024.csv,CMD-101542,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+468,erp_ventes_2024.csv,CMD-100197,QTE,-1,quantite_invalide,rejetee
+469,erp_ventes_2024.csv,CMD-101182,CANAL DE VENTE,,valeur_manquante,corrigee
+470,erp_ventes_2024.csv,CMD-100369,CANAL DE VENTE, ,valeur_manquante,corrigee
+471,erp_ventes_2024.csv,CMD-101680,CODE CLIENT,cli-0050,casse_ou_espaces,corrigee
+472,erp_ventes_2024.csv,CMD-100763,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+473,erp_ventes_2024.csv,CMD-101491,CODE ARTICLE,BD-9698,article_inconnu,rejetee
+474,erp_ventes_2024.csv,CMD-100739,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+475,erp_ventes_2024.csv,CMD-100402,CANAL DE VENTE, ,valeur_manquante,corrigee
+476,erp_ventes_2024.csv,CMD-101076,CODE CLIENT,CLI-0062 ,casse_ou_espaces,corrigee
+477,erp_ventes_2024.csv,CMD-102203,-,ligne identique,doublon_exact,rejetee
+478,erp_ventes_2024.csv,CMD-101064,CANAL DE VENTE, ,valeur_manquante,corrigee
+479,erp_ventes_2024.csv,CMD-101939,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+480,erp_ventes_2024.csv,CMD-101738,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+481,erp_ventes_2024.csv,CMD-102088,CODE CLIENT,CLI-0059 ,casse_ou_espaces,corrigee
+482,erp_ventes_2024.csv,CMD-101330,CODE CLIENT,cli-0218,casse_ou_espaces,corrigee
+483,erp_ventes_2024.csv,CMD-101660,CODE CLIENT,CLI-0024 ,casse_ou_espaces,corrigee
+484,erp_ventes_2024.csv,CMD-100609,CODE ARTICLE,BD-9892,article_inconnu,rejetee
+485,erp_ventes_2024.csv,CMD-100793,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+486,erp_ventes_2024.csv,CMD-101778,DATE COMMANDE,,date_illisible,rejetee
+487,erp_ventes_2024.csv,CMD-100098,CANAL DE VENTE, ,valeur_manquante,corrigee
+488,erp_ventes_2024.csv,CMD-102137,CANAL DE VENTE,,valeur_manquante,corrigee
+489,erp_ventes_2024.csv,CMD-100041,CANAL DE VENTE,,valeur_manquante,corrigee
+490,erp_ventes_2024.csv,CMD-100099,CODE CLIENT,cli-0206,casse_ou_espaces,corrigee
+491,erp_ventes_2024.csv,CMD-101299,CODE CLIENT,cli-0154,casse_ou_espaces,corrigee
+492,erp_ventes_2024.csv,CMD-100803,DATE COMMANDE,,date_illisible,rejetee
+493,erp_ventes_2024.csv,CMD-100518,CODE CLIENT,cli-0008,casse_ou_espaces,corrigee
+494,erp_ventes_2024.csv,CMD-102001,CODE CLIENT,cli-0021,casse_ou_espaces,corrigee
+495,erp_ventes_2024.csv,CMD-100552,CODE CLIENT,cli-0148,casse_ou_espaces,corrigee
+496,erp_ventes_2024.csv,CMD-100313,DATE COMMANDE,n/d,date_illisible,rejetee
+497,erp_ventes_2024.csv,CMD-100758,DATE COMMANDE,,date_illisible,rejetee
+498,erp_ventes_2024.csv,CMD-101871,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+499,erp_ventes_2024.csv,CMD-101291,QTE,-6,quantite_invalide,rejetee
+500,erp_ventes_2024.csv,CMD-100363,CODE CLIENT,  CLI-0168,casse_ou_espaces,corrigee
+501,erp_ventes_2024.csv,CMD-100160,QTE,0,quantite_invalide,rejetee
+502,erp_ventes_2024.csv,CMD-100674,CANAL DE VENTE,,valeur_manquante,corrigee
+503,erp_ventes_2024.csv,CMD-100484,CODE CLIENT,  CLI-0082,casse_ou_espaces,corrigee
+504,erp_ventes_2024.csv,CMD-101941,CODE CLIENT,  CLI-0121,casse_ou_espaces,corrigee
+505,erp_ventes_2024.csv,CMD-100933,CODE ARTICLE,BD-9317,article_inconnu,rejetee
+506,erp_ventes_2024.csv,CMD-100255,QTE,-6,quantite_invalide,rejetee
+507,erp_ventes_2024.csv,CMD-102019,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+508,erp_ventes_2024.csv,CMD-101224,CANAL DE VENTE, ,valeur_manquante,corrigee
+509,erp_ventes_2024.csv,CMD-102188,CODE CLIENT,  CLI-0195,casse_ou_espaces,corrigee
+510,erp_ventes_2024.csv,CMD-100131,CODE CLIENT,  CLI-0166,casse_ou_espaces,corrigee
+511,erp_ventes_2024.csv,CMD-101703,CODE CLIENT,CLI-0038 ,casse_ou_espaces,corrigee
+512,erp_ventes_2024.csv,CMD-102190,-,ligne identique,doublon_exact,rejetee
+513,erp_ventes_2024.csv,CMD-101883,CODE CLIENT,  CLI-0166,casse_ou_espaces,corrigee
+514,erp_ventes_2024.csv,CMD-100566,PRIX UNITAIRE,"291570,00",prix_aberrant,rejetee
+515,erp_ventes_2024.csv,CMD-101992,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+516,erp_ventes_2024.csv,CMD-101076,CODE ARTICLE,BD-9071,article_inconnu,rejetee
+517,erp_ventes_2024.csv,CMD-100778,CANAL DE VENTE,,valeur_manquante,corrigee
+518,erp_ventes_2024.csv,CMD-100777,CODE CLIENT,CLI-0176 ,casse_ou_espaces,corrigee
+519,erp_ventes_2024.csv,CMD-100328,CODE CLIENT,  CLI-0044,casse_ou_espaces,corrigee
+520,erp_ventes_2024.csv,CMD-101107,QTE,-2,quantite_invalide,rejetee
+521,erp_ventes_2024.csv,CMD-100591,CODE CLIENT,  CLI-0059,casse_ou_espaces,corrigee
+522,erp_ventes_2024.csv,CMD-101912,CODE CLIENT,CLI-0132 ,casse_ou_espaces,corrigee
+523,erp_ventes_2024.csv,CMD-100870,CODE CLIENT,CLI-0209 ,casse_ou_espaces,corrigee
+524,erp_ventes_2024.csv,CMD-100912,-,ligne identique,doublon_exact,rejetee
+525,erp_ventes_2024.csv,CMD-101272,PRIX UNITAIRE,"384730,00",prix_aberrant,rejetee
+526,erp_ventes_2024.csv,CMD-101160,CODE CLIENT,cli-0130,casse_ou_espaces,corrigee
+527,erp_ventes_2024.csv,CMD-100187,CODE CLIENT,cli-0134,casse_ou_espaces,corrigee
+528,erp_ventes_2024.csv,CMD-101622,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+529,erp_ventes_2024.csv,CMD-101304,-,ligne identique,doublon_exact,rejetee
+530,erp_ventes_2024.csv,CMD-101666,CODE ARTICLE,BD-9084,article_inconnu,rejetee
+531,erp_ventes_2024.csv,CMD-101487,CODE CLIENT,cli-0009,casse_ou_espaces,corrigee
+532,erp_ventes_2024.csv,CMD-101618,CODE CLIENT,CLI-0209 ,casse_ou_espaces,corrigee
+533,erp_ventes_2024.csv,CMD-102183,CODE ARTICLE,BD-9810,article_inconnu,rejetee
+534,erp_ventes_2024.csv,CMD-102142,CANAL DE VENTE, ,valeur_manquante,corrigee
+535,erp_ventes_2024.csv,CMD-101292,CANAL DE VENTE, ,valeur_manquante,corrigee
+536,erp_ventes_2024.csv,CMD-101116,CODE CLIENT,CLI-0173 ,casse_ou_espaces,corrigee
+537,erp_ventes_2024.csv,CMD-100098,-,ligne identique,doublon_exact,rejetee
+538,erp_ventes_2024.csv,CMD-100798,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+539,erp_ventes_2024.csv,CMD-101309,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+540,erp_ventes_2024.csv,CMD-100880,CANAL DE VENTE,,valeur_manquante,corrigee
+541,erp_ventes_2024.csv,CMD-101731,CODE CLIENT,cli-0215,casse_ou_espaces,corrigee
+542,erp_ventes_2024.csv,CMD-100426,DATE COMMANDE,,date_illisible,rejetee
+543,erp_ventes_2024.csv,CMD-100275,QTE,-2,quantite_invalide,rejetee
+544,erp_ventes_2024.csv,CMD-102080,-,ligne identique,doublon_exact,rejetee
+545,erp_ventes_2024.csv,CMD-100543,CODE CLIENT,  CLI-0188,casse_ou_espaces,corrigee
+546,erp_ventes_2024.csv,CMD-100150,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+547,erp_ventes_2024.csv,CMD-102272,CODE ARTICLE,BD-9215,article_inconnu,rejetee
+548,erp_ventes_2024.csv,CMD-102032,CODE ARTICLE,BD-9929,article_inconnu,rejetee
+549,erp_ventes_2024.csv,CMD-100457,CODE CLIENT,cli-0096,casse_ou_espaces,corrigee
+550,erp_ventes_2024.csv,CMD-101194,CANAL DE VENTE, ,valeur_manquante,corrigee
+551,erp_ventes_2024.csv,CMD-100033,QTE,0,quantite_invalide,rejetee
+552,erp_ventes_2024.csv,CMD-102296,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+553,erp_ventes_2024.csv,CMD-101018,QTE,-1,quantite_invalide,rejetee
+554,erp_ventes_2024.csv,CMD-102257,-,ligne identique,doublon_exact,rejetee
+555,erp_ventes_2024.csv,CMD-101611,-,ligne identique,doublon_exact,rejetee
+556,erp_ventes_2024.csv,CMD-102003,-,ligne identique,doublon_exact,rejetee
+557,erp_ventes_2024.csv,CMD-101793,-,ligne identique,doublon_exact,rejetee
+558,erp_ventes_2024.csv,CMD-101854,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+559,erp_ventes_2024.csv,CMD-100644,-,ligne identique,doublon_exact,rejetee
+560,erp_ventes_2024.csv,CMD-100233,-,ligne identique,doublon_exact,rejetee
+561,erp_ventes_2024.csv,CMD-101529,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+562,erp_ventes_2024.csv,CMD-100128,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+563,erp_ventes_2024.csv,CMD-101850,CODE CLIENT,cli-0070,casse_ou_espaces,corrigee
+564,erp_ventes_2024.csv,CMD-101665,CODE ARTICLE,BD-9401,article_inconnu,rejetee
+565,erp_ventes_2024.csv,CMD-100550,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+566,erp_ventes_2024.csv,CMD-100510,CODE ARTICLE,BD-9640,article_inconnu,rejetee
+567,erp_ventes_2024.csv,CMD-101651,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+568,erp_ventes_2024.csv,CMD-100433,CODE CLIENT,  CLI-0111,casse_ou_espaces,corrigee
+569,erp_ventes_2024.csv,CMD-100228,CODE CLIENT,cli-0153,casse_ou_espaces,corrigee
+570,erp_ventes_2024.csv,CMD-101474,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+571,erp_ventes_2024.csv,CMD-100776,QTE,0,quantite_invalide,rejetee
+572,erp_ventes_2024.csv,CMD-101626,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+573,erp_ventes_2024.csv,CMD-101391,QTE,-6,quantite_invalide,rejetee
+574,erp_ventes_2024.csv,CMD-100484,CODE CLIENT,cli-0082,casse_ou_espaces,corrigee
+575,erp_ventes_2024.csv,CMD-101237,CANAL DE VENTE,,valeur_manquante,corrigee
+576,erp_ventes_2024.csv,CMD-101848,-,ligne identique,doublon_exact,rejetee
+577,erp_ventes_2024.csv,CMD-102287,CODE CLIENT,CLI-0173 ,casse_ou_espaces,corrigee
+578,erp_ventes_2024.csv,CMD-101748,-,ligne identique,doublon_exact,rejetee
+579,erp_ventes_2024.csv,CMD-101284,CODE CLIENT,  CLI-0120,casse_ou_espaces,corrigee
+580,erp_ventes_2024.csv,CMD-100956,-,ligne identique,doublon_exact,rejetee
+581,erp_ventes_2024.csv,CMD-102136,-,ligne identique,doublon_exact,rejetee
+582,erp_ventes_2024.csv,CMD-100951,CANAL DE VENTE,,valeur_manquante,corrigee
+583,erp_ventes_2024.csv,CMD-101384,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+584,erp_ventes_2024.csv,CMD-100177,-,ligne identique,doublon_exact,rejetee
+585,erp_ventes_2024.csv,CMD-100788,-,ligne identique,doublon_exact,rejetee
+586,erp_ventes_2024.csv,CMD-102213,CANAL DE VENTE,,valeur_manquante,corrigee
+587,erp_ventes_2024.csv,CMD-102094,QTE,-6,quantite_invalide,rejetee
+588,erp_ventes_2024.csv,CMD-101993,CODE ARTICLE,BD-9886,article_inconnu,rejetee
+589,erp_ventes_2024.csv,CMD-100253,-,ligne identique,doublon_exact,rejetee
+590,erp_ventes_2024.csv,CMD-101748,-,ligne identique,doublon_exact,rejetee
+591,erp_ventes_2024.csv,CMD-101780,QTE,-1,quantite_invalide,rejetee
+592,erp_ventes_2024.csv,CMD-101012,PRIX UNITAIRE,"220130,00",prix_aberrant,rejetee
+593,erp_ventes_2024.csv,CMD-100369,CANAL DE VENTE, ,valeur_manquante,corrigee
+594,erp_ventes_2024.csv,CMD-100978,-,ligne identique,doublon_exact,rejetee
+595,erp_ventes_2024.csv,CMD-101992,CODE ARTICLE,BD-9051,article_inconnu,rejetee
+596,erp_ventes_2024.csv,CMD-101071,CODE CLIENT,CLI-0127 ,casse_ou_espaces,corrigee
+597,erp_ventes_2024.csv,CMD-100521,CODE CLIENT,cli-0061,casse_ou_espaces,corrigee
+598,erp_ventes_2024.csv,CMD-102251,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+599,erp_ventes_2024.csv,CMD-101020,CODE CLIENT,  CLI-0082,casse_ou_espaces,corrigee
+600,erp_ventes_2024.csv,CMD-100241,CODE CLIENT,CLI-0007 ,casse_ou_espaces,corrigee
+601,erp_ventes_2024.csv,CMD-101082,CODE CLIENT,CLI-0137 ,casse_ou_espaces,corrigee
+602,erp_ventes_2024.csv,CMD-101163,CANAL DE VENTE,,valeur_manquante,corrigee
+603,erp_ventes_2024.csv,CMD-100823,CANAL DE VENTE, ,valeur_manquante,corrigee
+604,erp_ventes_2024.csv,CMD-100420,CODE CLIENT,cli-0034,casse_ou_espaces,corrigee
+605,erp_ventes_2024.csv,CMD-100361,-,ligne identique,doublon_exact,rejetee
+606,erp_ventes_2024.csv,CMD-100061,CANAL DE VENTE,,valeur_manquante,corrigee
+607,erp_ventes_2024.csv,CMD-100085,CODE ARTICLE,BD-9914,article_inconnu,rejetee
+608,erp_ventes_2024.csv,CMD-101057,-,ligne identique,doublon_exact,rejetee
+609,erp_ventes_2024.csv,CMD-100239,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+610,erp_ventes_2024.csv,CMD-100297,CODE ARTICLE,BD-9065,article_inconnu,rejetee
+611,erp_ventes_2024.csv,CMD-100277,-,ligne identique,doublon_exact,rejetee
+612,erp_ventes_2024.csv,CMD-101846,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+613,erp_ventes_2024.csv,CMD-101727,PRIX UNITAIRE,"287710,00",prix_aberrant,rejetee
+614,erp_ventes_2024.csv,CMD-101988,CODE CLIENT,CLI-0110 ,casse_ou_espaces,corrigee
+615,erp_ventes_2024.csv,CMD-100246,CANAL DE VENTE, ,valeur_manquante,corrigee
+616,erp_ventes_2024.csv,CMD-101733,-,ligne identique,doublon_exact,rejetee
+617,erp_ventes_2024.csv,CMD-101507,CODE ARTICLE,BD-9270,article_inconnu,rejetee
+618,erp_ventes_2024.csv,CMD-102249,QTE,-6,quantite_invalide,rejetee
+619,erp_ventes_2024.csv,CMD-101959,-,ligne identique,doublon_exact,rejetee
+620,erp_ventes_2024.csv,CMD-100100,CODE CLIENT,cli-0073,casse_ou_espaces,corrigee
+621,erp_ventes_2024.csv,CMD-102154,CANAL DE VENTE, ,valeur_manquante,corrigee
+622,erp_ventes_2024.csv,CMD-101901,CANAL DE VENTE, ,valeur_manquante,corrigee
+623,erp_ventes_2024.csv,CMD-102040,-,ligne identique,doublon_exact,rejetee
+624,erp_ventes_2024.csv,CMD-101219,-,ligne identique,doublon_exact,rejetee
+625,erp_ventes_2024.csv,CMD-102118,-,ligne identique,doublon_exact,rejetee
+626,erp_ventes_2024.csv,CMD-100548,CODE CLIENT,  CLI-0007,casse_ou_espaces,corrigee
+627,erp_ventes_2024.csv,CMD-102139,-,ligne identique,doublon_exact,rejetee
+628,erp_ventes_2024.csv,CMD-100252,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+629,erp_ventes_2024.csv,CMD-100135,CODE CLIENT,cli-0025,casse_ou_espaces,corrigee
+630,erp_ventes_2024.csv,CMD-101345,DATE COMMANDE,,date_illisible,rejetee
+631,erp_ventes_2024.csv,CMD-101934,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+632,erp_ventes_2024.csv,CMD-101667,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+633,erp_ventes_2024.csv,CMD-101183,QTE,0,quantite_invalide,rejetee
+634,erp_ventes_2024.csv,CMD-101055,-,ligne identique,doublon_exact,rejetee
+635,erp_ventes_2024.csv,CMD-101256,CODE CLIENT,cli-0192,casse_ou_espaces,corrigee
+636,erp_ventes_2024.csv,CMD-101653,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+637,erp_ventes_2024.csv,CMD-101335,DATE COMMANDE,,date_illisible,rejetee
+638,erp_ventes_2024.csv,CMD-101978,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+639,erp_ventes_2024.csv,CMD-100155,CODE CLIENT,  CLI-0110,casse_ou_espaces,corrigee
+640,erp_ventes_2024.csv,CMD-100760,CODE CLIENT,  CLI-0211,casse_ou_espaces,corrigee
+641,erp_ventes_2024.csv,CMD-101233,CODE CLIENT,cli-0120,casse_ou_espaces,corrigee
+642,erp_ventes_2024.csv,CMD-100376,CODE CLIENT,  CLI-0217,casse_ou_espaces,corrigee
+643,erp_ventes_2024.csv,CMD-100969,-,ligne identique,doublon_exact,rejetee
+644,erp_ventes_2024.csv,CMD-101901,QTE,0,quantite_invalide,rejetee
+645,erp_ventes_2024.csv,CMD-102150,-,ligne identique,doublon_exact,rejetee
+646,erp_ventes_2024.csv,CMD-101303,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+647,erp_ventes_2024.csv,CMD-101055,-,ligne identique,doublon_exact,rejetee
+648,erp_ventes_2024.csv,CMD-101847,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+649,erp_ventes_2024.csv,CMD-101094,CODE CLIENT,CLI-0111 ,casse_ou_espaces,corrigee
+650,erp_ventes_2024.csv,CMD-101311,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+651,erp_ventes_2024.csv,CMD-102110,-,ligne identique,doublon_exact,rejetee
+652,erp_ventes_2024.csv,CMD-100827,-,ligne identique,doublon_exact,rejetee
+653,erp_ventes_2024.csv,CMD-100623,CODE CLIENT,cli-0195,casse_ou_espaces,corrigee
+654,erp_ventes_2024.csv,CMD-101061,-,ligne identique,doublon_exact,rejetee
+655,erp_ventes_2024.csv,CMD-100616,-,ligne identique,doublon_exact,rejetee
+656,erp_ventes_2024.csv,CMD-100403,CANAL DE VENTE,,valeur_manquante,corrigee
+657,erp_ventes_2024.csv,CMD-101339,-,ligne identique,doublon_exact,rejetee
+658,erp_ventes_2024.csv,CMD-100947,PRIX UNITAIRE,"375710,00",prix_aberrant,rejetee
+659,erp_ventes_2024.csv,CMD-101366,CODE CLIENT,  CLI-0139,casse_ou_espaces,corrigee
+660,erp_ventes_2024.csv,CMD-101683,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+661,erp_ventes_2024.csv,CMD-100629,-,ligne identique,doublon_exact,rejetee
+662,erp_ventes_2024.csv,CMD-101516,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+663,erp_ventes_2024.csv,CMD-100397,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+664,erp_ventes_2024.csv,CMD-102031,QTE,-2,quantite_invalide,rejetee
+665,erp_ventes_2024.csv,CMD-100860,-,ligne identique,doublon_exact,rejetee
+666,erp_ventes_2024.csv,CMD-101329,-,ligne identique,doublon_exact,rejetee
+667,erp_ventes_2024.csv,CMD-100478,QTE,-6,quantite_invalide,rejetee
+668,erp_ventes_2024.csv,CMD-100927,CODE CLIENT,CLI-0086 ,casse_ou_espaces,corrigee
+669,erp_ventes_2024.csv,CMD-100194,QTE,-2,quantite_invalide,rejetee
+670,erp_ventes_2024.csv,CMD-100310,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+671,erp_ventes_2024.csv,CMD-100007,-,ligne identique,doublon_exact,rejetee
+672,erp_ventes_2024.csv,CMD-101690,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+673,erp_ventes_2024.csv,CMD-101194,CANAL DE VENTE,,valeur_manquante,corrigee
+674,erp_ventes_2024.csv,CMD-101583,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+675,erp_ventes_2024.csv,CMD-101457,CODE CLIENT,  CLI-0154,casse_ou_espaces,corrigee
+676,erp_ventes_2024.csv,CMD-101573,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+677,erp_ventes_2024.csv,CMD-101732,-,ligne identique,doublon_exact,rejetee
+678,erp_ventes_2024.csv,CMD-100006,-,ligne identique,doublon_exact,rejetee
+679,erp_ventes_2024.csv,CMD-101121,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+680,erp_ventes_2024.csv,CMD-101028,CANAL DE VENTE,,valeur_manquante,corrigee
+681,erp_ventes_2024.csv,CMD-100172,DATE COMMANDE,,date_illisible,rejetee
+682,erp_ventes_2024.csv,CMD-101478,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+683,erp_ventes_2024.csv,CMD-100352,CODE CLIENT,cli-0056,casse_ou_espaces,corrigee
+684,erp_ventes_2024.csv,CMD-101435,-,ligne identique,doublon_exact,rejetee
+685,erp_ventes_2024.csv,CMD-100207,DATE COMMANDE,,date_illisible,rejetee
+686,erp_ventes_2024.csv,CMD-101255,-,ligne identique,doublon_exact,rejetee
+687,erp_ventes_2024.csv,CMD-100123,PRIX UNITAIRE,"123260,00",prix_aberrant,rejetee
+688,erp_ventes_2024.csv,CMD-101803,-,ligne identique,doublon_exact,rejetee
+689,erp_ventes_2024.csv,CMD-101226,-,ligne identique,doublon_exact,rejetee
+690,erp_ventes_2024.csv,CMD-101972,-,ligne identique,doublon_exact,rejetee
+691,erp_ventes_2024.csv,CMD-100662,-,ligne identique,doublon_exact,rejetee
+692,erp_ventes_2024.csv,CMD-101849,CODE ARTICLE,BD-9356,article_inconnu,rejetee
+693,erp_ventes_2024.csv,CMD-100655,CODE CLIENT,  CLI-0017,casse_ou_espaces,corrigee
+694,erp_ventes_2024.csv,CMD-101140,CODE CLIENT,cli-0025,casse_ou_espaces,corrigee
+695,erp_ventes_2024.csv,CMD-101848,CODE ARTICLE,BD-9933,article_inconnu,rejetee
+696,erp_ventes_2024.csv,CMD-100897,CODE CLIENT,  CLI-0066,casse_ou_espaces,corrigee
+697,erp_ventes_2024.csv,CMD-100967,QTE,-2,quantite_invalide,rejetee
+698,erp_ventes_2024.csv,CMD-101307,CODE CLIENT,CLI-0194 ,casse_ou_espaces,corrigee
+699,erp_ventes_2024.csv,CMD-101373,CANAL DE VENTE,,valeur_manquante,corrigee
+700,erp_ventes_2024.csv,CMD-102000,CANAL DE VENTE,,valeur_manquante,corrigee
+701,erp_ventes_2024.csv,CMD-102204,-,ligne identique,doublon_exact,rejetee
+702,erp_ventes_2024.csv,CMD-101829,-,ligne identique,doublon_exact,rejetee
+703,erp_ventes_2024.csv,CMD-101441,CODE CLIENT,CLI-0056 ,casse_ou_espaces,corrigee
+704,erp_ventes_2024.csv,CMD-101492,CODE CLIENT,cli-0206,casse_ou_espaces,corrigee
+705,erp_ventes_2024.csv,CMD-101260,CODE CLIENT,cli-0025,casse_ou_espaces,corrigee
+706,erp_ventes_2024.csv,CMD-100506,-,ligne identique,doublon_exact,rejetee
+707,erp_ventes_2024.csv,CMD-100788,-,ligne identique,doublon_exact,rejetee
+708,erp_ventes_2024.csv,CMD-100378,CODE ARTICLE,BD-9229,article_inconnu,rejetee
+709,erp_ventes_2024.csv,CMD-101380,-,ligne identique,doublon_exact,rejetee
+710,erp_ventes_2024.csv,CMD-100083,DATE COMMANDE,n/d,date_illisible,rejetee
+711,erp_ventes_2024.csv,CMD-102212,-,ligne identique,doublon_exact,rejetee
+712,erp_ventes_2024.csv,CMD-101302,-,ligne identique,doublon_exact,rejetee
+713,erp_ventes_2024.csv,CMD-101562,PRIX UNITAIRE,"85990,00",prix_aberrant,rejetee
+714,erp_ventes_2024.csv,CMD-100050,-,ligne identique,doublon_exact,rejetee
+715,erp_ventes_2024.csv,CMD-100792,-,ligne identique,doublon_exact,rejetee
+716,erp_ventes_2024.csv,CMD-100167,CODE CLIENT,  CLI-0042,casse_ou_espaces,corrigee
+717,erp_ventes_2024.csv,CMD-101967,CODE CLIENT,  CLI-0059,casse_ou_espaces,corrigee
+718,erp_ventes_2024.csv,CMD-100606,CODE ARTICLE,BD-9256,article_inconnu,rejetee
+719,erp_ventes_2024.csv,CMD-101688,-,ligne identique,doublon_exact,rejetee
+720,erp_ventes_2024.csv,CMD-100012,-,ligne identique,doublon_exact,rejetee
+721,erp_ventes_2024.csv,CMD-102061,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+722,erp_ventes_2024.csv,CMD-100386,PRIX UNITAIRE,"245320,00",prix_aberrant,rejetee
+723,erp_ventes_2024.csv,CMD-101048,CANAL DE VENTE,,valeur_manquante,corrigee
+724,erp_ventes_2024.csv,CMD-101193,-,ligne identique,doublon_exact,rejetee
+725,erp_ventes_2024.csv,CMD-101027,-,ligne identique,doublon_exact,rejetee
+726,erp_ventes_2024.csv,CMD-100365,PRIX UNITAIRE,"309700,00",prix_aberrant,rejetee
+727,erp_ventes_2024.csv,CMD-100722,CODE CLIENT,CLI-0185 ,casse_ou_espaces,corrigee
+728,erp_ventes_2024.csv,CMD-100668,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+729,erp_ventes_2024.csv,CMD-101502,QTE,0,quantite_invalide,rejetee
+730,erp_ventes_2024.csv,CMD-100710,-,ligne identique,doublon_exact,rejetee
+731,erp_ventes_2024.csv,CMD-100615,-,ligne identique,doublon_exact,rejetee
+732,erp_ventes_2024.csv,CMD-101427,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+733,erp_ventes_2024.csv,CMD-102269,-,ligne identique,doublon_exact,rejetee
+734,erp_ventes_2024.csv,CMD-100261,CODE ARTICLE,BD-9805,article_inconnu,rejetee
+735,erp_ventes_2024.csv,CMD-100325,DATE COMMANDE,,date_illisible,rejetee
+736,erp_ventes_2024.csv,CMD-101757,CODE ARTICLE,BD-9811,article_inconnu,rejetee
+737,erp_ventes_2024.csv,CMD-100138,CODE CLIENT,  CLI-0056,casse_ou_espaces,corrigee
+738,erp_ventes_2024.csv,CMD-101424,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+739,erp_ventes_2024.csv,CMD-100926,CODE CLIENT,CLI-0009 ,casse_ou_espaces,corrigee
+740,erp_ventes_2024.csv,CMD-101782,DATE COMMANDE,n/d,date_illisible,rejetee
+741,erp_ventes_2024.csv,CMD-100543,CODE ARTICLE,BD-9808,article_inconnu,rejetee
+742,erp_ventes_2024.csv,CMD-100566,-,ligne identique,doublon_exact,rejetee
+743,erp_ventes_2024.csv,CMD-101904,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+744,erp_ventes_2024.csv,CMD-101243,CANAL DE VENTE, ,valeur_manquante,corrigee
+745,erp_ventes_2024.csv,CMD-100162,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+746,erp_ventes_2024.csv,CMD-101161,CODE CLIENT,  CLI-0173,casse_ou_espaces,corrigee
+747,erp_ventes_2024.csv,CMD-101449,CODE CLIENT,CLI-0076 ,casse_ou_espaces,corrigee
+748,erp_ventes_2024.csv,CMD-101380,CODE CLIENT,  CLI-0068,casse_ou_espaces,corrigee
+749,erp_ventes_2024.csv,CMD-100024,DATE COMMANDE,,date_illisible,rejetee
+750,erp_ventes_2024.csv,CMD-100039,-,ligne identique,doublon_exact,rejetee
+751,erp_ventes_2024.csv,CMD-101167,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+752,erp_ventes_2024.csv,CMD-100086,DATE COMMANDE,,date_illisible,rejetee
+753,erp_ventes_2024.csv,CMD-100778,CODE CLIENT,  CLI-0102,casse_ou_espaces,corrigee
+754,erp_ventes_2024.csv,CMD-101625,CODE CLIENT,cli-0096,casse_ou_espaces,corrigee
+755,erp_ventes_2024.csv,CMD-100349,CODE CLIENT,CLI-0173 ,casse_ou_espaces,corrigee
+756,erp_ventes_2024.csv,CMD-101987,-,ligne identique,doublon_exact,rejetee
+757,erp_ventes_2024.csv,CMD-100356,CODE CLIENT,CLI-0174 ,casse_ou_espaces,corrigee
+758,erp_ventes_2024.csv,CMD-100463,CANAL DE VENTE,,valeur_manquante,corrigee
+759,erp_ventes_2024.csv,CMD-102164,CODE ARTICLE,BD-9248,article_inconnu,rejetee
+760,erp_ventes_2024.csv,CMD-100700,PRIX UNITAIRE,"299190,00",prix_aberrant,rejetee
+761,erp_ventes_2024.csv,CMD-101710,-,ligne identique,doublon_exact,rejetee
+762,erp_ventes_2024.csv,CMD-100495,-,ligne identique,doublon_exact,rejetee
+763,erp_ventes_2024.csv,CMD-100672,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+764,erp_ventes_2024.csv,CMD-101954,CODE CLIENT,CLI-0017 ,casse_ou_espaces,corrigee
+765,erp_ventes_2024.csv,CMD-101583,-,ligne identique,doublon_exact,rejetee
+766,erp_ventes_2024.csv,CMD-100699,CANAL DE VENTE, ,valeur_manquante,corrigee
+767,erp_ventes_2024.csv,CMD-101454,CANAL DE VENTE, ,valeur_manquante,corrigee
+768,erp_ventes_2024.csv,CMD-100097,CODE CLIENT,cli-0033,casse_ou_espaces,corrigee
+769,erp_ventes_2024.csv,CMD-100770,-,ligne identique,doublon_exact,rejetee
+770,erp_ventes_2024.csv,CMD-101525,-,ligne identique,doublon_exact,rejetee
+771,erp_ventes_2024.csv,CMD-101827,CODE CLIENT,  CLI-0010,casse_ou_espaces,corrigee
+772,erp_ventes_2024.csv,CMD-101093,-,ligne identique,doublon_exact,rejetee
+773,erp_ventes_2024.csv,CMD-102119,CANAL DE VENTE,,valeur_manquante,corrigee
+774,erp_ventes_2024.csv,CMD-100210,-,ligne identique,doublon_exact,rejetee
+775,erp_ventes_2024.csv,CMD-101147,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+776,erp_ventes_2024.csv,CMD-101656,CANAL DE VENTE, ,valeur_manquante,corrigee
+777,erp_ventes_2024.csv,CMD-102101,-,ligne identique,doublon_exact,rejetee
+778,erp_ventes_2024.csv,TOTAL GENERAL,-,pied de page d'export,ligne_technique,rejetee
+779,erp_ventes_2024.csv,Export du 31/12/2025 - Boréal Distribution inc.,-,pied de page d'export,ligne_technique,rejetee
+780,erp_ventes_2025.csv,CMD-103140,CODE CLIENT,CLI-0009 ,casse_ou_espaces,corrigee
+781,erp_ventes_2025.csv,CMD-103084,CANAL DE VENTE,,valeur_manquante,corrigee
+782,erp_ventes_2025.csv,CMD-102327,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+783,erp_ventes_2025.csv,CMD-102463,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+784,erp_ventes_2025.csv,CMD-105097,CODE CLIENT,  CLI-0167,casse_ou_espaces,corrigee
+785,erp_ventes_2025.csv,CMD-104218,CODE CLIENT,  CLI-0158,casse_ou_espaces,corrigee
+786,erp_ventes_2025.csv,CMD-102713,CODE CLIENT,cli-0061,casse_ou_espaces,corrigee
+787,erp_ventes_2025.csv,CMD-104777,CODE ARTICLE,BD-9627,article_inconnu,rejetee
+788,erp_ventes_2025.csv,CMD-103236,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+789,erp_ventes_2025.csv,CMD-103132,CODE CLIENT,CLI-0116 ,casse_ou_espaces,corrigee
+790,erp_ventes_2025.csv,CMD-105011,DATE COMMANDE,n/d,date_illisible,rejetee
+791,erp_ventes_2025.csv,CMD-104222,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+792,erp_ventes_2025.csv,CMD-102485,CODE CLIENT,  CLI-0148,casse_ou_espaces,corrigee
+793,erp_ventes_2025.csv,CMD-102723,QTE,-1,quantite_invalide,rejetee
+794,erp_ventes_2025.csv,CMD-104222,CODE CLIENT,  CLI-0180,casse_ou_espaces,corrigee
+795,erp_ventes_2025.csv,CMD-103992,CODE CLIENT,  CLI-0130,casse_ou_espaces,corrigee
+796,erp_ventes_2025.csv,CMD-104423,CODE CLIENT,CLI-0132 ,casse_ou_espaces,corrigee
+797,erp_ventes_2025.csv,CMD-104380,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+798,erp_ventes_2025.csv,CMD-102683,DATE COMMANDE,,date_illisible,rejetee
+799,erp_ventes_2025.csv,CMD-103483,CODE CLIENT,cli-0033,casse_ou_espaces,corrigee
+800,erp_ventes_2025.csv,CMD-103059,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+801,erp_ventes_2025.csv,CMD-105112,CODE ARTICLE,BD-9352,article_inconnu,rejetee
+802,erp_ventes_2025.csv,CMD-102673,CANAL DE VENTE, ,valeur_manquante,corrigee
+803,erp_ventes_2025.csv,CMD-104211,CODE CLIENT,CLI-0138 ,casse_ou_espaces,corrigee
+804,erp_ventes_2025.csv,CMD-102894,CODE CLIENT,cli-0209,casse_ou_espaces,corrigee
+805,erp_ventes_2025.csv,CMD-104572,DATE COMMANDE,n/d,date_illisible,rejetee
+806,erp_ventes_2025.csv,CMD-103664,CODE ARTICLE,BD-9076,article_inconnu,rejetee
+807,erp_ventes_2025.csv,CMD-103990,CODE CLIENT,  CLI-0100,casse_ou_espaces,corrigee
+808,erp_ventes_2025.csv,CMD-104964,CANAL DE VENTE,,valeur_manquante,corrigee
+809,erp_ventes_2025.csv,CMD-104596,CODE ARTICLE,BD-9013,article_inconnu,rejetee
+810,erp_ventes_2025.csv,CMD-104862,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+811,erp_ventes_2025.csv,CMD-104209,CANAL DE VENTE, ,valeur_manquante,corrigee
+812,erp_ventes_2025.csv,CMD-103755,DATE COMMANDE,,date_illisible,rejetee
+813,erp_ventes_2025.csv,CMD-102866,CODE ARTICLE,BD-9030,article_inconnu,rejetee
+814,erp_ventes_2025.csv,CMD-104774,CODE CLIENT,  CLI-0037,casse_ou_espaces,corrigee
+815,erp_ventes_2025.csv,CMD-102712,CODE CLIENT,cli-0082,casse_ou_espaces,corrigee
+816,erp_ventes_2025.csv,CMD-104852,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+817,erp_ventes_2025.csv,CMD-104405,PRIX UNITAIRE,"482060,00",prix_aberrant,rejetee
+818,erp_ventes_2025.csv,CMD-104123,-,ligne identique,doublon_exact,rejetee
+819,erp_ventes_2025.csv,CMD-103294,CANAL DE VENTE, ,valeur_manquante,corrigee
+820,erp_ventes_2025.csv,CMD-103294,DATE COMMANDE,,date_illisible,rejetee
+821,erp_ventes_2025.csv,CMD-103250,CODE CLIENT,cli-0185,casse_ou_espaces,corrigee
+822,erp_ventes_2025.csv,CMD-103547,CANAL DE VENTE,,valeur_manquante,corrigee
+823,erp_ventes_2025.csv,CMD-103032,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+824,erp_ventes_2025.csv,CMD-104902,CODE CLIENT,cli-0215,casse_ou_espaces,corrigee
+825,erp_ventes_2025.csv,CMD-104473,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+826,erp_ventes_2025.csv,CMD-103170,DATE COMMANDE,,date_illisible,rejetee
+827,erp_ventes_2025.csv,CMD-105019,DATE COMMANDE,n/d,date_illisible,rejetee
+828,erp_ventes_2025.csv,CMD-104124,CODE CLIENT,cli-0025,casse_ou_espaces,corrigee
+829,erp_ventes_2025.csv,CMD-103113,-,ligne identique,doublon_exact,rejetee
+830,erp_ventes_2025.csv,CMD-103520,CANAL DE VENTE,,valeur_manquante,corrigee
+831,erp_ventes_2025.csv,CMD-104488,CANAL DE VENTE,,valeur_manquante,corrigee
+832,erp_ventes_2025.csv,CMD-104701,CODE CLIENT,CLI-0025 ,casse_ou_espaces,corrigee
+833,erp_ventes_2025.csv,CMD-102739,CANAL DE VENTE,,valeur_manquante,corrigee
+834,erp_ventes_2025.csv,CMD-103501,CODE CLIENT,  CLI-0097,casse_ou_espaces,corrigee
+835,erp_ventes_2025.csv,CMD-103758,CODE CLIENT,  CLI-0137,casse_ou_espaces,corrigee
+836,erp_ventes_2025.csv,CMD-104159,QTE,-2,quantite_invalide,rejetee
+837,erp_ventes_2025.csv,CMD-104511,CODE CLIENT,  CLI-0073,casse_ou_espaces,corrigee
+838,erp_ventes_2025.csv,CMD-104994,CANAL DE VENTE,,valeur_manquante,corrigee
+839,erp_ventes_2025.csv,CMD-102409,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+840,erp_ventes_2025.csv,CMD-103502,-,ligne identique,doublon_exact,rejetee
+841,erp_ventes_2025.csv,CMD-103560,-,ligne identique,doublon_exact,rejetee
+842,erp_ventes_2025.csv,CMD-104575,-,ligne identique,doublon_exact,rejetee
+843,erp_ventes_2025.csv,CMD-102761,QTE,-6,quantite_invalide,rejetee
+844,erp_ventes_2025.csv,CMD-103019,CANAL DE VENTE, ,valeur_manquante,corrigee
+845,erp_ventes_2025.csv,CMD-102925,CANAL DE VENTE,,valeur_manquante,corrigee
+846,erp_ventes_2025.csv,CMD-104675,QTE,-2,quantite_invalide,rejetee
+847,erp_ventes_2025.csv,CMD-105000,CODE CLIENT,cli-0103,casse_ou_espaces,corrigee
+848,erp_ventes_2025.csv,CMD-104523,QTE,0,quantite_invalide,rejetee
+849,erp_ventes_2025.csv,CMD-103665,CODE CLIENT,CLI-0210 ,casse_ou_espaces,corrigee
+850,erp_ventes_2025.csv,CMD-104203,CODE CLIENT,  CLI-0097,casse_ou_espaces,corrigee
+851,erp_ventes_2025.csv,CMD-104088,CODE CLIENT,  CLI-0126,casse_ou_espaces,corrigee
+852,erp_ventes_2025.csv,CMD-103715,-,ligne identique,doublon_exact,rejetee
+853,erp_ventes_2025.csv,CMD-104568,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+854,erp_ventes_2025.csv,CMD-103516,CANAL DE VENTE, ,valeur_manquante,corrigee
+855,erp_ventes_2025.csv,CMD-103949,CANAL DE VENTE,,valeur_manquante,corrigee
+856,erp_ventes_2025.csv,CMD-104266,CODE ARTICLE,BD-9910,article_inconnu,rejetee
+857,erp_ventes_2025.csv,CMD-102652,CODE ARTICLE,BD-9041,article_inconnu,rejetee
+858,erp_ventes_2025.csv,CMD-103004,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+859,erp_ventes_2025.csv,CMD-102833,CODE CLIENT,  CLI-0037,casse_ou_espaces,corrigee
+860,erp_ventes_2025.csv,CMD-104212,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+861,erp_ventes_2025.csv,CMD-104260,CODE CLIENT,  CLI-0012,casse_ou_espaces,corrigee
+862,erp_ventes_2025.csv,CMD-104449,DATE COMMANDE,,date_illisible,rejetee
+863,erp_ventes_2025.csv,CMD-104327,CODE CLIENT,cli-0012,casse_ou_espaces,corrigee
+864,erp_ventes_2025.csv,CMD-104822,-,ligne identique,doublon_exact,rejetee
+865,erp_ventes_2025.csv,CMD-103974,CODE CLIENT,  CLI-0089,casse_ou_espaces,corrigee
+866,erp_ventes_2025.csv,CMD-104687,-,ligne identique,doublon_exact,rejetee
+867,erp_ventes_2025.csv,CMD-102516,CODE ARTICLE,BD-9889,article_inconnu,rejetee
+868,erp_ventes_2025.csv,CMD-104002,DATE COMMANDE,n/d,date_illisible,rejetee
+869,erp_ventes_2025.csv,CMD-103944,DATE COMMANDE,n/d,date_illisible,rejetee
+870,erp_ventes_2025.csv,CMD-102621,-,ligne identique,doublon_exact,rejetee
+871,erp_ventes_2025.csv,CMD-103308,PRIX UNITAIRE,"86480,00",prix_aberrant,rejetee
+872,erp_ventes_2025.csv,CMD-103170,CODE CLIENT,CLI-0067 ,casse_ou_espaces,corrigee
+873,erp_ventes_2025.csv,CMD-103846,CODE CLIENT,CLI-0009 ,casse_ou_espaces,corrigee
+874,erp_ventes_2025.csv,CMD-103625,CANAL DE VENTE, ,valeur_manquante,corrigee
+875,erp_ventes_2025.csv,CMD-104141,CANAL DE VENTE, ,valeur_manquante,corrigee
+876,erp_ventes_2025.csv,CMD-103794,CODE ARTICLE,BD-9719,article_inconnu,rejetee
+877,erp_ventes_2025.csv,CMD-104884,QTE,-1,quantite_invalide,rejetee
+878,erp_ventes_2025.csv,CMD-104928,DATE COMMANDE,,date_illisible,rejetee
+879,erp_ventes_2025.csv,CMD-104194,CODE CLIENT,CLI-0148 ,casse_ou_espaces,corrigee
+880,erp_ventes_2025.csv,CMD-104740,-,ligne identique,doublon_exact,rejetee
+881,erp_ventes_2025.csv,CMD-103876,QTE,-2,quantite_invalide,rejetee
+882,erp_ventes_2025.csv,CMD-103991,CANAL DE VENTE,,valeur_manquante,corrigee
+883,erp_ventes_2025.csv,CMD-103836,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+884,erp_ventes_2025.csv,CMD-104899,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+885,erp_ventes_2025.csv,CMD-104319,CODE CLIENT,CLI-0042 ,casse_ou_espaces,corrigee
+886,erp_ventes_2025.csv,CMD-102698,QTE,0,quantite_invalide,rejetee
+887,erp_ventes_2025.csv,CMD-103246,CODE CLIENT,cli-0204,casse_ou_espaces,corrigee
+888,erp_ventes_2025.csv,CMD-103746,CODE ARTICLE,BD-9227,article_inconnu,rejetee
+889,erp_ventes_2025.csv,CMD-104422,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+890,erp_ventes_2025.csv,CMD-103611,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+891,erp_ventes_2025.csv,CMD-102775,DATE COMMANDE,,date_illisible,rejetee
+892,erp_ventes_2025.csv,CMD-102759,CODE CLIENT,  CLI-0104,casse_ou_espaces,corrigee
+893,erp_ventes_2025.csv,CMD-104713,CODE CLIENT,  CLI-0076,casse_ou_espaces,corrigee
+894,erp_ventes_2025.csv,CMD-103194,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+895,erp_ventes_2025.csv,CMD-104230,CODE CLIENT,CLI-0066 ,casse_ou_espaces,corrigee
+896,erp_ventes_2025.csv,CMD-102525,-,ligne identique,doublon_exact,rejetee
+897,erp_ventes_2025.csv,CMD-102718,QTE,-1,quantite_invalide,rejetee
+898,erp_ventes_2025.csv,CMD-105072,CODE CLIENT,cli-0147,casse_ou_espaces,corrigee
+899,erp_ventes_2025.csv,CMD-104154,CODE CLIENT,  CLI-0081,casse_ou_espaces,corrigee
+900,erp_ventes_2025.csv,CMD-105099,CODE ARTICLE,BD-9738,article_inconnu,rejetee
+901,erp_ventes_2025.csv,CMD-103852,CANAL DE VENTE,,valeur_manquante,corrigee
+902,erp_ventes_2025.csv,CMD-103705,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+903,erp_ventes_2025.csv,CMD-102391,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+904,erp_ventes_2025.csv,CMD-102510,-,ligne identique,doublon_exact,rejetee
+905,erp_ventes_2025.csv,CMD-102890,-,ligne identique,doublon_exact,rejetee
+906,erp_ventes_2025.csv,CMD-103553,-,ligne identique,doublon_exact,rejetee
+907,erp_ventes_2025.csv,CMD-103542,CODE CLIENT,CLI-0084 ,casse_ou_espaces,corrigee
+908,erp_ventes_2025.csv,CMD-104632,CODE ARTICLE,BD-9414,article_inconnu,rejetee
+909,erp_ventes_2025.csv,CMD-104842,CODE CLIENT,cli-0012,casse_ou_espaces,corrigee
+910,erp_ventes_2025.csv,CMD-104949,-,ligne identique,doublon_exact,rejetee
+911,erp_ventes_2025.csv,CMD-104048,DATE COMMANDE,n/d,date_illisible,rejetee
+912,erp_ventes_2025.csv,CMD-104718,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+913,erp_ventes_2025.csv,CMD-102875,PRIX UNITAIRE,"362790,00",prix_aberrant,rejetee
+914,erp_ventes_2025.csv,CMD-104524,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+915,erp_ventes_2025.csv,CMD-102480,CODE CLIENT,CLI-0040 ,casse_ou_espaces,corrigee
+916,erp_ventes_2025.csv,CMD-102731,CANAL DE VENTE, ,valeur_manquante,corrigee
+917,erp_ventes_2025.csv,CMD-104941,PRIX UNITAIRE,"301280,00",prix_aberrant,rejetee
+918,erp_ventes_2025.csv,CMD-102847,-,ligne identique,doublon_exact,rejetee
+919,erp_ventes_2025.csv,CMD-104072,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+920,erp_ventes_2025.csv,CMD-104933,CODE CLIENT,  CLI-0009,casse_ou_espaces,corrigee
+921,erp_ventes_2025.csv,CMD-103083,CODE CLIENT,cli-0130,casse_ou_espaces,corrigee
+922,erp_ventes_2025.csv,CMD-104916,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+923,erp_ventes_2025.csv,CMD-102497,CODE ARTICLE,BD-9524,article_inconnu,rejetee
+924,erp_ventes_2025.csv,CMD-103557,-,ligne identique,doublon_exact,rejetee
+925,erp_ventes_2025.csv,CMD-102759,-,ligne identique,doublon_exact,rejetee
+926,erp_ventes_2025.csv,CMD-104579,PRIX UNITAIRE,"91380,00",prix_aberrant,rejetee
+927,erp_ventes_2025.csv,CMD-104301,CODE CLIENT,cli-0063,casse_ou_espaces,corrigee
+928,erp_ventes_2025.csv,CMD-103179,DATE COMMANDE,n/d,date_illisible,rejetee
+929,erp_ventes_2025.csv,CMD-102383,CODE CLIENT,  CLI-0091,casse_ou_espaces,corrigee
+930,erp_ventes_2025.csv,CMD-105021,CODE CLIENT,  CLI-0137,casse_ou_espaces,corrigee
+931,erp_ventes_2025.csv,CMD-105038,CODE CLIENT,  CLI-0217,casse_ou_espaces,corrigee
+932,erp_ventes_2025.csv,CMD-104673,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+933,erp_ventes_2025.csv,CMD-103360,CODE ARTICLE,BD-9061,article_inconnu,rejetee
+934,erp_ventes_2025.csv,CMD-104451,-,ligne identique,doublon_exact,rejetee
+935,erp_ventes_2025.csv,CMD-104401,CODE CLIENT,cli-0212,casse_ou_espaces,corrigee
+936,erp_ventes_2025.csv,CMD-103784,CANAL DE VENTE, ,valeur_manquante,corrigee
+937,erp_ventes_2025.csv,CMD-103085,-,ligne identique,doublon_exact,rejetee
+938,erp_ventes_2025.csv,CMD-104472,-,ligne identique,doublon_exact,rejetee
+939,erp_ventes_2025.csv,CMD-103015,-,ligne identique,doublon_exact,rejetee
+940,erp_ventes_2025.csv,CMD-103799,DATE COMMANDE,,date_illisible,rejetee
+941,erp_ventes_2025.csv,CMD-102662,-,ligne identique,doublon_exact,rejetee
+942,erp_ventes_2025.csv,CMD-104815,PRIX UNITAIRE,"49930,00",prix_aberrant,rejetee
+943,erp_ventes_2025.csv,CMD-104320,-,ligne identique,doublon_exact,rejetee
+944,erp_ventes_2025.csv,CMD-105029,QTE,-6,quantite_invalide,rejetee
+945,erp_ventes_2025.csv,CMD-104813,PRIX UNITAIRE,"49770,00",prix_aberrant,rejetee
+946,erp_ventes_2025.csv,CMD-103101,-,ligne identique,doublon_exact,rejetee
+947,erp_ventes_2025.csv,CMD-103598,CANAL DE VENTE, ,valeur_manquante,corrigee
+948,erp_ventes_2025.csv,CMD-103972,CANAL DE VENTE, ,valeur_manquante,corrigee
+949,erp_ventes_2025.csv,CMD-103374,CANAL DE VENTE, ,valeur_manquante,corrigee
+950,erp_ventes_2025.csv,CMD-103531,CANAL DE VENTE, ,valeur_manquante,corrigee
+951,erp_ventes_2025.csv,CMD-103470,DATE COMMANDE,n/d,date_illisible,rejetee
+952,erp_ventes_2025.csv,CMD-102688,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+953,erp_ventes_2025.csv,CMD-103553,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+954,erp_ventes_2025.csv,CMD-104206,CODE CLIENT,CLI-0191 ,casse_ou_espaces,corrigee
+955,erp_ventes_2025.csv,CMD-104880,PRIX UNITAIRE,"31730,00",prix_aberrant,rejetee
+956,erp_ventes_2025.csv,CMD-102721,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+957,erp_ventes_2025.csv,CMD-103061,-,ligne identique,doublon_exact,rejetee
+958,erp_ventes_2025.csv,CMD-104623,CODE CLIENT,cli-0035,casse_ou_espaces,corrigee
+959,erp_ventes_2025.csv,CMD-103773,CODE CLIENT,cli-0019,casse_ou_espaces,corrigee
+960,erp_ventes_2025.csv,CMD-104994,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+961,erp_ventes_2025.csv,CMD-103191,QTE,-1,quantite_invalide,rejetee
+962,erp_ventes_2025.csv,CMD-104788,-,ligne identique,doublon_exact,rejetee
+963,erp_ventes_2025.csv,CMD-103541,CANAL DE VENTE, ,valeur_manquante,corrigee
+964,erp_ventes_2025.csv,CMD-103023,CODE CLIENT,cli-0154,casse_ou_espaces,corrigee
+965,erp_ventes_2025.csv,CMD-102667,-,ligne identique,doublon_exact,rejetee
+966,erp_ventes_2025.csv,CMD-103977,-,ligne identique,doublon_exact,rejetee
+967,erp_ventes_2025.csv,CMD-103623,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+968,erp_ventes_2025.csv,CMD-104135,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+969,erp_ventes_2025.csv,CMD-103734,CODE CLIENT,CLI-0099 ,casse_ou_espaces,corrigee
+970,erp_ventes_2025.csv,CMD-103832,-,ligne identique,doublon_exact,rejetee
+971,erp_ventes_2025.csv,CMD-102375,CODE ARTICLE,BD-9626,article_inconnu,rejetee
+972,erp_ventes_2025.csv,CMD-103024,CODE CLIENT,cli-0144,casse_ou_espaces,corrigee
+973,erp_ventes_2025.csv,CMD-105072,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+974,erp_ventes_2025.csv,CMD-104415,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+975,erp_ventes_2025.csv,CMD-104558,QTE,-2,quantite_invalide,rejetee
+976,erp_ventes_2025.csv,CMD-104556,CODE CLIENT,cli-0136,casse_ou_espaces,corrigee
+977,erp_ventes_2025.csv,CMD-104989,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+978,erp_ventes_2025.csv,CMD-103770,CODE CLIENT,cli-0126,casse_ou_espaces,corrigee
+979,erp_ventes_2025.csv,CMD-102721,CANAL DE VENTE,,valeur_manquante,corrigee
+980,erp_ventes_2025.csv,CMD-104539,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+981,erp_ventes_2025.csv,CMD-103759,-,ligne identique,doublon_exact,rejetee
+982,erp_ventes_2025.csv,CMD-104679,CODE CLIENT,CLI-0041 ,casse_ou_espaces,corrigee
+983,erp_ventes_2025.csv,CMD-104204,-,ligne identique,doublon_exact,rejetee
+984,erp_ventes_2025.csv,CMD-103253,-,ligne identique,doublon_exact,rejetee
+985,erp_ventes_2025.csv,CMD-103898,-,ligne identique,doublon_exact,rejetee
+986,erp_ventes_2025.csv,CMD-102486,-,ligne identique,doublon_exact,rejetee
+987,erp_ventes_2025.csv,CMD-103287,-,ligne identique,doublon_exact,rejetee
+988,erp_ventes_2025.csv,CMD-103212,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+989,erp_ventes_2025.csv,CMD-104385,-,ligne identique,doublon_exact,rejetee
+990,erp_ventes_2025.csv,CMD-103277,PRIX UNITAIRE,"394290,00",prix_aberrant,rejetee
+991,erp_ventes_2025.csv,CMD-103849,-,ligne identique,doublon_exact,rejetee
+992,erp_ventes_2025.csv,CMD-103351,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+993,erp_ventes_2025.csv,CMD-104792,CODE CLIENT,cli-0074,casse_ou_espaces,corrigee
+994,erp_ventes_2025.csv,CMD-102426,CODE CLIENT,CLI-0112 ,casse_ou_espaces,corrigee
+995,erp_ventes_2025.csv,CMD-103655,-,ligne identique,doublon_exact,rejetee
+996,erp_ventes_2025.csv,CMD-104887,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+997,erp_ventes_2025.csv,CMD-103532,QTE,-2,quantite_invalide,rejetee
+998,erp_ventes_2025.csv,CMD-103410,CODE ARTICLE,BD-9437,article_inconnu,rejetee
+999,erp_ventes_2025.csv,CMD-103648,DATE COMMANDE,,date_illisible,rejetee
+1000,erp_ventes_2025.csv,CMD-104552,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1001,erp_ventes_2025.csv,CMD-102795,CODE CLIENT,cli-0210,casse_ou_espaces,corrigee
+1002,erp_ventes_2025.csv,CMD-103919,-,ligne identique,doublon_exact,rejetee
+1003,erp_ventes_2025.csv,CMD-103681,CODE ARTICLE,BD-9625,article_inconnu,rejetee
+1004,erp_ventes_2025.csv,CMD-103985,CANAL DE VENTE, ,valeur_manquante,corrigee
+1005,erp_ventes_2025.csv,CMD-103104,CODE ARTICLE,BD-9723,article_inconnu,rejetee
+1006,erp_ventes_2025.csv,CMD-102689,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+1007,erp_ventes_2025.csv,CMD-103184,QTE,-2,quantite_invalide,rejetee
+1008,erp_ventes_2025.csv,CMD-103124,-,ligne identique,doublon_exact,rejetee
+1009,erp_ventes_2025.csv,CMD-105054,CODE CLIENT,  CLI-0182,casse_ou_espaces,corrigee
+1010,erp_ventes_2025.csv,CMD-102742,CANAL DE VENTE, ,valeur_manquante,corrigee
+1011,erp_ventes_2025.csv,CMD-104782,CODE CLIENT,CLI-0217 ,casse_ou_espaces,corrigee
+1012,erp_ventes_2025.csv,CMD-105107,-,ligne identique,doublon_exact,rejetee
+1013,erp_ventes_2025.csv,CMD-104499,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1014,erp_ventes_2025.csv,CMD-103601,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+1015,erp_ventes_2025.csv,CMD-103676,CODE CLIENT,  CLI-0102,casse_ou_espaces,corrigee
+1016,erp_ventes_2025.csv,CMD-102439,CODE CLIENT,  CLI-0068,casse_ou_espaces,corrigee
+1017,erp_ventes_2025.csv,CMD-104794,QTE,-1,quantite_invalide,rejetee
+1018,erp_ventes_2025.csv,CMD-102366,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1019,erp_ventes_2025.csv,CMD-104112,CODE CLIENT,CLI-0029 ,casse_ou_espaces,corrigee
+1020,erp_ventes_2025.csv,CMD-103859,-,ligne identique,doublon_exact,rejetee
+1021,erp_ventes_2025.csv,CMD-104023,-,ligne identique,doublon_exact,rejetee
+1022,erp_ventes_2025.csv,CMD-102563,CODE CLIENT,  CLI-0113,casse_ou_espaces,corrigee
+1023,erp_ventes_2025.csv,CMD-103585,-,ligne identique,doublon_exact,rejetee
+1024,erp_ventes_2025.csv,CMD-104033,CANAL DE VENTE,,valeur_manquante,corrigee
+1025,erp_ventes_2025.csv,CMD-104173,-,ligne identique,doublon_exact,rejetee
+1026,erp_ventes_2025.csv,CMD-103960,CODE ARTICLE,BD-9850,article_inconnu,rejetee
+1027,erp_ventes_2025.csv,CMD-102592,-,ligne identique,doublon_exact,rejetee
+1028,erp_ventes_2025.csv,CMD-102928,CODE CLIENT,  CLI-0173,casse_ou_espaces,corrigee
+1029,erp_ventes_2025.csv,CMD-102943,CODE CLIENT,CLI-0172 ,casse_ou_espaces,corrigee
+1030,erp_ventes_2025.csv,CMD-104857,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+1031,erp_ventes_2025.csv,CMD-102716,-,ligne identique,doublon_exact,rejetee
+1032,erp_ventes_2025.csv,CMD-104674,CODE CLIENT,  CLI-0052,casse_ou_espaces,corrigee
+1033,erp_ventes_2025.csv,CMD-104888,-,ligne identique,doublon_exact,rejetee
+1034,erp_ventes_2025.csv,CMD-103559,DATE COMMANDE,n/d,date_illisible,rejetee
+1035,erp_ventes_2025.csv,CMD-103937,CODE CLIENT,CLI-0009 ,casse_ou_espaces,corrigee
+1036,erp_ventes_2025.csv,CMD-103781,-,ligne identique,doublon_exact,rejetee
+1037,erp_ventes_2025.csv,CMD-104352,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+1038,erp_ventes_2025.csv,CMD-105062,-,ligne identique,doublon_exact,rejetee
+1039,erp_ventes_2025.csv,CMD-104012,-,ligne identique,doublon_exact,rejetee
+1040,erp_ventes_2025.csv,CMD-102631,CODE CLIENT,cli-0012,casse_ou_espaces,corrigee
+1041,erp_ventes_2025.csv,CMD-104597,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1042,erp_ventes_2025.csv,CMD-102382,-,ligne identique,doublon_exact,rejetee
+1043,erp_ventes_2025.csv,CMD-102509,DATE COMMANDE,,date_illisible,rejetee
+1044,erp_ventes_2025.csv,CMD-104316,-,ligne identique,doublon_exact,rejetee
+1045,erp_ventes_2025.csv,CMD-102480,-,ligne identique,doublon_exact,rejetee
+1046,erp_ventes_2025.csv,CMD-104016,-,ligne identique,doublon_exact,rejetee
+1047,erp_ventes_2025.csv,CMD-104836,CODE CLIENT,CLI-0130 ,casse_ou_espaces,corrigee
+1048,erp_ventes_2025.csv,CMD-103047,CODE CLIENT,  CLI-0049,casse_ou_espaces,corrigee
+1049,erp_ventes_2025.csv,CMD-104634,-,ligne identique,doublon_exact,rejetee
+1050,erp_ventes_2025.csv,CMD-102351,-,ligne identique,doublon_exact,rejetee
+1051,erp_ventes_2025.csv,CMD-104754,CODE ARTICLE,BD-9164,article_inconnu,rejetee
+1052,erp_ventes_2025.csv,CMD-103510,CODE ARTICLE,BD-9647,article_inconnu,rejetee
+1053,erp_ventes_2025.csv,CMD-105055,CANAL DE VENTE,,valeur_manquante,corrigee
+1054,erp_ventes_2025.csv,CMD-104287,CODE CLIENT,cli-0012,casse_ou_espaces,corrigee
+1055,erp_ventes_2025.csv,CMD-102555,-,ligne identique,doublon_exact,rejetee
+1056,erp_ventes_2025.csv,CMD-103675,CANAL DE VENTE,,valeur_manquante,corrigee
+1057,erp_ventes_2025.csv,CMD-104366,PRIX UNITAIRE,"185040,00",prix_aberrant,rejetee
+1058,erp_ventes_2025.csv,CMD-102781,PRIX UNITAIRE,"236570,00",prix_aberrant,rejetee
+1059,erp_ventes_2025.csv,CMD-103636,QTE,-6,quantite_invalide,rejetee
+1060,erp_ventes_2025.csv,CMD-103097,CODE ARTICLE,BD-9363,article_inconnu,rejetee
+1061,erp_ventes_2025.csv,CMD-102621,-,ligne identique,doublon_exact,rejetee
+1062,erp_ventes_2025.csv,CMD-103603,CODE CLIENT,  CLI-0004,casse_ou_espaces,corrigee
+1063,erp_ventes_2025.csv,CMD-104542,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+1064,erp_ventes_2025.csv,CMD-104449,-,ligne identique,doublon_exact,rejetee
+1065,erp_ventes_2025.csv,CMD-103257,DATE COMMANDE,n/d,date_illisible,rejetee
+1066,erp_ventes_2025.csv,CMD-102550,CODE CLIENT,CLI-0037 ,casse_ou_espaces,corrigee
+1067,erp_ventes_2025.csv,CMD-104175,CODE CLIENT,cli-0121,casse_ou_espaces,corrigee
+1068,erp_ventes_2025.csv,CMD-102631,-,ligne identique,doublon_exact,rejetee
+1069,erp_ventes_2025.csv,CMD-104244,CANAL DE VENTE, ,valeur_manquante,corrigee
+1070,erp_ventes_2025.csv,CMD-102996,-,ligne identique,doublon_exact,rejetee
+1071,erp_ventes_2025.csv,CMD-104714,-,ligne identique,doublon_exact,rejetee
+1072,erp_ventes_2025.csv,CMD-103016,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1073,erp_ventes_2025.csv,CMD-102817,QTE,-1,quantite_invalide,rejetee
+1074,erp_ventes_2025.csv,CMD-104928,CODE CLIENT,CLI-0102 ,casse_ou_espaces,corrigee
+1075,erp_ventes_2025.csv,CMD-103404,QTE,-1,quantite_invalide,rejetee
+1076,erp_ventes_2025.csv,CMD-103290,CODE CLIENT,CLI-0087 ,casse_ou_espaces,corrigee
+1077,erp_ventes_2025.csv,CMD-103735,DATE COMMANDE,n/d,date_illisible,rejetee
+1078,erp_ventes_2025.csv,CMD-103300,-,ligne identique,doublon_exact,rejetee
+1079,erp_ventes_2025.csv,CMD-105111,-,ligne identique,doublon_exact,rejetee
+1080,erp_ventes_2025.csv,CMD-103090,-,ligne identique,doublon_exact,rejetee
+1081,erp_ventes_2025.csv,CMD-103505,CODE ARTICLE,BD-9634,article_inconnu,rejetee
+1082,erp_ventes_2025.csv,CMD-102717,CODE CLIENT,CLI-0053 ,casse_ou_espaces,corrigee
+1083,erp_ventes_2025.csv,CMD-105124,-,ligne identique,doublon_exact,rejetee
+1084,erp_ventes_2025.csv,CMD-104703,CODE CLIENT,  CLI-0048,casse_ou_espaces,corrigee
+1085,erp_ventes_2025.csv,CMD-103686,CODE ARTICLE,BD-9408,article_inconnu,rejetee
+1086,erp_ventes_2025.csv,CMD-102698,PRIX UNITAIRE,"132070,00",prix_aberrant,rejetee
+1087,erp_ventes_2025.csv,CMD-103242,DATE COMMANDE,,date_illisible,rejetee
+1088,erp_ventes_2025.csv,CMD-102788,QTE,-6,quantite_invalide,rejetee
+1089,erp_ventes_2025.csv,CMD-105008,CANAL DE VENTE,,valeur_manquante,corrigee
+1090,erp_ventes_2025.csv,CMD-104093,CANAL DE VENTE, ,valeur_manquante,corrigee
+1091,erp_ventes_2025.csv,CMD-102774,-,ligne identique,doublon_exact,rejetee
+1092,erp_ventes_2025.csv,CMD-102580,CANAL DE VENTE, ,valeur_manquante,corrigee
+1093,erp_ventes_2025.csv,CMD-104889,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1094,erp_ventes_2025.csv,CMD-102369,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+1095,erp_ventes_2025.csv,CMD-103869,CANAL DE VENTE, ,valeur_manquante,corrigee
+1096,erp_ventes_2025.csv,CMD-102789,DATE COMMANDE,,date_illisible,rejetee
+1097,erp_ventes_2025.csv,CMD-104371,QTE,-2,quantite_invalide,rejetee
+1098,erp_ventes_2025.csv,CMD-103710,CANAL DE VENTE, ,valeur_manquante,corrigee
+1099,erp_ventes_2025.csv,CMD-104437,PRIX UNITAIRE,"181750,00",prix_aberrant,rejetee
+1100,erp_ventes_2025.csv,CMD-103662,DATE COMMANDE,,date_illisible,rejetee
+1101,erp_ventes_2025.csv,CMD-104675,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+1102,erp_ventes_2025.csv,CMD-104187,-,ligne identique,doublon_exact,rejetee
+1103,erp_ventes_2025.csv,CMD-104927,QTE,0,quantite_invalide,rejetee
+1104,erp_ventes_2025.csv,CMD-102702,CANAL DE VENTE, ,valeur_manquante,corrigee
+1105,erp_ventes_2025.csv,CMD-104065,-,ligne identique,doublon_exact,rejetee
+1106,erp_ventes_2025.csv,CMD-104867,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1107,erp_ventes_2025.csv,CMD-103210,CANAL DE VENTE,,valeur_manquante,corrigee
+1108,erp_ventes_2025.csv,CMD-105046,-,ligne identique,doublon_exact,rejetee
+1109,erp_ventes_2025.csv,CMD-103163,CANAL DE VENTE, ,valeur_manquante,corrigee
+1110,erp_ventes_2025.csv,CMD-103796,CODE CLIENT,  CLI-0115,casse_ou_espaces,corrigee
+1111,erp_ventes_2025.csv,CMD-102586,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+1112,erp_ventes_2025.csv,CMD-105090,PRIX UNITAIRE,"429780,00",prix_aberrant,rejetee
+1113,erp_ventes_2025.csv,CMD-103375,CODE CLIENT,CLI-0009 ,casse_ou_espaces,corrigee
+1114,erp_ventes_2025.csv,CMD-104149,-,ligne identique,doublon_exact,rejetee
+1115,erp_ventes_2025.csv,CMD-104120,CANAL DE VENTE,,valeur_manquante,corrigee
+1116,erp_ventes_2025.csv,CMD-105107,-,ligne identique,doublon_exact,rejetee
+1117,erp_ventes_2025.csv,CMD-102984,CODE CLIENT,CLI-0173 ,casse_ou_espaces,corrigee
+1118,erp_ventes_2025.csv,CMD-104097,-,ligne identique,doublon_exact,rejetee
+1119,erp_ventes_2025.csv,CMD-103551,CANAL DE VENTE,,valeur_manquante,corrigee
+1120,erp_ventes_2025.csv,CMD-103718,CODE ARTICLE,BD-9462,article_inconnu,rejetee
+1121,erp_ventes_2025.csv,CMD-102409,-,ligne identique,doublon_exact,rejetee
+1122,erp_ventes_2025.csv,CMD-104717,CANAL DE VENTE, ,valeur_manquante,corrigee
+1123,erp_ventes_2025.csv,CMD-102604,CODE ARTICLE,BD-9080,article_inconnu,rejetee
+1124,erp_ventes_2025.csv,CMD-102933,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+1125,erp_ventes_2025.csv,CMD-102718,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+1126,erp_ventes_2025.csv,CMD-103564,-,ligne identique,doublon_exact,rejetee
+1127,erp_ventes_2025.csv,CMD-103502,CANAL DE VENTE,,valeur_manquante,corrigee
+1128,erp_ventes_2025.csv,CMD-104262,CODE CLIENT,CLI-0115 ,casse_ou_espaces,corrigee
+1129,erp_ventes_2025.csv,CMD-103253,CODE CLIENT,  CLI-0081,casse_ou_espaces,corrigee
+1130,erp_ventes_2025.csv,CMD-102515,CODE ARTICLE,BD-9284,article_inconnu,rejetee
+1131,erp_ventes_2025.csv,CMD-103082,-,ligne identique,doublon_exact,rejetee
+1132,erp_ventes_2025.csv,CMD-104266,-,ligne identique,doublon_exact,rejetee
+1133,erp_ventes_2025.csv,CMD-102581,CODE CLIENT,cli-0053,casse_ou_espaces,corrigee
+1134,erp_ventes_2025.csv,CMD-103741,PRIX UNITAIRE,"302260,00",prix_aberrant,rejetee
+1135,erp_ventes_2025.csv,CMD-103391,QTE,-1,quantite_invalide,rejetee
+1136,erp_ventes_2025.csv,CMD-103616,CODE CLIENT,cli-0066,casse_ou_espaces,corrigee
+1137,erp_ventes_2025.csv,CMD-103223,CANAL DE VENTE, ,valeur_manquante,corrigee
+1138,erp_ventes_2025.csv,CMD-103065,CODE CLIENT,CLI-0053 ,casse_ou_espaces,corrigee
+1139,erp_ventes_2025.csv,CMD-103108,CODE ARTICLE,BD-9421,article_inconnu,rejetee
+1140,erp_ventes_2025.csv,CMD-103103,DATE COMMANDE,n/d,date_illisible,rejetee
+1141,erp_ventes_2025.csv,CMD-104121,-,ligne identique,doublon_exact,rejetee
+1142,erp_ventes_2025.csv,CMD-102449,CODE CLIENT,cli-0057,casse_ou_espaces,corrigee
+1143,erp_ventes_2025.csv,CMD-104273,QTE,0,quantite_invalide,rejetee
+1144,erp_ventes_2025.csv,CMD-102890,CANAL DE VENTE,N/A,valeur_manquante,corrigee
+1145,erp_ventes_2025.csv,CMD-102714,CODE CLIENT,  CLI-0073,casse_ou_espaces,corrigee
+1146,erp_ventes_2025.csv,CMD-104367,QTE,-6,quantite_invalide,rejetee
+1147,erp_ventes_2025.csv,CMD-102371,-,ligne identique,doublon_exact,rejetee
+1148,erp_ventes_2025.csv,CMD-104009,-,ligne identique,doublon_exact,rejetee
+1149,erp_ventes_2025.csv,CMD-104406,-,ligne identique,doublon_exact,rejetee
+1150,erp_ventes_2025.csv,CMD-102943,-,ligne identique,doublon_exact,rejetee
+1151,erp_ventes_2025.csv,CMD-103152,-,ligne identique,doublon_exact,rejetee
+1152,erp_ventes_2025.csv,CMD-102938,-,ligne identique,doublon_exact,rejetee
+1153,erp_ventes_2025.csv,CMD-104379,QTE,-1,quantite_invalide,rejetee
+1154,erp_ventes_2025.csv,CMD-103321,CODE CLIENT,cli-0176,casse_ou_espaces,corrigee
+1155,erp_ventes_2025.csv,CMD-103833,CODE CLIENT,cli-0034,casse_ou_espaces,corrigee
+1156,erp_ventes_2025.csv,CMD-102766,-,ligne identique,doublon_exact,rejetee
+1157,erp_ventes_2025.csv,CMD-103924,CODE ARTICLE,BD-9815,article_inconnu,rejetee
+1158,erp_ventes_2025.csv,CMD-102401,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+1159,erp_ventes_2025.csv,CMD-103678,-,ligne identique,doublon_exact,rejetee
+1160,erp_ventes_2025.csv,CMD-102908,DATE COMMANDE,31/02/2024,date_illisible,rejetee
+1161,erp_ventes_2025.csv,CMD-104606,-,ligne identique,doublon_exact,rejetee
+1162,erp_ventes_2025.csv,CMD-102631,-,ligne identique,doublon_exact,rejetee
+1163,erp_ventes_2025.csv,CMD-103466,CODE CLIENT,CLI-0108 ,casse_ou_espaces,corrigee
+1164,erp_ventes_2025.csv,CMD-102403,CODE CLIENT,cli-0137,casse_ou_espaces,corrigee
+1165,erp_ventes_2025.csv,CMD-103415,-,ligne identique,doublon_exact,rejetee
+1166,erp_ventes_2025.csv,CMD-103988,-,ligne identique,doublon_exact,rejetee
+1167,erp_ventes_2025.csv,CMD-104713,DATE COMMANDE,,date_illisible,rejetee
+1168,erp_ventes_2025.csv,CMD-104838,-,ligne identique,doublon_exact,rejetee
+1169,erp_ventes_2025.csv,CMD-104589,CODE CLIENT,  CLI-0012,casse_ou_espaces,corrigee
+1170,erp_ventes_2025.csv,CMD-102370,DATE COMMANDE,,date_illisible,rejetee
+1171,erp_ventes_2025.csv,CMD-104344,CODE ARTICLE,BD-9813,article_inconnu,rejetee
+1172,erp_ventes_2025.csv,CMD-104624,-,ligne identique,doublon_exact,rejetee
+1173,erp_ventes_2025.csv,CMD-103591,CODE ARTICLE,BD-9736,article_inconnu,rejetee
+1174,erp_ventes_2025.csv,CMD-102755,CANAL DE VENTE,,valeur_manquante,corrigee
+1175,erp_ventes_2025.csv,CMD-105073,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+1176,erp_ventes_2025.csv,CMD-104110,-,ligne identique,doublon_exact,rejetee
+1177,erp_ventes_2025.csv,CMD-102687,CODE CLIENT,CLI-0211 ,casse_ou_espaces,corrigee
+1178,erp_ventes_2025.csv,CMD-103520,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1179,erp_ventes_2025.csv,CMD-104412,CANAL DE VENTE, ,valeur_manquante,corrigee
+1180,erp_ventes_2025.csv,CMD-103004,-,ligne identique,doublon_exact,rejetee
+1181,erp_ventes_2025.csv,CMD-103331,CODE CLIENT,cli-0009,casse_ou_espaces,corrigee
+1182,erp_ventes_2025.csv,CMD-104743,-,ligne identique,doublon_exact,rejetee
+1183,erp_ventes_2025.csv,CMD-102404,-,ligne identique,doublon_exact,rejetee
+1184,erp_ventes_2025.csv,CMD-102399,-,ligne identique,doublon_exact,rejetee
+1185,erp_ventes_2025.csv,CMD-103567,-,ligne identique,doublon_exact,rejetee
+1186,erp_ventes_2025.csv,CMD-104398,-,ligne identique,doublon_exact,rejetee
+1187,erp_ventes_2025.csv,CMD-103299,CODE CLIENT,cli-0126,casse_ou_espaces,corrigee
+1188,erp_ventes_2025.csv,CMD-104791,CODE CLIENT,  CLI-0161,casse_ou_espaces,corrigee
+1189,erp_ventes_2025.csv,CMD-103313,CANAL DE VENTE,,valeur_manquante,corrigee
+1190,erp_ventes_2025.csv,CMD-102652,CANAL DE VENTE,,valeur_manquante,corrigee
+1191,erp_ventes_2025.csv,CMD-103073,-,ligne identique,doublon_exact,rejetee
+1192,erp_ventes_2025.csv,CMD-104412,-,ligne identique,doublon_exact,rejetee
+1193,erp_ventes_2025.csv,CMD-103868,-,ligne identique,doublon_exact,rejetee
+1194,erp_ventes_2025.csv,CMD-104420,DATE COMMANDE,00/00/0000,date_illisible,rejetee
+1195,erp_ventes_2025.csv,CMD-104986,-,ligne identique,doublon_exact,rejetee
+1196,erp_ventes_2025.csv,CMD-104588,-,ligne identique,doublon_exact,rejetee
+1197,erp_ventes_2025.csv,CMD-104435,CODE CLIENT,CLI-0061 ,casse_ou_espaces,corrigee
+1198,erp_ventes_2025.csv,CMD-103941,-,ligne identique,doublon_exact,rejetee
+1199,erp_ventes_2025.csv,CMD-104590,CODE CLIENT,cli-0084,casse_ou_espaces,corrigee
+1200,erp_ventes_2025.csv,CMD-102768,CANAL DE VENTE,,valeur_manquante,corrigee
+1201,erp_ventes_2025.csv,CMD-103240,-,ligne identique,doublon_exact,rejetee
+1202,erp_ventes_2025.csv,CMD-102842,CODE CLIENT,CLI-0090 ,casse_ou_espaces,corrigee
+1203,erp_ventes_2025.csv,CMD-103389,PRIX UNITAIRE,"0,00",prix_invalide,rejetee
+1204,erp_ventes_2025.csv,TOTAL GENERAL,-,pied de page d'export,ligne_technique,rejetee
+1205,erp_ventes_2025.csv,Export du 31/12/2025 - Boréal Distribution inc.,-,pied de page d'export,ligne_technique,rejetee
+1206,achats_fournisseurs.csv,ACH-70001,quantite,-3,quantite_negative,conservee comme retour
+1207,achats_fournisseurs.csv,ACH-70017,code_article,BD-9239,article_inconnu,rejetee
+1208,achats_fournisseurs.csv,ACH-70034,quantite,-60,quantite_negative,conservee comme retour
+1209,achats_fournisseurs.csv,ACH-70036,code_article,BD-9392,article_inconnu,rejetee
+1210,achats_fournisseurs.csv,ACH-70054,code_article,BD-9951,article_inconnu,rejetee
+1211,achats_fournisseurs.csv,ACH-70058,quantite,-24,quantite_negative,conservee comme retour
+1212,achats_fournisseurs.csv,ACH-70061,quantite,-12,quantite_negative,conservee comme retour
+1213,achats_fournisseurs.csv,ACH-70074,code_article,BD-9903,article_inconnu,rejetee
+1214,achats_fournisseurs.csv,ACH-70119,code_article,BD-9431,article_inconnu,rejetee
+1215,achats_fournisseurs.csv,ACH-70123,quantite,-24,quantite_negative,conservee comme retour
+1216,achats_fournisseurs.csv,ACH-70141,code_article,BD-9902,article_inconnu,rejetee
+1217,achats_fournisseurs.csv,ACH-70153,code_article,BD-9319,article_inconnu,rejetee
+1218,achats_fournisseurs.csv,ACH-70190,quantite,-9,quantite_negative,conservee comme retour
+1219,achats_fournisseurs.csv,ACH-70201,quantite,-30,quantite_negative,conservee comme retour
+1220,achats_fournisseurs.csv,ACH-70203,code_article,BD-9667,article_inconnu,rejetee
+1221,achats_fournisseurs.csv,ACH-70213,code_article,BD-9703,article_inconnu,rejetee
+1222,achats_fournisseurs.csv,ACH-70237,code_article,BD-9005,article_inconnu,rejetee
+1223,achats_fournisseurs.csv,ACH-70244,code_article,BD-9715,article_inconnu,rejetee
+1224,achats_fournisseurs.csv,ACH-70271,quantite,-6,quantite_negative,conservee comme retour
+1225,achats_fournisseurs.csv,ACH-70272,quantite,-24,quantite_negative,conservee comme retour
+1226,achats_fournisseurs.csv,ACH-70279,quantite,-6,quantite_negative,conservee comme retour
+1227,achats_fournisseurs.csv,ACH-70281,code_article,BD-9483,article_inconnu,rejetee
+1228,achats_fournisseurs.csv,ACH-70297,code_article,BD-9052,article_inconnu,rejetee
+1229,achats_fournisseurs.csv,ACH-70314,code_article,BD-9620,article_inconnu,rejetee
+1230,achats_fournisseurs.csv,ACH-70315,quantite,-6,quantite_negative,conservee comme retour
+1231,achats_fournisseurs.csv,ACH-70337,quantite,-12,quantite_negative,conservee comme retour
+1232,achats_fournisseurs.csv,ACH-70341,quantite,-15,quantite_negative,conservee comme retour
+1233,achats_fournisseurs.csv,ACH-70355,code_article,BD-9433,article_inconnu,rejetee
+1234,achats_fournisseurs.csv,ACH-70356,quantite,-60,quantite_negative,conservee comme retour
+1235,achats_fournisseurs.csv,ACH-70369,code_article,BD-9172,article_inconnu,rejetee
+1236,achats_fournisseurs.csv,ACH-70382,quantite,-24,quantite_negative,conservee comme retour
+1237,achats_fournisseurs.csv,ACH-70403,quantite,-24,quantite_negative,conservee comme retour
+1238,achats_fournisseurs.csv,ACH-70410,quantite,-24,quantite_negative,conservee comme retour
+1239,achats_fournisseurs.csv,ACH-70423,quantite,-24,quantite_negative,conservee comme retour
+1240,achats_fournisseurs.csv,ACH-70426,quantite,-15,quantite_negative,conservee comme retour
+1241,achats_fournisseurs.csv,ACH-70437,code_article,BD-9721,article_inconnu,rejetee
+1242,achats_fournisseurs.csv,ACH-70447,code_article,BD-9984,article_inconnu,rejetee
+1243,achats_fournisseurs.csv,ACH-70454,quantite,-15,quantite_negative,conservee comme retour
+1244,achats_fournisseurs.csv,ACH-70476,quantite,-12,quantite_negative,conservee comme retour
+1245,achats_fournisseurs.csv,ACH-70495,quantite,-24,quantite_negative,conservee comme retour
+1246,achats_fournisseurs.csv,ACH-70497,code_article,BD-9518,article_inconnu,rejetee
+1247,achats_fournisseurs.csv,ACH-70500,quantite,-60,quantite_negative,conservee comme retour
+1248,achats_fournisseurs.csv,ACH-70517,quantite,-3,quantite_negative,conservee comme retour
+1249,achats_fournisseurs.csv,ACH-70550,quantite,-30,quantite_negative,conservee comme retour
+1250,achats_fournisseurs.csv,ACH-70560,code_article,BD-9141,article_inconnu,rejetee
+1251,achats_fournisseurs.csv,ACH-70562,code_article,BD-9180,article_inconnu,rejetee
+1252,achats_fournisseurs.csv,ACH-70564,quantite,-12,quantite_negative,conservee comme retour
+1253,achats_fournisseurs.csv,ACH-70572,quantite,-30,quantite_negative,conservee comme retour
+1254,achats_fournisseurs.csv,ACH-70589,quantite,-24,quantite_negative,conservee comme retour
+1255,achats_fournisseurs.csv,ACH-70593,code_article,BD-9161,article_inconnu,rejetee
+1256,achats_fournisseurs.csv,ACH-70602,quantite,-9,quantite_negative,conservee comme retour
+1257,achats_fournisseurs.csv,ACH-70605,quantite,-24,quantite_negative,conservee comme retour
+1258,achats_fournisseurs.csv,ACH-70608,code_article,BD-9273,article_inconnu,rejetee
+1259,achats_fournisseurs.csv,ACH-70616,quantite,-60,quantite_negative,conservee comme retour
+1260,achats_fournisseurs.csv,ACH-70635,quantite,-60,quantite_negative,conservee comme retour
+1261,achats_fournisseurs.csv,ACH-70651,quantite,-9,quantite_negative,conservee comme retour
+1262,achats_fournisseurs.csv,ACH-70653,code_article,BD-9838,article_inconnu,rejetee
+1263,achats_fournisseurs.csv,ACH-70668,quantite,-30,quantite_negative,conservee comme retour
+1264,achats_fournisseurs.csv,ACH-70670,quantite,-3,quantite_negative,conservee comme retour
+1265,achats_fournisseurs.csv,ACH-70673,quantite,-15,quantite_negative,conservee comme retour
+1266,achats_fournisseurs.csv,ACH-70675,quantite,-6,quantite_negative,conservee comme retour
+1267,achats_fournisseurs.csv,ACH-70678,quantite,-15,quantite_negative,conservee comme retour
+1268,achats_fournisseurs.csv,ACH-70689,code_article,BD-9322,article_inconnu,rejetee
+1269,stock_inventaire.csv,2024-11-30|ENT-MTL|BD-9931,code_article,BD-9931,article_inconnu,rejetee
+1270,stock_inventaire.csv,2024-04-30|ENT-SAG|BD-9834,code_article,BD-9834,article_inconnu,rejetee
+1271,stock_inventaire.csv,2025-01-31|ENT-QC|BD-9069,code_article,BD-9069,article_inconnu,rejetee
+1272,stock_inventaire.csv,2024-05-31|ENT-MTL|BD-9907,code_article,BD-9907,article_inconnu,rejetee
+1273,stock_inventaire.csv,2024-08-31|ENT-SAG|BD-1181,quantite_en_stock,-7,quantite_invalide,rejetee
+1274,stock_inventaire.csv,2025-11-30|ENT-QC|BD-9666,code_article,BD-9666,article_inconnu,rejetee
+1275,stock_inventaire.csv,2025-05-31|ENT-QC|BD-1019,quantite_en_stock,-8,quantite_invalide,rejetee
+1276,stock_inventaire.csv,2024-07-31|ENT-SAG|BD-1177,quantite_en_stock,-7,quantite_invalide,rejetee
+1277,stock_inventaire.csv,2024-12-31|ENT-MTL|BD-1040,quantite_en_stock,-7,quantite_invalide,rejetee
+1278,stock_inventaire.csv,2024-12-31|ENT-MTL|BD-9738,code_article,BD-9738,article_inconnu,rejetee
+1279,stock_inventaire.csv,2024-08-31|ENT-QC|BD-9832,code_article,BD-9832,article_inconnu,rejetee
+1280,stock_inventaire.csv,2025-04-30|ENT-QC|BD-1017,-,photo deja enregistree,doublon_exact,rejetee
+1281,stock_inventaire.csv,2024-01-31|ENT-MTL|BD-9083,code_article,BD-9083,article_inconnu,rejetee
+1282,stock_inventaire.csv,2024-06-30|ENT-SAG|BD-9821,code_article,BD-9821,article_inconnu,rejetee
+1283,stock_inventaire.csv,2025-11-30|ENT-QC|BD-1004,quantite_en_stock,-3,quantite_invalide,rejetee
+1284,stock_inventaire.csv,2025-05-31|ENT-SAG|BD-9949,code_article,BD-9949,article_inconnu,rejetee
+1285,stock_inventaire.csv,2025-06-30|ENT-SAG|BD-9985,code_article,BD-9985,article_inconnu,rejetee
+1286,stock_inventaire.csv,2024-04-30|ENT-QC|BD-1082,-,photo deja enregistree,doublon_exact,rejetee
+1287,stock_inventaire.csv,2025-04-30|ENT-MTL|BD-1151,quantite_en_stock,-6,quantite_invalide,rejetee
+1288,stock_inventaire.csv,2025-01-31|ENT-MTL|BD-1165,-,photo deja enregistree,doublon_exact,rejetee
+1289,stock_inventaire.csv,2025-09-30|ENT-SAG|BD-9352,code_article,BD-9352,article_inconnu,rejetee
+1290,stock_inventaire.csv,2024-04-30|ENT-MTL|BD-1070,-,photo deja enregistree,doublon_exact,rejetee
+1291,stock_inventaire.csv,2025-08-31|ENT-QC|BD-9926,code_article,BD-9926,article_inconnu,rejetee
+1292,stock_inventaire.csv,2025-10-31|ENT-QC|BD-1060,-,photo deja enregistree,doublon_exact,rejetee
+1293,stock_inventaire.csv,2025-11-30|ENT-QC|BD-9438,code_article,BD-9438,article_inconnu,rejetee
+1294,stock_inventaire.csv,2025-05-31|ENT-QC|BD-9581,code_article,BD-9581,article_inconnu,rejetee
+1295,stock_inventaire.csv,2024-07-31|ENT-MTL|BD-9815,code_article,BD-9815,article_inconnu,rejetee
+1296,stock_inventaire.csv,2024-04-30|ENT-QC|BD-9108,code_article,BD-9108,article_inconnu,rejetee
+1297,stock_inventaire.csv,2024-11-30|ENT-SAG|BD-9862,code_article,BD-9862,article_inconnu,rejetee
+1298,stock_inventaire.csv,2024-05-31|ENT-SAG|BD-1098,-,photo deja enregistree,doublon_exact,rejetee
+1299,stock_inventaire.csv,2025-03-31|ENT-QC|BD-9267,code_article,BD-9267,article_inconnu,rejetee
+1300,stock_inventaire.csv,2024-10-31|ENT-QC|BD-9167,code_article,BD-9167,article_inconnu,rejetee
+1301,stock_inventaire.csv,2024-02-29|ENT-SAG|BD-9559,code_article,BD-9559,article_inconnu,rejetee
+1302,stock_inventaire.csv,2024-12-31|ENT-MTL|BD-9451,code_article,BD-9451,article_inconnu,rejetee
+1303,stock_inventaire.csv,2025-05-31|ENT-QC|BD-9973,code_article,BD-9973,article_inconnu,rejetee
+1304,stock_inventaire.csv,2025-03-31|ENT-SAG|BD-1108,-,photo deja enregistree,doublon_exact,rejetee
+1305,stock_inventaire.csv,2024-04-30|ENT-MTL|BD-9951,code_article,BD-9951,article_inconnu,rejetee
+1306,stock_inventaire.csv,2025-04-30|ENT-SAG|BD-1082,-,photo deja enregistree,doublon_exact,rejetee
+1307,stock_inventaire.csv,2024-02-29|ENT-MTL|BD-1126,quantite_en_stock,-9,quantite_invalide,rejetee
+1308,stock_inventaire.csv,2024-01-31|ENT-MTL|BD-1135,quantite_en_stock,-9,quantite_invalide,rejetee
+1309,stock_inventaire.csv,2024-12-31|ENT-SAG|BD-1141,quantite_en_stock,-5,quantite_invalide,rejetee
+1310,stock_inventaire.csv,2025-02-28|ENT-QC|BD-1076,quantite_en_stock,-4,quantite_invalide,rejetee
+1311,stock_inventaire.csv,2024-01-31|ENT-QC|BD-1082,quantite_en_stock,-8,quantite_invalide,rejetee
+1312,stock_inventaire.csv,2025-02-28|ENT-QC|BD-1097,-,photo deja enregistree,doublon_exact,rejetee
+1313,stock_inventaire.csv,2024-08-31|ENT-MTL|BD-9617,code_article,BD-9617,article_inconnu,rejetee
+1314,stock_inventaire.csv,2025-06-30|ENT-MTL|BD-1038,-,photo deja enregistree,doublon_exact,rejetee
+1315,stock_inventaire.csv,2024-10-31|ENT-QC|BD-1045,-,photo deja enregistree,doublon_exact,rejetee
+1316,stock_inventaire.csv,2025-05-31|ENT-MTL|BD-1136,-,photo deja enregistree,doublon_exact,rejetee
+1317,stock_inventaire.csv,2024-03-31|ENT-MTL|BD-9018,code_article,BD-9018,article_inconnu,rejetee
+1318,stock_inventaire.csv,2024-07-31|ENT-MTL|BD-9011,code_article,BD-9011,article_inconnu,rejetee
+1319,stock_inventaire.csv,2025-03-31|ENT-QC|BD-1100,-,photo deja enregistree,doublon_exact,rejetee
+1320,stock_inventaire.csv,2024-07-31|ENT-QC|BD-1063,quantite_en_stock,-8,quantite_invalide,rejetee
+1321,stock_inventaire.csv,2024-04-30|ENT-SAG|BD-9278,code_article,BD-9278,article_inconnu,rejetee
+1322,stock_inventaire.csv,2024-02-29|ENT-QC|BD-1008,-,photo deja enregistree,doublon_exact,rejetee
+1323,stock_inventaire.csv,2024-11-30|ENT-SAG|BD-1127,-,photo deja enregistree,doublon_exact,rejetee
+1324,stock_inventaire.csv,2024-08-31|ENT-SAG|BD-9098,code_article,BD-9098,article_inconnu,rejetee
+1325,stock_inventaire.csv,2025-01-31|ENT-SAG|BD-1120,-,photo deja enregistree,doublon_exact,rejetee
+1326,stock_inventaire.csv,2025-05-31|ENT-QC|BD-9278,code_article,BD-9278,article_inconnu,rejetee
+1327,stock_inventaire.csv,2024-08-31|ENT-SAG|BD-1008,quantite_en_stock,-4,quantite_invalide,rejetee
+1328,stock_inventaire.csv,2024-09-30|ENT-QC|BD-1089,quantite_en_stock,-2,quantite_invalide,rejetee
+1329,stock_inventaire.csv,2024-08-31|ENT-QC|BD-9634,code_article,BD-9634,article_inconnu,rejetee
+1330,stock_inventaire.csv,2024-11-30|ENT-QC|BD-1097,quantite_en_stock,-3,quantite_invalide,rejetee
+1331,stock_inventaire.csv,2024-10-31|ENT-SAG|BD-1046,-,photo deja enregistree,doublon_exact,rejetee
+1332,stock_inventaire.csv,2025-02-28|ENT-MTL|BD-9700,code_article,BD-9700,article_inconnu,rejetee
+1333,stock_inventaire.csv,2024-10-31|ENT-SAG|BD-1098,-,photo deja enregistree,doublon_exact,rejetee
+1334,stock_inventaire.csv,2025-12-31|ENT-MTL|BD-1115,-,photo deja enregistree,doublon_exact,rejetee
+1335,stock_inventaire.csv,2025-08-31|ENT-SAG|BD-1136,quantite_en_stock,-1,quantite_invalide,rejetee
+1336,stock_inventaire.csv,2024-05-31|ENT-SAG|BD-1165,-,photo deja enregistree,doublon_exact,rejetee
+1337,stock_inventaire.csv,2025-09-30|ENT-QC|BD-1143,-,photo deja enregistree,doublon_exact,rejetee
+1338,stock_inventaire.csv,2025-07-31|ENT-QC|BD-1146,-,photo deja enregistree,doublon_exact,rejetee
+1339,stock_inventaire.csv,2025-05-31|ENT-SAG|BD-9156,code_article,BD-9156,article_inconnu,rejetee
+1340,stock_inventaire.csv,2024-03-31|ENT-QC|BD-1147,-,photo deja enregistree,doublon_exact,rejetee
+1341,stock_inventaire.csv,2024-08-31|ENT-QC|BD-1177,-,photo deja enregistree,doublon_exact,rejetee
+1342,stock_inventaire.csv,2025-01-31|ENT-MTL|BD-1154,-,photo deja enregistree,doublon_exact,rejetee
+1343,stock_inventaire.csv,2024-11-30|ENT-QC|BD-1038,-,photo deja enregistree,doublon_exact,rejetee
+1344,stock_inventaire.csv,2025-04-30|ENT-MTL|BD-1040,-,photo deja enregistree,doublon_exact,rejetee
+1345,stock_inventaire.csv,2024-04-30|ENT-QC|BD-9972,code_article,BD-9972,article_inconnu,rejetee
+1346,stock_inventaire.csv,2024-05-31|ENT-QC|BD-1079,-,photo deja enregistree,doublon_exact,rejetee
+1347,stock_inventaire.csv,2024-10-31|ENT-MTL|BD-1116,quantite_en_stock,-4,quantite_invalide,rejetee
+1348,stock_inventaire.csv,2025-04-30|ENT-SAG|BD-1055,quantite_en_stock,-8,quantite_invalide,rejetee
+1349,stock_inventaire.csv,2024-07-31|ENT-QC|BD-1042,quantite_en_stock,-4,quantite_invalide,rejetee
+1350,stock_inventaire.csv,2025-03-31|ENT-QC|BD-1107,-,photo deja enregistree,doublon_exact,rejetee
+1351,stock_inventaire.csv,2024-07-31|ENT-MTL|BD-1128,-,photo deja enregistree,doublon_exact,rejetee
+1352,stock_inventaire.csv,2025-11-30|ENT-QC|BD-9630,code_article,BD-9630,article_inconnu,rejetee
+1353,stock_inventaire.csv,2025-12-31|ENT-MTL|BD-1165,-,photo deja enregistree,doublon_exact,rejetee
+1354,stock_inventaire.csv,2024-10-31|ENT-MTL|BD-1068,quantite_en_stock,-3,quantite_invalide,rejetee
+1355,stock_inventaire.csv,2024-09-30|ENT-MTL|BD-1139,quantite_en_stock,-3,quantite_invalide,rejetee
+1356,stock_inventaire.csv,2024-01-31|ENT-QC|BD-1105,-,photo deja enregistree,doublon_exact,rejetee
+1357,stock_inventaire.csv,2025-08-31|ENT-QC|BD-1104,-,photo deja enregistree,doublon_exact,rejetee
+1358,stock_inventaire.csv,2025-03-31|ENT-MTL|BD-1163,quantite_en_stock,-4,quantite_invalide,rejetee
+1359,stock_inventaire.csv,2025-07-31|ENT-QC|BD-1045,-,photo deja enregistree,doublon_exact,rejetee
+1360,stock_inventaire.csv,2025-10-31|ENT-SAG|BD-1051,-,photo deja enregistree,doublon_exact,rejetee
+1361,stock_inventaire.csv,2025-11-30|ENT-MTL|BD-1049,-,photo deja enregistree,doublon_exact,rejetee
+1362,stock_inventaire.csv,2025-11-30|ENT-MTL|BD-1053,quantite_en_stock,-2,quantite_invalide,rejetee
+1363,stock_inventaire.csv,2024-11-30|ENT-QC|BD-1055,-,photo deja enregistree,doublon_exact,rejetee
+1364,stock_inventaire.csv,2025-04-30|ENT-SAG|BD-1017,-,photo deja enregistree,doublon_exact,rejetee
+1365,stock_inventaire.csv,2025-06-30|ENT-SAG|BD-1112,-,photo deja enregistree,doublon_exact,rejetee
+1366,stock_inventaire.csv,2024-06-30|ENT-QC|BD-9902,code_article,BD-9902,article_inconnu,rejetee
+1367,stock_inventaire.csv,2024-04-30|ENT-MTL|BD-9038,code_article,BD-9038,article_inconnu,rejetee
+1368,stock_inventaire.csv,2025-09-30|ENT-QC|BD-1081,-,photo deja enregistree,doublon_exact,rejetee
+1369,stock_inventaire.csv,2025-05-31|ENT-SAG|BD-9116,code_article,BD-9116,article_inconnu,rejetee
+1370,stock_inventaire.csv,2025-12-31|ENT-MTL|BD-1094,-,photo deja enregistree,doublon_exact,rejetee
+1371,stock_inventaire.csv,2025-10-31|ENT-QC|BD-1038,-,photo deja enregistree,doublon_exact,rejetee
+1372,stock_inventaire.csv,2025-04-30|ENT-SAG|BD-1083,-,photo deja enregistree,doublon_exact,rejetee
+1373,stock_inventaire.csv,2024-02-29|ENT-QC|BD-1140,-,photo deja enregistree,doublon_exact,rejetee
+1374,stock_inventaire.csv,2025-02-28|ENT-QC|BD-1034,-,photo deja enregistree,doublon_exact,rejetee
+1375,stock_inventaire.csv,2025-12-31|ENT-SAG|BD-1061,-,photo deja enregistree,doublon_exact,rejetee
+1376,stock_inventaire.csv,2024-05-31|ENT-MTL|BD-9614,code_article,BD-9614,article_inconnu,rejetee
+1377,stock_inventaire.csv,2024-05-31|ENT-MTL|BD-1129,-,photo deja enregistree,doublon_exact,rejetee
+1378,stock_inventaire.csv,2024-08-31|ENT-MTL|BD-1053,quantite_en_stock,-2,quantite_invalide,rejetee
+1379,stock_inventaire.csv,2025-03-31|ENT-MTL|BD-9251,code_article,BD-9251,article_inconnu,rejetee
+1380,stock_inventaire.csv,2025-03-31|ENT-MTL|BD-9554,code_article,BD-9554,article_inconnu,rejetee
+1381,stock_inventaire.csv,2025-08-31|ENT-MTL|BD-1058,-,photo deja enregistree,doublon_exact,rejetee
+1382,stock_inventaire.csv,2025-12-31|ENT-MTL|BD-1172,-,photo deja enregistree,doublon_exact,rejetee
+1383,stock_inventaire.csv,2024-06-30|ENT-SAG|BD-9003,code_article,BD-9003,article_inconnu,rejetee
+1384,stock_inventaire.csv,2025-03-31|ENT-MTL|BD-1173,-,photo deja enregistree,doublon_exact,rejetee
+1385,stock_inventaire.csv,2024-08-31|ENT-SAG|BD-9461,code_article,BD-9461,article_inconnu,rejetee
+1386,stock_inventaire.csv,2024-10-31|ENT-SAG|BD-9335,code_article,BD-9335,article_inconnu,rejetee
+1387,stock_inventaire.csv,2024-06-30|ENT-SAG|BD-9891,code_article,BD-9891,article_inconnu,rejetee
+1388,stock_inventaire.csv,2024-06-30|ENT-SAG|BD-1165,-,photo deja enregistree,doublon_exact,rejetee
+1389,stock_inventaire.csv,2024-03-31|ENT-QC|BD-1038,-,photo deja enregistree,doublon_exact,rejetee
+1390,stock_inventaire.csv,2025-04-30|ENT-MTL|BD-9244,code_article,BD-9244,article_inconnu,rejetee
+1391,stock_inventaire.csv,2025-04-30|ENT-QC|BD-1139,-,photo deja enregistree,doublon_exact,rejetee
+1392,stock_inventaire.csv,2024-06-30|ENT-QC|BD-1172,-,photo deja enregistree,doublon_exact,rejetee
+1393,stock_inventaire.csv,2024-10-31|ENT-SAG|BD-1107,-,photo deja enregistree,doublon_exact,rejetee
+1394,stock_inventaire.csv,2025-04-30|ENT-SAG|BD-1002,-,photo deja enregistree,doublon_exact,rejetee
+1395,stock_inventaire.csv,2025-11-30|ENT-MTL|BD-9931,code_article,BD-9931,article_inconnu,rejetee
+1396,stock_inventaire.csv,2025-05-31|ENT-MTL|BD-1002,quantite_en_stock,-7,quantite_invalide,rejetee
+1397,stock_inventaire.csv,2025-01-31|ENT-SAG|BD-9176,code_article,BD-9176,article_inconnu,rejetee
+1398,stock_inventaire.csv,2025-06-30|ENT-QC|BD-1161,-,photo deja enregistree,doublon_exact,rejetee
+1399,stock_inventaire.csv,2025-09-30|ENT-SAG|BD-1066,-,photo deja enregistree,doublon_exact,rejetee
+1400,stock_inventaire.csv,2024-07-31|ENT-QC|BD-9531,code_article,BD-9531,article_inconnu,rejetee
+1401,stock_inventaire.csv,2025-05-31|ENT-QC|BD-9540,code_article,BD-9540,article_inconnu,rejetee
+1402,stock_inventaire.csv,2025-01-31|ENT-MTL|BD-9465,code_article,BD-9465,article_inconnu,rejetee
+1403,stock_inventaire.csv,2024-01-31|ENT-QC|BD-1158,-,photo deja enregistree,doublon_exact,rejetee
+1404,stock_inventaire.csv,2024-09-30|ENT-SAG|BD-1041,-,photo deja enregistree,doublon_exact,rejetee
+1405,stock_inventaire.csv,2025-10-31|ENT-QC|BD-1140,quantite_en_stock,-9,quantite_invalide,rejetee
+1406,stock_inventaire.csv,2024-08-31|ENT-QC|BD-1064,quantite_en_stock,-1,quantite_invalide,rejetee
+1407,stock_inventaire.csv,2024-08-31|ENT-MTL|BD-1069,-,photo deja enregistree,doublon_exact,rejetee
+1408,stock_inventaire.csv,2025-03-31|ENT-QC|BD-1043,quantite_en_stock,-2,quantite_invalide,rejetee
+1409,stock_inventaire.csv,2025-07-31|ENT-MTL|BD-9612,code_article,BD-9612,article_inconnu,rejetee
+1410,stock_inventaire.csv,2025-06-30|ENT-QC|BD-1130,-,photo deja enregistree,doublon_exact,rejetee
+1411,stock_inventaire.csv,2024-01-31|ENT-SAG|BD-1103,-,photo deja enregistree,doublon_exact,rejetee
+1412,stock_inventaire.csv,2025-12-31|ENT-QC|BD-1176,-,photo deja enregistree,doublon_exact,rejetee
+1413,stock_inventaire.csv,2024-02-29|ENT-SAG|BD-1051,quantite_en_stock,-3,quantite_invalide,rejetee
+1414,marketing_campagnes.json,2024-01 Publicité numérique,budget_prevu,None,valeur_manquante,corrigee
+1415,marketing_campagnes.json,2024-05 Commandite locale,budget_prevu,None,valeur_manquante,corrigee
+1416,marketing_campagnes.json,2024-10 Salons professionnels,budget_prevu,None,valeur_manquante,corrigee
+1417,marketing_campagnes.json,2025-03 Salons professionnels,budget_prevu,None,valeur_manquante,corrigee
+1418,marketing_campagnes.json,2025-08 Catalogue imprimé,budget_prevu,None,valeur_manquante,corrigee
+1419,compta_charges.csv,12/2025 HONORAIRES PROFESSIONNELS,Categorie,HONORAIRES PROFESSIONNELS,variante_ecriture,corrigee
+1420,compta_charges.csv,05/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1421,compta_charges.csv,10/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1422,compta_charges.csv,08/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1423,compta_charges.csv,04/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1424,compta_charges.csv,01/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1425,compta_charges.csv,09/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1426,compta_charges.csv,11/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1427,compta_charges.csv,07/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1428,compta_charges.csv,12/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1429,compta_charges.csv,04/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1430,compta_charges.csv,11/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1431,compta_charges.csv,07/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1432,compta_charges.csv,02/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1433,compta_charges.csv,04/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1434,compta_charges.csv,01/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1435,compta_charges.csv,04/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1436,compta_charges.csv,05/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1437,compta_charges.csv,07/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1438,compta_charges.csv,06/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1439,compta_charges.csv,06/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1440,compta_charges.csv,03/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1441,compta_charges.csv,07/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1442,compta_charges.csv,10/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1443,compta_charges.csv,09/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1444,compta_charges.csv,11/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1445,compta_charges.csv,05/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1446,compta_charges.csv,02/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1447,compta_charges.csv,10/2025 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1448,compta_charges.csv,05/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1449,compta_charges.csv,08/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1450,compta_charges.csv,10/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1451,compta_charges.csv,06/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1452,compta_charges.csv,06/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1453,compta_charges.csv,09/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1454,compta_charges.csv,03/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1455,compta_charges.csv,07/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1456,compta_charges.csv,05/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1457,compta_charges.csv,02/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1458,compta_charges.csv,02/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1459,compta_charges.csv,04/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1460,compta_charges.csv,03/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1461,compta_charges.csv,05/2024 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1462,compta_charges.csv,08/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1463,compta_charges.csv,10/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1464,compta_charges.csv,08/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1465,compta_charges.csv,01/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1466,compta_charges.csv,08/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1467,compta_charges.csv,01/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1468,compta_charges.csv,07/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1469,compta_charges.csv,07/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1470,compta_charges.csv,06/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1471,compta_charges.csv,06/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1472,compta_charges.csv,12/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1473,compta_charges.csv,11/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1474,compta_charges.csv,11/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1475,compta_charges.csv,09/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1476,compta_charges.csv,10/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1477,compta_charges.csv,09/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1478,compta_charges.csv,02/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1479,compta_charges.csv,05/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1480,compta_charges.csv,06/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1481,compta_charges.csv,07/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1482,compta_charges.csv,03/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1483,compta_charges.csv,12/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1484,compta_charges.csv,11/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1485,compta_charges.csv,01/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1486,compta_charges.csv,06/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1487,compta_charges.csv,10/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1488,compta_charges.csv,11/2024|Énergie|ENT-SAG,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1489,compta_charges.csv,01/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1490,compta_charges.csv,01/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1491,compta_charges.csv,07/2024 logiciels et ti,Categorie,logiciels et ti,variante_ecriture,corrigee
+1492,compta_charges.csv,02/2024|Énergie|ENT-QC,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1493,compta_charges.csv,08/2025 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1494,compta_charges.csv,03/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1495,compta_charges.csv,03/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1496,compta_charges.csv,01/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1497,compta_charges.csv,09/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1498,compta_charges.csv,12/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1499,compta_charges.csv,10/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1500,compta_charges.csv,12/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1501,compta_charges.csv,05/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1502,compta_charges.csv,07/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1503,compta_charges.csv,05/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1504,compta_charges.csv,02/2024 logiciels et ti,Categorie,logiciels et ti,variante_ecriture,corrigee
+1505,compta_charges.csv,04/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1506,compta_charges.csv,03/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1507,compta_charges.csv,05/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1508,compta_charges.csv,09/2024 HONORAIRES PROFESSIONNELS,Categorie,HONORAIRES PROFESSIONNELS,variante_ecriture,corrigee
+1509,compta_charges.csv,01/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1510,compta_charges.csv,06/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1511,compta_charges.csv,06/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1512,compta_charges.csv,11/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1513,compta_charges.csv,10/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1514,compta_charges.csv,07/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1515,compta_charges.csv,08/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1516,compta_charges.csv,06/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1517,compta_charges.csv,01/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1518,compta_charges.csv,10/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1519,compta_charges.csv,11/2024 honoraires professionnels,Categorie,honoraires professionnels,variante_ecriture,corrigee
+1520,compta_charges.csv,06/2024 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1521,compta_charges.csv,09/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1522,compta_charges.csv,07/2025 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1523,compta_charges.csv,10/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1524,compta_charges.csv,07/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1525,compta_charges.csv,02/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1526,compta_charges.csv,01/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1527,compta_charges.csv,06/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1528,compta_charges.csv,04/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1529,compta_charges.csv,06/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1530,compta_charges.csv,05/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1531,compta_charges.csv,03/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1532,compta_charges.csv,08/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1533,compta_charges.csv,05/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1534,compta_charges.csv,04/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1535,compta_charges.csv,07/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1536,compta_charges.csv,03/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1537,compta_charges.csv,07/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1538,compta_charges.csv,11/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1539,compta_charges.csv,04/2025 logiciels et ti,Categorie,logiciels et ti,variante_ecriture,corrigee
+1540,compta_charges.csv,05/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1541,compta_charges.csv,12/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1542,compta_charges.csv,12/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1543,compta_charges.csv,08/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1544,compta_charges.csv,10/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1545,compta_charges.csv,07/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1546,compta_charges.csv,01/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1547,compta_charges.csv,11/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1548,compta_charges.csv,08/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1549,compta_charges.csv,04/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1550,compta_charges.csv,01/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1551,compta_charges.csv,08/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1552,compta_charges.csv,04/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1553,compta_charges.csv,06/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1554,compta_charges.csv,04/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1555,compta_charges.csv,01/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1556,compta_charges.csv,09/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1557,compta_charges.csv,05/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1558,compta_charges.csv,12/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1559,compta_charges.csv,11/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1560,compta_charges.csv,10/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1561,compta_charges.csv,06/2025 honoraires professionnels,Categorie,honoraires professionnels,variante_ecriture,corrigee
+1562,compta_charges.csv,05/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1563,compta_charges.csv,11/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1564,compta_charges.csv,02/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1565,compta_charges.csv,08/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1566,compta_charges.csv,03/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1567,compta_charges.csv,05/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1568,compta_charges.csv,07/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1569,compta_charges.csv,04/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1570,compta_charges.csv,10/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1571,compta_charges.csv,07/2025|Entretien et réparations|ENT-SAG,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1572,compta_charges.csv,11/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1573,compta_charges.csv,01/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1574,compta_charges.csv,07/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1575,compta_charges.csv,12/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1576,compta_charges.csv,03/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1577,compta_charges.csv,08/2024|Énergie|ENT-QC,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1578,compta_charges.csv,12/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1579,compta_charges.csv,06/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1580,compta_charges.csv,02/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1581,compta_charges.csv,06/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1582,compta_charges.csv,01/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1583,compta_charges.csv,10/2025 honoraires professionnels,Categorie,honoraires professionnels,variante_ecriture,corrigee
+1584,compta_charges.csv,02/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1585,compta_charges.csv,07/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1586,compta_charges.csv,03/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1587,compta_charges.csv,12/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1588,compta_charges.csv,07/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1589,compta_charges.csv,08/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1590,compta_charges.csv,05/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1591,compta_charges.csv,11/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1592,compta_charges.csv,02/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1593,compta_charges.csv,07/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1594,compta_charges.csv,07/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1595,compta_charges.csv,11/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1596,compta_charges.csv,04/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1597,compta_charges.csv,03/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1598,compta_charges.csv,03/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1599,compta_charges.csv,09/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1600,compta_charges.csv,01/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1601,compta_charges.csv,10/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1602,compta_charges.csv,02/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1603,compta_charges.csv,07/2025|Entretien et réparations|ENT-MTL,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1604,compta_charges.csv,06/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1605,compta_charges.csv,06/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1606,compta_charges.csv,04/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1607,compta_charges.csv,03/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1608,compta_charges.csv,11/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1609,compta_charges.csv,04/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1610,compta_charges.csv,02/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1611,compta_charges.csv,12/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1612,compta_charges.csv,07/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1613,compta_charges.csv,11/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1614,compta_charges.csv,08/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1615,compta_charges.csv,05/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1616,compta_charges.csv,11/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1617,compta_charges.csv,11/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1618,compta_charges.csv,01/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1619,compta_charges.csv,01/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1620,compta_charges.csv,01/2024 logiciels et ti,Categorie,logiciels et ti,variante_ecriture,corrigee
+1621,compta_charges.csv,02/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1622,compta_charges.csv,06/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1623,compta_charges.csv,12/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1624,compta_charges.csv,07/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1625,compta_charges.csv,02/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1626,compta_charges.csv,05/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1627,compta_charges.csv,12/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1628,compta_charges.csv,03/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1629,compta_charges.csv,07/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1630,compta_charges.csv,01/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1631,compta_charges.csv,07/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1632,compta_charges.csv,10/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1633,compta_charges.csv,11/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1634,compta_charges.csv,03/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1635,compta_charges.csv,09/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1636,compta_charges.csv,04/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1637,compta_charges.csv,02/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1638,compta_charges.csv,04/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1639,compta_charges.csv,05/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1640,compta_charges.csv,08/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1641,compta_charges.csv,08/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1642,compta_charges.csv,09/2025 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1643,compta_charges.csv,01/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1644,compta_charges.csv,09/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1645,compta_charges.csv,05/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1646,compta_charges.csv,06/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1647,compta_charges.csv,10/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1648,compta_charges.csv,12/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1649,compta_charges.csv,05/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1650,compta_charges.csv,02/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1651,compta_charges.csv,03/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1652,compta_charges.csv,08/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1653,compta_charges.csv,06/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1654,compta_charges.csv,05/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1655,compta_charges.csv,12/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1656,compta_charges.csv,03/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1657,compta_charges.csv,04/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1658,compta_charges.csv,09/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1659,compta_charges.csv,03/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1660,compta_charges.csv,03/2024 HONORAIRES PROFESSIONNELS,Categorie,HONORAIRES PROFESSIONNELS,variante_ecriture,corrigee
+1661,compta_charges.csv,05/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1662,compta_charges.csv,04/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1663,compta_charges.csv,08/2024 honoraires professionnels,Categorie,honoraires professionnels,variante_ecriture,corrigee
+1664,compta_charges.csv,09/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1665,compta_charges.csv,09/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1666,compta_charges.csv,12/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1667,compta_charges.csv,06/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1668,compta_charges.csv,04/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1669,compta_charges.csv,09/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1670,compta_charges.csv,03/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1671,compta_charges.csv,12/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1672,compta_charges.csv,08/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1673,compta_charges.csv,11/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1674,compta_charges.csv,06/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1675,compta_charges.csv,06/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1676,compta_charges.csv,05/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1677,compta_charges.csv,03/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1678,compta_charges.csv,08/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1679,compta_charges.csv,01/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1680,compta_charges.csv,02/2024 HONORAIRES PROFESSIONNELS,Categorie,HONORAIRES PROFESSIONNELS,variante_ecriture,corrigee
+1681,compta_charges.csv,12/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1682,compta_charges.csv,01/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1683,compta_charges.csv,02/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1684,compta_charges.csv,08/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1685,compta_charges.csv,01/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1686,compta_charges.csv,03/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1687,compta_charges.csv,02/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1688,compta_charges.csv,12/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1689,compta_charges.csv,09/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1690,compta_charges.csv,10/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1691,compta_charges.csv,05/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1692,compta_charges.csv,11/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1693,compta_charges.csv,12/2025 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1694,compta_charges.csv,09/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1695,compta_charges.csv,10/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1696,compta_charges.csv,04/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1697,compta_charges.csv,02/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1698,compta_charges.csv,06/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1699,compta_charges.csv,09/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1700,compta_charges.csv,07/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1701,compta_charges.csv,09/2025 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1702,compta_charges.csv,10/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1703,compta_charges.csv,03/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1704,compta_charges.csv,03/2024|Assurances|ENT-QC,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1705,compta_charges.csv,06/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1706,compta_charges.csv,10/2024 HONORAIRES PROFESSIONNELS,Categorie,HONORAIRES PROFESSIONNELS,variante_ecriture,corrigee
+1707,compta_charges.csv,11/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1708,compta_charges.csv,12/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1709,compta_charges.csv,09/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1710,compta_charges.csv,09/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1711,compta_charges.csv,11/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1712,compta_charges.csv,01/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1713,compta_charges.csv,03/2025 logiciels et ti,Categorie,logiciels et ti,variante_ecriture,corrigee
+1714,compta_charges.csv,05/2025|Énergie|ENT-SAG,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1715,compta_charges.csv,10/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1716,compta_charges.csv,05/2024 HONORAIRES PROFESSIONNELS,Categorie,HONORAIRES PROFESSIONNELS,variante_ecriture,corrigee
+1717,compta_charges.csv,10/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1718,compta_charges.csv,06/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1719,compta_charges.csv,11/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1720,compta_charges.csv,01/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1721,compta_charges.csv,12/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1722,compta_charges.csv,10/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1723,compta_charges.csv,07/2024 énergie,Categorie,énergie,variante_ecriture,corrigee
+1724,compta_charges.csv,07/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1725,compta_charges.csv,12/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1726,compta_charges.csv,02/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1727,compta_charges.csv,11/2025|Assurances|ENT-MTL,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1728,compta_charges.csv,11/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1729,compta_charges.csv,01/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1730,compta_charges.csv,04/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1731,compta_charges.csv,02/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1732,compta_charges.csv,03/2024 logiciels et ti,Categorie,logiciels et ti,variante_ecriture,corrigee
+1733,compta_charges.csv,12/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1734,compta_charges.csv,11/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1735,compta_charges.csv,04/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1736,compta_charges.csv,03/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1737,compta_charges.csv,11/2025|Télécommunications|ENT-QC,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1738,compta_charges.csv,10/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1739,compta_charges.csv,07/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1740,compta_charges.csv,08/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1741,compta_charges.csv,08/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1742,compta_charges.csv,01/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1743,compta_charges.csv,05/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1744,compta_charges.csv,04/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1745,compta_charges.csv,04/2025|Énergie|ENT-QC,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1746,compta_charges.csv,01/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1747,compta_charges.csv,04/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1748,compta_charges.csv,07/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1749,compta_charges.csv,04/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1750,compta_charges.csv,09/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1751,compta_charges.csv,03/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1752,compta_charges.csv,11/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1753,compta_charges.csv,08/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1754,compta_charges.csv,12/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1755,compta_charges.csv,04/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1756,compta_charges.csv,09/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1757,compta_charges.csv,03/2025|Fournitures de bureau|ENT-SAG,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1758,compta_charges.csv,10/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1759,compta_charges.csv,04/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1760,compta_charges.csv,05/2024|Entretien et réparations|ENT-MTL,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1761,compta_charges.csv,09/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1762,compta_charges.csv,08/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1763,compta_charges.csv,08/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1764,compta_charges.csv,08/2024 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1765,compta_charges.csv,04/2024|Honoraires professionnels|ENT-QC,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1766,compta_charges.csv,12/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1767,compta_charges.csv,09/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1768,compta_charges.csv,09/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1769,compta_charges.csv,10/2024 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1770,compta_charges.csv,05/2024 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1771,compta_charges.csv,04/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1772,compta_charges.csv,02/2025 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1773,compta_charges.csv,08/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1774,compta_charges.csv,07/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1775,compta_charges.csv,01/2025 logiciels et ti,Categorie,logiciels et ti,variante_ecriture,corrigee
+1776,compta_charges.csv,05/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1777,compta_charges.csv,04/2024 ÉNERGIE,Categorie,ÉNERGIE,variante_ecriture,corrigee
+1778,compta_charges.csv,04/2025|Entretien et réparations|ENT-SAG,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1779,compta_charges.csv,11/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1780,compta_charges.csv,02/2025 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1781,compta_charges.csv,04/2024 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1782,compta_charges.csv,10/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1783,compta_charges.csv,07/2024 télécommunications,Categorie,télécommunications,variante_ecriture,corrigee
+1784,compta_charges.csv,05/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1785,compta_charges.csv,05/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1786,compta_charges.csv,05/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1787,compta_charges.csv,10/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1788,compta_charges.csv,12/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1789,compta_charges.csv,09/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1790,compta_charges.csv,09/2024|Entretien et réparations|ENT-MTL,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1791,compta_charges.csv,03/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1792,compta_charges.csv,08/2025 loyer,Categorie,loyer,variante_ecriture,corrigee
+1793,compta_charges.csv,06/2025 assurances,Categorie,assurances,variante_ecriture,corrigee
+1794,compta_charges.csv,10/2024|Fournitures de bureau|ENT-QC,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1795,compta_charges.csv,01/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1796,compta_charges.csv,11/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1797,compta_charges.csv,08/2024|Télécommunications|ENT-MTL,-,ecriture deja comptabilisee,doublon_exact,rejetee
+1798,compta_charges.csv,06/2024 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1799,compta_charges.csv,09/2024 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1800,compta_charges.csv,09/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1801,compta_charges.csv,06/2024 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1802,compta_charges.csv,08/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1803,compta_charges.csv,10/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1804,compta_charges.csv,08/2025 honoraires professionnels,Categorie,honoraires professionnels,variante_ecriture,corrigee
+1805,compta_charges.csv,01/2024 assurances,Categorie,assurances,variante_ecriture,corrigee
+1806,compta_charges.csv,07/2025 FOURNITURES DE BUREAU,Categorie,FOURNITURES DE BUREAU,variante_ecriture,corrigee
+1807,compta_charges.csv,10/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee
+1808,compta_charges.csv,08/2025 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1809,compta_charges.csv,03/2025 honoraires professionnels,Categorie,honoraires professionnels,variante_ecriture,corrigee
+1810,compta_charges.csv,08/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1811,compta_charges.csv,10/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1812,compta_charges.csv,05/2025 TRANSPORT ET LIVRAISON,Categorie,TRANSPORT ET LIVRAISON,variante_ecriture,corrigee
+1813,compta_charges.csv,06/2024 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1814,compta_charges.csv,09/2025 entretien et réparations,Categorie,entretien et réparations,variante_ecriture,corrigee
+1815,compta_charges.csv,02/2025 ASSURANCES,Categorie,ASSURANCES,variante_ecriture,corrigee
+1816,compta_charges.csv,09/2024 LOGICIELS ET TI,Categorie,LOGICIELS ET TI,variante_ecriture,corrigee
+1817,compta_charges.csv,12/2025 LOYER,Categorie,LOYER,variante_ecriture,corrigee
+1818,compta_charges.csv,03/2024 loyer,Categorie,loyer,variante_ecriture,corrigee
+1819,compta_charges.csv,08/2025 énergie,Categorie,énergie,variante_ecriture,corrigee
+1820,compta_charges.csv,11/2024 transport et livraison,Categorie,transport et livraison,variante_ecriture,corrigee
+1821,compta_charges.csv,08/2025 ENTRETIEN ET RÉPARATIONS,Categorie,ENTRETIEN ET RÉPARATIONS,variante_ecriture,corrigee
+1822,compta_charges.csv,03/2024 fournitures de bureau,Categorie,fournitures de bureau,variante_ecriture,corrigee
+1823,compta_charges.csv,12/2025 TÉLÉCOMMUNICATIONS,Categorie,TÉLÉCOMMUNICATIONS,variante_ecriture,corrigee

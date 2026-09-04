@@ -1,0 +1,6 @@
+# Dependances du pipeline. Les scripts 1 a 5 et 7 n'utilisent que la bibliotheque
+# standard (csv, json, sqlite3, datetime, re) a l'exception d'openpyxl, necessaire
+# pour lire et ecrire le classeur RH.
+openpyxl>=3.1      # source RH : classeur Excel a deux feuilles
+matplotlib>=3.8    # script 6 : apercus des pages du rapport
+pandas>=2.2        # contre-verification independante des chiffres publies

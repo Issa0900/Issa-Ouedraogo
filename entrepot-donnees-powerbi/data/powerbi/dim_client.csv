@@ -1,0 +1,221 @@
+﻿client_id,code,nom,type_commerce,ville,province,code_postal,segment,conditions_paiement,courriel,date_ouverture,fiches_fusionnees
+1,CLI-0073,Aventure Hull Mauricie,Coopérative de plein air,Terrebonne,QC,J6B 0Y3,B,Net 60,achats@aventurehullmauricie.ca,2021-11-14,1
+2,CLI-0003,Nature Saint-Laurent,Boutique en ligne,Val-d'Or,QC,K0Y 0R6,C,Net 45,achats@naturesaint-laurent.ca,2016-02-24,2
+3,CLI-0128,Cap Nord Beauport Laurentides,Détaillant indépendant,Rimouski,QC,N2P 8J1,B,Net 30,achats@capnordbeauportlaurentides.ca,2017-06-26,1
+4,CLI-0132,Le Portage Mauricie,Détaillant indépendant,Sudbury,ON,M1N 9P8,B,Net 30,achats@leportagemauricie.ca,2020-03-12,1
+5,CLI-0083,Chalet Laurentides,Boutique en ligne,Kingston,ON,H5C 1Y3,C,Net 60,achats@chaletlaurentides.ca,2020-10-03,1
+6,CLI-0106,Chalet Longueuil Enr.,Coopérative de plein air,Drummondville,QC,L1B 1X2,B,Net 45,achats@chaletlongueuilenr.ca,2022-07-28,1
+7,CLI-0170,Grand Air Charlevoix,Coopérative de plein air,Montréal,QC,H1H 8G6,C,Net 30,achats@grandaircharlevoix.ca,2017-10-24,1
+8,CLI-0153,Expédition Lachine du Nord,Boutique en ligne,Québec,QC,N4Y 9J4,B,Net 30,achats@expeditionlachinedunord.ca,2020-01-08,1
+9,CLI-0213,Grand Air Verdun Cantons,Chaîne régionale,Fredericton,NB,N2L 2N9,C,Net 60,achats@grandairverduncantons.ca,2023-06-20,1
+10,CLI-0180,Sports Jonquière ltée,Détaillant indépendant,Victoriaville,QC,R4R 4V2,C,Net 30,achats@sportsjonquiereltee.ca,2017-02-25,1
+11,CLI-0206,Base Camp Enr.,Coopérative de plein air,Rimouski,QC,J2H 4N9,B,Net 60,achats@basecampenr.ca,2023-02-20,1
+12,CLI-0162,Chalet Chicoutimi Mauricie,Détaillant indépendant,Shawinigan,QC,M1R 4P1,B,Net 60,achats@chaletchicoutimimauricie.ca,2023-04-17,1
+13,CLI-0092,Chalet Blainville ltée,Chaîne régionale,Val-d'Or,QC,N6J 4S0,C,Net 60,achats@chaletblainvilleltee.ca,2020-10-04,2
+14,CLI-0108,Sentiers Mirabel Boréal,Coopérative de plein air,Baie-Comeau,QC,N2C 7B7,B,Net 30,achats@sentiersmirabelboreal.ca,2016-11-28,1
+15,CLI-0119,Grand Air inc.,Boutique en ligne,Baie-Comeau,QC,J3K 6V8,C,Net 30,,2023-01-05,1
+16,CLI-0054,Plein Air Appalaches,Chaîne régionale,Laval,QC,J6M 1K0,B,Net 45,achats@pleinairappalaches.ca,2018-06-10,1
+17,CLI-0056,Nature Gaspésie,Coopérative de plein air,Val-d'Or,QC,R0L 9A2,A,Net 45,achats@naturegaspesie.ca,2022-08-17,1
+18,CLI-0023,Expédition ltée,Coopérative de plein air,Moncton,NB,K8V 2C3,C,Net 60,achats@expeditionltee.ca,2023-06-12,1
+19,CLI-0100,Grand Air Mauricie,Chaîne régionale,Thunder Bay,ON,R4H 6J4,C,Net 60,achats@grandairmauricie.ca,2022-04-20,1
+20,CLI-0006,Sentiers Enr.,Chaîne régionale,Sudbury,ON,L1K 9P3,B,Net 30,achats@sentiersenr.ca,2023-02-18,1
+21,CLI-0070,Grand Air Lachine Gaspésie,Coopérative de plein air,Kingston,ON,M7V 2R1,C,Net 60,achats@grandairlachinegaspesie.ca,2016-12-06,1
+22,CLI-0146,Boutique ltée,Coopérative de plein air,Rouyn-Noranda,QC,R8H 9J4,B,Net 30,achats@boutiqueltee.ca,2019-05-08,1
+23,CLI-0109,Le Portage ltée,Chaîne régionale,Val-d'Or,QC,H8T 0M5,C,Net 30,achats@leportageltee.ca,2018-08-12,1
+24,CLI-0091,Boutique Boucherville Charlevoix,Chaîne régionale,Victoriaville,QC,G3R 7C2,C,Net 60,achats@boutiquebouchervillecharlevoix.ca,2016-07-05,2
+25,CLI-0081,Plein Air Repentigny inc.,Détaillant indépendant,Laval,QC,,B,Net 30,achats@pleinairrepentignyinc.ca,2019-07-15,1
+26,CLI-0022,Coopérative Mauricie,Chaîne régionale,Fredericton,NB,,C,Net 30,achats@cooperativemauricie.ca,2021-01-22,1
+27,CLI-0131,Nature Beauport Charlevoix,Chaîne régionale,Bathurst,NB,H7T 5X4,B,Net 30,achats@naturebeauportcharlevoix.ca,2018-09-28,1
+28,CLI-0028,Sentiers Charlevoix,Détaillant indépendant,Trois-Rivières,QC,K5R 9S4,C,Net 45,achats@sentierscharlevoix.ca,2018-12-05,1
+29,CLI-0027,Chalet Saint-Laurent,Détaillant indépendant,Victoriaville,QC,K7N 6M5,C,Net 60,achats@chaletsaint-laurent.ca,2020-04-14,2
+30,CLI-0138,Expédition Enr.,Détaillant indépendant,Sherbrooke,QC,M4P 4X2,C,Net 45,achats@expeditionenr.ca,2021-07-17,1
+31,CLI-0220,Randonneurs Lennoxville Cantons,Détaillant indépendant,Victoriaville,QC,L7L 6R5,B,Net 30,achats@randonneurslennoxvillecantons.ca,2018-08-24,1
+32,CLI-0060,Aventure inc.,Détaillant indépendant,Shawinigan,QC,R7E 8K7,C,Net 30,achats@aventureinc.ca,2022-06-09,1
+33,CLI-0069,Coopérative Lennoxville Charlevoix,Chaîne régionale,Charlottetown,PE,H8V 3K8,C,Net 60,achats@cooperativelennoxvillecharlevoix.ca,2017-08-28,1
+34,CLI-0157,Plein Air Anjou inc.,Boutique en ligne,Laval,QC,G1A 2M7,B,Net 30,,2016-10-24,1
+35,CLI-0071,Base Camp Cantons,Détaillant indépendant,Baie-Comeau,QC,M9B 8E4,C,Net 30,achats@basecampcantons.ca,2019-11-21,1
+36,CLI-0136,Cap Nord Chicoutimi du Nord,Détaillant indépendant,Terrebonne,QC,M7E 7C1,B,Net 60,achats@capnordchicoutimidunord.ca,2019-08-22,1
+37,CLI-0026,Expédition inc.,Boutique en ligne,Trois-Rivières,QC,H6B 4G0,B,Net 60,achats@expeditioninc.ca,2017-01-28,1
+38,CLI-0187,Plein Air Vaudreuil du Nord,Coopérative de plein air,North Bay,ON,M7X 1P8,B,Net 45,achats@pleinairvaudreuildunord.ca,2019-07-04,2
+39,CLI-0050,Nature ltée,Coopérative de plein air,Laval,QC,G4R 4V0,B,Net 60,achats@natureltee.ca,2016-06-12,1
+40,CLI-0185,Coopérative du Nord,Boutique en ligne,Sudbury,ON,G3V 3P3,A,Net 30,achats@cooperativedunord.ca,2018-01-05,1
+41,CLI-0047,Grand Air Outaouais,Boutique en ligne,Shawinigan,QC,H1L 2V6,B,Net 30,achats@grandairoutaouais.ca,2019-09-20,1
+42,CLI-0168,Boutique Lachine Charlevoix,Chaîne régionale,Baie-Comeau,QC,L7P 4G2,C,Net 45,achats@boutiquelachinecharlevoix.ca,2018-04-29,1
+43,CLI-0067,Coopérative Abitibi,Chaîne régionale,Victoriaville,QC,J0Y 9G8,B,Net 30,achats@cooperativeabitibi.ca,2022-05-15,2
+44,CLI-0041,Chalet inc.,Chaîne régionale,Baie-Comeau,QC,R8V 2M6,B,Net 45,achats@chaletinc.ca,2020-02-03,1
+45,CLI-0113,Expédition Sainte-Foy Mauricie,Détaillant indépendant,Granby,QC,R3B 5T8,C,Net 30,achats@expeditionsainte-foymauricie.ca,2020-05-10,1
+46,CLI-0062,Cap Nord et Fils,Boutique en ligne,Saguenay,QC,L2L 8R2,B,Net 45,achats@capnordetfils.ca,2019-07-13,1
+47,CLI-0043,Plein Air et Fils,Coopérative de plein air,Val-d'Or,QC,K9X 6T6,B,Net 45,,2023-04-28,1
+48,CLI-0058,Cap Nord Cantons,Détaillant indépendant,Sudbury,ON,R9E 4G6,C,Net 30,achats@capnordcantons.ca,2022-01-08,1
+49,CLI-0118,Cap Nord ltée,Chaîne régionale,Saguenay,QC,M7N 8M1,B,Net 30,achats@capnordltee.ca,2020-08-30,1
+50,CLI-0188,Plein Air ltée,Chaîne régionale,Baie-Comeau,QC,H3E 9S8,B,Net 60,achats@pleinairltee.ca,2021-01-12,1
+51,CLI-0195,Cap Nord Saint-Laurent,Chaîne régionale,Saint-Jean-sur-Richelieu,QC,K5S 8Y0,B,Net 30,achats@capnordsaint-laurent.ca,2022-12-19,1
+52,CLI-0084,Grand Air Anjou Saint-Laurent,Détaillant indépendant,Québec,QC,M8S 4K1,B,Net 30,achats@grandairanjousaint-laurent.ca,2019-07-18,1
+53,CLI-0057,Expédition Outaouais,Détaillant indépendant,Rimouski,QC,K8V 0E4,B,Net 60,,2017-11-19,1
+54,CLI-0077,Expédition Boréal,Chaîne régionale,Trois-Rivières,QC,M7V 2E4,C,Net 30,,2019-12-15,1
+55,CLI-0082,Cap Nord Beauport Gaspésie,Chaîne régionale,Saint-Jean-sur-Richelieu,QC,L6S 0L3,C,Net 45,,2018-04-13,1
+56,CLI-0045,Grand Air Vaudreuil Enr.,Chaîne régionale,Sept-Îles,QC,H3N 0M8,B,Net 30,achats@grandairvaudreuilenr.ca,2023-01-07,1
+57,CLI-0048,Aventure Outaouais,Chaîne régionale,Drummondville,QC,L4H 3S3,B,Net 60,achats@aventureoutaouais.ca,2022-03-23,1
+58,CLI-0101,Sentiers Laurentides,Coopérative de plein air,Victoriaville,QC,L9S 1P0,C,Net 30,achats@sentierslaurentides.ca,2022-08-08,1
+59,CLI-0161,Sports Pointe-Claire Abitibi,Détaillant indépendant,Ottawa,ON,R7G 6S5,C,Net 45,achats@sportspointe-claireabitibi.ca,2016-03-26,1
+60,CLI-0183,Le Refuge Repentigny Cantons,Détaillant indépendant,Ottawa,ON,,C,Net 30,achats@lerefugerepentignycantons.ca,2016-12-20,1
+61,CLI-0134,Chalet Gaspésie,Chaîne régionale,Sherbrooke,QC,G6G 3P9,C,Net 30,achats@chaletgaspesie.ca,2018-04-11,1
+62,CLI-0110,Expédition Charlevoix,Coopérative de plein air,Victoriaville,QC,H2L 2S6,C,Net 45,,2019-08-01,1
+63,CLI-0065,Grand Air Vaudreuil inc.,Détaillant indépendant,Moncton,NB,N4J 3K0,C,Net 45,achats@grandairvaudreuilinc.ca,2021-12-28,1
+64,CLI-0008,Sentiers Saint-Laurent,Détaillant indépendant,Victoriaville,QC,N2M 1J4,C,Net 30,achats@sentierssaint-laurent.ca,2019-03-09,1
+65,CLI-0042,Sports Cantons,Boutique en ligne,Ottawa,ON,M6N 3C1,B,Net 30,achats@sportscantons.ca,2022-06-07,1
+66,CLI-0178,Coopérative Mirabel Gaspésie,Boutique en ligne,Sept-Îles,QC,L6J 2B3,C,Net 45,achats@cooperativemirabelgaspesie.ca,2020-05-17,1
+67,CLI-0160,Le Portage Boréal,Boutique en ligne,Kingston,ON,K3C 8X4,C,Net 30,achats@leportageboreal.ca,2020-02-21,1
+68,CLI-0189,Sports Lachine Enr.,Détaillant indépendant,Drummondville,QC,L4P 6J8,C,Net 30,achats@sportslachineenr.ca,2020-12-24,1
+69,CLI-0133,Plein Air du Nord,Détaillant indépendant,Ottawa,ON,G8B 1L1,B,Net 60,achats@pleinairdunord.ca,2021-12-15,2
+70,CLI-0216,Plein Air Charlevoix,Coopérative de plein air,Laval,QC,M4S 2B6,C,Net 45,achats@pleinaircharlevoix.ca,2022-03-09,1
+71,CLI-0210,Le Refuge Hull Boréal,Boutique en ligne,Montréal,QC,H4L 4Y4,C,Net 45,achats@lerefugehullboreal.ca,2018-04-16,1
+72,CLI-0150,Expédition Lennoxville inc.,Chaîne régionale,Saint-Jean-sur-Richelieu,QC,K4N 4X9,C,Net 30,achats@expeditionlennoxvilleinc.ca,2020-06-17,1
+73,CLI-0072,Base Camp Verdun Abitibi,Chaîne régionale,Laval,QC,R1E 9V8,B,Net 30,achats@basecampverdunabitibi.ca,2020-06-04,1
+74,CLI-0016,Base Camp Abitibi,Boutique en ligne,Sept-Îles,QC,,C,Net 30,achats@basecampabitibi.ca,2017-02-07,1
+75,CLI-0014,Boutique Beauport Abitibi,Coopérative de plein air,Montréal,QC,K1P 0B0,C,Net 30,achats@boutiquebeauportabitibi.ca,2022-08-20,1
+76,CLI-0064,Grand Air Saint-Laurent,Boutique en ligne,Québec,QC,J1X 9M2,C,Net 60,achats@grandairsaint-laurent.ca,2019-09-25,1
+77,CLI-0177,Plein Air inc.,Boutique en ligne,Terrebonne,QC,N6M 4J6,C,Net 45,achats@pleinairinc.ca,2018-03-10,1
+78,CLI-0145,Sports Repentigny Charlevoix,Boutique en ligne,Drummondville,QC,N3V 9K5,C,Net 30,,2020-02-06,1
+79,CLI-0167,Cap Nord Sainte-Foy Boréal,Boutique en ligne,Kingston,ON,,C,Net 30,achats@capnordsainte-foyboreal.ca,2023-05-13,1
+80,CLI-0037,Expédition Abitibi,Coopérative de plein air,Bathurst,NB,H6A 2P7,A,Net 30,achats@expeditionabitibi.ca,2019-02-11,1
+81,CLI-0194,Expédition Beauport Outaouais,Détaillant indépendant,Charlottetown,PE,N5B 8N6,C,Net 60,achats@expeditionbeauportoutaouais.ca,2022-02-23,1
+82,CLI-0096,Cap Nord Abitibi,Chaîne régionale,Fredericton,NB,,C,Net 60,achats@capnordabitibi.ca,2016-09-22,1
+83,CLI-0126,Base Camp Appalaches,Coopérative de plein air,Saint-Jean-sur-Richelieu,QC,L9V 3Y6,B,Net 30,achats@basecampappalaches.ca,2017-05-24,1
+84,CLI-0203,Le Portage Charlevoix,Détaillant indépendant,Lévis,QC,N6A 8S5,C,Net 45,achats@leportagecharlevoix.ca,2020-07-14,1
+85,CLI-0217,Base Camp Chicoutimi et Fils,Détaillant indépendant,Montréal,QC,R7P 0X6,A,Net 30,achats@basecampchicoutimietfils.ca,2022-07-30,1
+86,CLI-0207,Nature Hull ltée,Chaîne régionale,Sherbrooke,QC,K5E 6A5,C,Net 30,achats@naturehullltee.ca,2021-04-09,2
+87,CLI-0086,Plein Air Mirabel et Fils,Chaîne régionale,Sept-Îles,QC,J5P 0T4,C,Net 45,achats@pleinairmirabeletfils.ca,2017-12-09,1
+88,CLI-0019,Le Refuge et Fils,Détaillant indépendant,North Bay,ON,L8R 1B0,C,Net 30,,2018-10-27,1
+89,CLI-0099,Nature Cantons,Boutique en ligne,North Bay,ON,N0K 4V7,A,Net 60,achats@naturecantons.ca,2022-09-04,1
+90,CLI-0191,Le Portage Gaspésie,Chaîne régionale,Saint-Jean-sur-Richelieu,QC,L6G 5X7,B,Net 45,achats@leportagegaspesie.ca,2016-06-28,1
+91,CLI-0078,Le Refuge du Nord,Chaîne régionale,Saint-Jérôme,QC,J6R 4K8,C,Net 60,achats@lerefugedunord.ca,2016-08-03,1
+92,CLI-0130,Expédition Appalaches,Coopérative de plein air,Shawinigan,QC,G6E 0H6,A,Net 30,achats@expeditionappalaches.ca,2020-08-02,1
+93,CLI-0190,Base Camp et Fils,Coopérative de plein air,Saint-Jérôme,QC,H5V 9X4,C,Net 60,achats@basecampetfils.ca,2018-01-19,1
+94,CLI-0053,Aventure et Fils,Boutique en ligne,Bathurst,NB,M6R 3P2,B,Net 30,achats@aventureetfils.ca,2022-07-22,1
+95,CLI-0174,Coopérative Longueuil inc.,Boutique en ligne,Saguenay,QC,L8H 7M0,C,Net 30,achats@cooperativelongueuilinc.ca,2021-11-27,1
+96,CLI-0001,Le Refuge Boréal,Détaillant indépendant,Victoriaville,QC,H5H 7R2,C,Net 60,achats@lerefugeboreal.ca,2017-01-18,1
+97,CLI-0139,Cap Nord Laurentides,Chaîne régionale,Moncton,NB,K8N 8K5,B,Net 30,achats@capnordlaurentides.ca,2021-03-21,1
+98,CLI-0005,Le Refuge Abitibi,Chaîne régionale,Baie-Comeau,QC,R1P 0C2,C,Net 30,achats@lerefugeabitibi.ca,2017-08-25,1
+99,CLI-0009,Le Refuge inc.,Détaillant indépendant,Val-d'Or,QC,M3R 7C8,A,Net 30,achats@lerefugeinc.ca,2019-12-23,1
+100,CLI-0080,Randonneurs Verdun Abitibi,Coopérative de plein air,Drummondville,QC,R7E 2R7,B,Net 45,,2022-06-04,2
+101,CLI-0120,Chalet Lennoxville ltée,Chaîne régionale,Lévis,QC,G9L 4C6,C,Net 30,achats@chaletlennoxvilleltee.ca,2019-04-04,1
+102,CLI-0147,Le Refuge Blainville Abitibi,Coopérative de plein air,Saint-Jean-sur-Richelieu,QC,R4K 5S9,C,Net 60,achats@lerefugeblainvilleabitibi.ca,2022-02-17,1
+103,CLI-0199,Expédition Brossard Saint-Laurent,Chaîne régionale,Shawinigan,QC,H7R 2A1,B,Net 30,achats@expeditionbrossardsaint-laurent.ca,2018-06-17,1
+104,CLI-0135,Le Refuge Pointe-Claire Gaspésie,Chaîne régionale,Ottawa,ON,M8E 5H5,B,Net 30,achats@lerefugepointe-clairegaspesie.ca,2017-11-10,1
+105,CLI-0165,Base Camp inc.,Détaillant indépendant,Shawinigan,QC,L7J 3J0,C,Net 30,achats@basecampinc.ca,2017-03-05,1
+106,CLI-0117,Plein Air Saint-Hubert Appalaches,Coopérative de plein air,Saguenay,QC,N7K 2B0,C,Net 45,achats@pleinairsaint-hubertappalaches.ca,2019-07-29,1
+107,CLI-0032,Base Camp Laurentides,Boutique en ligne,Shawinigan,QC,M8V 2S5,C,Net 30,achats@basecamplaurentides.ca,2017-01-05,2
+108,CLI-0025,Coopérative et Fils,Chaîne régionale,Sudbury,ON,,B,Net 60,achats@cooperativeetfils.ca,2019-02-25,1
+109,CLI-0204,Expédition Vaudreuil inc.,Boutique en ligne,Sept-Îles,QC,K4P 9C8,C,Net 30,achats@expeditionvaudreuilinc.ca,2021-08-14,1
+110,CLI-0075,Nature Abitibi,Détaillant indépendant,Terrebonne,QC,L6N 4L0,C,Net 45,achats@natureabitibi.ca,2019-09-26,1
+111,CLI-0149,Aventure Jonquière Abitibi,Chaîne régionale,Montréal,QC,L2A 6C7,C,Net 60,achats@aventurejonquiereabitibi.ca,2021-12-07,2
+112,CLI-0015,Boutique Gaspésie,Détaillant indépendant,Thunder Bay,ON,H1H 3A3,C,Net 30,,2019-11-16,1
+113,CLI-0104,Cap Nord Charlevoix,Boutique en ligne,Sept-Îles,QC,K8K 2N6,C,Net 45,achats@capnordcharlevoix.ca,2017-07-17,1
+114,CLI-0013,Le Portage Outaouais,Détaillant indépendant,Rimouski,QC,M4Y 6K3,C,Net 60,achats@leportageoutaouais.ca,2021-03-18,1
+115,CLI-0219,Boutique Boréal,Coopérative de plein air,Montréal,QC,N6R 1B4,C,Net 30,achats@boutiqueboreal.ca,2017-02-13,1
+116,CLI-0200,Randonneurs Repentigny inc.,Boutique en ligne,Laval,QC,N8A 0R1,B,Net 45,achats@randonneursrepentignyinc.ca,2016-12-26,1
+117,CLI-0193,Cap Nord Longueuil Appalaches,Détaillant indépendant,Gatineau,QC,M3A 2A6,B,Net 30,achats@capnordlongueuilappalaches.ca,2018-03-26,1
+118,CLI-0211,Plein Air Abitibi,Chaîne régionale,Québec,QC,M1P 9S5,B,Net 45,achats@pleinairabitibi.ca,2021-10-23,1
+119,CLI-0088,Cap Nord Sillery du Nord,Boutique en ligne,Gatineau,QC,G4K 3P6,B,Net 30,achats@capnordsillerydunord.ca,2018-07-02,1
+120,CLI-0182,Grand Air Lennoxville Laurentides,Boutique en ligne,Laval,QC,M8R 7A2,B,Net 30,achats@grandairlennoxvillelaurentides.ca,2020-04-13,1
+121,CLI-0172,Sentiers Mirabel Outaouais,Coopérative de plein air,Rimouski,QC,H5G 8N8,C,Net 45,achats@sentiersmirabeloutaouais.ca,2018-06-04,1
+122,CLI-0171,Sports Laurentides,Chaîne régionale,Victoriaville,QC,,C,Net 30,achats@sportslaurentides.ca,2022-12-10,1
+123,CLI-0046,Randonneurs Enr.,Coopérative de plein air,Sept-Îles,QC,G8J 5N1,C,Net 30,achats@randonneursenr.ca,2023-10-26,1
+124,CLI-0011,Aventure Mauricie,Coopérative de plein air,Sept-Îles,QC,J3P 6V0,C,Net 30,achats@aventuremauricie.ca,2017-12-05,1
+125,CLI-0186,Le Portage Enr.,Coopérative de plein air,Rouyn-Noranda,QC,L6H 8K9,C,Net 30,achats@leportageenr.ca,2019-02-12,1
+126,CLI-0111,Grand Air Gaspésie,Coopérative de plein air,Sherbrooke,QC,L9R 8B4,C,Net 45,achats@grandairgaspesie.ca,2016-11-17,2
+127,CLI-0123,Plein Air Verdun Charlevoix,Coopérative de plein air,Shawinigan,QC,L4G 0C3,B,Net 30,,2018-03-19,1
+128,CLI-0068,Nature Repentigny ltée,Chaîne régionale,Saguenay,QC,N4V 2Y2,C,Net 45,achats@naturerepentignyltee.ca,2023-10-30,1
+129,CLI-0031,Grand Air Enr.,Boutique en ligne,Val-d'Or,QC,N2H 1K3,B,Net 30,achats@grandairenr.ca,2019-09-19,1
+130,CLI-0049,Sports Enr.,Chaîne régionale,Toronto,ON,M4M 2S5,B,Net 60,achats@sportsenr.ca,2021-01-26,1
+131,CLI-0044,Boutique Laurentides,Coopérative de plein air,Ottawa,ON,J5C 1V1,B,Net 60,achats@boutiquelaurentides.ca,2022-05-10,1
+132,CLI-0112,Sentiers du Nord,Chaîne régionale,Moncton,NB,H0Y 5X6,B,Net 30,achats@sentiersdunord.ca,2018-08-04,1
+133,CLI-0115,Expédition Hull Laurentides,Chaîne régionale,Shawinigan,QC,R5A 0E8,B,Net 30,achats@expeditionhulllaurentides.ca,2019-05-10,1
+134,CLI-0192,Coopérative Laurentides,Détaillant indépendant,Laval,QC,R2S 8A7,C,Net 30,achats@cooperativelaurentides.ca,2021-09-06,1
+135,CLI-0196,Plein Air Jonquière et Fils,Coopérative de plein air,Laval,QC,M8L 3V7,C,Net 30,achats@pleinairjonquiereetfils.ca,2020-08-05,1
+136,CLI-0040,Sports Appalaches,Détaillant indépendant,Montréal,QC,K2N 1E6,B,Net 60,achats@sportsappalaches.ca,2017-10-14,1
+137,CLI-0164,Cap Nord Enr.,Détaillant indépendant,Gatineau,QC,R8X 4E1,C,Net 30,,2021-08-28,1
+138,CLI-0151,Randonneurs Repentigny Outaouais,Boutique en ligne,Charlottetown,PE,L9C 7E4,C,Net 30,achats@randonneursrepentignyoutaouais.ca,2019-06-02,1
+139,CLI-0215,Sentiers Cantons,Détaillant indépendant,Victoriaville,QC,,C,Net 60,achats@sentierscantons.ca,2017-03-18,1
+140,CLI-0039,Le Portage Abitibi,Boutique en ligne,Québec,QC,L8X 5S1,C,Net 60,achats@leportageabitibi.ca,2020-11-29,1
+141,CLI-0129,Randonneurs Chicoutimi Gaspésie,Détaillant indépendant,Rimouski,QC,M5C 9P0,C,Net 45,achats@randonneurschicoutimigaspesie.ca,2023-04-21,1
+142,CLI-0010,Chalet Boréal,Chaîne régionale,Trois-Rivières,QC,M1R 4K9,C,Net 30,,2023-07-25,1
+143,CLI-0085,Grand Air Brossard du Nord,Coopérative de plein air,Saint-Jean-sur-Richelieu,QC,J7E 4X0,C,Net 30,achats@grandairbrossarddunord.ca,2020-04-09,1
+144,CLI-0105,Aventure Boréal,Chaîne régionale,Kingston,ON,,C,Net 45,achats@aventureboreal.ca,2019-05-21,1
+145,CLI-0090,Randonneurs du Nord,Boutique en ligne,Saint-Jean-sur-Richelieu,QC,G1J 8B7,B,Net 30,achats@randonneursdunord.ca,2017-02-12,1
+146,CLI-0122,Le Refuge Jonquière Outaouais,Coopérative de plein air,Saint-Jean-sur-Richelieu,QC,K0G 4R1,C,Net 30,achats@lerefugejonquiereoutaouais.ca,2021-12-08,1
+147,CLI-0159,Sentiers Brossard Laurentides,Coopérative de plein air,Toronto,ON,K5S 6K7,C,Net 60,achats@sentiersbrossardlaurentides.ca,2017-10-09,1
+148,CLI-0066,Grand Air Appalaches,Détaillant indépendant,Bathurst,NB,L4G 4R3,B,Net 45,achats@grandairappalaches.ca,2020-01-17,2
+149,CLI-0184,Grand Air Boréal,Boutique en ligne,Victoriaville,QC,K5R 3V7,C,Net 45,achats@grandairboreal.ca,2021-03-29,1
+150,CLI-0116,Nature Blainville Boréal,Détaillant indépendant,Trois-Rivières,QC,H7G 7X6,B,Net 45,achats@natureblainvilleboreal.ca,2021-10-25,1
+151,CLI-0176,Grand Air Rosemont Charlevoix,Coopérative de plein air,Sudbury,ON,G8B 7X3,C,Net 30,achats@grandairrosemontcharlevoix.ca,2017-07-26,1
+152,CLI-0094,Nature Laurentides,Boutique en ligne,Gatineau,QC,G2E 7P9,C,Net 60,achats@naturelaurentides.ca,2017-11-06,1
+153,CLI-0051,Le Refuge ltée,Chaîne régionale,Gatineau,QC,K8L 3M0,C,Net 30,achats@lerefugeltee.ca,2016-12-21,1
+154,CLI-0209,Aventure Vaudreuil ltée,Détaillant indépendant,Val-d'Or,QC,G2T 2J4,A,Net 45,achats@aventurevaudreuilltee.ca,2019-11-30,1
+155,CLI-0218,Cap Nord Mauricie,Détaillant indépendant,Saguenay,QC,J2G 3M4,C,Net 45,,2017-03-09,1
+156,CLI-0007,Sentiers Gaspésie,Détaillant indépendant,Moncton,NB,L4M 8C8,C,Net 45,achats@sentiersgaspesie.ca,2023-01-17,1
+157,CLI-0169,Nature Pointe-Claire Appalaches,Boutique en ligne,Lévis,QC,M9X 9T3,B,Net 45,achats@naturepointe-claireappalaches.ca,2017-09-03,1
+158,CLI-0173,Expédition et Fils,Chaîne régionale,Trois-Rivières,QC,N5L 8S2,B,Net 30,achats@expeditionetfils.ca,2023-07-25,1
+159,CLI-0124,Grand Air Brossard Saint-Laurent,Chaîne régionale,Drummondville,QC,K3L 0L4,C,Net 30,achats@grandairbrossardsaint-laurent.ca,2017-04-14,1
+160,CLI-0021,Expédition Laurentides,Boutique en ligne,Trois-Rivières,QC,G6T 8V4,C,Net 30,achats@expeditionlaurentides.ca,2021-12-19,1
+161,CLI-0142,Nature Jonquière Appalaches,Boutique en ligne,Lévis,QC,N8S 7P9,C,Net 30,,2016-11-19,1
+162,CLI-0152,Grand Air du Nord,Boutique en ligne,Laval,QC,R5V 7C8,C,Net 30,achats@grandairdunord.ca,2019-08-08,1
+163,CLI-0055,Sentiers Outaouais,Coopérative de plein air,Drummondville,QC,L2J 8R6,C,Net 60,,2019-11-10,1
+164,CLI-0087,Nature Sainte-Foy inc.,Boutique en ligne,Laval,QC,H1J 4Y9,B,Net 45,achats@naturesainte-foyinc.ca,2018-11-18,1
+165,CLI-0179,Grand Air Cantons,Coopérative de plein air,Saint-Jean-sur-Richelieu,QC,,C,Net 60,achats@grandaircantons.ca,2018-12-14,1
+166,CLI-0198,Randonneurs Lennoxville Charlevoix,Chaîne régionale,Montréal,QC,J0K 4M3,C,Net 60,achats@randonneurslennoxvillecharlevoix.ca,2019-06-26,1
+167,CLI-0089,Nature Blainville Gaspésie,Boutique en ligne,Saint-Jean-sur-Richelieu,QC,H2S 4S7,A,Net 45,achats@natureblainvillegaspesie.ca,2019-04-27,1
+168,CLI-0143,Chalet Appalaches,Boutique en ligne,Drummondville,QC,L6K 0L7,B,Net 30,achats@chaletappalaches.ca,2017-07-16,1
+169,CLI-0141,Base Camp Outaouais,Détaillant indépendant,Rouyn-Noranda,QC,R7J 0G1,B,Net 60,achats@basecampoutaouais.ca,2022-08-10,1
+170,CLI-0154,Cap Nord Pointe-Claire Outaouais,Boutique en ligne,Val-d'Or,QC,N8S 0J2,B,Net 45,achats@capnordpointe-claireoutaouais.ca,2021-06-10,1
+171,CLI-0166,Base Camp Pointe-Claire et Fils,Chaîne régionale,Drummondville,QC,,B,Net 30,achats@basecamppointe-claireetfils.ca,2021-12-19,1
+172,CLI-0175,Chalet Blainville Charlevoix,Coopérative de plein air,Laval,QC,J4X 5X9,C,Net 30,achats@chaletblainvillecharlevoix.ca,2016-02-18,1
+173,CLI-0140,Cap Nord inc.,Détaillant indépendant,Saguenay,QC,M7A 2T0,C,Net 45,achats@capnordinc.ca,2018-01-26,1
+174,CLI-0018,Cap Nord Boréal,Boutique en ligne,Rimouski,QC,J0G 0R0,C,Net 60,achats@capnordboreal.ca,2018-11-14,1
+175,CLI-0158,Aventure Cantons,Chaîne régionale,Saguenay,QC,R4A 3G0,C,Net 60,achats@aventurecantons.ca,2016-07-28,1
+176,CLI-0030,Le Refuge Beauport Outaouais,Chaîne régionale,Lévis,QC,K6E 4N6,C,Net 45,achats@lerefugebeauportoutaouais.ca,2019-06-13,1
+177,CLI-0098,Cap Nord Gaspésie,Coopérative de plein air,Drummondville,QC,J7S 7V5,C,Net 45,achats@capnordgaspesie.ca,2017-01-16,1
+178,CLI-0052,Chalet Lachine Cantons,Détaillant indépendant,North Bay,ON,K8M 0X1,B,Net 30,achats@chaletlachinecantons.ca,2021-10-08,1
+179,CLI-0156,Aventure ltée,Détaillant indépendant,Bathurst,NB,H2Y 5K2,C,Net 30,achats@aventureltee.ca,2017-07-14,1
+180,CLI-0144,Chalet Rosemont Outaouais,Chaîne régionale,Québec,QC,K0P 6R8,B,Net 45,achats@chaletrosemontoutaouais.ca,2022-01-12,1
+181,CLI-0012,Randonneurs Appalaches,Chaîne régionale,Sept-Îles,QC,J1J 1V0,A,Net 30,achats@randonneursappalaches.ca,2020-05-17,1
+182,CLI-0155,Sentiers Appalaches,Détaillant indépendant,Sept-Îles,QC,N5R 5C3,B,Net 30,achats@sentiersappalaches.ca,2020-04-23,1
+183,CLI-0095,Nature Chicoutimi Appalaches,Boutique en ligne,Rouyn-Noranda,QC,L7C 5L1,C,Net 30,achats@naturechicoutimiappalaches.ca,2018-11-18,1
+184,CLI-0017,Le Portage Saint-Laurent,Boutique en ligne,Drummondville,QC,G9V 8Y0,B,Net 30,achats@leportagesaint-laurent.ca,2019-11-12,1
+185,CLI-0201,Base Camp Sainte-Foy Enr.,Coopérative de plein air,Kingston,ON,L7X 7K9,C,Net 30,achats@basecampsainte-foyenr.ca,2023-10-19,1
+186,CLI-0163,Nature Longueuil Mauricie,Boutique en ligne,Sherbrooke,QC,L3R 3C5,C,Net 60,achats@naturelongueuilmauricie.ca,2022-02-10,1
+187,CLI-0038,Sports Sillery Charlevoix,Boutique en ligne,Montréal,QC,K7M 2H0,B,Net 60,achats@sportssillerycharlevoix.ca,2020-11-11,1
+188,CLI-0125,Nature inc.,Chaîne régionale,Gatineau,QC,J4M 2P9,C,Net 45,achats@natureinc.ca,2020-07-22,1
+189,CLI-0127,Chalet Abitibi,Boutique en ligne,Sept-Îles,QC,N8P 7X0,B,Net 45,,2018-04-13,1
+190,CLI-0002,Nature Enr.,Chaîne régionale,Thunder Bay,ON,N8K 4P7,C,Net 30,achats@natureenr.ca,2017-03-01,1
+191,CLI-0202,Le Refuge Mauricie,Chaîne régionale,Victoriaville,QC,H6V 5S6,C,Net 45,,2020-12-25,1
+192,CLI-0035,Randonneurs Mauricie,Détaillant indépendant,Saint-Jean-sur-Richelieu,QC,R2R 9R6,B,Net 45,achats@randonneursmauricie.ca,2023-04-29,1
+193,CLI-0181,Sentiers Lachine Gaspésie,Détaillant indépendant,Sudbury,ON,J8R 0P0,C,Net 60,achats@sentierslachinegaspesie.ca,2016-06-28,1
+194,CLI-0076,Coopérative Cantons,Boutique en ligne,Baie-Comeau,QC,K6M 1L9,A,Net 30,achats@cooperativecantons.ca,2023-05-20,1
+195,CLI-0033,Le Portage et Fils,Boutique en ligne,Baie-Comeau,QC,N1J 2P5,B,Net 60,achats@leportageetfils.ca,2022-11-07,1
+196,CLI-0212,Grand Air Rosemont Mauricie,Chaîne régionale,Rouyn-Noranda,QC,N2H 6R1,A,Net 30,achats@grandairrosemontmauricie.ca,2018-02-24,1
+197,CLI-0024,Randonneurs Outaouais,Chaîne régionale,Granby,QC,R5B 6N6,C,Net 30,achats@randonneursoutaouais.ca,2019-04-09,1
+198,CLI-0114,Expédition Saint-Laurent,Coopérative de plein air,Lévis,QC,K7P 9Y7,C,Net 30,achats@expeditionsaint-laurent.ca,2020-05-28,1
+199,CLI-0063,Plein Air Gaspésie,Détaillant indépendant,Granby,QC,J4X 0S3,B,Net 60,achats@pleinairgaspesie.ca,2022-06-30,1
+200,CLI-0102,Nature du Nord,Détaillant indépendant,Montréal,QC,M5J 4X8,C,Net 30,achats@naturedunord.ca,2020-09-17,2
+201,CLI-0205,Coopérative Boréal,Boutique en ligne,Val-d'Or,QC,L5V 5A2,C,Net 45,achats@cooperativeboreal.ca,2016-02-01,1
+202,CLI-0097,Randonneurs Sainte-Foy Outaouais,Chaîne régionale,Baie-Comeau,QC,L4L 4R0,C,Net 45,achats@randonneurssainte-foyoutaouais.ca,2017-10-07,1
+203,CLI-0137,Le Refuge Cantons,Détaillant indépendant,Charlottetown,PE,N9X 3E5,A,Net 30,achats@lerefugecantons.ca,2016-10-17,1
+204,CLI-0148,Cap Nord Vaudreuil Laurentides,Chaîne régionale,Gatineau,QC,L8S 7T4,B,Net 45,achats@capnordvaudreuillaurentides.ca,2023-10-22,1
+205,CLI-0020,Boutique du Nord,Chaîne régionale,Halifax,NS,M4N 1H9,C,Net 45,achats@boutiquedunord.ca,2019-10-25,1
+206,CLI-0103,Boutique Boucherville ltée,Coopérative de plein air,Moncton,NB,M6G 1V5,C,Net 30,achats@boutiquebouchervilleltee.ca,2019-09-12,1
+207,CLI-0197,Plein Air Brossard Gaspésie,Coopérative de plein air,Saguenay,QC,R3Y 9H5,C,Net 60,achats@pleinairbrossardgaspesie.ca,2021-11-27,1
+208,CLI-0004,Aventure Gaspésie,Détaillant indépendant,Trois-Rivières,QC,J7A 9X2,C,Net 30,achats@aventuregaspesie.ca,2016-06-20,1
+209,CLI-0036,Randonneurs Charlevoix,Coopérative de plein air,Sept-Îles,QC,J7L 3G4,B,Net 60,achats@randonneurscharlevoix.ca,2016-11-08,1
+210,CLI-0029,Sentiers Boréal,Détaillant indépendant,Baie-Comeau,QC,M8V 8P5,A,Net 60,achats@sentiersboreal.ca,2019-12-02,1
+211,CLI-0093,Randonneurs Brossard Appalaches,Chaîne régionale,Trois-Rivières,QC,K1N 4V0,B,Net 60,achats@randonneursbrossardappalaches.ca,2023-08-26,1
+212,CLI-0208,Plein Air Verdun Mauricie,Boutique en ligne,Rimouski,QC,,B,Net 30,achats@pleinairverdunmauricie.ca,2019-02-21,1
+213,CLI-0214,Le Portage Jonquière Outaouais,Chaîne régionale,Halifax,NS,G4A 3H7,C,Net 45,achats@leportagejonquiereoutaouais.ca,2016-09-16,1
+214,CLI-0074,Randonneurs et Fils,Chaîne régionale,Saguenay,QC,G1Y 2T6,A,Net 30,achats@randonneursetfils.ca,2017-10-28,1
+215,CLI-0034,Sentiers Mauricie,Chaîne régionale,North Bay,ON,L1G 0H8,B,Net 60,achats@sentiersmauricie.ca,2020-03-09,1
+216,CLI-0107,Le Refuge Appalaches,Chaîne régionale,Granby,QC,R9J 6M4,C,Net 45,achats@lerefugeappalaches.ca,2018-03-28,1
+217,CLI-0121,Le Refuge Laurentides,Chaîne régionale,Saguenay,QC,N0K 6A1,B,Net 45,achats@lerefugelaurentides.ca,2018-04-15,1
+218,CLI-0059,Coopérative Saint-Hubert Saint-Laurent,Détaillant indépendant,Rouyn-Noranda,QC,M5E 2E8,A,Net 30,achats@cooperativesaint-hubertsaint-laurent.ca,2019-05-29,1
+219,CLI-0079,Base Camp Jonquière inc.,Détaillant indépendant,Drummondville,QC,H1T 1R7,C,Net 30,achats@basecampjonquiereinc.ca,2018-12-25,1
+220,CLI-0061,Plein Air Cantons,Coopérative de plein air,Drummondville,QC,K4B 5R6,B,Net 30,achats@pleinaircantons.ca,2017-12-04,1

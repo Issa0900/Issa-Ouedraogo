@@ -1,0 +1,246 @@
+// =============================================================================
+// Boréal Distribution — mesures DAX
+//
+// À coller une par une dans Power BI Desktop (Modélisation > Nouvelle mesure).
+// Les mesures sont regroupées par thème ; l'ordre de création compte, une mesure
+// en référence souvent une autre définie plus haut.
+//
+// Toutes ont été confrontées aux requêtes de SQL/2_requetes_analyse.sql : si une
+// mesure et sa requête ne donnent pas le même chiffre, c'est la mesure qui est
+// fausse. Les valeurs de référence sont dans data/ANALYSE.md.
+// =============================================================================
+
+
+// -----------------------------------------------------------------------------
+// 1. Ventes et marge — le socle, tout le reste en dépend
+// -----------------------------------------------------------------------------
+
+Chiffre d'affaires = SUM ( fait_ventes[montant_ht] )
+
+Coût des marchandises vendues = SUM ( fait_ventes[cout_total] )
+
+Marge brute = [Chiffre d'affaires] - [Coût des marchandises vendues]
+
+// DIVIDE plutôt que l'opérateur / : renvoie BLANK au lieu d'une erreur quand le
+// dénominateur est vide, ce qui arrive dès qu'un filtre isole une période sans vente.
+Taux de marge brute = DIVIDE ( [Marge brute], [Chiffre d'affaires] )
+
+Quantité vendue = SUM ( fait_ventes[quantite] )
+
+// Le grain de la table est la LIGNE de commande, pas la commande : il faut donc
+// compter les numéros distincts, sinon une commande de 5 articles compte pour 5.
+Nombre de commandes = DISTINCTCOUNT ( fait_ventes[no_commande] )
+
+Panier moyen = DIVIDE ( [Chiffre d'affaires], [Nombre de commandes] )
+
+Nombre de clients actifs = DISTINCTCOUNT ( fait_ventes[client_id] )
+
+
+// -----------------------------------------------------------------------------
+// 2. Comparaison entre exercices
+// Nécessite que dim_date soit marquée comme table de dates sur la colonne [date].
+// -----------------------------------------------------------------------------
+
+CA année précédente =
+CALCULATE ( [Chiffre d'affaires], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+Croissance CA % =
+DIVIDE ( [Chiffre d'affaires] - [CA année précédente], [CA année précédente] )
+
+Taux de marge année précédente =
+CALCULATE ( [Taux de marge brute], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+// Exprimé en POINTS de pourcentage, pas en pourcentage de variation : passer de
+// 31,8 % à 27,9 % est une baisse de 3,9 points (et non de 12,3 %). Confondre les
+// deux est l'erreur de lecture la plus fréquente sur un tableau de bord de marge.
+Écart de taux de marge (pts) =
+VAR Actuel = [Taux de marge brute]
+VAR Precedent = [Taux de marge année précédente]
+RETURN IF ( NOT ISBLANK ( Precedent ), ( Actuel - Precedent ) * 100 )
+
+CA cumulé annuel = TOTALYTD ( [Chiffre d'affaires], dim_date[date] )
+
+
+// -----------------------------------------------------------------------------
+// 3. Diagnostic de la marge — d'où vient la dégradation ?
+// -----------------------------------------------------------------------------
+
+Coût unitaire moyen =
+DIVIDE ( [Coût des marchandises vendues], [Quantité vendue] )
+
+Coût unitaire moyen N-1 =
+CALCULATE ( [Coût unitaire moyen], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+Variation du coût unitaire % =
+DIVIDE ( [Coût unitaire moyen] - [Coût unitaire moyen N-1], [Coût unitaire moyen N-1] )
+
+// Marge perdue à cause de la seule hausse des coûts d'achat, à volumes et prix
+// de vente inchangés. Le calcul est fait PAR ARTICLE (SUMX sur dim_produit) et non
+// globalement : un coût unitaire moyen global bougerait aussi par simple effet de
+// mix produit, ce qui attribuerait à l'inflation une variation qui n'en est pas une.
+Manque à gagner sur coût d'achat =
+SUMX (
+    VALUES ( dim_produit[produit_id] ),
+    VAR CoutRef = [Coût unitaire moyen N-1]
+    VAR Qte = [Quantité vendue]
+    RETURN IF ( NOT ISBLANK ( CoutRef ),
+                [Coût des marchandises vendues] - Qte * CoutRef )
+)
+
+
+// -----------------------------------------------------------------------------
+// 4. Résultat d'exploitation
+// -----------------------------------------------------------------------------
+
+Masse salariale = SUM ( fait_paie[cout_total] )
+
+Charges d'exploitation = SUM ( fait_charges[montant] )
+
+Dépense marketing = SUM ( fait_marketing[depense] )
+
+Résultat d'exploitation =
+[Marge brute] - [Masse salariale] - [Charges d'exploitation] - [Dépense marketing]
+
+Taux de résultat = DIVIDE ( [Résultat d'exploitation], [Chiffre d'affaires] )
+
+Masse salariale / CA = DIVIDE ( [Masse salariale], [Chiffre d'affaires] )
+
+CA par employé =
+DIVIDE (
+    [Chiffre d'affaires],
+    CALCULATE ( DISTINCTCOUNT ( dim_employe[employe_id] ), dim_employe[est_actif] = 1 )
+)
+
+
+// -----------------------------------------------------------------------------
+// 5. Stocks — mesures SEMI-ADDITIVES
+//
+// fait_stock contient une photo mensuelle. Additionner ces photos sur l'axe du
+// temps n'a aucun sens physique : 12 photos de 800 000 $ ne font pas 9,6 M$ de
+// stock, elles décrivent le même stock à 12 instants. Une simple somme afficherait
+// donc un stock 12 fois trop élevé — et une rotation 12 fois trop basse.
+// -----------------------------------------------------------------------------
+
+Stock moyen =
+AVERAGEX (
+    VALUES ( dim_date[mois_annee] ),
+    CALCULATE ( SUM ( fait_stock[valeur_stock] ) )
+)
+
+// Dernière photo réellement disponible dans le contexte : LASTNONBLANK ignore les
+// jours sans inventaire (l'inventaire n'existe qu'en fin de mois).
+Stock fin de période =
+CALCULATE (
+    SUM ( fait_stock[valeur_stock] ),
+    LASTNONBLANK ( dim_date[date_id], CALCULATE ( COUNTROWS ( fait_stock ) ) )
+)
+
+Rotation des stocks =
+DIVIDE ( [Coût des marchandises vendues], [Stock moyen] )
+
+Jours de stock = DIVIDE ( 365, [Rotation des stocks] )
+
+Articles sous le seuil =
+CALCULATE (
+    DISTINCTCOUNT ( fait_stock[produit_id] ),
+    fait_stock[sous_seuil] = 1,
+    LASTNONBLANK ( dim_date[date_id], CALCULATE ( COUNTROWS ( fait_stock ) ) )
+)
+
+
+// -----------------------------------------------------------------------------
+// 6. Clients et encaissement
+// -----------------------------------------------------------------------------
+
+// Concentration commerciale : part du CA réalisée avec les 10 plus gros comptes.
+// ALLSELECTED conserve les filtres de la page (année, région) mais ignore la
+// sélection de client en cours, sinon la mesure vaudrait toujours 100 %.
+Part des 10 premiers clients =
+VAR Top10 = TOPN ( 10, ALLSELECTED ( dim_client[client_id] ), [Chiffre d'affaires], DESC )
+VAR CaTop10 = CALCULATE ( [Chiffre d'affaires], KEEPFILTERS ( Top10 ) )
+VAR CaTotal = CALCULATE ( [Chiffre d'affaires], ALLSELECTED ( dim_client ) )
+RETURN DIVIDE ( CaTop10, CaTotal )
+
+Délai moyen d'encaissement =
+AVERAGE ( fait_ventes[delai_paiement_jours] )
+
+// Une facture sans date de paiement est une facture non réglée.
+Encours non réglé =
+CALCULATE ( [Chiffre d'affaires], ISBLANK ( fait_ventes[date_paiement_id] ) )
+
+// Utilise la relation INACTIVE date_paiement_id -> dim_date : replace le chiffre
+// d'affaires sur la date d'ENCAISSEMENT au lieu de la date de commande. C'est la
+// seule façon d'avoir les deux lectures dans un même modèle sans dupliquer la table.
+CA encaissé =
+CALCULATE (
+    [Chiffre d'affaires],
+    USERELATIONSHIP ( dim_date[date_id], fait_ventes[date_paiement_id] )
+)
+
+
+// -----------------------------------------------------------------------------
+// 7. Achats et fournisseurs
+// -----------------------------------------------------------------------------
+
+Montant des achats = SUM ( fait_achats[montant] )
+
+Taux de retard fournisseur =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( fait_achats ), fait_achats[retard_jours] > 0 ),
+    CALCULATE ( COUNTROWS ( fait_achats ), NOT ISBLANK ( fait_achats[retard_jours] ) )
+)
+
+Retard moyen (jours) =
+CALCULATE ( AVERAGE ( fait_achats[retard_jours] ), fait_achats[retard_jours] > 0 )
+
+
+// -----------------------------------------------------------------------------
+// 8. Marketing
+//
+// Attention à la lecture : le rattachement d'un nouveau client à un canal vient du
+// suivi manuel des campagnes, pas d'un modèle d'attribution. Ces mesures comparent
+// des canaux entre eux, elles ne prouvent pas une causalité.
+// -----------------------------------------------------------------------------
+
+Budget marketing = SUM ( fait_marketing[budget] )
+
+Écart au budget = [Dépense marketing] - [Budget marketing]
+
+Prospects générés = SUM ( fait_marketing[prospects] )
+
+Nouveaux clients = SUM ( fait_marketing[nouveaux_clients] )
+
+Coût par prospect = DIVIDE ( [Dépense marketing], [Prospects générés] )
+
+Coût par nouveau client = DIVIDE ( [Dépense marketing], [Nouveaux clients] )
+
+
+// -----------------------------------------------------------------------------
+// 9. Ressources humaines
+// -----------------------------------------------------------------------------
+
+Effectif actif =
+CALCULATE ( DISTINCTCOUNT ( dim_employe[employe_id] ), dim_employe[est_actif] = 1 )
+
+Départs = CALCULATE ( COUNTROWS ( dim_employe ), dim_employe[est_actif] = 0 )
+
+Taux de roulement = DIVIDE ( [Départs], COUNTROWS ( dim_employe ) )
+
+
+// -----------------------------------------------------------------------------
+// 10. Qualité des données
+//
+// Ces mesures alimentent la page « Qualité » du rapport. Un tableau de bord qui
+// n'affiche jamais ce qu'il a écarté demande une confiance aveugle.
+// -----------------------------------------------------------------------------
+
+Lignes rejetées =
+CALCULATE ( COUNTROWS ( qualite_rejets ), qualite_rejets[action] = "rejetee" )
+
+Valeurs corrigées =
+CALCULATE ( COUNTROWS ( qualite_rejets ), qualite_rejets[action] <> "rejetee" )
+
+Lignes de vente chargées = COUNTROWS ( fait_ventes )
+
+Taux de retenue des ventes =
+DIVIDE ( [Lignes de vente chargées], [Lignes de vente chargées] + [Lignes rejetées] )

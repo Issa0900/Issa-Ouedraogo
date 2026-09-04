@@ -1,1 +1,4 @@
 .claude/
+
+# Entrepot SQLite : artefact regenere par Python/2_nettoyer_charger.py
+entrepot-donnees-powerbi/data/entrepot/
