@@ -3,7 +3,7 @@
 
   # Issa Ouedraogo
 
-  *Gestion de commerce · IA générative & automatisation · Analyse de données*
+  *GESCOP · Intelligence d'affaires augmentée par l'IA · PME*
 
   📧 [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
 </div>
@@ -18,7 +18,7 @@ Je conçois des outils d'aide à la décision, comme des tableaux de bord intera
 
 Je vais plus loin en intégrant l'**IA à mon flux de travail** : automatisation de tâches répétitives, génération assistée de scripts Python, structuration de rapports par prompts. L'objectif est concret — réduire les délais de production pour concentrer le temps sur l'interprétation et la recommandation, là où se trouve la vraie valeur ajoutée pour l'entreprise.
 
-Je recherche activement un **stage en analyse de données**.
+Je développe une clientèle de PME comme **consultant en intelligence d'affaires et automatisation (GESCOP)**, en parallèle d'un poste salarié en analyse de données.
 
 Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un README détaillé expliquant le contexte métier, la méthode et les résultats.
 
