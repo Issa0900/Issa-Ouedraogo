@@ -9,7 +9,7 @@
 
 Modélisation financière complète du démarrage d'une entreprise de distribution (13 produits) : du dimensionnement des ressources et du montage financier jusqu'aux états financiers de deux trimestres d'exploitation, avec analyse par ratios, seuil de rentabilité et rentabilité par produit.
 
-> 📁 Fichier livrable : [`bilan-demarrage.xlsx`](./bilan-demarrage.xlsx) — 29 feuilles de travail
+> 📁 Fichier livrable : [`bilan-demarrage.xlsx`](./bilan-demarrage.xlsx) — 29 feuilles de travail  ·  🔒 Classeur protégé en lecture seule : consultation, tri et filtres possibles, modification bloquée.
 > · 👁️ [**Ouvrir en ligne (Office Viewer)**](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FIssa0900%2FIssa-Ouedraogo%2Fmain%2Fanalyse-financiere-demarrage%2Fbilan-demarrage.xlsx)
 > · ⬇️ [Télécharger](https://github.com/Issa0900/Issa-Ouedraogo/raw/main/analyse-financiere-demarrage/bilan-demarrage.xlsx)
 >

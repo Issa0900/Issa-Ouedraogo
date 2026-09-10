@@ -11,7 +11,7 @@ Analyse complète de trois échantillons : 225 employés d'une entreprise, 150 m
 
 Chaque résultat est doublé d'un **recalcul indépendant en Python**, qui repart des données brutes et refait les mesures, les intervalles et les tests avec ses propres lois de probabilité. Le classeur passe les **36 contrôles croisés sans un seul écart**.
 
-> 📁 Fichier livrable : [`analyse-statistique.xlsx`](./analyse-statistique.xlsx), 11 feuilles de travail
+> 📁 Fichier livrable : [`analyse-statistique.xlsx`](./analyse-statistique.xlsx), 11 feuilles de travail  ·  🔒 Classeur protégé en lecture seule : consultation, tri et filtres possibles, modification bloquée.
 > · 👁️ [**Ouvrir en ligne (Office Viewer)**](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FIssa0900%2FIssa-Ouedraogo%2Fmain%2Fanalyse-statistique-inferentielle%2Fanalyse-statistique.xlsx)
 > · ⬇️ [Télécharger](https://github.com/Issa0900/Issa-Ouedraogo/raw/main/analyse-statistique-inferentielle/analyse-statistique.xlsx)
 >

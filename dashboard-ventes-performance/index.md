@@ -12,7 +12,7 @@ title: Dashboard Ventes & Performance
 
 Tableau de bord interactif pour suivre les ventes, marges et performances régionales d'une entreprise de vente au détail, et identifier les zones à améliorer.
 
-> 📁 Fichier livrable : [`Dashboard_Ventes.xlsx`](./Dashboard_Ventes.xlsx)  ·  👁️ [**Ouvrir en ligne (Office Viewer)**](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FIssa0900%2FIssa-Ouedraogo%2Fmain%2Fdashboard-ventes-performance%2FDashboard_Ventes.xlsx)  ·  ⬇️ [Télécharger](https://github.com/Issa0900/Issa-Ouedraogo/raw/main/dashboard-ventes-performance/Dashboard_Ventes.xlsx)
+> 📁 Fichier livrable : [`Dashboard_Ventes.xlsx`](./Dashboard_Ventes.xlsx)  ·  👁️ [**Ouvrir en ligne (Office Viewer)**](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FIssa0900%2FIssa-Ouedraogo%2Fmain%2Fdashboard-ventes-performance%2FDashboard_Ventes.xlsx)  ·  ⬇️ [Télécharger](https://github.com/Issa0900/Issa-Ouedraogo/raw/main/dashboard-ventes-performance/Dashboard_Ventes.xlsx)  ·  🔒 Classeur protégé en lecture seule : consultation, tri et filtres possibles, modification bloquée.
 >
 > ℹ️ GitHub ne sait pas prévisualiser correctement les fichiers Excel complexes (formules, graphiques, feuille masquée, filtres). Utilise le lien **"Ouvrir en ligne"** ci-dessus pour consulter le vrai fichier dans ton navigateur, ou télécharge-le pour l'ouvrir dans Excel et tester les filtres. Les aperçus ci-dessous montrent exactement ce que tu y trouveras.
 
