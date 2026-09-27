@@ -18,7 +18,7 @@ Je conçois des outils d'aide à la décision, comme des tableaux de bord intera
 
 Je vais plus loin en intégrant l'**IA à mon flux de travail** : automatisation de tâches répétitives, génération assistée de scripts Python, structuration de rapports par prompts. L'objectif est concret — réduire les délais de production pour concentrer le temps sur l'interprétation et la recommandation, là où se trouve la vraie valeur ajoutée pour l'entreprise.
 
-Je développe une clientèle de PME comme **consultant en intelligence d'affaires et automatisation (GESCOP)**, en parallèle d'un poste salarié en analyse de données.
+Je développe une clientèle de PME avec **GESCOP**, l'application de pilotage financier que je conçois ([voir en ligne](https://smart-pilot-gescop.base44.app)), en parallèle d'un poste salarié en analyse de données.
 
 Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un README détaillé expliquant le contexte métier, la méthode et les résultats.
 
@@ -30,7 +30,7 @@ Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un
 
 | Projet | Description | Compétences | Lien |
 |---|---|---|---|
-| 🧭 **Copilote PME** *(app full-stack)* | SaaS de pilotage et d'aide à la décision pour PME : ingestion multi-format (CSV/Excel/ODS/JSON/XML/PDF, OCR pour PDF scannés), détection d'anomalies par catégorie, alertes et recommandations automatiques | Next.js (TypeScript, Tailwind), FastAPI (Python), PostgreSQL, pipeline d'ingestion multi-format, détection d'anomalies | [Voir le repo →](https://github.com/Issa0900/copilote-pme) |
+| 🧭 **GESCOP** *(SaaS en production)* | Pilotage financier pour PME : import universel de fichiers (Excel/CSV/PDF), 62 KPI traçables, rapprochement bancaire, détection des écarts, rapports en un clic. [Application en ligne](https://smart-pilot-gescop.base44.app) | React, Deno (TypeScript), Stripe, IA, fiabilité et traçabilité des données | [Voir le projet →](./gescop/) |
 | 🤖 **Intégration IA au flux de travail** | Comment l'IA générative (Claude Code) s'intègre à la production de code et d'analyses, avec preuves à l'appui (commits, corrections documentées) | Claude Code, automatisation, revue et validation humaine | [Voir le projet →](./integration-ia/) |
 | 💼 **Bilan de démarrage & analyse financière** | Modélisation financière complète du lancement d'une entreprise commerciale : montage financier, états financiers, ratios, seuil de rentabilité et rentabilité par produit | Analyse financière, ratios & DuPont, seuil de rentabilité, Python (pandas/openpyxl/matplotlib), Acomba | [Voir le projet →](./analyse-financiere-demarrage/) |
 | 🗺️ **Geomarketing Québec** | Score d'opportunité commerciale par région (population, revenu, croissance, concurrence) à partir de 257 755 établissements et des données ISQ | Python (pandas), web scraping, SQL, modélisation de score | [Voir le projet →](./geomarketing-quebec/) |

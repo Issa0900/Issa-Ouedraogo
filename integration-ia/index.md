@@ -14,7 +14,7 @@ Intégrer l'IA générative à un flux de travail, ce n'est pas lui poser une qu
 
 ### 1. Cadrage
 
-Avant de solliciter l'IA, le problème doit être posé précisément : quel résultat, selon quels critères, avec quelles contraintes. Un prompt vague produit un résultat vague. Exemple : avant d'implémenter l'authentification de Copilote PME, les règles d'accès entre entreprises (isolation multi-tenant) ont été définies d'abord, l'implémentation est venue ensuite.
+Avant de solliciter l'IA, le problème doit être posé précisément : quel résultat, selon quels critères, avec quelles contraintes. Un prompt vague produit un résultat vague. Exemple : sur [GESCOP](../gescop/), les règles de traitement des doublons (conservés et signalés, jamais supprimés en silence) ont été décidées avant d'écrire la moindre ligne de détection.
 
 ### 2. Génération assistée
 
@@ -25,7 +25,7 @@ L'IA écrit le code, le script ou le texte à partir du cadrage. C'est l'étape 
 Chaque résultat généré est testé, relu et confronté aux données réelles avant d'être considéré fini. C'est l'étape où se joue la fiabilité du livrable. Deux exemples concrets :
 
 - Sur [Analyse statistique et tests d'hypothèses](../analyse-statistique-inferentielle/), l'exigence posée dès le départ était de recalculer les 36 contrôles croisés indépendamment du classeur d'origine, résultat, zéro écart.
-- Sur Copilote PME, la vérification a permis d'identifier [une race condition sur des requêtes concurrentes](https://github.com/Issa0900/copilote-pme/commit/2aa9345), un bug qui n'apparaît qu'avec plusieurs utilisateurs simultanés, et de revoir la méthode de [détection d'anomalies pour utiliser la médiane/MAD plutôt qu'un seuil fixe](https://github.com/Issa0900/copilote-pme/commit/cafc645), après avoir constaté qu'un seuil fixe générait trop de faux positifs sur des données réelles.
+- Sur [GESCOP](../gescop/), des erreurs apparaissaient sur de vrais fichiers alors que tout semblait correct. La vérification a montré qu'elles venaient du moment où l'IA intervient. Résultat : l'application reste juste même quand l'IA se trompe ou ne répond pas, et chaque correction est vérifiée sur l'ensemble des fichiers de référence.
 
 ### 4. Intégration et livraison
 
@@ -33,8 +33,7 @@ Le résultat vérifié est intégré au produit ou au livrable final, documenté
 
 ## 📌 Autres exemples appliqués
 
-- [Ingestion OCR pour les PDF scannés](https://github.com/Issa0900/copilote-pme/commit/a901733), pour couvrir un format de document réel qu'une PME utilise encore couramment.
-- [Authentification JWT et isolation multi-tenant](https://github.com/Issa0900/copilote-pme/commit/6fe0bab) sur Copilote PME.
+- [GESCOP](../gescop/) : reconnaissance automatique des colonnes de fichiers hétérogènes, fiable même quand les colonnes sont renommées, déplacées ou mal formatées.
 - Scripts d'extraction et de visualisation pour [Geomarketing Québec](../geomarketing-quebec/), à partir d'un cadrage sur les indicateurs à produire (score d'opportunité par région).
 
 ## 💡 Pourquoi ce processus compte pour une PME
