@@ -1,6 +1,8 @@
 ---
 layout: project
 title: GESCOP
+description: "Application en ligne qui aide les PME à comprendre leurs chiffres : marge réelle, trésorerie, écarts entre les sources, rapports en un clic."
+image: /gescop/assets/app-tresorerie.png
 ---
 
 # 🧭 GESCOP · Pilotage financier et aide à la décision pour PME

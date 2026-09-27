@@ -4,7 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{{ page.title }} · Issa Ouedraogo</title>
-<meta name="description" content="{{ page.title }} · projet d'Issa Ouedraogo, analyse de données et GESCOP." />
+<meta name="description" content="{{ page.description | default: page.title }}{% unless page.description %} · projet d'Issa Ouedraogo, analyse de données et GESCOP.{% endunless %}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ page.title }} · Issa Ouedraogo" />
+<meta property="og:description" content="{{ page.description | default: page.title }}" />
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+{% if page.image %}<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}" />
+<meta name="twitter:card" content="summary_large_image" />{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
