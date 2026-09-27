@@ -3,194 +3,527 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Issa Ouedraogo · Analyse de données et créateur de GESCOP</title>
-<meta name="description" content="Issa Ouedraogo, analyste de données et créateur de GESCOP, l'application de pilotage financier pour PME : indicateurs fiables et traçables, trésorerie, détection des écarts. Projets en Excel, Python, SQL et analyse financière." />
+<title>Issa Ouedraogo · Data Analyst, Business Intelligence & Créateur de GESCOP</title>
+<meta name="description" content="Portfolio d'Issa Ouedraogo : Data Analyst, Business Intelligence et créateur de GESCOP (SaaS de pilotage financier PME). Projets vérifiables en Python, SQL, Power BI, Excel et modélisation financière." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
 <style>
-  /* ---------- Hero (page d'accueil uniquement) ---------- */
-  .hero{
-    padding:96px 0 72px;
-    position:relative;
-    overflow:hidden;
-  }
-  .hero-grid{
-    display:grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap:56px;
-    align-items:center;
-  }
-  .hero .kicker{ opacity:0; }
-  .hero h1{
-    font-size: clamp(2.4rem, 5vw, 3.6rem);
-    line-height:1.06;
-    text-wrap:balance;
-    opacity:0;
-  }
-  .hero h1 em{ font-style:italic; color:var(--accent); }
-  .hero p.lead{
-    margin-top:22px; max-width:46ch;
-    font-size:1.08rem; color:var(--ink-soft);
-    opacity:0;
-  }
-  .hero-actions{ margin-top:32px; display:flex; gap:14px; flex-wrap:wrap; opacity:0; }
-
-  .portrait-frame{
-    position:relative;
-    opacity:0;
-  }
-  .portrait-frame .photo{
-    width:100%; aspect-ratio: 4/5; object-fit:cover;
-    border-radius:var(--radius);
-    filter: grayscale(15%);
-    border:1px solid var(--line);
-  }
-  .portrait-tag{
-    position:absolute; left:-1px; bottom:-1px;
-    background:var(--ink); color:var(--paper);
-    font-family:"IBM Plex Mono", monospace;
-    font-size:0.72rem; padding:8px 12px;
-    letter-spacing:0.04em;
-  }
-  .avail-badge{
-    position:absolute; top:18px; right:-22px;
-    display:flex; align-items:center; gap:8px;
-    background:var(--paper); border:1px solid var(--line);
-    box-shadow: 0 12px 28px -12px rgba(26,30,23,0.28);
-    padding:10px 16px 10px 12px;
-    font-size:0.8rem; color:var(--ink);
-    max-width:180px; line-height:1.3;
-  }
-  .avail-dot{
-    width:7px; height:7px; border-radius:50%; background:var(--accent);
-    flex:none; box-shadow:0 0 0 3px var(--accent-soft);
+  :root {
+    --accent: #0284c7; /* Primary Blue Accent */
+    --accent-soft: rgba(2, 132, 199, 0.08);
+    --teal: #0d9488; /* Secondary GESCOP Accent */
+    --teal-soft: rgba(13, 148, 136, 0.08);
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
+    --slate-700: #334155;
+    --slate-600: #475569;
+    --slate-200: #e2e8f0;
+    --slate-100: #f1f5f9;
+    --slate-50: #f8fafc;
+    --paper: #ffffff;
+    --paper-2: #f8fafc;
+    --line: #e2e8f0;
+    --font-heading: 'Plus Jakarta Sans', 'Fraunces', serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
   }
 
-  /* animated data line behind hero text, content-relevant motif */
-  .hero-chart{ position:absolute; top:0; right:0; width:58%; height:100%; pointer-events:none; opacity:0.4; z-index:0; }
-  .hero-chart svg{ width:100%; height:100%; }
-  .hero-chart path.line{
-    fill:none; stroke:var(--accent); stroke-width:1.4;
-    stroke-dasharray: 900; stroke-dashoffset:900;
-  }
-  .hero-chart path.area{ fill:url(#areaGrad); opacity:0; }
-
-  /* ---------- Stats ---------- */
-  .stats{
-    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
-    background:var(--paper-2);
-  }
-  .stats-grid{
-    display:grid; grid-template-columns:repeat(4,1fr);
-    max-width:var(--maxw); margin:0 auto;
-  }
-  .stat{
-    padding:34px 28px; text-align:left;
-    border-left:1px solid var(--line);
-  }
-  .stat:first-child{ border-left:none; }
-  .stat .num{
-    font-family:"Fraunces", serif; font-size:2.1rem; color:var(--accent);
-    display:block; font-variant-numeric: tabular-nums;
-  }
-  .stat .lbl{
-    font-size:0.82rem; color:var(--ink-soft); margin-top:6px; display:block;
+  body {
+    font-family: var(--font-body);
+    color: var(--slate-800);
+    background: var(--paper);
   }
 
-  /* ---------- Section shell ---------- */
-  section{ padding:88px 0; }
-  .section-head{ margin-bottom:44px; max-width:60ch; }
-  .section-head .kicker{ margin-bottom:14px; }
-  .section-head h2{ font-size:clamp(1.7rem,3vw,2.3rem); }
-  .section-head p{ color:var(--ink-soft); margin-top:14px; }
-
-  /* ---------- About ---------- */
-  .about-grid{
-    display:grid; grid-template-columns: 1fr 1fr; gap:56px;
-  }
-  .about-grid p{ color:var(--ink-soft); margin:0 0 16px; }
-  .about-grid p:last-child{ margin-bottom:0; }
-  .about-grid strong{ color:var(--ink); font-weight:600; }
-  .status-line{
-    margin-top:26px; padding:18px 20px;
-    border-left:2px solid var(--accent);
-    background:var(--accent-soft);
-    font-size:0.94rem;
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--slate-900);
+    letter-spacing: -0.02em;
   }
 
-  /* ---------- Projects ---------- */
-  .projects{ background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  .project-list{ display:flex; flex-direction:column; }
-  .project{
-    display:grid; grid-template-columns: 60px 1.3fr 1fr auto;
-    align-items:start; gap:28px;
-    padding:30px 0; border-top:1px solid var(--line);
-    text-decoration:none; color:var(--ink);
-    transition: padding-left .25s ease, background .25s ease;
+  /* ---------- Navigation Bar ---------- */
+  header.nav {
+    background: rgba(255, 255, 255, 0.92);
+    border-bottom: 1px solid var(--slate-200);
   }
-  .project:last-child{ border-bottom:1px solid var(--line); }
-  .project:hover{ padding-left:10px; background:rgba(11,107,69,0.045); }
-  .project .idx{
-    display:flex; flex-direction:column; gap:8px; padding-top:4px;
+  .brand {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--slate-900);
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
-  .project .idx .n{ font-family:"IBM Plex Mono", monospace; color:var(--ink-soft); font-size:0.85rem; }
-  .project .domain{
-    font-family:"IBM Plex Mono", monospace; font-size:0.66rem;
-    text-transform:uppercase; letter-spacing:0.05em; color:var(--accent);
+  .brand::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
   }
-  .project h3{ font-size:1.18rem; font-weight:500; }
-  .project .desc{ color:var(--ink-soft); font-size:0.93rem; }
-  .project .skills{ font-size:0.78rem; color:var(--ink-soft); font-family:"IBM Plex Mono", monospace; }
-  .project .arrow{
-    font-size:1.1rem; color:var(--accent); padding-top:4px;
-    transition: transform .25s ease;
+  nav.links a {
+    font-weight: 600;
+    font-size: 0.82rem;
+    color: var(--slate-600);
   }
-  .project:hover .arrow{ transform:translateX(6px); }
-  .project-thumb{
-    grid-column: 1 / -1;
-    margin-top:18px; border-radius:8px; overflow:hidden;
-    border:1px solid var(--line);
+  nav.links a:hover {
+    color: var(--accent);
   }
-  .project-thumb img{ width:100%; display:block; }
-
-  /* ---------- Skills (bande sombre pour rompre le rythme clair/clair) ---------- */
-  :root{ --accent-bright:#4fcf95; }
-  .skills-dark{ background:var(--ink); }
-  .skills-dark .kicker{ color:var(--accent-bright); }
-  .skills-dark .section-head h2{ color:var(--paper); }
-  .skills-dark .section-head p{ color:rgba(241,242,236,0.6); }
-  .skills-grid{
-    display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:36px 28px;
+  nav.links a.badge-nav {
+    background: var(--teal-soft);
+    color: var(--teal);
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(13, 148, 136, 0.2);
   }
-  .skill-cell .cat{
-    font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em;
-    color:var(--accent-bright); font-family:"IBM Plex Mono", monospace;
-  }
-  .tag-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
-  .tag{
-    font-size:0.82rem; padding:6px 13px; color:rgba(241,242,236,0.82);
-    border:1px solid rgba(241,242,236,0.18); border-radius:999px;
-    transition: border-color .2s ease, color .2s ease;
-  }
-  .tag:hover{ border-color:var(--accent-bright); color:#fff; }
-
-  @media (max-width: 860px){
-    .hero-grid{ grid-template-columns:1fr; }
-    .portrait-frame{ max-width:280px; }
-    .avail-badge{ right:0; top:auto; bottom:36px; max-width:150px; font-size:0.75rem; }
-    .stats-grid{ grid-template-columns:repeat(2,1fr); }
-    .stat:nth-child(3){ border-left:none; }
-    .about-grid{ grid-template-columns:1fr; }
-    .project{ grid-template-columns: 68px 1fr; }
-    .project .domain{ white-space:normal; }
-    .project .skills, .project .arrow{ grid-column:2; }
-    .skills-grid{ grid-template-columns:repeat(2,1fr); }
+  nav.links a.badge-pdf {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(2, 132, 199, 0.2);
   }
 
-  @media (prefers-reduced-motion: reduce){
-    .hero-actions, .kicker, .hero h1, .hero p.lead, .portrait-frame{ opacity:1 !important; }
+  /* ---------- Hero Section ---------- */
+  .hero {
+    padding: 80px 0 64px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 85% 20%, rgba(2, 132, 199, 0.05) 0%, transparent 60%);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .hero .kicker {
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+    line-height: 1.1;
+    font-weight: 800;
+    color: var(--slate-900);
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--accent);
+    background: linear-gradient(120deg, var(--accent), var(--teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p.lead {
+    margin-top: 20px;
+    max-width: 58ch;
+    font-size: 1.05rem;
+    color: var(--slate-600);
+    line-height: 1.6;
+  }
+  .hero-actions {
+    margin-top: 32px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .btn-teal {
+    background: var(--teal);
+    color: white;
+    border: 1px solid var(--teal);
+    font-weight: 700;
+  }
+  .btn-teal:hover {
+    background: #0f766e;
+    border-color: #0f766e;
+  }
+  .btn-pdf {
+    background: #0284c7;
+    color: white;
+    border: 1px solid #0284c7;
+    font-weight: 700;
+  }
+  .btn-pdf:hover {
+    background: #0369a1;
+    border-color: #0369a1;
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--slate-800);
+    border: 1px solid var(--slate-200);
+    font-weight: 600;
+  }
+  .btn-ghost:hover {
+    background: var(--slate-50);
+    border-color: var(--slate-800);
+  }
+
+  .portrait-frame {
+    position: relative;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .portrait-frame .photo {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--slate-200);
+    box-shadow: 0 16px 36px -12px rgba(15, 23, 42, 0.15);
+  }
+  .portrait-tag {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  .avail-badge {
+    position: absolute;
+    top: 14px;
+    right: -16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid var(--slate-200);
+    box-shadow: 0 12px 28px -10px rgba(15, 23, 42, 0.2);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--slate-900);
+  }
+  .avail-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+  }
+
+  /* ---------- Stats Counter Bar ---------- */
+  .stats-strip {
+    border-top: 1px solid var(--slate-200);
+    border-bottom: 1px solid var(--slate-200);
+    background: var(--slate-50);
+    padding: 30px 0;
+  }
+  .stats-grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  .stat-card {
+    border-left: 1px solid var(--slate-200);
+    padding-left: 20px;
+  }
+  .stat-card:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+  .stat-card .num {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--slate-900);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-card.accent .num { color: var(--accent); }
+  .stat-card.teal .num { color: var(--teal); }
+  .stat-card .lbl {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--slate-600);
+    margin-top: 6px;
+    display: block;
+  }
+
+  /* ---------- Pipeline Section ---------- */
+  .pipeline-section {
+    padding: 72px 0;
+    background: #ffffff;
+  }
+  .pipeline-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--slate-50);
+    border: 1px solid var(--slate-200);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin: 32px 0 24px 0;
+    overflow-x: auto;
+  }
+  .pipe-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+  }
+  .pipe-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .pipe-badge.teal { color: var(--teal); }
+  .pipe-label {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--slate-900);
+  }
+  .pipe-arrow {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  /* ---------- GESCOP Showcase (Dark Emerald / Slate Theme) ---------- */
+  .gescop-feature {
+    background: #09131a;
+    color: #ffffff;
+    padding: 88px 0;
+    position: relative;
+    border-top: 1px solid #1e293b;
+    border-bottom: 1px solid #1e293b;
+  }
+  .gescop-feature .kicker {
+    color: #2dd4bf;
+  }
+  .gescop-feature h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+  }
+  .gescop-feature p.sub {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    max-width: 65ch;
+  }
+  .gescop-hero-frame {
+    margin-top: 40px;
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  }
+  .gescop-hero-frame img {
+    width: 100%;
+    display: block;
+  }
+  .gescop-pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 36px;
+  }
+  .gescop-pill-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px 18px;
+  }
+  .gescop-pill-card h4 {
+    font-size: 0.95rem;
+    color: #2dd4bf;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .gescop-pill-card p {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ---------- Projects Grid ---------- */
+  .projects-section {
+    padding: 88px 0;
+    background: var(--slate-50);
+  }
+  .project-card {
+    background: #ffffff;
+    border: 1px solid var(--slate-200);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.08);
+  }
+  .proj-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--slate-200);
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+  }
+  .proj-domain {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .proj-head h3 {
+    font-size: 1.45rem;
+    margin: 4px 0 0 0;
+  }
+  .proj-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  .proj-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .proj-mcard {
+    background: var(--slate-50);
+    border: 1px solid var(--slate-200);
+    border-radius: 6px;
+    padding: 10px 14px;
+  }
+  .proj-mval {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--slate-900);
+    font-variant-numeric: tabular-nums;
+  }
+  .proj-mlbl {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--slate-600);
+    margin-top: 2px;
+  }
+  .proj-thumb-frame {
+    border: 1px solid var(--slate-200);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  }
+  .proj-thumb-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .insight-badge-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: var(--slate-50);
+    border: 1px solid var(--slate-200);
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 14px;
+    font-size: 0.8rem;
+  }
+  .ibadge {
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  .ibadge.d { background: #e0f2fe; color: #0369a1; }
+  .ibadge.i { background: #ccfbf1; color: #0f766e; }
+  .ibadge.p { background: #f1f5f9; color: #0f172a; border: 1px solid #cbd5e1; }
+
+  /* ---------- PDF CTA Banner ---------- */
+  .pdf-banner-box {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    border-radius: 12px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 32px;
+    align-items: center;
+    margin: 60px 0;
+  }
+  .pdf-banner-box h3 {
+    color: white;
+    font-size: 1.8rem;
+  }
+  .pdf-banner-box p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+
+  /* ---------- Evidence Table ---------- */
+  .table-responsive {
+    overflow-x: auto;
+    margin-top: 24px;
+  }
+  table.matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  table.matrix-table th {
+    background: var(--slate-100);
+    color: var(--slate-900);
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid var(--slate-200);
+  }
+  table.matrix-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--slate-200);
+  }
+  table.matrix-table tr:hover td {
+    background: var(--slate-50);
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .stats-grid-5 { grid-template-columns: repeat(2, 1fr); }
+    .stat-card { border-left: none; padding-left: 0; }
+    .gescop-pillars { grid-template-columns: repeat(2, 1fr); }
+    .proj-grid { grid-template-columns: 1fr; }
+    .pdf-banner-box { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -201,8 +534,12 @@
     <a class="brand" href="#top">Issa <span>Ouedraogo</span></a>
     <nav class="links">
       <a href="#apropos">À propos</a>
-      <a href="#projets">Projets</a>
+      <a href="#fil-conducteur">Fil Conducteur</a>
+      <a href="#gescop" class="badge-nav">🧭 GESCOP (SaaS)</a>
+      <a href="#projets">Projets BI &amp; Data</a>
       <a href="#competences">Compétences</a>
+      <a href="#preuves">Matrice de Preuves</a>
+      <a href="./Portfolio_Issa_Ouedraogo_2026.pdf" target="_blank" class="badge-pdf">📄 Rapport PDF (24p)</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -210,229 +547,650 @@
 
 <main id="top">
 
+  <!-- ==================== HERO SECTION ==================== -->
   <section class="hero">
-    <div class="hero-chart" aria-hidden="true">
-      <svg viewBox="0 0 1000 400" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#0b6b45" stop-opacity="0.16"/>
-            <stop offset="100%" stop-color="#0b6b45" stop-opacity="0"/>
-          </linearGradient>
-        </defs>
-        <path class="area" d="M0,320 L60,300 L140,310 L220,240 L300,260 L380,180 L460,205 L540,140 L620,165 L700,100 L780,130 L860,70 L940,95 L1000,60 L1000,400 L0,400 Z"/>
-        <path class="line" d="M0,320 L60,300 L140,310 L220,240 L300,260 L380,180 L460,205 L540,140 L620,165 L700,100 L780,130 L860,70 L940,95 L1000,60"/>
-      </svg>
-    </div>
     <div class="wrap hero-grid">
       <div>
-        <p class="kicker" id="kicker">Gestion de commerce · Analyse de données · Créateur de GESCOP</p>
-        <h1 id="h1">Je transforme les chiffres d'une PME en <em>décisions</em> fiables.</h1>
-        <p class="lead" id="lead">Je conçois <strong>GESCOP</strong>, une application en ligne qui réunit les fichiers d'une PME (ventes, dépenses, banque, paie, stocks) et en tire des indicateurs traçables jusqu'à leur source. Je réalise aussi des analyses de données et des tableaux de bord en Excel, Python et SQL.</p>
+        <p class="kicker" id="kicker">
+          <span>●</span> Data Analyst · Business Intelligence · Analyse Financière
+        </p>
+        <h1 id="h1">
+          Je transforme les données d'entreprise en <em>décisions fiables</em> et en solutions logicielles.
+        </h1>
+        <p class="lead" id="lead">
+          Mon parcours en <strong>Gestion de commerce</strong> m'a ancré dans la réalité du dirigeant (marge, trésorerie, BFR). J'y associe l'expertise technique de l'analyse de données (Python, SQL, Power BI, statistiques) et la création de <strong>GESCOP</strong>, une application SaaS en production qui unifie les fichiers d'une PME en indicateurs traçables.
+        </p>
         <div class="hero-actions" id="hero-actions">
-          <a class="btn btn-primary" href="./gescop/">Découvrir GESCOP</a>
-          <a class="btn btn-ghost" href="#projets">Voir les projets</a>
-          
+          <a class="btn btn-teal" href="#gescop">🧭 Découvrir GESCOP (SaaS Live)</a>
+          <a class="btn btn-pdf" href="./Portfolio_Issa_Ouedraogo_2026.pdf" target="_blank">📄 Télécharger le Rapport PDF (24p)</a>
+          <a class="btn btn-ghost" href="#projets">📊 Voir les 6 projets</a>
         </div>
       </div>
       <div class="portrait-frame" id="portrait">
-        <img class="photo" src="assets/photo-profil.jpg" alt="Portrait d'Issa Ouedraogo" />
-        <span class="portrait-tag mono">Lévis, QC</span>
-        <div class="avail-badge"><span class="avail-dot"></span>Ouvert aux mandats PME et collaborations</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="stats" data-reveal>
-    <div class="wrap stats-grid">
-      <div class="stat"><span class="num" data-count="7">0</span><span class="lbl">Projets documentés</span></div>
-      <div class="stat"><span class="num" data-count="257755">0</span><span class="lbl">Établissements analysés (Geomarketing)</span></div>
-      <div class="stat"><span class="num" data-count="38">0</span><span class="lbl">Types de données unifiés (GESCOP)</span></div>
-      <div class="stat"><span class="num" data-count="62">0</span><span class="lbl">KPI calculés par GESCOP</span></div>
-    </div>
-  </section>
-
-  <section id="apropos">
-    <div class="wrap">
-      <div class="section-head" data-reveal>
-        <p class="kicker">01 — Profil</p>
-        <h2>Du terrain commercial à un produit logiciel</h2>
-      </div>
-      <div class="about-grid">
-        <div data-reveal>
-          <p>Mon parcours en <strong>Gestion de commerce</strong> m'a appris ce qui compte pour un dirigeant : la marge, la trésorerie, la rentabilité de chaque produit. J'y ai ajouté l'<strong>analyse de données</strong> : Excel avancé, Python, SQL, Power BI et statistiques appliquées.</p>
-          <p>Sur le terrain, un constat revient toujours : les chiffres d'une PME existent, mais ils sont éparpillés dans des fichiers qui ne se parlent pas, et la marge réelle n'est connue que des mois plus tard.</p>
-        </div>
-        <div data-reveal>
-          <p>C'est pour répondre à ce problème que j'ai créé <strong>GESCOP</strong>. J'en définis le produit et les règles métier, et je le développe avec l'IA générative comme outil de production, en gardant la main sur ce qui fait la valeur : la justesse des chiffres.</p>
-          <p>Chaque projet de ce portfolio est documenté avec son contexte métier, sa méthode et ses résultats.</p>
-          <div class="status-line">Je développe <strong>GESCOP</strong> (<a href="https://smart-pilot-gescop.base44.app" target="_blank" rel="noopener">voir l'application en ligne</a>) et je reste ouvert aux postes en analyse de données et aux mandats de PME.</div>
+        <img class="photo" src="assets/photo-profil.jpg" alt="Issa Ouedraogo" />
+        <span class="portrait-tag">Montréal / Lévis, QC</span>
+        <div class="avail-badge">
+          <span class="avail-dot"></span>
+          Disponible pour mandats &amp; embauche
         </div>
       </div>
     </div>
   </section>
 
-  <section class="projects" id="projets">
-    <div class="wrap">
-      <div class="section-head" data-reveal>
-        <p class="kicker">02 — Portfolio</p>
-        <h2>Sept projets, sept problèmes métier</h2>
-        <p>Chaque lien mène vers le dossier complet du projet : données, code et README détaillé.</p>
+  <!-- ==================== STATS COUNTER STRIP ==================== -->
+  <section class="stats-strip" data-reveal>
+    <div class="stats-grid-5">
+      <div class="stat-card">
+        <span class="num" data-count="7">0</span>
+        <span class="lbl">Projets Audités</span>
       </div>
-      <div class="project-list" data-reveal>
-        <a class="project" href="./gescop/">
-          <span class="idx"><span class="n mono">01</span><span class="domain">SaaS en production</span></span>
-          <h3>GESCOP</h3>
-          <span class="desc">Application de pilotage financier pour PME, en ligne : import universel de fichiers (Excel, CSV, PDF), 62 KPI traçables, rapprochement bancaire, détection des écarts et rapports de direction en un clic. Des chiffres fiables, traçables jusqu'à leur source.</span>
-          <span class="skills">React · Deno (TypeScript) · Stripe · IA · fiabilité des données</span>
-          <span class="arrow">→</span>
-          <span class="project-thumb"><img src="gescop/assets/app-tresorerie.png" alt="GESCOP : écran Trésorerie avec l'évolution sur 12 mois" loading="lazy" /></span>
-        </a>
-        <a class="project" href="./integration-ia/">
-          <span class="idx"><span class="n mono">02</span><span class="domain">IA appliquée</span></span>
-          <h3>Intégration IA au flux de travail</h3>
-          <span class="desc">Comment l'IA générative (Claude Code) s'intègre à la production de code et d'analyses — avec preuves à l'appui (commits, corrections documentées), pas juste une affirmation.</span>
-          <span class="skills">Claude Code · automatisation · revue et validation humaine</span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="project" href="./analyse-financiere-demarrage/">
-          <span class="idx"><span class="n mono">03</span><span class="domain">Finance</span></span>
-          <h3>Bilan de démarrage &amp; analyse financière</h3>
-          <span class="desc">Modélisation financière complète du lancement d'une entreprise : montage financier, états financiers, ratios, seuil de rentabilité, rentabilité par produit.</span>
-          <span class="skills">Analyse financière · ratios &amp; DuPont · Python · Acomba</span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="project" href="./geomarketing-quebec/">
-          <span class="idx"><span class="n mono">04</span><span class="domain">Marketing</span></span>
-          <h3>Geomarketing Québec</h3>
-          <span class="desc">Score d'opportunité commerciale par région (population, revenu, croissance, concurrence) à partir de 257 755 établissements et des données ISQ.</span>
-          <span class="skills">Python · pandas · web scraping · SQL · modélisation de score</span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="project" href="./dashboard-ventes-performance/">
-          <span class="idx"><span class="n mono">05</span><span class="domain">Ventes</span></span>
-          <h3>Dashboard Ventes &amp; Performance</h3>
-          <span class="desc">Tableau de bord Excel interactif (segments, TCD, graphiques dynamiques) pour piloter les ventes par région et catégorie.</span>
-          <span class="skills">Excel avancé · Python (pandas/openpyxl) · nettoyage de données</span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="project" href="./analyse-performances-rh/">
-          <span class="idx"><span class="n mono">06</span><span class="domain">RH</span></span>
-          <h3>Analyse des performances RH</h3>
-          <span class="desc">Statistiques descriptives et détection d'outliers (règle 1,5×IQR) sur 311 employés pour identifier les vrais facteurs de performance.</span>
-          <span class="skills">Python (pandas/matplotlib) · statistiques descriptives · outliers</span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="project" href="./analyse-statistique-inferentielle/">
-          <span class="idx"><span class="n mono">07</span><span class="domain">Statistiques</span></span>
-          <h3>Analyse statistique et tests d'hypothèses</h3>
-          <span class="desc">Trois échantillons (225 employés, 150 salaires, 2 330 pièces) : distribution, corrélation, intervalle de confiance et quatre tests d'hypothèses.</span>
-          <span class="skills">Statistiques inférentielles · khi-deux · régression · Python</span>
-          <span class="arrow">→</span>
-        </a>
+      <div class="stat-card accent">
+        <span class="num" data-count="257755">0</span>
+        <span class="lbl">Établissements (ISQ)</span>
+      </div>
+      <div class="stat-card teal">
+        <span class="num" data-count="38">0</span>
+        <span class="lbl">Entités Unifiées (SaaS)</span>
+      </div>
+      <div class="stat-card teal">
+        <span class="num" data-count="62">0</span>
+        <span class="lbl">KPIs Temps Réel</span>
+      </div>
+      <div class="stat-card">
+        <span class="num" data-count="333">0</span>
+        <span class="lbl">Tests Validés</span>
       </div>
     </div>
   </section>
 
+  <!-- ==================== FIL CONDUCTEUR ==================== -->
+  <section class="pipeline-section" id="fil-conducteur">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">01 — Méthodologie</p>
+        <h2>Le fil conducteur : de l'analyse au produit</h2>
+        <p>Chaque projet de ce portfolio s'inscrit dans une chaîne de valeur orientée vers l'action concrète.</p>
+      </div>
+
+      <div class="pipeline-flow" data-reveal>
+        <div class="pipe-node">
+          <span class="pipe-badge">01. Explorer</span>
+          <span class="pipe-label">Géomarketing</span>
+          <span style="font-size:0.72rem;color:var(--slate-600);">257k étab. ISQ</span>
+        </div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node">
+          <span class="pipe-badge">02. Analyser</span>
+          <span class="pipe-label">Statistiques</span>
+          <span style="font-size:0.72rem;color:var(--slate-600);">36 contrôles croisés</span>
+        </div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node">
+          <span class="pipe-badge">03. Comprendre</span>
+          <span class="pipe-label">Performance RH</span>
+          <span style="font-size:0.72rem;color:var(--slate-600);">Outliers 1,5×IQR</span>
+        </div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node">
+          <span class="pipe-badge">04. Visualiser</span>
+          <span class="pipe-label">Dashboard Ventes</span>
+          <span style="font-size:0.72rem;color:var(--slate-600);">Cockpit dynamique</span>
+        </div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node">
+          <span class="pipe-badge">05. Décider</span>
+          <span class="pipe-label">Finance Démarrage</span>
+          <span style="font-size:0.72rem;color:var(--slate-600);">DuPont &amp; 4,9M$ CA</span>
+        </div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node">
+          <span class="pipe-badge">06. Automatiser</span>
+          <span class="pipe-label">Intégration IA</span>
+          <span style="font-size:0.72rem;color:var(--slate-600);">Workflow 4 étapes</span>
+        </div>
+        <span class="pipe-arrow">→</span>
+        <div class="pipe-node" style="background:#f0fdfa;padding:8px 12px;border-radius:8px;border:1px solid #99f6e4;">
+          <span class="pipe-badge teal">07. Construire</span>
+          <span class="pipe-label" style="color:#0f766e;">GESCOP SaaS</span>
+          <span style="font-size:0.72rem;font-weight:700;color:#0d9488;">En production</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GESCOP SPECIAL SHOWCASE ==================== -->
+  <section class="gescop-feature" id="gescop">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="kicker">PRODUIT PHARE · APPLICATION SAAS EN PRODUCTION</p>
+        <h2>GESCOP : Le pilotage financier des PME réinventé.</h2>
+        <p class="sub">
+          Les données existent dans chaque PME, mais elles sont éparpillées entre les exports comptables, les fichiers Excel et les relevés bancaires. GESCOP les réconcilie pour offrir une vision en temps réel de la trésorerie et de la marge réelle.
+        </p>
+      </div>
+
+      <div class="gescop-hero-frame" data-reveal>
+        <img src="gescop/assets/app-tresorerie.png" alt="GESCOP : tableau de bord de trésorerie" />
+      </div>
+
+      <div class="gescop-pillars" data-reveal>
+        <div class="gescop-pill-card">
+          <h4>01 · Import Universel &amp; Qualité</h4>
+          <p>Dépôt de fichiers Excel, CSV ou PDF. Reconnaissance automatique des colonnes, détection intelligente des doublons sans suppression silencieuse.</p>
+        </div>
+        <div class="gescop-pill-card">
+          <h4>02 · Moteur Déterministe 62 KPIs</h4>
+          <p>Calcul en live de la trésorerie consolidée, du BFR, de la marge sur coût variable et de la rotation des stocks avec traçabilité totale.</p>
+        </div>
+        <div class="gescop-pill-card">
+          <h4>03 · Transparence des Calculs</h4>
+          <p>Chaque chiffre affiché peut être audité d'un simple clic pour révéler la formule mathématique exacte et les transactions sources associées.</p>
+        </div>
+        <div class="gescop-pill-card">
+          <h4>04 · Assistant Décisionnel IA</h4>
+          <p>Copilote contextuel branché sur les 62 KPIs validés : formulation en langage clair des risques de trésorerie et des arbitrages de rentabilité.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:36px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;" data-reveal>
+        <a class="btn btn-teal" href="https://smart-pilot-gescop.base44.app" target="_blank" rel="noopener">🚀 Tester GESCOP en Direct</a>
+        <a class="btn btn-ghost" style="color:white;border-color:rgba(255,255,255,0.25);" href="./gescop/">Consulter la documentation technique →</a>
+        <span style="color:#2dd4bf;font-size:0.85rem;font-weight:700;margin-left:auto;">
+          Architecture : React 18 · Deno (TypeScript) · PostgreSQL · Stripe · 333 Tests
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJETS ANALYTIQUES ==================== -->
+  <section class="projects-section" id="projets">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">02 — Études de Cas</p>
+        <h2>Analyses de données &amp; modélisation d'affaires</h2>
+        <p>Six cas sectoriels approfondis avec code source, données réelles et méthodologie rigoureuse.</p>
+      </div>
+
+      <!-- PROJET 01 : FINANCE -->
+      <div class="project-card" data-reveal>
+        <div class="proj-head">
+          <div>
+            <span class="proj-domain">01 · Finance d'Entreprise</span>
+            <h3>Bilan de démarrage &amp; analyse financière</h3>
+          </div>
+          <a class="btn btn-ghost" style="font-size:0.78rem;padding:6px 14px;" href="./analyse-financiere-demarrage/">Dossier complet →</a>
+        </div>
+        <div class="proj-grid">
+          <div>
+            <div class="proj-metrics">
+              <div class="proj-mcard">
+                <div class="proj-mval">4,90 M$</div>
+                <div class="proj-mlbl">CA Annuel Projeté</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">29</div>
+                <div class="proj-mlbl">Feuilles de Calcul</div>
+              </div>
+              <div class="proj-mcard" style="background:#fff1f2;border-color:#fecdd3;">
+                <div class="proj-mval" style="color:#e11d48;">-103 k$</div>
+                <div class="proj-mlbl">Résultat Net T1</div>
+              </div>
+              <div class="proj-mcard" style="background:#f0fdf4;border-color:#bbf7d0;">
+                <div class="proj-mval" style="color:#16a34a;">+261 k$</div>
+                <div class="proj-mlbl">Résultat Net T2</div>
+              </div>
+            </div>
+            <p style="font-size:0.88rem;color:var(--slate-600);line-height:1.5;">
+              <strong>Problématique métier :</strong> Comment modéliser avec exactitude le creux de trésorerie d'amorçage au premier trimestre et déterminer le seuil de rentabilité unitaire par famille de produits pour sécuriser le lancement ?
+            </p>
+            <div class="insight-badge-row">
+              <div>
+                <span class="ibadge d">Donnée</span>
+                <div>Perte de 103 k$ au T1 puis bascule à +261 k$ au T2.</div>
+              </div>
+              <div>
+                <span class="ibadge i">Interprétation</span>
+                <div>Effet de décalage d'encaissement et amortissements initiaux.</div>
+              </div>
+              <div>
+                <span class="ibadge p">Implication</span>
+                <div>Dimensionner une marge de sécurité de trésorerie de 150 k$.</div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-thumb-frame">
+            <img src="analyse-financiere-demarrage/assets/cascade-resultats.png" alt="Cascade de résultats" />
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 02 : VENTES -->
+      <div class="project-card" data-reveal>
+        <div class="proj-head">
+          <div>
+            <span class="proj-domain">02 · Business Intelligence &amp; Ventes</span>
+            <h3>Dashboard Ventes &amp; Performance Commerciale</h3>
+          </div>
+          <a class="btn btn-ghost" style="font-size:0.78rem;padding:6px 14px;" href="./dashboard-ventes-performance/">Dossier complet →</a>
+        </div>
+        <div class="proj-grid">
+          <div>
+            <div class="proj-metrics">
+              <div class="proj-mcard">
+                <div class="proj-mval">9 988</div>
+                <div class="proj-mlbl">Transactions Auditéess</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">2,30 M$</div>
+                <div class="proj-mlbl">Chiffre d'Affaires</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">12,5 %</div>
+                <div class="proj-mlbl">Marge Nette Moyenne</div>
+              </div>
+              <div class="proj-mcard" style="background:#fff1f2;border-color:#fecdd3;">
+                <div class="proj-mval" style="color:#e11d48;">-17,7 k$</div>
+                <div class="proj-mlbl">Perte Nette Tables</div>
+              </div>
+            </div>
+            <p style="font-size:0.88rem;color:var(--slate-600);line-height:1.5;">
+              <strong>Problématique métier :</strong> Un chiffre d'affaires agrégé en croissance constante masque-t-il des sous-catégories déficitaires ? Conception d'un cockpit interactif avec filtres dynamiques (SOMME.SI.ENS, TCD).
+            </p>
+            <div class="insight-badge-row">
+              <div>
+                <span class="ibadge d">Donnée</span>
+                <div>Tables (-17,7 k$) et Bookcases (-3,5 k$) en déficit constant.</div>
+              </div>
+              <div>
+                <span class="ibadge i">Interprétation</span>
+                <div>Les remises commerciales supérieures à 20 % détruisent la marge.</div>
+              </div>
+              <div>
+                <span class="ibadge p">Implication</span>
+                <div>Plafonner les rabais à 15 % et renégocier les coûts d'achat.</div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-thumb-frame">
+            <img src="dashboard-ventes-performance/assets/dashboard-preview-tous.png" alt="Cockpit de pilotage des ventes" />
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 03 : RH -->
+      <div class="project-card" data-reveal>
+        <div class="proj-head">
+          <div>
+            <span class="proj-domain">03 · Data Science RH &amp; Statistiques</span>
+            <h3>Analyse des performances RH &amp; détection d'outliers</h3>
+          </div>
+          <a class="btn btn-ghost" style="font-size:0.78rem;padding:6px 14px;" href="./analyse-performances-rh/">Dossier complet →</a>
+        </div>
+        <div class="proj-grid">
+          <div>
+            <div class="proj-metrics">
+              <div class="proj-mcard">
+                <div class="proj-mval">311</div>
+                <div class="proj-mlbl">Employés Étudiés</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">1,5× IQR</div>
+                <div class="proj-mlbl">Seuil Outliers</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">r = 0,13</div>
+                <div class="proj-mlbl">Salaire vs Perf</div>
+              </div>
+              <div class="proj-mcard" style="background:#f0fdfa;border-color:#99f6e4;">
+                <div class="proj-mval" style="color:#0d9488;">r = -0,73</div>
+                <div class="proj-mlbl">Retards vs Engagement</div>
+              </div>
+            </div>
+            <p style="font-size:0.88rem;color:var(--slate-600);line-height:1.5;">
+              <strong>Problématique métier :</strong> Le salaire est-il le moteur central du rendement ? L'analyse par la règle 1,5×IQR révèle la dispersion par département et démontre que les retards répétés sont le vrai signal précurseur de désengagement.
+            </p>
+            <div class="insight-badge-row">
+              <div>
+                <span class="ibadge d">Donnée</span>
+                <div>Corrélation quasi-nulle entre salaire et note de performance.</div>
+              </div>
+              <div>
+                <span class="ibadge i">Interprétation</span>
+                <div>L'engagement managérial surpasse la surenchère salariale.</div>
+              </div>
+              <div>
+                <span class="ibadge p">Implication</span>
+                <div>Suivre l'assiduité mensuelle pour prévenir le turnover.</div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-thumb-frame">
+            <img src="analyse-performances-rh/assets/boxplot-salaire-departement.png" alt="Boxplot des salaires par département" />
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 04 : STATS -->
+      <div class="project-card" data-reveal>
+        <div class="proj-head">
+          <div>
+            <span class="proj-domain">04 · Rigueur Mathématique &amp; Inférence</span>
+            <h3>Statistiques inférentielles &amp; tests d'hypothèses</h3>
+          </div>
+          <a class="btn btn-ghost" style="font-size:0.78rem;padding:6px 14px;" href="./analyse-statistique-inferentielle/">Dossier complet →</a>
+        </div>
+        <div class="proj-grid">
+          <div>
+            <div class="proj-metrics">
+              <div class="proj-mcard">
+                <div class="proj-mval">2 705</div>
+                <div class="proj-mlbl">Observations</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">36</div>
+                <div class="proj-mlbl">Contrôles Croisés</div>
+              </div>
+              <div class="proj-mcard" style="background:#f0fdfa;border-color:#99f6e4;">
+                <div class="proj-mval" style="color:#0d9488;">0</div>
+                <div class="proj-mlbl">Discordance (100% exact)</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">4</div>
+                <div class="proj-mlbl">Tests d'Hypothèses</div>
+              </div>
+            </div>
+            <p style="font-size:0.88rem;color:var(--slate-600);line-height:1.5;">
+              <strong>Objectif scientifique :</strong> Recalcul indépendant complet en Python (Scipy/Statsmodels) de l'ensemble des formules d'un classeur source (Khi-deux, régression, intervalles de confiance) pour certifier la robustesse absolue des conclusions.
+            </p>
+            <div class="insight-badge-row">
+              <div>
+                <span class="ibadge d">Donnée</span>
+                <div>36 contrôles statistiques concordants au 4e chiffre après la virgule.</div>
+              </div>
+              <div>
+                <span class="ibadge i">Interprétation</span>
+                <div>Élimination totale des biais d'échantillonnage et erreurs de calcul.</div>
+              </div>
+              <div>
+                <span class="ibadge p">Implication</span>
+                <div>Garantie méthodologique réinvestie dans le moteur de calcul GESCOP.</div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-thumb-frame">
+            <img src="analyse-statistique-inferentielle/assets/robustesse-decisions.png" alt="Matrice de vérification statistique" />
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 05 : GEOMARKETING -->
+      <div class="project-card" data-reveal>
+        <div class="proj-head">
+          <div>
+            <span class="proj-domain">05 · Stratégie Territoriale</span>
+            <h3>Géomarketing Québec : 257 755 établissements</h3>
+          </div>
+          <a class="btn btn-ghost" style="font-size:0.78rem;padding:6px 14px;" href="./geomarketing-quebec/">Dossier complet →</a>
+        </div>
+        <div class="proj-grid">
+          <div>
+            <div class="proj-metrics">
+              <div class="proj-mcard">
+                <div class="proj-mval">257 755</div>
+                <div class="proj-mlbl">Établissements ISQ</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">17</div>
+                <div class="proj-mlbl">Régions Administratives</div>
+              </div>
+              <div class="proj-mcard">
+                <div class="proj-mval">8,6 M</div>
+                <div class="proj-mlbl">Population Couverte</div>
+              </div>
+              <div class="proj-mcard" style="background:#f0fdfa;border-color:#99f6e4;">
+                <div class="proj-mval" style="color:#0d9488;">0–100</div>
+                <div class="proj-mlbl">Score Composite</div>
+              </div>
+            </div>
+            <p style="font-size:0.88rem;color:var(--slate-600);line-height:1.5;">
+              <strong>Problématique métier :</strong> Priorisation de l'expansion géographique sur le marché québécois. Modélisation d'un score pondéré (Population 35%, Revenu 25%, Croissance 20%, Concurrence inverse 20%).
+            </p>
+            <div class="insight-badge-row">
+              <div>
+                <span class="ibadge d">Donnée</span>
+                <div>Score de 90/100 à Montréal mais saturation concurrentielle maximale.</div>
+              </div>
+              <div>
+                <span class="ibadge i">Interprétation</span>
+                <div>Laval et la Montérégie offrent un meilleur ratio potentiel / coût.</div>
+              </div>
+              <div>
+                <span class="ibadge p">Implication</span>
+                <div>Cibler les couronnes périphériques pour accélérer la rentabilité.</div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-thumb-frame">
+            <img src="geomarketing-quebec/assets/classement-score-opportunite.png" alt="Score d'opportunité par région administrative" />
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJET 06 : IA WORKFLOW -->
+      <div class="project-card" data-reveal>
+        <div class="proj-head">
+          <div>
+            <span class="proj-domain">06 · Automatisation Industrielle</span>
+            <h3>Intégration IA au flux de travail analytique</h3>
+          </div>
+          <a class="btn btn-ghost" style="font-size:0.78rem;padding:6px 14px;" href="./integration-ia/">Dossier complet →</a>
+        </div>
+        <div class="proj-grid">
+          <div>
+            <p style="font-size:0.92rem;color:var(--slate-700);line-height:1.6;">
+              Intégrer l'IA générative (Claude Code) n'est pas lui poser une question et copier le code. C'est un <strong>protocole en quatre étapes</strong> appliqué systématiquement :
+            </p>
+            <ul style="font-size:0.85rem;color:var(--slate-600);line-height:1.6;margin:12px 0 16px 20px;">
+              <li><strong>1. Cadrage :</strong> Définition des règles métier et contraintes avant toute ligne générée.</li>
+              <li><strong>2. Génération assistée :</strong> Écriture rapide de code sous contrôle strict.</li>
+              <li><strong>3. Vérification :</strong> Audit indépendant sur les données réelles (zéro divergence acceptée).</li>
+              <li><strong>4. Intégration :</strong> Versionnage git, tests de non-régression et documentation.</li>
+            </ul>
+            <div class="insight-badge-row">
+              <div>
+                <span class="ibadge d">Preuve 1</span>
+                <div>36 fonctions recalculées indépendamment (Stats).</div>
+              </div>
+              <div>
+                <span class="ibadge i">Preuve 2</span>
+                <div>Moteur déterministe résistant aux coupures LLM (GESCOP).</div>
+              </div>
+              <div>
+                <span class="ibadge p">Valeur PME</span>
+                <div>Développement accéléré x5 sans aucun compromis sur la fiabilité.</div>
+              </div>
+            </div>
+          </div>
+          <div style="background:var(--slate-900);color:white;border-radius:8px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;">
+            <div>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:#38bdf8;text-transform:uppercase;">Principe Directeur</span>
+              <h4 style="color:white;font-size:1.15rem;margin-top:6px;">« La génération vaut ce que valent le cadrage et l'audit qui l'encadrent. »</h4>
+              <p style="font-size:0.85rem;color:#94a3b8;margin-top:8px;">L'humain garde la responsabilité intégrale de la justesse des chiffres.</p>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:12px;font-size:0.75rem;color:#cbd5e1;">
+              Vérifiable dans les historiques de commits Git
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SKILL MAP (SANS POURCENTAGES) ==================== -->
   <section id="competences" class="skills-dark">
     <div class="wrap">
       <div class="section-head" data-reveal>
-        <p class="kicker">03 — Compétences</p>
-        <h2>Outils et méthodes</h2>
+        <p class="kicker">03 — Compétences Opérationnelles</p>
+        <h2>Cartographie des compétences maîtrisées</h2>
+        <p>Structurée par domaines d'application, sans pourcentages subjectifs ni badges décoratifs.</p>
       </div>
       <div class="skills-grid" data-reveal>
         <div class="skill-cell">
-          <p class="cat">IA appliquée</p>
+          <p class="cat">DATA &amp; CODE</p>
           <div class="tag-row">
-            <span class="tag">Claude Code</span><span class="tag">Prompts &amp; automatisation</span><span class="tag">IA encadrée par des règles métier</span><span class="tag">Génération de rapports</span>
+            <span class="tag">Python 3</span><span class="tag">Pandas / NumPy</span><span class="tag">SQL (PostgreSQL)</span><span class="tag">Scipy (Statistiques)</span><span class="tag">Nettoyage &amp; Outliers (IQR)</span><span class="tag">Web Scraping</span>
           </div>
         </div>
         <div class="skill-cell">
-          <p class="cat">Produit &amp; web</p>
+          <p class="cat">BUSINESS INTELLIGENCE</p>
           <div class="tag-row">
-            <span class="tag">Conception SaaS</span><span class="tag">React</span><span class="tag">TypeScript (Deno)</span><span class="tag">Stripe</span><span class="tag">Qualité des données</span>
+            <span class="tag">Power BI (DAX)</span><span class="tag">Excel Avancé</span><span class="tag">TCD Dynamiques</span><span class="tag">SOMME.SI.ENS</span><span class="tag">Acomba Comptabilité</span><span class="tag">Tableau</span>
           </div>
         </div>
         <div class="skill-cell">
-          <p class="cat">Tableurs &amp; BI</p>
+          <p class="cat">BUSINESS &amp; FINANCE</p>
           <div class="tag-row">
-            <span class="tag">Excel avancé</span><span class="tag">TCD</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Acomba</span>
+            <span class="tag">Analyse Financière</span><span class="tag">Modèle DuPont</span><span class="tag">BFR &amp; Trésorerie</span><span class="tag">Seuil de Rentabilité</span><span class="tag">Gestion des Stocks</span><span class="tag">Ratios RH</span>
           </div>
         </div>
         <div class="skill-cell">
-          <p class="cat">Programmation</p>
+          <p class="cat">IA APPLIQUÉE</p>
           <div class="tag-row">
-            <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">matplotlib</span><span class="tag">SQL</span><span class="tag">openpyxl</span>
+            <span class="tag">Claude Code</span><span class="tag">Automatisation</span><span class="tag">Audit Anti-hallucination</span><span class="tag">Mappage Intelligent</span><span class="tag">Prompting Structuré</span>
           </div>
         </div>
-        <div class="skill-cell">
-          <p class="cat">Statistiques</p>
+        <div class="skill-cell" style="grid-column:1/-1;border:1px solid rgba(45,212,191,0.3);background:rgba(45,212,191,0.04);border-radius:8px;padding:18px;">
+          <p class="cat" style="color:#2dd4bf;">CONCEPTION PRODUIT &amp; SAAS (GESCOP)</p>
           <div class="tag-row">
-            <span class="tag">Stat. inférentielles</span><span class="tag">Tests d'hypothèses</span><span class="tag">Khi-deux</span><span class="tag">Régression</span><span class="tag">Corrélation</span>
-          </div>
-        </div>
-        <div class="skill-cell">
-          <p class="cat">Analyse financière</p>
-          <div class="tag-row">
-            <span class="tag">États financiers</span><span class="tag">Ratios</span><span class="tag">Modèle DuPont</span><span class="tag">Seuil de rentabilité</span>
+            <span class="tag" style="border-color:#2dd4bf;color:#fff;">Architecture SaaS Multi-tiers</span>
+            <span class="tag" style="border-color:#2dd4bf;color:#fff;">React 18 &amp; TypeScript</span>
+            <span class="tag" style="border-color:#2dd4bf;color:#fff;">Deno Edge Runtime</span>
+            <span class="tag" style="border-color:#2dd4bf;color:#fff;">38 Tables Relationnelles</span>
+            <span class="tag" style="border-color:#2dd4bf;color:#fff;">333 Tests Automatisés</span>
+            <span class="tag" style="border-color:#2dd4bf;color:#fff;">Stripe Billing &amp; Abonnements</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ==================== MATRICE DE PREUVES ==================== -->
+  <section id="preuves" style="padding:80px 0;background:#ffffff;">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <p class="kicker">04 — Reproductibilité</p>
+        <h2>Matrice de preuves techniques</h2>
+        <p>Chaque livrable est public et auditable en libre accès avec son jeu de données et son code source.</p>
+      </div>
+
+      <div class="table-responsive" data-reveal>
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>Projet</th>
+              <th>Code / Dépôt</th>
+              <th>Dataset Source</th>
+              <th>Livrable Vérifiable</th>
+              <th>Statut de Validation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>01. Finance de Démarrage</strong></td>
+              <td><a href="./analyse-financiere-demarrage/">Script Python &amp; Excel</a></td>
+              <td>Modélisation Acomba</td>
+              <td>Classeur 29 feuilles</td>
+              <td><span style="color:#16a34a;font-weight:700;">✅ DuPont &amp; Cascade réconciliés</span></td>
+            </tr>
+            <tr>
+              <td><strong>02. Dashboard Ventes</strong></td>
+              <td><a href="./dashboard-ventes-performance/">Classeur &amp; Scripts</a></td>
+              <td>Superstore (9 988 lignes)</td>
+              <td>Cockpit Excel interactif</td>
+              <td><span style="color:#16a34a;font-weight:700;">✅ TCD &amp; Formules dynamiques</span></td>
+            </tr>
+            <tr>
+              <td><strong>03. Performance RH</strong></td>
+              <td><a href="./analyse-performances-rh/">Notebook Python</a></td>
+              <td>HRDataset (311 employés)</td>
+              <td>Distributions &amp; Boxplots</td>
+              <td><span style="color:#16a34a;font-weight:700;">✅ Seuil 1,5×IQR documenté</span></td>
+            </tr>
+            <tr>
+              <td><strong>04. Statistiques Inférentielles</strong></td>
+              <td><a href="./analyse-statistique-inferentielle/">Notebook Scipy</a></td>
+              <td>3 échantillons (2 705 obs)</td>
+              <td>4 tests formels d'hypothèses</td>
+              <td><span style="color:#16a34a;font-weight:700;">✅ 36 contrôles croisés (0 écart)</span></td>
+            </tr>
+            <tr>
+              <td><strong>05. Géomarketing Québec</strong></td>
+              <td><a href="./geomarketing-quebec/">Pipeline Python</a></td>
+              <td>257 755 étab. (ISQ)</td>
+              <td>Palmarès des 17 régions</td>
+              <td><span style="color:#16a34a;font-weight:700;">✅ Score composite ouvert</span></td>
+            </tr>
+            <tr>
+              <td><strong>06. Intégration IA</strong></td>
+              <td><a href="./integration-ia/">Commits &amp; Tests</a></td>
+              <td>Données de production</td>
+              <td>Workflow en 4 temps</td>
+              <td><span style="color:#16a34a;font-weight:700;">✅ Revue humaine intégrale</span></td>
+            </tr>
+            <tr>
+              <td><strong>07. GESCOP SaaS</strong></td>
+              <td><a href="./gescop/">Deno / React / Base44</a></td>
+              <td>Multi-formats PME réels</td>
+              <td><a href="https://smart-pilot-gescop.base44.app" target="_blank">Web App en ligne</a></td>
+              <td><span style="color:#0d9488;font-weight:800;">✅ 333 tests automatisés passés</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PDF Banner Download -->
+      <div class="pdf-banner-box" data-reveal>
+        <div>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.75rem;color:#38bdf8;text-transform:uppercase;">Document Exécutif Complet</span>
+          <h3 style="margin-top:6px;">Rapport Portfolio Professionnel 2026</h3>
+          <p>
+            Téléchargez l'intégralité du rapport éditorial (24 pages A4, PDF haute résolution) incluant la synthèse exécutive, les schémas d'architecture et les 6 cas d'étude.
+          </p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
+          <a class="btn btn-pdf" style="width:100%;text-align:center;justify-content:center;" href="./Portfolio_Issa_Ouedraogo_2026.pdf" target="_blank">
+            📄 Télécharger le Rapport PDF (3,98 Mo)
+          </a>
+          <a class="btn btn-ghost" style="color:white;border-color:rgba(255,255,255,0.25);width:100%;text-align:center;justify-content:center;" href="./portfolio_report.html" target="_blank">
+            🌐 Ouvrir la version web du rapport
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER & CONTACT ==================== -->
   <footer id="contact" class="site-footer">
     <div class="wrap">
       <div class="contact-row" data-reveal>
-        <h2>Parlons de vos données, ou de GESCOP.</h2>
+        <h2>Parlons de vos défis de données, ou de GESCOP.</h2>
         <div class="contact-links">
           <a href="mailto:issaouedraogo0900@gmail.com">issaouedraogo0900@gmail.com</a>
           <a href="https://www.linkedin.com/in/issa-ouedraogo-34b146332/" target="_blank" rel="noopener">LinkedIn →</a>
+          <a href="https://github.com/Issa0900/Issa-Ouedraogo" target="_blank" rel="noopener">GitHub →</a>
+          <a href="https://smart-pilot-gescop.base44.app" target="_blank" rel="noopener">GESCOP Live →</a>
         </div>
       </div>
       <div class="foot-meta wrap" style="padding-left:0;padding-right:0;">
-        <span>Issa Ouedraogo · Analyse de données et GESCOP</span>
-        <span>Lévis, Québec</span>
+        <span>Issa Ouedraogo · Data Analyst &amp; Créateur de GESCOP</span>
+        <span>Montréal / Lévis, Québec, Canada · Édition 2026</span>
       </div>
     </div>
   </footer>
 
 </main>
 
-<script>
-(function(){
-  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // Hero entrance
-  var heroEls = ['#kicker','#h1','#lead','#hero-actions','#portrait'];
-  heroEls.forEach(function(sel, i){
-    var el = document.querySelector(sel);
-    if(!el) return;
-    if(reduced){ el.style.opacity = 1; return; }
-    el.style.transition = 'opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)';
-    el.style.transform = 'translateY(14px)';
-    setTimeout(function(){
-      el.style.opacity = 1;
-      el.style.transform = 'translateY(0)';
-    }, 120 + i*110);
-  });
-
-  // Hero data line draw-in
-  var line = document.querySelector('.hero-chart path.line');
-  var area = document.querySelector('.hero-chart path.area');
-  if(line && !reduced){
-    setTimeout(function(){
-      line.style.transition = 'stroke-dashoffset 1.6s cubic-bezier(.2,.7,.2,1)';
-      line.style.strokeDashoffset = '0';
-      area.style.transition = 'opacity 1.2s ease 0.6s';
-      area.style.opacity = '1';
-    }, 200);
-  } else if(line){
-    line.style.strokeDashoffset = '0';
-    area.style.opacity = '1';
-  }
-})();
-</script>
 <script src="assets/js/site.js"></script>
-
 </body>
 </html>
