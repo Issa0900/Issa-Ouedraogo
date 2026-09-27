@@ -3,7 +3,7 @@
 
   # Issa Ouedraogo
 
-  *GESCOP · Intelligence d'affaires augmentée par l'IA · PME*
+  *Gestion de commerce · Analyse de données · Créateur de GESCOP*
 
   📧 [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
 </div>
@@ -12,13 +12,11 @@
 
 ## 👋 À propos
 
-Mon parcours en **Gestion de Commerce** m'a donné une compréhension fine des enjeux business. Je complète cette base par des compétences en **analyse de données**, notamment Excel avancé, Python, SQL, Power BI/Tableau et statistiques appliquées, pour aider à la bonne prise de décision.
+Mon parcours en **Gestion de commerce** m'a appris ce qui compte pour un dirigeant : la marge, la trésorerie, la rentabilité de chaque produit. J'y ai ajouté l'**analyse de données** : Excel avancé, Python, SQL, Power BI et statistiques appliquées.
 
-Je conçois des outils d'aide à la décision, comme des tableaux de bord interactifs, des analyses de données et des requêtes SQL, qui transforment des données brutes en informations exploitables pour piloter une activité, du nettoyage des données jusqu'au livrable final documenté.
+Un constat revient dans chaque PME : les chiffres existent, mais ils sont éparpillés dans des fichiers qui ne se parlent pas. Pour y répondre, j'ai créé **[GESCOP](./gescop/)**, une application en ligne qui réunit les fichiers d'une PME et en tire des indicateurs fiables, traçables jusqu'à leur source. J'en définis le produit et les règles métier, et je le développe avec l'IA générative comme outil de production.
 
-Je vais plus loin en intégrant l'**IA à mon flux de travail** : automatisation de tâches répétitives, génération assistée de scripts Python, structuration de rapports par prompts. L'objectif est concret — réduire les délais de production pour concentrer le temps sur l'interprétation et la recommandation, là où se trouve la vraie valeur ajoutée pour l'entreprise.
-
-Je développe une clientèle de PME avec **GESCOP**, l'application de pilotage financier que je conçois ([voir en ligne](https://smart-pilot-gescop.base44.app)), en parallèle d'un poste salarié en analyse de données.
+Je développe GESCOP ([voir l'application en ligne](https://smart-pilot-gescop.base44.app)) et je reste ouvert aux postes en analyse de données et aux mandats de PME.
 
 Chaque dossier ci-dessous est un projet indépendant : données, livrable, et un README détaillé expliquant le contexte métier, la méthode et les résultats.
 

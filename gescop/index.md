@@ -18,7 +18,7 @@ Application web (SaaS) qui transforme les fichiers éparpillés d'une PME (vente
 >
 > 🔒 Le code source est privé : GESCOP est un produit commercial. Cette page documente le problème, les choix de conception et ce qui rend les chiffres fiables.
 
-![Page d'accueil de GESCOP](./assets/accueil.png)
+![Écran Trésorerie de GESCOP : trésorerie disponible, flux net mensuel et évolution sur 12 mois](./assets/app-tresorerie.png)
 
 ---
 
@@ -48,18 +48,21 @@ Permettre à un dirigeant de PME, sans compétence technique, de déposer ses fi
 | **Rapports** | Rapport de direction généré en un clic, exportable en PDF, Excel et diaporama. |
 | **Abonnement** | Paiement et gestion d'abonnement par Stripe, essai gratuit. |
 
-<table>
-<tr>
-<td><img src="./assets/demo-tableau-de-bord.png" alt="Démonstration : tableau de bord" /></td>
-<td><img src="./assets/demo-tresorerie.png" alt="Démonstration : trésorerie et rapprochement bancaire" /></td>
-</tr>
-<tr>
-<td><img src="./assets/demo-detection-ecarts.png" alt="Démonstration : détection des écarts" /></td>
-<td><img src="./assets/demo-rapports.png" alt="Démonstration : rapports de gestion" /></td>
-</tr>
-</table>
+### Aperçu de l'interface
 
-*Captures de la démonstration publique (entreprise fictive « Nordik Plein Air »).*
+**Évolution de l'entreprise** : chiffre d'affaires mois par mois sur 12 mois, avec bascule vers la marge, la trésorerie, les nouveaux clients ou les coûts.
+
+![Graphique d'évolution du chiffre d'affaires sur 12 mois](./assets/app-evolution.png)
+
+**Rapports** : rapports quotidien, hebdomadaire et mensuel générés à partir des données importées.
+
+![Écran Rapports : rapports quotidien, hebdomadaire et mensuel](./assets/app-rapports.png)
+
+**Assistant IA** : questions en langage naturel sur les données de l'entreprise, avec les sources citées.
+
+![Écran Assistant GESCOP : questions suggérées sur la rentabilité, les risques et les coûts](./assets/app-assistant-ia.png)
+
+*Captures de l'application réelle, sur un compte de test.*
 
 ## 🏗️ Architecture
 
@@ -101,6 +104,14 @@ Un tableau de bord qui affiche un faux chiffre est pire que pas de tableau de bo
 - **Robuste aux fichiers « sales ».** Colonnes renommées ou déplacées, formats de date et de nombre québécois ou américains, séparateurs, lignes de totaux : le même fichier présenté de dizaines de façons différentes doit donner le même résultat.
 - **Rien n'est supprimé en silence.** Une ligne douteuse (doublon, montant incohérent) est mise en quarantaine et signalée, jamais effacée sans que le dirigeant le sache.
 - **L'IA est encadrée.** Elle aide à reconnaître les colonnes difficiles, mais l'application reste juste même si l'IA se trompe ou ne répond pas : ses propositions sont contrôlées par des règles métier.
+
+**Des écarts expliqués, pas seulement signalés.** Quand deux sources se contredisent, GESCOP dit quoi, pourquoi (avec les chiffres et la source) et quoi faire :
+
+![Anomalies détectées : les campagnes publicitaires s'attribuent plus que le chiffre d'affaires total](./assets/app-anomalies-detectees.png)
+
+**Un audit des calculs accessible au dirigeant.** L'écran « Audit des calculs » vérifie que chaque ligne importée se retrouve bien en base, fichier par fichier :
+
+![Écran Audit des calculs : contrôle des lignes importées contre la base de données](./assets/app-audit-calculs.png)
 
 ## 🧠 Règles métier décidées (et pourquoi)
 
