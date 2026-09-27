@@ -11,7 +11,7 @@ Application web (SaaS) qui transforme les fichiers éparpillés d'une PME (vente
 
 > 🌐 **Application en ligne : [smart-pilot-gescop.base44.app](https://smart-pilot-gescop.base44.app)** (démonstration interactive sur la page d'accueil, compte d'essai gratuit)
 >
-> 🔒 Le code source est privé : GESCOP est un produit commercial. Cette page documente le problème, les choix de conception et la méthode de validation.
+> 🔒 Le code source est privé : GESCOP est un produit commercial. Cette page documente le problème, les choix de conception et ce qui rend les chiffres fiables.
 
 ![Page d'accueil de GESCOP](./assets/accueil.png)
 
