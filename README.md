@@ -13,7 +13,7 @@
   [![GESCOP Live](https://img.shields.io/badge/SaaS_Live-GESCOP-0D9488?style=flat&logo=safari&logoColor=white)](https://smart-pilot-gescop.base44.app)
   [![Rapport Web](https://img.shields.io/badge/Rapport_Exécutif-24_Pages_Web-0284C7?style=flat)](./portfolio_report.html)
 
-  📧 **[issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)** · 📍 **Québec, QC, Canada**
+  📧 **[issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)** · 📍 **Québec**
 
 </div>
 
@@ -122,4 +122,4 @@ Disponible pour échanger sur vos défis d'analyse de données, de modélisation
 - 🐙 **GitHub :** [github.com/Issa0900](https://github.com/Issa0900)
 - 🧭 **GESCOP Live :** [smart-pilot-gescop.base44.app](https://smart-pilot-gescop.base44.app)
 
-*Québec, QC, Canada · 2026*
+*Québec · 2026*
