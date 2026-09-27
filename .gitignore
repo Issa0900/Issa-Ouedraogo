@@ -1,5 +1,6 @@
 .claude/
 node_modules/
-package-lock.json
 package.json
+package-lock.json
 build_report.js
+*.pdf
