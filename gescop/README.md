@@ -9,7 +9,7 @@
 
 Application web (SaaS) qui transforme les fichiers éparpillés d'une PME (ventes, dépenses, relevés bancaires, paie, stocks) en un tableau de bord financier fiable : marge réelle, trésorerie, écarts entre les sources et rapports de direction.
 
-> 🌐 **Application en ligne : [smart-pilot-gescop.base44.app](https://smart-pilot-gescop.base44.app)** (démonstration interactive sur la page d'accueil, compte d'essai gratuit)
+> 🌐 **Application en ligne : [gescop.ca](https://gescop.ca)** (démonstration interactive sur la page d'accueil, compte d'essai gratuit)
 >
 > 🔒 Le code source est privé : GESCOP est un produit commercial. Cette page documente le problème, les choix de conception et ce qui rend les chiffres fiables.
 

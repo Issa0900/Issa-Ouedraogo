@@ -9,7 +9,7 @@
 
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Issa_Ouedraogo-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
   [![GitHub](https://img.shields.io/badge/GitHub-Issa0900-181717?style=flat&logo=github&logoColor=white)](https://github.com/Issa0900/Issa-Ouedraogo)
-  [![GESCOP Live](https://img.shields.io/badge/SaaS_Live-GESCOP-0D9488?style=flat&logo=safari&logoColor=white)](https://smart-pilot-gescop.base44.app)
+  [![GESCOP Live](https://img.shields.io/badge/SaaS_Live-GESCOP-0D9488?style=flat&logo=safari&logoColor=white)](https://gescop.ca)
   [![Rapport Web](https://img.shields.io/badge/Rapport_Web-24_Pages-0284C7?style=flat)](./portfolio_report.html)
 
   📧 **[issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)** · 📍 **Québec**
@@ -68,7 +68,7 @@ J'ai créé **GESCOP** pour offrir aux dirigeants de PME la clarté financière 
 * **La fin du casse-tête des fichiers :** L'utilisateur dépose ses fichiers hétérogènes (Excel, CSV, PDF). L'application reconnaît automatiquement les colonnes et signale les doublons sans jamais les supprimer en silence.
 * **62 indicateurs vérifiables en 1 clic :** Suivi en temps réel de la trésorerie, du BFR, du runway cash, des marges par produit et de la rotation des stocks. Un clic sur n'importe quel chiffre permet d'inspecter la formule et les écritures sources.
 * **Architecture moderne & pérenne :** React 18, Deno en TypeScript, PostgreSQL (38 tables relationnelles), Stripe pour les abonnements et **333 tests automatisés** pour garantir qu'aucun calcul ne dérive.
-* 🔗 **Tester l'application en direct :** [smart-pilot-gescop.base44.app](https://smart-pilot-gescop.base44.app) · [Voir le dossier technique →](./gescop/)
+* 🔗 **Tester l'application en direct :** [gescop.ca](https://gescop.ca) · [Voir le dossier technique →](./gescop/)
 
 ---
 
@@ -131,6 +131,6 @@ Disponible pour discuter de vos besoins d'analyse, d'optimisation de vos rapport
 - 📧 **Courriel :** [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)
 - 💼 **LinkedIn :** [linkedin.com/in/issa-ouedraogo-34b146332/](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
 - 🐙 **GitHub :** [github.com/Issa0900](https://github.com/Issa0900)
-- 🧭 **GESCOP Live :** [smart-pilot-gescop.base44.app](https://smart-pilot-gescop.base44.app)
+- 🧭 **GESCOP Live :** [gescop.ca](https://gescop.ca)
 
 *Québec · 2026*
