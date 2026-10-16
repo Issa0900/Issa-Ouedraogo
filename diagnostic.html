@@ -217,6 +217,9 @@ const yn=[["oui","Oui"],["non","Non"]];
 const Q=[
 /* Profil */
 {id:"P00",s:"P",q:"Nom de l'entreprise",t:"text",ph:"Ex. : Atelier Martin"},
+{id:"P00c",s:"P",q:"Votre nom",t:"text",ph:"Prénom et nom"},
+{id:"P00m",s:"P",q:"Votre courriel",t:"text",ph:"nom@entreprise.com",hint:"Pour que GESCOP puisse vous recontacter et fixer la présentation de vos résultats."},
+{id:"P00t",s:"P",q:"Votre téléphone (facultatif)",t:"text"},
 {id:"P01",s:"P",q:"Pays et ville où l'entreprise exerce",t:"text",ph:"Ex. : Abidjan, Côte d'Ivoire"},
 {id:"P02",s:"P",q:"Monnaie utilisée principalement",t:"select",o:CURR},
 {id:"P02b",s:"P",f:1,q:"Code de la monnaie, en trois lettres",t:"text",ph:"Ex. : GHS",show:()=>v("P02")==="AUTRE"},
@@ -469,7 +472,7 @@ function renderIntro(){
       <div><b>0 · 2 · 4</b><span>points par question notée</span></div>
       <div><b>Toute monnaie</b><span>scores en ratios, coûts convertis</span></div>
     </div>
-    <p class="note">${ENDPOINT?"Vos réponses restent dans ce navigateur pendant que vous remplissez le questionnaire. Elles ne sont transmises à GESCOP que si vous le choisissez, à la fin, avec votre accord. Vous pouvez quitter et revenir plus tard.":"Vos réponses restent dans ce navigateur et ne sont envoyées nulle part. Vous pouvez quitter et revenir plus tard. À la fin, copiez le rapport pour le transmettre à la personne qui vous a envoyé ce questionnaire."}</p>
+    <p class="note">${ENDPOINT?"En commençant ce diagnostic, vous acceptez que vos réponses et vos coordonnées soient transmises à GESCOP (Issa Ouedraogo) lorsque vous arrivez au rapport final, uniquement pour préparer la présentation de vos résultats. Elles ne sont ni vendues ni partagées. Pour les faire supprimer, écrivez à gescop.support@gmail.com. Vous pouvez quitter et revenir plus tard.":"Vos réponses restent dans ce navigateur et ne sont envoyées nulle part. Vous pouvez quitter et revenir plus tard. À la fin, copiez le rapport pour le transmettre à la personne qui vous a envoyé ce questionnaire."}</p>
    </div>
    <aside class="toc">
     <p class="eyebrow">Sections</p>
@@ -568,6 +571,7 @@ function renderReport(){
    <div class="rep-head">
     <div class="who"><p class="eyebrow">Rapport de diagnostic · ${esc(date)}</p><h2>${esc(name)}</h2>
      <p class="muted">${esc([v("P01"),CUR(),E()?fmt(E())+" personnes":null].filter(Boolean).join(" · "))}</p></div>
+    <p id="sendMsg" class="muted" role="status" style="font-size:13px;flex-basis:100%;margin:0" hidden></p>
     <div class="rep-actions"><button class="btn" id="copy">Copier le rapport</button><button class="btn" id="dl" hidden>Télécharger (.txt)</button><button class="btn ghost" id="edit">Modifier les réponses</button></div>
    </div>
    ${R.global===null?`<div class="panel"><p class="empty">Aucune question notée n'a encore de réponse. Répondez au moins à une section pour obtenir des scores.</p></div>`:`
@@ -611,18 +615,6 @@ function renderReport(){
 
    ${quotes.length?`<div class="section panel"><h3>Ce que dit le dirigeant</h3><div class="quotes">${quotes.map(([id,l])=>`<div><small>${esc(l)}</small>${esc(A[id])}</div>`).join("")}</div></div>`:""}
 
-   ${ENDPOINT&&!isExample?`<div class="section panel" id="sendPanel">
-    <h3>Transmettre mes résultats à GESCOP</h3>
-    <p class="muted" style="font-size:14px;max-width:62ch">Issa Ouedraogo, de GESCOP, utilisera ce rapport uniquement pour préparer la rencontre de 30 minutes où il vous présente les résultats. Vos renseignements ne sont ni vendus ni partagés. Vous pouvez demander leur suppression en écrivant à gescop.support@gmail.com.</p>
-    <div class="send-grid">
-     <label for="snd-nom">Votre nom<input type="text" id="snd-nom" autocomplete="name"></label>
-     <label for="snd-mail">Votre courriel<input type="email" id="snd-mail" autocomplete="email" required></label>
-     <label for="snd-tel">Téléphone (facultatif)<input type="text" id="snd-tel" autocomplete="tel"></label>
-     <input type="text" id="snd-hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px">
-    </div>
-    <label class="consent" for="snd-ok"><input type="checkbox" id="snd-ok"> J'accepte que mes réponses et mes coordonnées soient transmises à GESCOP pour la préparation de la rencontre.</label>
-    <div class="send-row"><button class="btn primary" id="sendBtn">Envoyer mes résultats</button><span id="sendMsg" class="muted" style="font-size:14px" role="status"></span></div>
-   </div>`:""}
    <div class="section panel" id="copyPanel" hidden><h3>Texte du rapport</h3><p class="muted" style="font-size:13px">La copie automatique n'est pas disponible ici. Sélectionnez le texte ci-dessous et copiez-le.</p><textarea id="copyArea" readonly></textarea></div>
    <div class="nav"><button class="btn ghost" id="back">Section précédente</button><button class="btn" id="home">Accueil</button></div>
   </section></div>`;
@@ -637,24 +629,24 @@ function renderReport(){
     try{navigator.clipboard.writeText(txt).then(()=>toast("Rapport copié"),fallback)}catch(e){fallback()}
   };
   setupDownload();
-  const sb=document.getElementById("sendBtn");if(sb)sb.onclick=sendResults;
+  if(ENDPOINT&&!isExample&&R.global!==null)autoSend();
 }
 
 
-async function sendResults(){
-  const btn=document.getElementById("sendBtn"),msg=document.getElementById("sendMsg");
-  const mail=document.getElementById("snd-mail").value.trim();
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)){msg.textContent="Indiquez une adresse courriel valide.";return}
-  if(!document.getElementById("snd-ok").checked){msg.textContent="Cochez la case d'accord pour pouvoir envoyer.";return}
+const SENT_KEY="diagnostic-entreprise-envoi";
+async function autoSend(){
+  const msg=document.getElementById("sendMsg");if(!msg)return;
+  const sig=JSON.stringify(A);
+  let last="";try{last=localStorage.getItem(SENT_KEY)||""}catch(e){}
+  if(last===sig){msg.hidden=false;msg.textContent="Vos résultats ont été transmis à GESCOP.";return}
   const R=report();
   const p={
-    consentement:true,
-    site_web_confirmation:document.getElementById("snd-hp").value,
-    entreprise:v("P00")||"",contact:document.getElementById("snd-nom").value.trim(),courriel:mail,
-    telephone:document.getElementById("snd-tel").value.trim(),lieu:v("P01")||"",monnaie:CUR(),
+    consentement:true,site_web_confirmation:"",
+    entreprise:v("P00")||"",contact:v("P00c")||"",courriel:v("P00m")||"",telephone:v("P00t")||"",
+    lieu:v("P01")||"",monnaie:CUR(),
     secteur:(Q.find(q=>q.id==="P03").o.find(o=>o[0]===v("P03"))||["",""])[1],
     employes:E(),chiffreAffaires:CA(),scoreGlobal:R.global,
-    scoresParFonction:R.secs.map(s=>s.title+" : "+s.r.score).join(" ; "),
+    scoresParFonction:R.secs.map(x=>x.title+" : "+x.r.score).join(" ; "),
     problemesImportants:R.issues.filter(i=>i.s===0).length,pointsASurveiller:R.issues.filter(i=>i.s===2).length,
     heuresRecuperables:Math.round(R.totH)||0,valeurTemps:R.totM!==null&&R.totH?money(R.totM):"",
     partCA:R.totP!==null&&R.totH?Math.round(R.totP*10)/10:"",
@@ -662,16 +654,16 @@ async function sendResults(){
     priorite:[v("DIR-03"),v("CLO-02")].filter(Boolean).join(" / "),
     reponses:reportText()
   };
-  btn.disabled=true;msg.textContent="Envoi en cours…";
+  msg.hidden=false;msg.textContent="Transmission de vos résultats à GESCOP…";
   try{
     const r=await fetch(ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(p)});
     const j=await r.json();
     if(!j.ok)throw new Error(j.erreur||"refus");
-    msg.textContent="Merci. Vos résultats ont été transmis à GESCOP, qui vous contactera pour fixer la rencontre.";
-    btn.textContent="Résultats envoyés";
+    try{localStorage.setItem(SENT_KEY,sig)}catch(e){}
+    msg.textContent="Vos résultats ont été transmis à GESCOP, qui vous contactera pour fixer la présentation.";
   }catch(e){
-    btn.disabled=false;
-    msg.textContent="L'envoi n'a pas fonctionné. Réessayez dans un instant, ou copiez le rapport et envoyez-le à gescop.support@gmail.com.";
+    msg.innerHTML='La transmission n\'a pas fonctionné. <button class="btn" id="retrySend" style="padding:3px 10px;font-size:13px">Réessayer</button> Vous pouvez aussi copier le rapport et l\'envoyer à gescop.support@gmail.com.';
+    const b=document.getElementById("retrySend");if(b)b.onclick=autoSend;
   }
 }
 
