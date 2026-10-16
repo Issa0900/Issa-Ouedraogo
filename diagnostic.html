@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Diagnostic de gestion gratuit pour PME : un score par fonction, les problèmes repérés et le coût du temps perdu. GESCOP.">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.5 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Diagnostic d'entreprise · GESCOP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+/* Layout: fiche de diagnostic — rail des sections à gauche, une section à la fois, rapport en fin de parcours */
+:root{
+  --bg:#EEF2F1; --surface:#FFFFFF; --ink:#15242B; --muted:#56676C; --line:#D3DCDB;
+  --accent:#1D5C63; --accent-ink:#FFFFFF; --accent-soft:#DDEBEA;
+  --good:#2C7A4B; --warn:#A86B12; --bad:#B03F2C;
+  --good-soft:#E1F0E6; --warn-soft:#F6EBD6; --bad-soft:#F6E1DC;
+  --f-display:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1619; --surface:#162126; --ink:#E3EBEB; --muted:#94A4A7; --line:#283840;
+  --accent:#73B5BA; --accent-ink:#0E1619; --accent-soft:#1B3236;
+  --good:#5CB585; --warn:#E2A94E; --bad:#E77B65;
+  --good-soft:#173027; --warn-soft:#33281A; --bad-soft:#38201B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1619; --surface:#162126; --ink:#E3EBEB; --muted:#94A4A7; --line:#283840;
+  --accent:#73B5BA; --accent-ink:#0E1619; --accent-soft:#1B3236;
+  --good:#5CB585; --warn:#E2A94E; --bad:#E77B65;
+  --good-soft:#173027; --warn-soft:#33281A; --bad-soft:#38201B; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:20px 48px}
+.wrap{max-width:1080px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(28px,4.4vw,40px);line-height:1.12}
+h2{font-size:24px;line-height:1.2}
+h3{font-size:18px}
+p{margin:0}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 16px;border-radius:6px;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.07)}
+.btn.ghost{background:transparent}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Header */
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:24px}
+.top .brand{font-family:var(--f-display);font-weight:600;font-size:20px}
+.top .meta{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+
+/* Intro */
+.intro{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start}
+.intro .lead{font-size:17px;max-width:60ch;margin-top:14px}
+.intro .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:28px}
+.facts div{background:var(--surface);padding:12px 14px}
+.facts b{display:block;font-family:var(--f-mono);font-size:20px;font-weight:500}
+.facts span{font-size:13px;color:var(--muted)}
+.toc{background:var(--surface);border:1px solid var(--line);padding:18px 20px}
+.toc ol{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:2px}
+.toc li{display:flex;gap:12px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.toc li:last-child{border-bottom:0}
+.toc .code{font-family:var(--f-mono);font-size:12px;color:var(--accent);min-width:36px}
+.note{font-size:13px;color:var(--muted);margin-top:16px;max-width:60ch}
+
+/* Form layout */
+.form{display:grid;grid-template-columns:230px minmax(0,1fr);gap:32px;align-items:start}
+.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);display:grid;gap:2px}
+.rail button{display:flex;justify-content:space-between;gap:8px;align-items:center;text-align:left;background:transparent;border:0;border-left:3px solid transparent;padding:8px 10px;color:var(--muted);font-size:14px;border-radius:0 4px 4px 0}
+.rail button:hover{color:var(--ink);background:var(--surface)}
+.rail button.on{color:var(--ink);border-left-color:var(--accent);background:var(--surface);font-weight:500}
+.rail .cnt{font-family:var(--f-mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.rail .cnt.done{color:var(--good)}
+.rail .sep{height:1px;background:var(--line);margin:8px 0}
+.sec-head{display:grid;gap:6px;margin-bottom:20px}
+.sec-head p{max-width:62ch;color:var(--muted)}
+.progress{height:4px;background:var(--line);margin-bottom:22px}
+.progress i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.qs{display:grid;gap:14px}
+.q{background:var(--surface);border:1px solid var(--line);padding:16px 18px;border-radius:6px;display:grid;gap:10px;min-width:0}
+.q.follow{margin-left:22px;border-left:3px solid var(--accent);background:var(--accent-soft);border-color:transparent;border-left-color:var(--accent)}
+.q-top{display:flex;gap:12px;align-items:baseline}
+.q-code{font-family:var(--f-mono);font-size:11px;color:var(--accent);flex:none;min-width:52px}
+.q-text{font-weight:500}
+.q-hint{font-size:13px;color:var(--muted);margin-top:-4px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt span{display:inline-block;padding:7px 12px;border:1px solid var(--line);border-radius:5px;font-size:14px;background:var(--surface);color:var(--ink);cursor:pointer;line-height:1.35}
+.opt input:checked + span{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.opt input:focus-visible + span{outline:2px solid var(--accent);outline-offset:2px}
+.scale{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.scale .opt span{min-width:40px;text-align:center;font-family:var(--f-mono)}
+.scale small{font-size:12px;color:var(--muted)}
+.num{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+input[type=text],input[type=number],select,textarea{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:8px 10px;max-width:100%}
+input[type=number]{width:160px;font-family:var(--f-mono)}
+input[type=text]{width:420px}
+textarea{width:100%;min-height:90px;resize:vertical}
+.unit{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:24px;flex-wrap:wrap}
+
+/* Report */
+.banner{background:var(--warn-soft);color:var(--ink);border:1px solid var(--warn);padding:10px 14px;border-radius:6px;font-size:14px;margin-bottom:20px}
+.rep-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px}
+.rep-head .who{display:grid;gap:6px}
+.rep-actions{display:flex;flex-wrap:wrap;gap:8px}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px;min-width:0}
+.panel h3{margin-bottom:12px}
+.global{display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+.global b{font-family:var(--f-mono);font-size:52px;font-weight:500;line-height:1}
+.bars{display:grid;gap:9px;margin-top:14px}
+.bar{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) 44px;gap:10px;align-items:center;font-size:14px}
+.bar .track{height:10px;background:var(--bg);border-radius:2px;overflow:hidden;position:relative}
+.bar .track i{display:block;height:100%}
+.bar .track::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent calc(40% - 1px),var(--line) 40%,transparent calc(40% + 1px),transparent calc(70% - 1px),var(--line) 70%,transparent calc(70% + 1px))}
+.bar .v{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums}
+.bar .lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted);margin-top:12px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:0}
+.kv{display:grid;gap:0}
+.kv div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kv div:last-child{border-bottom:0}
+.kv b{font-family:var(--f-mono);font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
+.chip{display:inline-block;font-size:11px;font-family:var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.chip.bad{background:var(--bad-soft);color:var(--bad)}
+.chip.warn{background:var(--warn-soft);color:var(--warn)}
+.chip.good{background:var(--good-soft);color:var(--good)}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{text-align:left;font-family:var(--f-mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--ink);padding:8px 10px 8px 0}
+td{padding:10px 10px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{font-family:var(--f-mono);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+th.n{text-align:right}
+.section{margin-top:28px}
+.section > h3{margin-bottom:12px}
+.quotes{display:grid;gap:10px}
+.quotes div{border-left:3px solid var(--line);padding:2px 0 2px 12px;font-size:14px}
+.quotes small{display:block;color:var(--muted);font-size:12px;margin-bottom:2px}
+.empty{color:var(--muted);font-size:14px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:6px;font-size:14px;z-index:20}
+#copyArea{width:100%;min-height:160px;font-family:var(--f-mono);font-size:12px;margin-top:10px}
+
+@media (max-width:820px){
+  .intro,.grid2{grid-template-columns:minmax(0,1fr)}
+  .form{grid-template-columns:minmax(0,1fr);gap:16px}
+  .rail{position:static;display:flex;overflow-x:auto;gap:4px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+  .rail button{flex:none;border-left:0;border-bottom:3px solid transparent;border-radius:4px 4px 0 0}
+  .rail button.on{border-bottom-color:var(--accent)}
+  .rail .sep{display:none}
+  .q.follow{margin-left:10px}
+  input[type=text]{width:100%}
+  .bar{grid-template-columns:minmax(0,120px) minmax(0,1fr) 40px}
+  .facts{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="brand">Diagnostic d'entreprise</span>
+    <span class="meta" id="topMeta">Questionnaire · 11 sections</span>
+  </header>
+  <main id="app"></main>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+/* ---------- Données ---------- */
+const CURR=[["CAD","Dollar canadien (CAD)"],["USD","Dollar américain (USD)"],["EUR","Euro (EUR)"],["XOF","Franc CFA BCEAO (XOF)"],["XAF","Franc CFA BEAC (XAF)"],["GBP","Livre sterling (GBP)"],["CHF","Franc suisse (CHF)"],["MAD","Dirham marocain (MAD)"],["TND","Dinar tunisien (TND)"],["DZD","Dinar algérien (DZD)"],["HTG","Gourde haïtienne (HTG)"],["MXN","Peso mexicain (MXN)"],["BRL","Réal brésilien (BRL)"],["AUTRE","Autre monnaie"]];
+
+const SECTIONS=[
+ {id:"P",title:"Profil et paramètres",intro:"Ces informations ne sont pas notées. Elles adaptent la suite du questionnaire et servent à calculer les coûts dans votre monnaie."},
+ {id:"DIR",title:"Direction et priorités",intro:"Comment le dirigeant utilise son temps et pilote l'entreprise."},
+ {id:"FIN",title:"Finances et rentabilité",intro:"Marges, trésorerie et suivi des chiffres. Des estimations suffisent."},
+ {id:"VEN",title:"Ventes et clients",intro:"D'où viennent les clients, combien reviennent et comment l'information est conservée."},
+ {id:"MKT",title:"Marketing et présence",intro:"Visibilité, prix et ce qui distingue l'entreprise."},
+ {id:"OPS",title:"Opérations et processus",intro:"Le parcours d'une commande, les erreurs et les tâches répétitives."},
+ {id:"RH",title:"Ressources humaines",intro:"Roulement, formation et charge administrative de l'équipe."},
+ {id:"STK",title:"Stocks et approvisionnement",intro:"Section affichée parce que l'entreprise vend des produits.",show:()=>A.P04 && A.P04!=="services"},
+ {id:"OUT",title:"Outils et données",intro:"Logiciels, documents, sauvegardes et décisions appuyées sur des chiffres."},
+ {id:"ADM",title:"Administration et conformité",intro:"Obligations légales, fiscales et contrats."},
+ {id:"CLO",title:"Clôture",intro:"Dernières précisions avant le rapport."}
+];
+
+let A={};
+const v=id=>A[id];
+const n=id=>{const x=A[id];if(x===undefined||x===null||x==="")return null;const f=parseFloat(String(x).replace(",","."));return isFinite(f)?f:null};
+const has=(id,val)=>Array.isArray(A[id])&&A[id].includes(val);
+const cnt=id=>Array.isArray(A[id])?A[id].length:0;
+const any=(id,ex)=>cnt(id)>0&&!has(id,ex);
+const E=()=>n("P06");
+const S=()=>n("P09")||48;
+const CA=()=>n("P07");
+const H=()=>v("P08")==="oui"?n("P08a"):(v("P08")==="non"&&n("P08b")!==null?n("P08b")/173:null);
+const CUR=()=>v("P02")==="AUTRE"?String(v("P02b")||"").trim().toUpperCase():(v("P02")||"");
+const yn=[["oui","Oui"],["non","Non"]];
+
+const Q=[
+/* Profil */
+{id:"P00",s:"P",q:"Nom de l'entreprise",t:"text",ph:"Ex. : Atelier Martin"},
+{id:"P01",s:"P",q:"Pays et ville où l'entreprise exerce",t:"text",ph:"Ex. : Abidjan, Côte d'Ivoire"},
+{id:"P02",s:"P",q:"Monnaie utilisée principalement",t:"select",o:CURR},
+{id:"P02b",s:"P",f:1,q:"Code de la monnaie, en trois lettres",t:"text",ph:"Ex. : GHS",show:()=>v("P02")==="AUTRE"},
+{id:"P03",s:"P",q:"Secteur d'activité",t:"choice",o:[["detail","Commerce de détail"],["resto","Restauration"],["services","Services professionnels"],["construction","Construction"],["fabrication","Fabrication"],["sante","Santé"],["transport","Transport"],["autre","Autre"]]},
+{id:"P04",s:"P",q:"L'entreprise vend…",t:"choice",o:[["produits","Des produits"],["services","Des services"],["deux","Les deux"]]},
+{id:"P05",s:"P",q:"Depuis combien d'années l'entreprise existe-t-elle ?",t:"num",unit:"ans"},
+{id:"P06",s:"P",q:"Combien de personnes y travaillent, propriétaire compris ?",t:"num",unit:"personnes"},
+{id:"P07",s:"P",q:"Chiffre d'affaires annuel approximatif",t:"num",unit:"$C par an"},
+{id:"P08",s:"P",q:"Connaissez-vous le coût horaire moyen d'un employé, charges comprises ?",t:"choice",o:[["oui","Oui"],["non","Non, mais je connais le salaire mensuel moyen"]]},
+{id:"P08a",s:"P",f:1,q:"Coût horaire moyen d'un employé",t:"num",unit:"$C par heure",show:()=>v("P08")==="oui"},
+{id:"P08b",s:"P",f:1,q:"Salaire mensuel moyen d'un employé",t:"num",unit:"$C par mois",hint:"Le coût horaire sera estimé sur une base de 173 heures par mois.",show:()=>v("P08")==="non"},
+{id:"P09",s:"P",q:"Combien de semaines par an l'entreprise est-elle en activité ?",t:"num",unit:"semaines",ph:"48"},
+{id:"P10",s:"P",q:"Quelle part des ventes se fait en espèces ou sans facture formelle ?",t:"choice",o:[["lt10","Moins de 10 %"],["10-30","10 à 30 %"],["30-60","30 à 60 %"],["gt60","Plus de 60 %"]]},
+{id:"P11",s:"P",q:"Quels outils numériques l'entreprise utilise-t-elle ?",t:"multi",ex:"aucun",o:[["compta","Logiciel comptable"],["pos","Caisse ou point de vente"],["crm","Logiciel de gestion clients"],["tableur","Tableur (Excel, Sheets)"],["ecom","Vente en ligne"],["msg","Messagerie (courriel, WhatsApp)"],["aucun","Aucun"]]},
+
+/* Direction */
+{id:"DIR-01",s:"DIR",q:"À quelle activité le dirigeant consacre-t-il le plus de temps chaque semaine ?",t:"choice",o:[["admin","Administration"],["ventes","Ventes"],["prod","Production ou prestation"],["rh","Gestion du personnel"],["compta","Comptabilité"],["autre","Autre"]],
+ score:()=>{const a=v("DIR-01");if(!a)return null;if(a!=="admin"&&a!=="compta")return 4;const h=n("DIR-01h");if(h===null)return null;return h<5?4:h<=15?2:0},
+ issue:"Le dirigeant consacre une grande part de son temps à l'administratif ou à la comptabilité."},
+{id:"DIR-01h",s:"DIR",f:1,q:"Combien d'heures par semaine environ ?",t:"num",unit:"h par semaine",show:()=>!!v("DIR-01")},
+{id:"DIR-01t",s:"DIR",f:1,q:"Quelles tâches précises ?",t:"text",show:()=>["admin","compta"].includes(v("DIR-01"))&&n("DIR-01h")>10},
+{id:"DIR-02",s:"DIR",q:"Avec dix heures de plus par semaine, à quoi le dirigeant les consacrerait-il ?",t:"text"},
+{id:"DIR-03",s:"DIR",q:"Quel problème aimeriez-vous voir disparaître en premier ?",t:"text"},
+{id:"DIR-04",s:"DIR",q:"L'entreprise a-t-elle des objectifs chiffrés pour l'année ?",t:"choice",o:[["oui","Oui, suivis régulièrement",4],["peu","Oui, mais peu suivis",2],["non","Non",0]],issue:"Pas d'objectifs chiffrés suivis régulièrement."},
+{id:"DIR-04b",s:"DIR",f:1,q:"Pourquoi sont-ils peu suivis ?",t:"choice",o:[["temps","Manque de temps"],["donnees","Données difficiles à obtenir"],["outil","Pas d'outil adapté"],["autre","Autre raison"]],show:()=>v("DIR-04")==="peu"},
+{id:"DIR-05",s:"DIR",q:"Si le dirigeant était absent pendant un mois, l'entreprise fonctionnerait…",t:"scale",lo:"Elle s'arrêterait",hi:"Normalement",
+ score:()=>{const x=n("DIR-05");return x===null?null:x<=2?0:x===3?2:4},issue:"L'entreprise dépend fortement de la présence du dirigeant."},
+{id:"DIR-05b",s:"DIR",f:1,q:"Quelles décisions ou tâches seraient bloquées ?",t:"text",show:()=>n("DIR-05")!==null&&n("DIR-05")<=2},
+
+/* Finances */
+{id:"FIN-01",s:"FIN",q:"Connaissez-vous votre marge ?",t:"choice",o:[["produit","Par produit ou par service",4],["globale","Globale seulement",2],["non","Non",0]],issue:"La marge n'est pas connue par produit ou par service."},
+{id:"FIN-02",s:"FIN",f:1,q:"Pouvez-vous estimer votre marge brute globale ?",t:"num",unit:"%",hint:"Ventes moins coût direct des ventes, divisé par les ventes.",show:()=>!!v("FIN-01")&&v("FIN-01")!=="produit"},
+{id:"FIN-03",s:"FIN",q:"Savez-vous quels produits ou services sont les moins rentables ?",t:"choice",o:[["oui","Oui",4],["non","Non",0]],issue:"Les produits ou services les moins rentables ne sont pas identifiés."},
+{id:"FIN-03b",s:"FIN",f:1,q:"Lesquels, et quelle part des ventes représentent-ils ?",t:"text",show:()=>v("FIN-03")==="oui"},
+{id:"FIN-04",s:"FIN",q:"Quelle part des revenus sert à couvrir les coûts fixes (loyer, salaires, abonnements) ?",t:"num",unit:"%",
+ score:()=>{const x=n("FIN-04");return x===null?null:x<40?4:x<=60?2:0},issue:"Les coûts fixes pèsent lourd par rapport aux revenus."},
+{id:"FIN-05",s:"FIN",q:"En combien de jours les clients paient-ils en moyenne ?",t:"num",unit:"jours",show:()=>v("P10")!=="gt60",
+ score:()=>{const x=n("FIN-05");return x===null?null:x<=30?4:x<=60?2:0},issue:"Les clients paient trop lentement."},
+{id:"FIN-05b",s:"FIN",f:1,q:"Quelle part des factures est en retard de plus de 30 jours ?",t:"num",unit:"%",show:()=>v("P10")!=="gt60"&&n("FIN-05")>45},
+{id:"FIN-06",s:"FIN",q:"En combien de jours payez-vous vos fournisseurs en moyenne ?",t:"num",unit:"jours"},
+{id:"FIN-07",s:"FIN",q:"Au cours des 12 derniers mois, la trésorerie a-t-elle manqué pour couvrir les dépenses ?",t:"choice",o:[["jamais","Jamais",4],["parfois","Une ou deux fois",2],["souvent","Souvent",0]],issue:"Tensions de trésorerie répétées."},
+{id:"FIN-07b",s:"FIN",f:1,q:"Pendant combien de jours en moyenne ?",t:"num",unit:"jours",show:()=>["parfois","souvent"].includes(v("FIN-07"))},
+{id:"FIN-07c",s:"FIN",f:1,q:"Comment l'écart a-t-il été comblé ?",t:"choice",o:[["credit","Crédit ou marge de crédit"],["report","Report de paiements"],["apport","Apport personnel"],["autre","Autre"]],show:()=>["parfois","souvent"].includes(v("FIN-07"))},
+{id:"FIN-08",s:"FIN",q:"À quelle fréquence le dirigeant consulte-t-il les chiffres financiers ?",t:"choice",o:[["semaine","Chaque semaine",4],["mois","Chaque mois",4],["trim","Chaque trimestre",2],["an","Une fois par an ou moins",0]],issue:"Les chiffres financiers sont consultés trop rarement pour piloter."},
+{id:"FIN-08b",s:"FIN",f:1,q:"Sous quelle forme les recevez-vous ?",t:"text",show:()=>["trim","an"].includes(v("FIN-08"))},
+{id:"FIN-09",s:"FIN",q:"Combien d'heures par mois sont consacrées à la comptabilité en interne ?",t:"num",unit:"h par mois",
+ score:()=>{const x=n("FIN-09");return x===null?null:x<=8?4:x<=20?2:0},issue:"Beaucoup de temps consacré à la comptabilité en interne.",
+ cost:()=>n("FIN-09")>8?{label:"Comptabilité en interne",hy:n("FIN-09")*12}:null},
+{id:"FIN-09b",s:"FIN",f:1,q:"Quelles tâches prennent ce temps ?",t:"multi",o:[["saisie","Saisie des factures"],["rappro","Rapprochements bancaires"],["paie","Paie"],["taxes","Taxes et déclarations"],["autre","Autre"]],show:()=>n("FIN-09")>20},
+
+/* Ventes */
+{id:"VEN-01",s:"VEN",q:"D'où viennent les nouveaux clients ?",t:"multi",o:[["bouche","Bouche-à-oreille"],["reseaux","Réseaux sociaux"],["recherche","Recherche en ligne"],["prospection","Prospection directe"],["partenaires","Partenaires"],["appels","Appels d'offres"],["passage","Passage en magasin"],["autre","Autre"]],
+ score:()=>{const c=cnt("VEN-01");return c===0?null:c>=3?4:c===2?2:0},issue:"Les nouveaux clients viennent d'une seule source."},
+{id:"VEN-01b",s:"VEN",f:1,q:"Quelle part des clients vient de cette source ?",t:"num",unit:"%",show:()=>cnt("VEN-01")===1},
+{id:"VEN-02",s:"VEN",q:"Quelle part du chiffre d'affaires vient des trois plus gros clients ?",t:"num",unit:"%",show:()=>!["detail","resto"].includes(v("P03")),
+ score:()=>{const x=n("VEN-02");return x===null?null:x<30?4:x<=50?2:0},issue:"Le chiffre d'affaires est concentré sur peu de clients."},
+{id:"VEN-02b",s:"VEN",f:1,q:"Ces clients sont-ils liés par un contrat ?",t:"choice",o:yn,show:()=>!["detail","resto"].includes(v("P03"))&&n("VEN-02")>50},
+{id:"VEN-03",s:"VEN",q:"Quelle part des clients achète une deuxième fois ?",t:"num",unit:"%",
+ score:()=>{const x=n("VEN-03");return x===null?null:x>60?4:x>=30?2:0},issue:"Peu de clients reviennent acheter."},
+{id:"VEN-04",s:"VEN",q:"Savez-vous pourquoi certains clients cessent d'acheter chez vous ?",t:"choice",o:[["mesure","Oui, c'est mesuré",4],["idee","J'en ai une idée générale",2],["non","Non",0]],issue:"Les raisons de perte de clients ne sont pas connues."},
+{id:"VEN-05",s:"VEN",q:"L'entreprise prépare-t-elle des soumissions ou des devis ?",t:"choice",o:yn},
+{id:"VEN-06",s:"VEN",f:1,q:"Quelle part des soumissions est acceptée ?",t:"num",unit:"%",show:()=>v("VEN-05")==="oui",
+ score:()=>{const x=n("VEN-06");return x===null?null:x>=40?4:x>=25?2:0},issue:"Faible taux d'acceptation des soumissions."},
+{id:"VEN-06b",s:"VEN",f:1,q:"Quelle raison de refus revient le plus souvent ?",t:"text",show:()=>v("VEN-05")==="oui"&&n("VEN-06")!==null&&n("VEN-06")<25},
+{id:"VEN-07",s:"VEN",f:1,q:"En combien de temps répondez-vous à une demande de soumission ?",t:"choice",o:[["jour","Le jour même",4],["1-3","Un à trois jours",2],["plus","Plus de trois jours",0]],show:()=>v("VEN-05")==="oui",issue:"Les demandes de soumission reçoivent une réponse lente."},
+{id:"VEN-08",s:"VEN",q:"Comment l'information sur les clients est-elle conservée ?",t:"choice",o:[["logiciel","Logiciel de gestion clients",4],["tableur","Tableur",2],["papier","Papier",0],["memoire","De mémoire",0]],issue:"L'information sur les clients n'est pas centralisée."},
+{id:"VEN-08b",s:"VEN",f:1,q:"Combien de clients actifs environ ?",t:"num",unit:"clients",show:()=>["papier","memoire"].includes(v("VEN-08"))},
+{id:"VEN-09",s:"VEN",q:"Les ventes varient-elles selon les périodes de l'année ?",t:"choice",o:[["stables","Elles sont stables",4],["anticipe","Elles varient, et c'est anticipé",4],["non","Elles varient sans être anticipées",0]],issue:"Les variations de ventes ne sont pas anticipées."},
+{id:"VEN-09b",s:"VEN",f:1,q:"Quels mois sont les plus difficiles ?",t:"text",show:()=>v("VEN-09")==="non"},
+
+/* Marketing */
+{id:"MKT-01",s:"MKT",q:"Où l'entreprise est-elle présente en ligne ?",t:"multi",ex:"aucune",o:[["site","Site web"],["fiche","Fiche d'annuaire ou de carte (Google, etc.)"],["reseaux","Réseaux sociaux"],["place","Place de marché en ligne"],["aucune","Nulle part"]],
+ score:()=>{if(has("MKT-01","aucune"))return 0;const c=cnt("MKT-01");return c===0?null:c>=3?4:2},issue:"Présence en ligne faible ou absente."},
+{id:"MKT-02",s:"MKT",f:1,q:"Combien d'heures par semaine sont consacrées au marketing et aux réseaux sociaux ?",t:"num",unit:"h par semaine",show:()=>any("MKT-01","aucune")},
+{id:"MKT-03",s:"MKT",q:"Savez-vous ce qu'un nouveau client coûte en efforts ou en publicité ?",t:"choice",o:[["oui","Oui",4],["approx","Approximativement",2],["non","Non",0]],issue:"Le coût d'acquisition d'un client n'est pas connu."},
+{id:"MKT-04",s:"MKT",q:"Qu'est-ce qui distingue l'entreprise de ses concurrents ?",t:"text"},
+{id:"MKT-04s",s:"MKT",f:1,q:"Les clients confirmeraient-ils cette différence ?",t:"scale",lo:"Pas du tout",hi:"Tout à fait",
+ score:()=>{const x=n("MKT-04s");return x===null?null:x>=4?4:x===3?2:0},issue:"L'avantage concurrentiel est peu reconnu par les clients."},
+{id:"MKT-05",s:"MKT",q:"Comment les prix ont-ils été fixés ?",t:"choice",o:[["couts","À partir des coûts et d'une marge visée",4],["conc","D'après la concurrence",2],["intuition","À l'intuition",0],["jamais","Jamais revus depuis le démarrage",0]],issue:"Les prix ont été fixés sans calcul ou n'ont jamais été révisés."},
+{id:"MKT-05b",s:"MKT",f:1,q:"Quand les prix ont-ils été révisés pour la dernière fois ?",t:"text",show:()=>["intuition","jamais"].includes(v("MKT-05"))},
+
+/* Opérations */
+{id:"OPS-01",s:"OPS",q:"Décrivez le parcours d'une commande ou d'un mandat, de la demande jusqu'au paiement.",t:"long"},
+{id:"OPS-02",s:"OPS",q:"À quelles étapes les retards ou les erreurs surviennent-ils le plus souvent ?",t:"multi",ex:"aucune",o:[["commande","Prise de commande"],["prod","Production ou prestation"],["livraison","Livraison"],["factu","Facturation"],["encaiss","Encaissement"],["aucune","Aucune"]],
+ score:()=>{if(has("OPS-02","aucune"))return 4;const c=cnt("OPS-02");return c===0?null:c===1?2:0},issue:"Retards ou erreurs à plusieurs étapes du processus."},
+{id:"OPS-02b",s:"OPS",f:1,q:"Pour l'étape la plus touchée, combien de fois sur 100 commandes ?",t:"num",unit:"sur 100",show:()=>any("OPS-02","aucune")},
+{id:"OPS-03",s:"OPS",q:"Sur 100 commandes ou mandats, combien doivent être corrigés ou repris ?",t:"num",unit:"sur 100",
+ score:()=>{const x=n("OPS-03");return x===null?null:x<2?4:x<=5?2:0},issue:"Beaucoup de commandes doivent être corrigées ou reprises."},
+{id:"OPS-04",s:"OPS",q:"Quelles tâches répétitives sont faites à la main chaque semaine ?",t:"multi",ex:"aucune",o:[["factu","Facturation"],["relances","Relances de paiement"],["saisie","Saisie de commandes"],["horaires","Horaires"],["rapports","Rapports"],["courriels","Réponses aux courriels"],["inventaire","Inventaire"],["autre","Autre"],["aucune","Aucune"]],
+ score:()=>{if(has("OPS-04","aucune"))return 4;const h=n("OPS-04h");if(h===null)return null;const per=E()?h/E():h;return per<=1?4:per<=3?2:0},
+ issue:"Charge importante de tâches répétitives faites à la main.",cost:()=>any("OPS-04","aucune")&&n("OPS-04h")>0?{label:"Tâches répétitives faites à la main",hy:n("OPS-04h")*S()}:null},
+{id:"OPS-04h",s:"OPS",f:1,q:"Combien d'heures par semaine au total, pour toute l'équipe ?",t:"num",unit:"h par semaine",show:()=>any("OPS-04","aucune")},
+{id:"OPS-04b",s:"OPS",f:1,q:"Laquelle prend le plus de temps ?",t:"text",show:()=>n("OPS-04h")>5&&any("OPS-04","aucune")},
+{id:"OPS-05",s:"OPS",q:"Une même information est-elle saisie dans plusieurs outils ou documents ?",t:"choice",o:yn,
+ score:()=>{const a=v("OPS-05");if(!a)return null;if(a==="non")return 4;const h=n("OPS-05h");return h!==null&&h>=2?0:2},issue:"Les mêmes informations sont saisies plusieurs fois.",
+ cost:()=>v("OPS-05")==="oui"&&n("OPS-05h")>0?{label:"Ressaisie d'information",hy:n("OPS-05h")*S()}:null},
+{id:"OPS-05b",s:"OPS",f:1,q:"Dans quels outils ou documents ?",t:"text",show:()=>v("OPS-05")==="oui"},
+{id:"OPS-05h",s:"OPS",f:1,q:"Combien d'heures par semaine cela représente-t-il ?",t:"num",unit:"h par semaine",show:()=>v("OPS-05")==="oui"},
+{id:"OPS-06",s:"OPS",q:"Combien de rapports ou de tableaux sont produits régulièrement ?",t:"num",unit:"rapports"},
+{id:"OPS-06s",s:"OPS",f:1,q:"Sont-ils réellement utilisés pour décider ?",t:"scale",lo:"Jamais",hi:"Toujours",show:()=>n("OPS-06")>0,
+ score:()=>{const x=n("OPS-06s");return x===null?null:x>=4?4:x===3?2:0},issue:"Des rapports sont produits mais peu utilisés.",
+ cost:()=>n("OPS-06s")!==null&&n("OPS-06s")<=2&&n("OPS-06h")>0?{label:"Rapports peu utilisés",hy:n("OPS-06h")*S()}:null},
+{id:"OPS-06h",s:"OPS",f:1,q:"Combien d'heures par semaine prend leur préparation ?",t:"num",unit:"h par semaine",show:()=>n("OPS-06s")!==null&&n("OPS-06s")<=2&&n("OPS-06")>0},
+{id:"OPS-07",s:"OPS",q:"Combien de tâches importantes une seule personne sait-elle faire ?",t:"num",unit:"tâches",
+ score:()=>{const x=n("OPS-07");return x===null?null:x===0?4:x<=2?2:0},issue:"Des tâches importantes reposent sur une seule personne."},
+{id:"OPS-07b",s:"OPS",f:1,q:"Lesquelles ? Existe-t-il une procédure écrite ?",t:"text",show:()=>n("OPS-07")>=1},
+
+/* RH */
+{id:"RH-01",s:"RH",q:"Combien d'employés sont partis au cours des 12 derniers mois ?",t:"num",unit:"personnes",
+ score:()=>{const x=n("RH-01");if(x===null||!E())return null;const r=x/E()*100;return r<10?4:r<=25?2:0},issue:"Roulement du personnel élevé."},
+{id:"RH-01b",s:"RH",f:1,q:"Quelles sont les principales raisons des départs ?",t:"text",show:()=>n("RH-01")!==null&&E()&&n("RH-01")/E()>.2},
+{id:"RH-02",s:"RH",q:"Combien de semaines faut-il pour qu'un nouvel employé soit autonome ?",t:"num",unit:"semaines",
+ score:()=>{const x=n("RH-02");return x===null?null:x<=4?4:x<=12?2:0},issue:"La formation des nouveaux employés est longue."},
+{id:"RH-02b",s:"RH",f:1,q:"Existe-t-il une formation structurée ?",t:"choice",o:yn,show:()=>n("RH-02")>8},
+{id:"RH-03",s:"RH",q:"Les rôles et tâches de chacun sont-ils écrits quelque part ?",t:"choice",o:[["tous","Oui, pour tous",4],["partie","En partie",2],["non","Non",0]],issue:"Les rôles et les tâches ne sont pas documentés."},
+{id:"RH-04",s:"RH",q:"Comment sont gérés les horaires, les présences et la paie ?",t:"choice",o:[["logiciel","Avec un logiciel",4],["tableur","Avec un tableur",2],["papier","Sur papier",0]],issue:"Horaires, présences et paie gérés à la main.",
+ cost:()=>["tableur","papier"].includes(v("RH-04"))&&n("RH-04h")>0?{label:"Horaires, présences et paie",hy:n("RH-04h")*12}:null},
+{id:"RH-04h",s:"RH",f:1,q:"Combien d'heures par mois cela prend-il ?",t:"num",unit:"h par mois",show:()=>!!v("RH-04")},
+{id:"RH-04b",s:"RH",f:1,q:"Quelles étapes prennent le plus de temps ?",t:"text",show:()=>["tableur","papier"].includes(v("RH-04"))&&n("RH-04h")>8},
+{id:"RH-05",s:"RH",q:"Quelle part de leur temps les employés passent-ils sur des tâches administratives ?",t:"num",unit:"%",
+ score:()=>{const x=n("RH-05");return x===null?null:x<10?4:x<=25?2:0},issue:"Les employés passent beaucoup de temps sur l'administratif."},
+{id:"RH-06",s:"RH",q:"Quelle plainte ou frustration revient le plus souvent dans l'équipe ?",t:"text"},
+
+/* Stocks */
+{id:"STK-01",s:"STK",q:"Comment savez-vous ce que vous avez en stock à un moment donné ?",t:"choice",o:[["logiciel","Logiciel tenu à jour",4],["comptage","Comptage périodique",2],["estimation","Estimation",0]],issue:"Le niveau de stock est estimé plutôt que connu."},
+{id:"STK-02",s:"STK",q:"Au cours du dernier mois, avez-vous manqué d'un produit demandé ?",t:"choice",o:[["jamais","Jamais",4],["parfois","Parfois",2],["souvent","Souvent",0]],issue:"Ruptures de stock fréquentes."},
+{id:"STK-02b",s:"STK",f:1,q:"Quels produits, et combien de ventes perdues environ ?",t:"text",show:()=>["parfois","souvent"].includes(v("STK-02"))},
+{id:"STK-03",s:"STK",q:"Quelle part du stock ne s'est pas vendue depuis six mois ?",t:"num",unit:"%",
+ score:()=>{const x=n("STK-03");return x===null?null:x<10?4:x<=25?2:0},issue:"Une part importante du stock ne se vend pas."},
+{id:"STK-04",s:"STK",q:"Comment décidez-vous quand et combien commander ?",t:"choice",o:[["seuils","Seuils ou prévisions",4],["habitude","Par habitude",2],["rupture","Quand le produit est épuisé",0]],issue:"Les commandes fournisseurs sont déclenchées sans méthode."},
+{id:"STK-05",s:"STK",q:"Dépendez-vous d'un seul fournisseur pour un produit important ?",t:"choice",o:[["non","Non",4],["oui-alt","Oui, avec une solution de rechange",2],["oui-sans","Oui, sans solution de rechange",0]],issue:"Dépendance à un seul fournisseur, sans solution de rechange."},
+{id:"STK-06",s:"STK",q:"Les délais de vos fournisseurs sont-ils fiables ?",t:"scale",lo:"Jamais",hi:"Toujours",
+ score:()=>{const x=n("STK-06");return x===null?null:x>=4?4:x===3?2:0},issue:"Les délais des fournisseurs sont peu fiables."},
+{id:"STK-06b",s:"STK",f:1,q:"Quel est le retard moyen ?",t:"num",unit:"jours",show:()=>n("STK-06")!==null&&n("STK-06")<=2},
+
+/* Outils */
+{id:"OUT-01",s:"OUT",q:"Les logiciels échangent-ils l'information entre eux ?",t:"choice",o:[["auto","Oui, automatiquement",4],["partie","En partie",2],["main","Non, tout se transfère à la main",0]],show:()=>!has("P11","aucun"),issue:"Les logiciels ne communiquent pas entre eux."},
+{id:"OUT-02",s:"OUT",q:"Où sont conservés les documents importants ?",t:"choice",o:[["partage","Espace partagé en ligne",4],["ordi","Sur les ordinateurs de chacun",2],["papier","Sur papier",0]],issue:"Les documents importants sont dispersés ou sur papier."},
+{id:"OUT-03",s:"OUT",q:"Les données de l'entreprise sont-elles sauvegardées ?",t:"choice",o:[["auto","Automatiquement, et c'est vérifié",4],["parfois","De temps en temps",2],["jamais","Jamais",0]],issue:"Les données ne sont pas sauvegardées de façon fiable."},
+{id:"OUT-04",s:"OUT",q:"Quelles décisions sont prises sans données, faute d'information facile à obtenir ?",t:"multi",ex:"aucune",o:[["prix","Prix"],["achats","Achats"],["embauche","Embauche"],["marketing","Marketing"],["invest","Investissements"],["aucune","Aucune"]],
+ score:()=>{if(has("OUT-04","aucune"))return 4;const c=cnt("OUT-04");return c===0?null:c<=2?2:0},issue:"Plusieurs décisions sont prises sans données."},
+{id:"OUT-04b",s:"OUT",f:1,q:"Pour la décision la plus importante, quelle information manque ?",t:"text",show:()=>any("OUT-04","aucune")},
+{id:"OUT-05",s:"OUT",q:"L'entreprise a-t-elle déjà utilisé un outil d'automatisation ou d'intelligence artificielle ?",t:"choice",o:[["encore","Oui, encore utilisé"],["abandon","Essayé puis abandonné"],["jamais","Jamais"]]},
+{id:"OUT-05b",s:"OUT",f:1,q:"Pour quelle raison a-t-il été abandonné ?",t:"text",show:()=>v("OUT-05")==="abandon"},
+{id:"OUT-06a",s:"OUT",q:"La connexion internet est-elle fiable ?",t:"scale",lo:"Très peu",hi:"Tout à fait"},
+{id:"OUT-06b",s:"OUT",q:"L'équipe est-elle à l'aise avec les outils numériques ?",t:"scale",lo:"Très peu",hi:"Tout à fait"},
+
+/* Administration */
+{id:"ADM-01",s:"ADM",q:"Quelles obligations légales ou fiscales prennent le plus de temps ?",t:"multi",ex:"aucune",o:[["taxes","Taxes"],["employeur","Déclarations d'employeur"],["permis","Permis et licences"],["rapports","Rapports réglementaires"],["autre","Autre"],["aucune","Aucune en particulier"]],
+ score:()=>{if(has("ADM-01","aucune"))return 4;const h=n("ADM-01h");return h===null?null:h<=4?4:h<=10?2:0},issue:"Les obligations légales et fiscales prennent beaucoup de temps.",
+ cost:()=>any("ADM-01","aucune")&&n("ADM-01h")>4?{label:"Obligations légales et fiscales",hy:n("ADM-01h")*12}:null},
+{id:"ADM-01h",s:"ADM",f:1,q:"Combien d'heures par mois au total ?",t:"num",unit:"h par mois",show:()=>any("ADM-01","aucune")},
+{id:"ADM-01b",s:"ADM",f:1,q:"Ces tâches sont-elles confiées à un professionnel externe ?",t:"choice",o:yn,show:()=>n("ADM-01h")>10&&any("ADM-01","aucune")},
+{id:"ADM-02",s:"ADM",q:"Depuis deux ans, l'entreprise a-t-elle reçu des pénalités ou accusé des retards de conformité ?",t:"choice",o:[["jamais","Jamais",4],["une","Une fois",2],["plusieurs","Plusieurs fois",0]],issue:"Pénalités ou retards de conformité."},
+{id:"ADM-02b",s:"ADM",f:1,q:"De quelle nature ?",t:"text",show:()=>["une","plusieurs"].includes(v("ADM-02"))},
+{id:"ADM-03",s:"ADM",q:"Comment sont gérés les contrats avec les clients, fournisseurs et employés ?",t:"choice",o:[["classes","Écrits et classés au même endroit",4],["disperses","Écrits mais dispersés",2],["verbaux","Surtout verbaux",0]],issue:"Contrats dispersés ou surtout verbaux."},
+{id:"ADM-04",s:"ADM",q:"Des règles propres à votre pays ou à votre secteur pèsent-elles sur la gestion ?",t:"long"},
+
+/* Clôture */
+{id:"CLO-01",s:"CLO",q:"Y a-t-il un sujet important que ce questionnaire n'a pas abordé ?",t:"long"},
+{id:"CLO-02",s:"CLO",q:"Si vous pouviez améliorer une seule chose dans les six prochains mois, laquelle choisiriez-vous ?",t:"text"},
+{id:"CLO-03",s:"CLO",q:"Quels documents seriez-vous prêt à partager pour préciser le diagnostic ?",t:"multi",ex:"aucun",o:[["etats","États financiers"],["ventes","Export des ventes"],["clients","Liste des clients"],["horaires","Horaires"],["aucun","Aucun pour l'instant"]]}
+];
+
+/* ---------- Calculs ---------- */
+const visible=q=>{const sec=SECTIONS.find(s=>s.id===q.s);if(sec.show&&!sec.show())return false;return q.show?!!q.show():true};
+const visSections=()=>SECTIONS.filter(s=>!s.show||s.show());
+const answered=q=>{const x=A[q.id];return Array.isArray(x)?x.length>0:(x!==undefined&&x!==null&&String(x).trim()!=="")};
+function scoreOf(q){
+  if(!visible(q))return null;
+  if(q.score)return q.score();
+  if(q.t==="choice"&&q.o&&q.o.some(o=>o.length>2)){const o=q.o.find(o=>o[0]===A[q.id]);return o?o[2]:null}
+  return null;
+}
+const isScored=q=>!!q.score||(q.t==="choice"&&q.o&&q.o.some(o=>o.length>2));
+function sectionScore(sid){
+  let pts=0,max=0,qs=Q.filter(q=>q.s===sid&&isScored(q));
+  qs.forEach(q=>{const s=scoreOf(q);if(s!==null&&s!==undefined){pts+=s;max+=4}});
+  return max?{score:Math.round(pts/max*100),pts,max}:null;
+}
+function report(){
+  const secs=visSections().map(s=>({...s,r:sectionScore(s.id)})).filter(s=>s.r);
+  const tp=secs.reduce((a,s)=>a+s.r.pts,0),tm=secs.reduce((a,s)=>a+s.r.max,0);
+  const global=tm?Math.round(tp/tm*100):null;
+  const issues=[];
+  Q.forEach(q=>{if(!isScored(q))return;const s=scoreOf(q);if(s===0||s===2)issues.push({q,s,sec:SECTIONS.find(x=>x.id===q.s)})});
+  issues.sort((a,b)=>a.s-b.s||SECTIONS.indexOf(a.sec)-SECTIONS.indexOf(b.sec));
+  const costs=Q.filter(q=>q.cost&&visible(q)).map(q=>q.cost()).filter(Boolean);
+  const h=H(),ca=CA();
+  costs.forEach(c=>{c.money=h?c.hy*h:null;c.pct=(c.money!==null&&ca)?c.money/ca*100:null});
+  costs.sort((a,b)=>b.hy-a.hy);
+  const totH=costs.reduce((a,c)=>a+c.hy,0),totM=h?totH*h:null,totP=(totM!==null&&ca)?totM/ca*100:null;
+  return {secs,global,issues,costs,totH,totM,totP};
+}
+function reliability(){
+  const p=v("P10");
+  if(p==="gt60"||has("P11","aucun"))return ["Faible","Les résultats reposent surtout sur des déclarations.","bad"];
+  if(p==="30-60"||(cnt("P11")>0&&!has("P11","compta")&&!has("P11","pos")))return ["Moyenne","Une partie des chiffres est estimée.","warn"];
+  if(!p&&cnt("P11")===0)return ["Non évaluée","Profil incomplet.","warn"];
+  return ["Bonne","Les chiffres peuvent être vérifiés dans les outils.","good"];
+}
+const level=s=>s>=70?"good":s>=40?"warn":"bad";
+const levelTxt=s=>s>=70?"Satisfaisant":s>=40?"À surveiller":"En difficulté";
+function money(x){
+  if(x===null||x===undefined)return "—";
+  const c=CUR();
+  try{if(/^[A-Z]{3}$/.test(c))return new Intl.NumberFormat("fr-CA",{style:"currency",currency:c,maximumFractionDigits:0}).format(x)}catch(e){}
+  return new Intl.NumberFormat("fr-CA",{maximumFractionDigits:0}).format(x)+(c?" "+c:"");
+}
+const fmt=(x,d=0)=>x===null||x===undefined||!isFinite(x)?"—":new Intl.NumberFormat("fr-CA",{maximumFractionDigits:d}).format(x);
+
+/* ---------- État et stockage local ---------- */
+let step=-1, isExample=false;
+const KEY="diagnostic-entreprise-v1";
+function save(){if(isExample)return;try{localStorage.setItem(KEY,JSON.stringify({A,step}))}catch(e){}}
+function load(){try{const d=JSON.parse(localStorage.getItem(KEY)||"null");return d&&d.A?d:null}catch(e){return null}}
+function clearSaved(){try{localStorage.removeItem(KEY)}catch(e){}}
+
+/* ---------- Rendu ---------- */
+const app=document.getElementById("app");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const unitTxt=u=>u?u.replace("$C",CUR()||"monnaie"):"";
+function toast(msg){const t=document.getElementById("toast");t.textContent=msg;t.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>t.hidden=true,2400)}
+function go(s){step=s;save();render();window.scrollTo({top:0,behavior:"auto"})}
+
+function render(){
+  const vs=visSections();
+  document.getElementById("topMeta").textContent=step===-1?`Questionnaire · ${vs.length} sections`:step>=vs.length?"Rapport":`Section ${step+1} sur ${vs.length}`;
+  if(step===-1)return renderIntro();
+  if(step>=vs.length)return renderReport();
+  renderSection(vs[step]);
+}
+
+function renderIntro(){
+  const saved=load(), vs=visSections();
+  const nb=Q.filter(q=>!q.f).length;
+  app.innerHTML=`<section class="intro">
+   <div>
+    <p class="eyebrow">Repérer les problèmes qu'on peut régler</p>
+    <h1 style="margin-top:10px">Un diagnostic de l'entreprise en une vingtaine de minutes</h1>
+    <p class="lead">Le questionnaire passe en revue onze fonctions de l'entreprise. Des questions de précision s'ajoutent seulement quand une réponse signale une difficulté. À la fin, un rapport calcule un score par fonction, liste les problèmes repérés et estime le temps perdu, converti dans votre monnaie.</p>
+    <div class="actions">
+      ${saved?`<button class="btn primary" id="resume">Reprendre où j'en étais</button><button class="btn" id="start">Recommencer à zéro</button>`:`<button class="btn primary" id="start">Commencer le diagnostic</button>`}
+      <button class="btn ghost" id="example">Voir un exemple de rapport</button>
+    </div>
+    <div class="facts">
+      <div><b>${nb}</b><span>questions principales</span></div>
+      <div><b>0 · 2 · 4</b><span>points par question notée</span></div>
+      <div><b>Toute monnaie</b><span>scores en ratios, coûts convertis</span></div>
+    </div>
+    <p class="note">Vos réponses restent dans ce navigateur et ne sont envoyées nulle part. Vous pouvez quitter et revenir plus tard. À la fin, copiez ou téléchargez le rapport pour le transmettre à la personne qui vous a envoyé ce questionnaire.</p>
+   </div>
+   <aside class="toc">
+    <p class="eyebrow">Sections</p>
+    <ol>${SECTIONS.map(s=>`<li><span class="code">${s.id}</span><span>${esc(s.title)}${s.show?' <span class="muted">· si produits</span>':''}</span></li>`).join("")}</ol>
+   </aside>
+  </section>`;
+  const st=document.getElementById("start");
+  st.onclick=()=>{A={};isExample=false;clearSaved();go(0)};
+  if(saved)document.getElementById("resume").onclick=()=>{A=saved.A;isExample=false;go(Math.max(0,saved.step||0))};
+  document.getElementById("example").onclick=()=>{A=JSON.parse(JSON.stringify(EXAMPLE));isExample=true;step=visSections().length;render();window.scrollTo(0,0)};
+}
+
+function railHTML(){
+  const vs=visSections();
+  return `<nav class="rail" aria-label="Sections">${vs.map((s,i)=>{
+    const qs=Q.filter(q=>q.s===s.id&&visible(q)), a=qs.filter(answered).length;
+    return `<button data-go="${i}" class="${i===step?"on":""}"><span>${esc(s.title)}</span><span class="cnt ${a===qs.length&&a>0?"done":""}">${a}/${qs.length}</span></button>`}).join("")}
+    <div class="sep"></div><button data-go="${vs.length}" class="${step>=vs.length?"on":""}"><span>Rapport</span><span class="cnt">→</span></button></nav>`;
+}
+function bindRail(){app.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>go(+b.dataset.go))}
+
+function inputHTML(q){
+  const val=A[q.id];
+  if(q.t==="text")return `<input type="text" id="${q.id}" data-q="${q.id}" value="${esc(val||"")}" placeholder="${esc(q.ph||"")}">`;
+  if(q.t==="long")return `<textarea id="${q.id}" data-q="${q.id}">${esc(val||"")}</textarea>`;
+  if(q.t==="num")return `<div class="num"><input type="number" step="any" inputmode="decimal" id="${q.id}" data-q="${q.id}" value="${esc(val??"")}" placeholder="${esc(q.ph||"")}"><span class="unit" data-unit="${q.id}">${esc(unitTxt(q.unit))}</span></div>`;
+  if(q.t==="select")return `<select id="${q.id}" data-q="${q.id}"><option value="">Choisir…</option>${q.o.map(o=>`<option value="${o[0]}" ${val===o[0]?"selected":""}>${esc(o[1])}</option>`).join("")}</select>`;
+  if(q.t==="choice")return `<div class="opts" role="radiogroup">${q.o.map((o,i)=>`<label class="opt"><input type="radio" name="${q.id}" id="${q.id}-${i}" data-q="${q.id}" value="${o[0]}" ${val===o[0]?"checked":""}><span>${esc(o[1])}</span></label>`).join("")}</div>`;
+  if(q.t==="multi")return `<div class="opts">${q.o.map((o,i)=>`<label class="opt"><input type="checkbox" name="${q.id}" id="${q.id}-${i}" data-q="${q.id}" value="${o[0]}" ${Array.isArray(val)&&val.includes(o[0])?"checked":""}><span>${esc(o[1])}</span></label>`).join("")}</div>`;
+  if(q.t==="scale")return `<div class="scale"><small>${esc(q.lo)}</small><div class="opts">${[1,2,3,4,5].map(k=>`<label class="opt"><input type="radio" name="${q.id}" id="${q.id}-${k}" data-q="${q.id}" value="${k}" ${String(val)===String(k)?"checked":""}><span>${k}</span></label>`).join("")}</div><small>${esc(q.hi)}</small></div>`;
+}
+
+function renderSection(sec){
+  const vs=visSections(), qs=Q.filter(q=>q.s===sec.id);
+  app.innerHTML=`<div class="form">${railHTML()}
+   <section style="min-width:0">
+    <div class="progress"><i id="prog"></i></div>
+    <div class="sec-head"><p class="eyebrow">${sec.id} · Section ${step+1} sur ${vs.length}</p><h2>${esc(sec.title)}</h2>${sec.intro?`<p>${esc(sec.intro)}</p>`:""}</div>
+    <div class="qs">${qs.map(q=>`<div class="q ${q.f?"follow":""}" data-block="${q.id}" ${visible(q)?"":"hidden"}>
+      <div class="q-top"><span class="q-code">${q.id}</span><span class="q-text">${esc(q.q)}</span></div>
+      ${q.hint?`<p class="q-hint">${esc(q.hint)}</p>`:""}
+      ${inputHTML(q)}</div>`).join("")}</div>
+    <div class="nav">
+      <button class="btn ghost" id="prev">${step===0?"Retour à l'accueil":"Section précédente"}</button>
+      <button class="btn primary" id="next">${step===vs.length-1?"Voir le rapport":"Section suivante"}</button>
+    </div>
+   </section></div>`;
+  bindRail();
+  document.getElementById("prev").onclick=()=>go(step-1);
+  document.getElementById("next").onclick=()=>go(step+1);
+  app.querySelectorAll("[data-q]").forEach(el=>{
+    const ev=(el.tagName==="SELECT"||el.type==="radio"||el.type==="checkbox")?"change":"input";
+    el.addEventListener(ev,()=>onInput(el));
+  });
+  updateProgress();
+}
+
+function onInput(el){
+  const id=el.dataset.q,q=Q.find(x=>x.id===id);
+  if(q.t==="multi"){
+    let arr=Array.isArray(A[id])?[...A[id]]:[];
+    if(el.checked){
+      if(q.ex&&el.value===q.ex)arr=[q.ex];else{arr=arr.filter(x=>x!==q.ex);arr.push(el.value)}
+    }else arr=arr.filter(x=>x!==el.value);
+    A[id]=arr;
+    app.querySelectorAll(`input[name="${id}"]`).forEach(c=>c.checked=arr.includes(c.value));
+  }else A[id]=el.value;
+  if(id==="P02"||id==="P02b")app.querySelectorAll("[data-unit]").forEach(u=>{const qq=Q.find(x=>x.id===u.dataset.unit);u.textContent=unitTxt(qq.unit)});
+  app.querySelectorAll("[data-block]").forEach(b=>{b.hidden=!visible(Q.find(x=>x.id===b.dataset.block))});
+  clearTimeout(onInput.t);onInput.t=setTimeout(()=>{save();refreshRailCounts()},250);
+  updateProgress();
+}
+function refreshRailCounts(){
+  const rail=app.querySelector(".rail");if(!rail)return;
+  const tmp=document.createElement("div");tmp.innerHTML=railHTML();rail.replaceWith(tmp.firstElementChild);bindRail();
+}
+function updateProgress(){
+  const vs=visSections(),sec=vs[step];if(!sec)return;
+  const qs=Q.filter(q=>q.s===sec.id&&visible(q));const a=qs.filter(answered).length;
+  const p=document.getElementById("prog");if(p)p.style.width=(qs.length?a/qs.length*100:0)+"%";
+}
+
+/* ---------- Rapport ---------- */
+function renderReport(){
+  const R=report(),rel=reliability(),vs=visSections();
+  const name=v("P00")||"Entreprise sans nom";
+  const date=new Intl.DateTimeFormat("fr-CA",{dateStyle:"long"}).format(new Date());
+  const ecart=(n("FIN-05")!==null&&n("FIN-06")!==null)?n("FIN-05")-n("FIN-06"):null;
+  const roul=(n("RH-01")!==null&&E())?n("RH-01")/E()*100:null;
+  const charge=(n("OPS-04h")!==null&&E())?n("OPS-04h")/E():null;
+  const quotes=[["DIR-03","Problème à régler en premier"],["CLO-02","Une seule amélioration sur six mois"],["DIR-02","Avec dix heures de plus par semaine"],["RH-06","Frustration fréquente dans l'équipe"],["MKT-04","Ce qui distingue l'entreprise"],["CLO-01","Sujet non abordé"]].filter(([id])=>answered({id})&&visible(Q.find(q=>q.id===id)));
+  const nbBad=R.issues.filter(i=>i.s===0).length,nbWarn=R.issues.filter(i=>i.s===2).length;
+
+  app.innerHTML=`<div class="form">${railHTML()}<section style="min-width:0">
+   ${isExample?`<div class="banner">Exemple fictif : ces réponses ont été inventées pour montrer à quoi ressemble le rapport. <button class="btn" id="startReal" style="margin-left:8px;padding:5px 10px">Commencer mon diagnostic</button></div>`:""}
+   <div class="rep-head">
+    <div class="who"><p class="eyebrow">Rapport de diagnostic · ${esc(date)}</p><h2>${esc(name)}</h2>
+     <p class="muted">${esc([v("P01"),CUR(),E()?fmt(E())+" personnes":null].filter(Boolean).join(" · "))}</p></div>
+    <div class="rep-actions"><button class="btn" id="copy">Copier le rapport</button><button class="btn" id="dl" hidden>Télécharger (.txt)</button><button class="btn ghost" id="edit">Modifier les réponses</button></div>
+   </div>
+   ${R.global===null?`<div class="panel"><p class="empty">Aucune question notée n'a encore de réponse. Répondez au moins à une section pour obtenir des scores.</p></div>`:`
+   <div class="grid2">
+    <div class="panel">
+     <h3>Score global</h3>
+     <div class="global"><b>${R.global}</b><span class="muted">sur 100</span> <span class="chip ${level(R.global)}">${levelTxt(R.global)}</span></div>
+     <p class="muted" style="font-size:14px">${nbBad} problème${nbBad>1?"s":""} important${nbBad>1?"s":""} et ${nbWarn} point${nbWarn>1?"s":""} à surveiller.</p>
+     <div class="bars">${R.secs.map(s=>`<div class="bar"><span class="lbl" title="${esc(s.title)}">${esc(s.title)}</span><span class="track"><i style="width:${s.r.score}%;background:var(--${level(s.r.score)})"></i></span><span class="v">${s.r.score}</span></div>`).join("")}</div>
+     <div class="legend"><span><i style="background:var(--good)"></i>70 à 100 satisfaisant</span><span><i style="background:var(--warn)"></i>40 à 69 à surveiller</span><span><i style="background:var(--bad)"></i>0 à 39 en difficulté</span></div>
+    </div>
+    <div class="panel">
+     <h3>Indicateurs</h3>
+     <div class="kv">
+      <div><span>Temps récupérable estimé</span><b>${R.totH?fmt(R.totH)+" h par an":"—"}</b></div>
+      <div><span>Valeur de ce temps</span><b>${R.totM!==null&&R.totH?money(R.totM):"—"}</b></div>
+      <div><span>Part du chiffre d'affaires</span><b>${R.totP!==null&&R.totH?fmt(R.totP,1)+" %":"—"}</b></div>
+      <div><span>Écart de trésorerie (clients − fournisseurs)</span><b>${ecart===null?"—":fmt(ecart)+" jours"}</b></div>
+      <div><span>Taux de roulement du personnel</span><b>${roul===null?"—":fmt(roul,1)+" %"}</b></div>
+      <div><span>Tâches répétitives par employé</span><b>${charge===null?"—":fmt(charge,1)+" h par semaine"}</b></div>
+      <div><span>Marge brute déclarée</span><b>${n("FIN-02")===null?"—":fmt(n("FIN-02"),1)+" %"}</b></div>
+      <div><span>Fiabilité des données</span><b><span class="chip ${rel[2]}">${rel[0]}</span></b></div>
+     </div>
+     <p class="muted" style="font-size:13px;margin-top:10px">${esc(rel[1])}${ecart!==null&&ecart>15?" Un écart de plus de 15 jours signifie que l'entreprise paie ses fournisseurs bien avant d'être payée.":""}</p>
+    </div>
+   </div>`}
+
+   <div class="section panel">
+    <h3>Problèmes repérés</h3>
+    ${R.issues.length?`<div class="tbl-wrap"><table><thead><tr><th>Niveau</th><th>Constat</th><th>Fonction</th><th>Question</th></tr></thead><tbody>
+     ${R.issues.map(i=>`<tr><td><span class="chip ${i.s===0?"bad":"warn"}">${i.s===0?"Important":"À surveiller"}</span></td><td>${esc(i.q.issue)}</td><td>${esc(i.sec.title)}</td><td class="mono" style="font-size:12px">${i.q.id}</td></tr>`).join("")}
+    </tbody></table></div><p class="muted" style="font-size:13px;margin-top:10px">Le niveau vient de la grille de cotation. L'ordre dans lequel s'attaquer à ces problèmes reste à décider avec le dirigeant, selon ses priorités et ses moyens.</p>`:`<p class="empty">Aucun problème repéré dans les réponses données.</p>`}
+   </div>
+
+   <div class="section panel">
+    <h3>Temps perdu, converti en coût</h3>
+    ${R.costs.length?`<div class="tbl-wrap"><table><thead><tr><th>Source</th><th class="n">Heures par an</th><th class="n">Coût annuel</th><th class="n">Part du CA</th></tr></thead><tbody>
+     ${R.costs.map(c=>`<tr><td>${esc(c.label)}</td><td class="n">${fmt(c.hy)}</td><td class="n">${money(c.money)}</td><td class="n">${c.pct===null?"—":fmt(c.pct,1)+" %"}</td></tr>`).join("")}
+    </tbody></table></div><p class="muted" style="font-size:13px;margin-top:10px">Calcul : heures par semaine × ${fmt(S())} semaines d'activité${H()?` × ${money(H())} de coût horaire`:""}. ${H()?"":"Indiquez le coût horaire dans la section Profil pour obtenir les montants."}</p>`:`<p class="empty">Aucun temps perdu chiffré. Les questions sur les heures (comptabilité, tâches répétitives, ressaisie, paie, obligations légales) alimentent ce tableau.</p>`}
+   </div>
+
+   ${quotes.length?`<div class="section panel"><h3>Ce que dit le dirigeant</h3><div class="quotes">${quotes.map(([id,l])=>`<div><small>${esc(l)}</small>${esc(A[id])}</div>`).join("")}</div></div>`:""}
+
+   <div class="section panel" id="copyPanel" hidden><h3>Texte du rapport</h3><p class="muted" style="font-size:13px">La copie automatique n'est pas disponible ici. Sélectionnez le texte ci-dessous et copiez-le.</p><textarea id="copyArea" readonly></textarea></div>
+   <div class="nav"><button class="btn ghost" id="back">Section précédente</button><button class="btn" id="home">Accueil</button></div>
+  </section></div>`;
+  bindRail();
+  document.getElementById("edit").onclick=()=>go(0);
+  document.getElementById("back").onclick=()=>go(vs.length-1);
+  document.getElementById("home").onclick=()=>{if(isExample){A={};isExample=false}go(-1)};
+  const sr=document.getElementById("startReal");if(sr)sr.onclick=()=>{A={};isExample=false;clearSaved();go(0)};
+  document.getElementById("copy").onclick=()=>{
+    const txt=reportText();
+    const fallback=()=>{const p=document.getElementById("copyPanel"),t=document.getElementById("copyArea");p.hidden=false;t.value=txt;t.focus();t.select()};
+    try{navigator.clipboard.writeText(txt).then(()=>toast("Rapport copié"),fallback)}catch(e){fallback()}
+  };
+  setupDownload();
+}
+
+async function setupDownload(){
+  const btn=document.getElementById("dl");
+  try{
+    const d=window.claude&&window.claude.use?await window.claude.use("downloads"):null;
+    if(!d||!document.body.contains(btn))return;
+    btn.hidden=false;
+    btn.onclick=async()=>{
+      const slug=(v("P00")||"entreprise").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-zA-Z0-9]+/g,"-").replace(/^-|-$/g,"").toLowerCase()||"entreprise";
+      try{await d.save({filename:`diagnostic-${slug}.txt`,data:reportText()});}catch(e){}
+    };
+  }catch(e){}
+}
+
+function reportText(){
+  const R=report(),rel=reliability(),L=[];
+  const line=()=>L.push("");
+  L.push("DIAGNOSTIC D'ENTREPRISE"+(isExample?" (exemple fictif)":""));
+  L.push(`${v("P00")||"Entreprise sans nom"} — ${[v("P01"),CUR(),E()?fmt(E())+" personnes":null].filter(Boolean).join(", ")}`);
+  L.push("Date : "+new Intl.DateTimeFormat("fr-CA",{dateStyle:"long"}).format(new Date()));
+  line();
+  if(R.global!==null){
+    L.push(`SCORE GLOBAL : ${R.global}/100 (${levelTxt(R.global)})`);
+    R.secs.forEach(s=>L.push(`  ${s.title} : ${s.r.score}/100 (${levelTxt(s.r.score)})`));
+    line();
+  }
+  L.push("PROBLÈMES REPÉRÉS");
+  if(R.issues.length)R.issues.forEach(i=>L.push(`  [${i.s===0?"Important":"À surveiller"}] ${i.q.issue} (${i.sec.title}, ${i.q.id})`));else L.push("  Aucun");
+  line();
+  L.push("TEMPS PERDU CONVERTI EN COÛT");
+  if(R.costs.length){R.costs.forEach(c=>L.push(`  ${c.label} : ${fmt(c.hy)} h/an, ${money(c.money)}${c.pct!==null?", "+fmt(c.pct,1)+" % du CA":""}`));
+    L.push(`  Total : ${fmt(R.totH)} h/an, ${money(R.totM)}${R.totP!==null?", "+fmt(R.totP,1)+" % du CA":""}`)}else L.push("  Non chiffré");
+  line();
+  L.push("INDICATEURS");
+  const ecart=(n("FIN-05")!==null&&n("FIN-06")!==null)?n("FIN-05")-n("FIN-06"):null;
+  L.push(`  Écart de trésorerie : ${ecart===null?"—":fmt(ecart)+" jours"}`);
+  L.push(`  Roulement du personnel : ${n("RH-01")!==null&&E()?fmt(n("RH-01")/E()*100,1)+" %":"—"}`);
+  L.push(`  Marge brute déclarée : ${n("FIN-02")===null?"—":fmt(n("FIN-02"),1)+" %"}`);
+  L.push(`  Fiabilité des données : ${rel[0]}. ${rel[1]}`);
+  line();
+  L.push("RÉPONSES DÉTAILLÉES");
+  visSections().forEach(s=>{
+    const qs=Q.filter(q=>q.s===s.id&&visible(q)&&answered(q));if(!qs.length)return;
+    L.push(`-- ${s.title}`);
+    qs.forEach(q=>{let a=A[q.id];
+      if(q.o){const lab=x=>(q.o.find(o=>o[0]===x)||[x,x])[1];a=Array.isArray(a)?a.map(lab).join(", "):lab(a)}
+      L.push(`  ${q.id} ${q.q} → ${a}${q.unit&&q.t==="num"?" "+unitTxt(q.unit):""}`)});
+  });
+  return L.join("\n");
+}
+
+/* ---------- Exemple fictif ---------- */
+const EXAMPLE={"P00":"Quincaillerie Rivière (exemple)","P01":"Ville fictive","P02":"CAD","P03":"detail","P04":"produits","P05":"14","P06":"9","P07":"1850000","P08":"oui","P08a":"28","P09":"50","P10":"lt10","P11":["pos","tableur","msg"],
+"DIR-01":"admin","DIR-01h":"18","DIR-01t":"Commandes fournisseurs, factures, horaires","DIR-02":"Rencontrer les entrepreneurs de la région pour développer les ventes aux professionnels","DIR-03":"Les ruptures de stock sur les produits qui se vendent le mieux","DIR-04":"peu","DIR-04b":"donnees","DIR-05":"2","DIR-05b":"Les commandes aux fournisseurs et les prix",
+"FIN-01":"globale","FIN-02":"31","FIN-03":"non","FIN-04":"52","FIN-05":"38","FIN-06":"21","FIN-07":"parfois","FIN-07b":"12","FIN-07c":"credit","FIN-08":"trim","FIN-08b":"Rapport du comptable par courriel","FIN-09":"22","FIN-09b":["saisie","rappro"],
+"VEN-01":["bouche","passage"],"VEN-03":"55","VEN-04":"idee","VEN-05":"oui","VEN-06":"34","VEN-07":"1-3","VEN-08":"tableur","VEN-09":"anticipe",
+"MKT-01":["fiche","reseaux"],"MKT-02":"3","MKT-03":"non","MKT-04":"Conseils d'employés qui connaissent les travaux","MKT-04s":"4","MKT-05":"conc",
+"OPS-01":"Le client demande en magasin ou par téléphone, on vérifie le stock à la main, on commande au fournisseur si besoin, facture à la caisse.","OPS-02":["commande","livraison"],"OPS-02b":"6","OPS-03":"4","OPS-04":["saisie","inventaire","horaires","rapports"],"OPS-04h":"26","OPS-04b":"L'inventaire du vendredi","OPS-05":"oui","OPS-05b":"Caisse, tableur d'inventaire, bons de commande","OPS-05h":"6","OPS-06":"3","OPS-06s":"2","OPS-06h":"2","OPS-07":"2","OPS-07b":"Commandes fournisseurs et paie, aucune procédure",
+"RH-01":"3","RH-01b":"Horaires changeants","RH-02":"6","RH-03":"partie","RH-04":"tableur","RH-04h":"10","RH-04b":"Calcul des heures et vérification","RH-05":"20","RH-06":"Les horaires arrivent trop tard",
+"STK-01":"comptage","STK-02":"souvent","STK-02b":"Vis et quincaillerie de base, une dizaine de ventes par mois","STK-03":"18","STK-04":"habitude","STK-05":"oui-alt","STK-06":"3",
+"OUT-01":"main","OUT-02":"ordi","OUT-03":"parfois","OUT-04":["prix","achats"],"OUT-04b":"Quels produits se vendent vraiment, par mois","OUT-05":"jamais","OUT-06a":"4","OUT-06b":"3",
+"ADM-01":["taxes","employeur"],"ADM-01h":"7","ADM-02":"jamais","ADM-03":"disperses",
+"CLO-02":"Ne plus manquer de stock sur les produits essentiels","CLO-03":["ventes","horaires"]};
+
+/* ---------- Démarrage ---------- */
+render();
+</script>
+
+</body>
+</html>
