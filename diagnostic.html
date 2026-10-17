@@ -434,7 +434,7 @@ const fmt=(x,d=0)=>x===null||x===undefined||!isFinite(x)?"—":new Intl.NumberFo
 /* ---------- État et stockage local ---------- */
 let step=-1, isExample=false;
 /* Adresse du script Google Apps Script qui reçoit les diagnostics (vide = envoi désactivé) */
-const ENDPOINT="";
+const ENDPOINT="https://script.google.com/macros/s/AKfycbzAE0kvH_8AQC7tLEWR2nMCxSKupEtuY9TqecPdCdbuhnmc67yYMXVMUopeM_08GSN7OA/exec";
 const KEY="diagnostic-entreprise-v1";
 function save(){if(isExample)return;try{localStorage.setItem(KEY,JSON.stringify({A,step}))}catch(e){}}
 function load(){try{const d=JSON.parse(localStorage.getItem(KEY)||"null");return d&&d.A?d:null}catch(e){return null}}
