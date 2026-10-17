@@ -615,10 +615,11 @@ function renderReport(){
 
    ${quotes.length?`<div class="section panel"><h3>Ce que dit le dirigeant</h3><div class="quotes">${quotes.map(([id,l])=>`<div><small>${esc(l)}</small>${esc(A[id])}</div>`).join("")}</div></div>`:""}
 
-   ${isExample?"":`<div class="section panel"><h3>Passer à l'action</h3>
-    <p style="margin:0 0 10px">Ce rapport vous appartient. Gardez-le, que vous fassiez affaire avec moi ou non.</p>
-    <p style="margin:0 0 16px">Si vous voulez vraiment régler ces problèmes, écrivez-moi en joignant votre rapport (bouton « Copier le rapport » plus haut). Nous commençons par une rencontre de 30 minutes, en personne ou en visioconférence, sans engagement. Nous partons de vos priorités : c'est vous qui choisissez quoi régler en premier, selon votre temps et vos moyens.</p>
-    <p style="margin:0 0 12px"><a class="btn primary" style="display:inline-block;text-decoration:none" href="mailto:gescop.support@gmail.com?subject=${encodeURIComponent("Diagnostic de gestion : "+(v("P00")||"mon entreprise"))}">Écrire à Issa</a></p>
+   ${isExample?"":`<div class="section panel"><h3>Et maintenant ?</h3>
+    <p style="margin:0 0 10px"><strong>Ce rapport est à vous</strong>, que nous travaillions ensemble ou non.</p>
+    <p style="margin:0 0 10px">${ENDPOINT?"Vos réponses m’ont été transmises. <strong>D’ici deux jours ouvrables</strong>, je vous propose une rencontre de 30 minutes, en personne ou en visioconférence, sans engagement.":"Écrivez-moi en joignant votre rapport (bouton « Copier le rapport » plus haut) pour fixer une rencontre de 30 minutes, en personne ou en visioconférence, sans engagement."}</p>
+    <p style="margin:0 0 16px">Ensemble, on choisit le problème qui vous coûte le plus et je vous propose une solution concrète : automatiser une tâche, simplifier une procédure ou mettre en place GESCOP pour voir enfin vos marges. Trois mois plus tard, vous refaites ce diagnostic pour mesurer ce qui a changé.</p>
+    <p style="margin:0 0 12px"><a class="btn primary" style="display:inline-block;text-decoration:none" href="mailto:gescop.support@gmail.com?subject=${encodeURIComponent("Rencontre diagnostic : "+(v("P00")||"mon entreprise"))}&body=Bonjour%20Issa%2C%0A%0AJe%20souhaite%20fixer%20notre%20rencontre%20de%2030%20minutes.%20Mes%20disponibilit%C3%A9s%20%3A%20%0A%0A">Fixer ma rencontre maintenant</a></p>
     <p class="muted" style="font-size:13px">Issa Ouedraogo, GESCOP · gescop.support@gmail.com</p></div>`}
 
    <div class="section panel" id="copyPanel" hidden><h3>Texte du rapport</h3><p class="muted" style="font-size:13px">La copie automatique n'est pas disponible ici. Sélectionnez le texte ci-dessous et copiez-le.</p><textarea id="copyArea" readonly></textarea></div>
