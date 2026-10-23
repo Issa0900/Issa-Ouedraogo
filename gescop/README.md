@@ -9,7 +9,7 @@
 
 Application web (SaaS) qui transforme les fichiers éparpillés d'une PME (ventes, dépenses, relevés bancaires, paie, stocks) en un tableau de bord financier fiable : marge réelle, trésorerie, écarts entre les sources et rapports de direction.
 
-> 🌐 **Application en ligne : [gescop.ca](https://gescop.ca)** (démonstration interactive sur la page d'accueil, compte d'essai gratuit)
+> 🌐 **Application en ligne : [gescop.ca/application](https://gescop.ca/application)**, développée et utilisée par GESCOP, cabinet de conseil et d'intégration de solutions d'affaires pour PME ([gescop.ca](https://gescop.ca)).
 >
 > 🔒 Le code source est privé : GESCOP est un produit commercial. Cette page documente le problème, les choix de conception et ce qui rend les chiffres fiables.
 
@@ -41,7 +41,7 @@ Permettre à un dirigeant de PME, sans compétence technique, de déposer ses fi
 | **Détection des écarts** | Confrontation entre sources : ventes déclarées par les régies publicitaires contre encaissements réels, factures fournisseur payées en double... |
 | **Décision** | Alertes, risques, recommandations, simulateur de scénarios et assistant conversationnel sur les données de l'entreprise. |
 | **Rapports** | Rapport de direction généré en un clic, exportable en PDF, Excel et diaporama. |
-| **Abonnement** | Paiement et gestion d'abonnement par Stripe, essai gratuit. |
+| **Abonnement** | Paiement et gestion d'abonnement par Stripe, ou code pilote d'un mois. |
 
 ### Aperçu de l'interface
 
@@ -83,7 +83,7 @@ Interface React : tableaux de bord, alertes, rapports, assistant IA
 | Élément | Choix |
 |---|---|
 | Interface | React 18, Vite, Tailwind CSS, composants Radix, TanStack Query |
-| Serveur et données | Plateforme Base44 (authentification, base de données, 15 fonctions serveur en Deno/TypeScript) |
+| Serveur et données | Supabase (authentification, base PostgreSQL, fonctions serveur en Deno/TypeScript) |
 | IA | Modèle de langage pour la reconnaissance des colonnes difficiles, les synthèses et l'assistant |
 | Paiement | Stripe (paiement, portail client, webhooks) |
 | Exports | jsPDF, génération Excel, PptxGenJS |

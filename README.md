@@ -9,7 +9,7 @@
 
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Issa_Ouedraogo-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
   [![GitHub](https://img.shields.io/badge/GitHub-Issa0900-181717?style=flat&logo=github&logoColor=white)](https://github.com/Issa0900/Issa-Ouedraogo)
-  [![GESCOP Live](https://img.shields.io/badge/SaaS_Live-GESCOP-0D9488?style=flat&logo=safari&logoColor=white)](https://gescop.ca)
+  [![GESCOP](https://img.shields.io/badge/GESCOP-conseil_et_int%C3%A9gration-0D9488?style=flat&logo=safari&logoColor=white)](https://gescop.ca)
   [![Rapport Web](https://img.shields.io/badge/Rapport_Web-24_Pages-0284C7?style=flat)](./portfolio_report.html)
 
   📧 **[issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)** · 📍 **Québec**
@@ -49,9 +49,9 @@ PME & marges  BFR/DuPont  SQL/Python    Excel/Power BI        4 étapes (tests) 
 ```
 
 ### Chiffres Clés Vérifiables
-| **7+** | **6** | **1** | **333** |
+| **7+** | **6** | **1** | **5** |
 | :---: | :---: | :---: | :---: |
-| **Projets Documentés**<br><sub>Code source & données ouverts</sub> | **Domaines Explorés**<br><sub>Finance, ventes, RH, stats...</sub> | **Application en Ligne**<br><sub>GESCOP (Base44/Deno)</sub> | **Tests Automatisés**<br><sub>Non-régression des calculs</sub> |
+| **Projets Documentés**<br><sub>Code source & données ouverts</sub> | **Domaines Explorés**<br><sub>Finance, ventes, RH, stats...</sub> | **Application en Ligne**<br><sub>GESCOP (Supabase/Deno)</sub> | **Étapes de méthode**<br><sub>Observer, cartographier, concevoir, mettre en place, mesurer</sub> |
 
 ---
 
@@ -67,8 +67,8 @@ J'ai créé **GESCOP** pour offrir aux dirigeants de PME la clarté financière 
 
 * **La fin du casse-tête des fichiers :** L'utilisateur dépose ses fichiers hétérogènes (Excel, CSV, PDF). L'application reconnaît automatiquement les colonnes et signale les doublons sans jamais les supprimer en silence.
 * **62 indicateurs vérifiables en 1 clic :** Suivi en temps réel de la trésorerie, du BFR, du runway cash, des marges par produit et de la rotation des stocks. Un clic sur n'importe quel chiffre permet d'inspecter la formule et les écritures sources.
-* **Architecture moderne & pérenne :** React 18, Deno en TypeScript, PostgreSQL (38 tables relationnelles), Stripe pour les abonnements et **333 tests automatisés** pour garantir qu'aucun calcul ne dérive.
-* 🔗 **Tester l'application en direct :** [gescop.ca](https://gescop.ca) · [Voir le dossier technique →](./gescop/)
+* **Architecture moderne & pérenne :** React, Deno en TypeScript, PostgreSQL et Stripe pour les abonnements ; les calculs sont vérifiés sur des jeux de données de référence pour qu'ils ne dérivent pas.
+* 🔗 **L'application en ligne :** [gescop.ca/application](https://gescop.ca/application) · [Voir le dossier technique →](./gescop/)
 
 ---
 
@@ -120,7 +120,7 @@ Chaque dossier ci-dessous est un cas d'étude complet avec son code, ses donnée
 | **Inférence Statistique** | Statistiques Inférentielles | 3 jeux (2 705 obs) | Script Python Scipy | ✅ 36 contrôles sans divergence |
 | **Analyse Territoriale** | Géomarketing Québec | 257 755 étab. (ISQ) | Palmarès 17 régions | ✅ Source publique ISQ documentée |
 | **IA Appliquée** | Workflow IA & Automatisation | Données réelles | Commits & architecture | ✅ Revue humaine systématique |
-| **Conception Produit** | GESCOP SaaS | Multi-formats PME | Web App en ligne | ✅ 333 tests automatisés réussis |
+| **Conception Produit** | GESCOP SaaS | Multi-formats PME | Web App en ligne | ✅ Calculs vérifiés sur des jeux de référence |
 
 ---
 
@@ -131,6 +131,6 @@ Disponible pour discuter de vos besoins d'analyse, d'optimisation de vos rapport
 - 📧 **Courriel :** [issaouedraogo0900@gmail.com](mailto:issaouedraogo0900@gmail.com)
 - 💼 **LinkedIn :** [linkedin.com/in/issa-ouedraogo-34b146332/](https://www.linkedin.com/in/issa-ouedraogo-34b146332/)
 - 🐙 **GitHub :** [github.com/Issa0900](https://github.com/Issa0900)
-- 🧭 **GESCOP Live :** [gescop.ca](https://gescop.ca)
+- 🧭 **GESCOP, conseil et intégration pour PME :** [gescop.ca](https://gescop.ca)
 
 *Québec · 2026*
