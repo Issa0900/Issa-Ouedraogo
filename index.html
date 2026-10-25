@@ -703,6 +703,20 @@
     .report-web-callout { grid-template-columns: 1fr; }
     .site-footer-bar { flex-direction: column; gap: 8px; text-align: center; }
   }
+
+  html {scroll-padding-top:100px;scroll-behavior:smooth}
+  .offer-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+  .offer {padding:28px;border:1px solid var(--line);border-radius:12px;background:white;display:flex;flex-direction:column;gap:14px}
+  .offer h3 {font-size:1.3rem;line-height:1.3;margin:0}.offer h4 {font-size:.86rem;margin:6px 0 0}
+  .offer p {font-size:.94rem;color:var(--slate-600);margin:0}.offer ul {padding-left:19px;font-size:.9rem;margin:0;color:var(--slate-700)}
+  .offer li {margin-bottom:9px}.offer a {margin-top:auto;font-weight:700;color:var(--teal);font-size:.9rem}
+  .offer-step {font-family:'IBM Plex Mono',monospace;font-size:.7rem;color:var(--teal);text-transform:uppercase;letter-spacing:.04em}
+  .offer .offer-fit {font-size:.8rem;border-top:1px solid var(--line);padding-top:16px}.offers-section,.method-section {background:var(--slate-50)}
+  .scope-note {margin-top:26px;color:var(--slate-600);max-width:85ch}.method-list {padding-left:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 50px;margin:24px 0 30px}
+  .method-list span {display:block;color:var(--slate-600);margin-top:8px}.proof-grid .offer {border-top:3px solid var(--teal)}
+  @media(max-width:800px){.offer-grid,.method-list{grid-template-columns:1fr}.offer{padding:22px}nav.links{display:flex;flex-wrap:wrap;gap:12px}.nav-row{flex-wrap:wrap;gap:14px;padding:12px 20px}.hero{padding-top:44px}.hero-identity{font-size:.68rem;letter-spacing:.03em}.avail-badge{right:0}html{scroll-padding-top:160px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
 </style>
 </head>
 <body>
@@ -711,15 +725,10 @@
 <header class="nav">
   <div class="nav-row">
     <a class="brand" href="#top">Issa <span>Ouedraogo</span></a>
-    <nav class="links">
-      <a href="./diagnostic.html">Rapport de gestion gratuit</a>
-      <a href="#services">Services</a>
-      <a href="#gescop" class="badge-nav">🧭 GESCOP</a>
-      <a href="#projets">Études de cas</a>
-      <a href="#competences">Compétences</a>
-      <a href="#preuves">Preuves &amp; Code</a>
-      <a href="./portfolio_report.html" target="_blank" class="badge-report">🌐 Rapport Web (24p)</a>
-      <a href="#contact">Contact</a>
+    <nav class="links" aria-label="Navigation principale">
+      <a href="#services">Services</a><a href="#exemples">Réalisations</a>
+      <a href="#methode">Méthode</a><a href="#english" lang="en">English</a>
+      <a href="#contact" class="badge-nav">Parlons de votre projet</a>
     </nav>
   </div>
 </header>
@@ -735,15 +744,15 @@
           Consultant freelance · Gestion, données et automatisation · FR/EN
         </div>
         <h1>
-          Vos données plus claires.<br>Vos tâches répétitives <em>automatisées.</em>
+          Des fichiers fiables.<br>Des rapports prêts<br><em>à réutiliser.</em>
         </h1>
         <p class="lead">
-          J’aide les PME à organiser leurs données, suivre leur activité et simplifier leurs opérations. De vos premiers fichiers Excel à un tableau de bord ou une automatisation, j’adapte l’intervention à vos outils et à votre organisation. <strong>Mandats à distance à l’international, en français et en anglais.</strong>
+          Votre suivi de ventes, de marges ou de stocks demande trop de manipulations ? Je nettoie vos fichiers, construis votre tableau de bord et automatise les étapes répétitives. Vous recevez un outil documenté, avec des calculs que vous pouvez vérifier. <strong>Mandats à distance à l’international, en français et en anglais.</strong>
         </p>
         <div class="hero-actions">
           <a class="btn-primary" href="mailto:gescop.support@gmail.com?subject=Projet%20freelance">Discuter de mon besoin</a>
-          <a class="btn-teal" href="https://gescop.ca" target="_blank" rel="noopener">Découvrir GESCOP</a>
-          <a class="btn-ghost" href="#projets">Voir les études de cas →</a>
+          <a class="btn-ghost" href="#exemples">Examiner mes réalisations</a>
+          
         </div>
       </div>
       <div class="portrait-frame">
@@ -785,26 +794,49 @@
 
   <!-- ==================== CE QUE J'AI CONSTRUIT ==================== -->
 
-  <section id="services" style="background:var(--slate-50)">
+
+  <section id="services" class="offers-section">
     <div class="wrap">
-      <div class="section-head"><span class="kicker">Missions freelance</span>
-        <h2>Une intervention adaptée à votre point de départ.</h2>
-        <p>Un problème précis, un livrable utilisable et une méthode pour vérifier le résultat. Le choix des outils vient après la compréhension de votre besoin.</p>
+      <div class="section-head"><span class="kicker">Trois missions concrètes</span>
+        <h2>De quoi avez-vous besoin aujourd’hui ?</h2>
+        <p>Nous partons de votre organisation actuelle. Chaque mission définit les fichiers concernés, les livrables et la façon de valider le résultat.</p>
       </div>
-      <div class="capabilities-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))">
-        <article class="cap-box"><h3>Structurer</h3><p>Vos informations sont dispersées et les suivis sont manuels.</p><p><strong>Livrables :</strong> fichiers nettoyés, gabarits de suivi, procédures et dictionnaire des données.</p><a href="mailto:gescop.support@gmail.com?subject=Structurer%20mes%20donnees">Organiser mes données →</a></article>
-        <article class="cap-box"><h3>Piloter</h3><p>Vos logiciels produisent des exports, mais les indicateurs restent difficiles à lire.</p><p><strong>Livrables :</strong> tableau de bord Excel ou Power BI, règles de calcul documentées et guide d’actualisation.</p><a href="#projets">Voir les projets d’analyse →</a></article>
-        <article class="cap-box"><h3>Automatiser</h3><p>Vos processus sont définis, mais les mêmes manipulations reviennent chaque semaine.</p><p><strong>Livrables :</strong> script ou outil ciblé, contrôles, documentation et transfert à votre équipe.</p><a href="mailto:gescop.support@gmail.com?subject=Automatiser%20un%20suivi">Décrire ma tâche répétitive →</a></article>
-        <article class="cap-box"><h3>Évaluer un usage IA</h3><p>Vous avez un besoin identifié et souhaitez vérifier où l’IA serait utile.</p><p><strong>Livrables :</strong> cadrage, prototype limité et critères de validation humaine avant d’aller plus loin.</p><a href="./integration-ia/">Voir ma méthode →</a></article>
+      <div class="offer-grid">
+        <article class="offer"><span class="offer-step">01 · Structurer</span><h3>Remettre vos fichiers en ordre</h3>
+          <p>Des doublons, des formules fragiles ou plusieurs versions du même suivi ?</p>
+          <h4>Ce que vous recevez</h4><ul><li>Un fichier nettoyé et consolidé.</li><li>La liste des anomalies et les règles appliquées.</li><li>Un gabarit et un guide pour la suite.</li></ul>
+          <p class="offer-fit">Pour démarrer : un fichier représentatif et les totaux attendus.</p><a href="mailto:gescop.support@gmail.com?subject=Mission%20fichiers">Décrire mes fichiers →</a>
+        </article>
+        <article class="offer"><span class="offer-step">02 · Piloter</span><h3>Construire votre tableau de bord</h3>
+          <p>Vos exports existent, mais les ventes, les marges ou les stocks restent difficiles à suivre ?</p>
+          <h4>Ce que vous recevez</h4><ul><li>Des indicateurs définis avec vous.</li><li>Un tableau de bord Excel ou Power BI.</li><li>Les calculs documentés et un guide d’actualisation.</li></ul>
+          <p class="offer-fit">Pour démarrer : vos exports et les décisions à éclairer.</p><a href="./dashboard-ventes-performance/">Voir le cockpit Excel →</a>
+        </article>
+        <article class="offer"><span class="offer-step">03 · Automatiser</span><h3>Réutiliser votre rapport mensuel</h3>
+          <p>Vous recommencez les mêmes copier-coller ou consolidations à chaque période ?</p>
+          <h4>Ce que vous recevez</h4><ul><li>Un traitement réutilisable sur un périmètre défini.</li><li>Des contrôles et des messages d’erreur utiles.</li><li>La documentation et une prise en main.</li></ul>
+          <p class="offer-fit">Pour démarrer : les étapes actuelles et un exemple de sortie.</p><a href="mailto:gescop.support@gmail.com?subject=Mission%20rapport%20recurrent">Décrire mon rapport →</a>
+        </article>
       </div>
-      <p style="margin-top:24px">Nous commençons par votre processus actuel, les fichiers disponibles et la décision à améliorer. Le périmètre, les délais et les modalités sont convenus avant le démarrage.</p>
-      <aside lang="en" style="margin-top:28px;padding:24px;border-left:3px solid var(--teal);background:white">
-        <h3>Freelance support for your business data and operations</h3>
-        <p>I help small and medium-sized businesses organize spreadsheets, build dashboards and automate recurring reports. Excel, Power BI, SQL, Python and custom business tools. Remote projects worldwide, in French and English.</p>
-        <a href="mailto:gescop.support@gmail.com?subject=Freelance%20project">Tell me about your project →</a>
-      </aside>
+      <p class="scope-note">Si vos processus sont encore informels, nous commençons par un suivi simple. Si vos données sont déjà structurées, nous pouvons cadrer une automatisation ou un outil métier. L’IA intervient lorsqu’un usage précis le justifie.</p>
     </div>
   </section>
+  <section id="exemples">
+    <div class="wrap"><div class="section-head"><span class="kicker">Preuves consultables</span><h2>Regardez ce que j’ai construit.</h2><p>Ces réalisations montrent ma méthode et mes livrables. Les analyses sur jeux de données ne sont pas présentées comme des gains obtenus chez des clients.</p></div>
+      <div class="offer-grid proof-grid">
+        <article class="offer"><span class="offer-step">Tableau de bord · Jeu de données Superstore</span><h3>Suivre ventes et marges dans Excel</h3><p>Un cockpit filtrable, une préparation des données et des calculs consultables pour examiner la performance par catégorie.</p><a href="./dashboard-ventes-performance/">Voir le livrable et sa méthode →</a></article>
+        <article class="offer"><span class="offer-step">Modélisation · Projet de démarrage</span><h3>Relier budget et trésorerie</h3><p>Un modèle financier documenté pour examiner les revenus, les charges et les besoins de financement d’un scénario de démarrage.</p><a href="./analyse-financiere-demarrage/">Examiner le modèle →</a></article>
+        <article class="offer"><span class="offer-step">Application développée · GESCOP</span><h3>Passer des fichiers aux décisions</h3><p>Une application qui relie import, indicateurs traçables, alertes et suivi des actions. Une preuve de conception et de développement d’un outil métier.</p><a href="./gescop/">Voir les captures et le fonctionnement →</a></article>
+      </div>
+    </div>
+  </section>
+  <section id="methode" class="method-section"><div class="wrap"><div class="section-head"><span class="kicker">Comment se déroule une mission</span><h2>Un premier lot clair, avant d’aller plus loin.</h2></div>
+    <ol class="method-list"><li><strong>Comprendre votre suivi.</strong><span>Votre question, vos outils, vos fichiers et votre échéance.</span></li><li><strong>Définir le livrable.</strong><span>Un périmètre, un devis et des critères de validation convenus.</span></li><li><strong>Vérifier sur un exemple.</strong><span>Une première version comparée aux données sources et à vos attentes.</span></li><li><strong>Transmettre l’outil.</strong><span>La version validée, ses limites, sa documentation et sa prise en main.</span></li></ol>
+    <p>Les licences, l’hébergement, le support et les évolutions éventuelles sont précisés dans le devis. Une mission peut se réaliser dans vos outils existants ; GESCOP est une option lorsque le besoin s’y prête.</p>
+  </div></section>
+  <section id="english" lang="en"><div class="wrap"><div class="section-head"><span class="kicker">Remote projects · French / English</span><h2>Reliable spreadsheets. Reusable reporting.</h2><p>I help small businesses clean and reconcile their files, build practical dashboards and automate recurring reports. My background combines business management with Excel, Power BI, Python, SQL and business application development.</p></div>
+  <div class="offer-grid"><article class="offer"><h3>Clean and reconcile</h3><p>Structured source files, documented corrections and a reusable tracking template.</p></article><article class="offer"><h3>Build a dashboard</h3><p>Agreed KPIs, an Excel or Power BI report, calculation notes and refresh instructions.</p></article><article class="offer"><h3>Automate a recurring report</h3><p>A defined workflow, validation checks, documentation and handover.</p></article></div>
+  <p style="margin-top:24px">Start with your current process, a representative file and the output you need. We agree on scope, acceptance criteria and pricing before work begins. The portfolio examples are demonstrations and analytical projects, not claimed client savings.</p><a class="btn-primary" href="mailto:gescop.support@gmail.com?subject=Remote%20reporting%20project">Tell me about your project</a></div></section>
 
   <section id="construit">
     <div class="wrap">
@@ -862,7 +894,7 @@
         <div class="parcours-card">
           <span class="parcours-step">03</span>
           <div class="parcours-title">Données &amp; Code</div>
-          <div class="parcours-desc">Quand les feuilles de calcul deviennent trop lourdes, Python et SQL permettent de nettoyer, croiser et fiabiliser sans risque d'erreur manuelle.</div>
+          <div class="parcours-desc">Quand les feuilles de calcul deviennent trop lourdes, Python et SQL permettent de nettoyer, croiser et fiabiliser avec des contrôles explicites.</div>
         </div>
 
         <div class="parcours-card">
@@ -893,7 +925,7 @@
         <span class="kicker">02 — Réalisation phare</span>
         <h2>L'application d'analyse GESCOP : pourquoi je l'ai construite</h2>
         <p class="lead">
-          Dans presque toutes les PME que j'ai observées, le même problème revient : le dirigeant a un export de caisse, des factures dans un classeur, un relevé de banque et des dépenses sur Excel. Il passe ses fins de semaine à faire du copier-coller et n'a aucune visibilité sur sa marge nette réelle. J'ai voulu créer l'outil que j'aurais aimé lui donner.
+          GESCOP répond à un besoin de gestion : relier des exports de ventes, de dépenses et de banque pour examiner la rentabilité et la trésorerie. J’ai conçu cette application pour rendre les calculs consultables et faciliter le passage des constats aux actions.
         </p>
       </div>
 
@@ -906,7 +938,7 @@
         <div class="level-card">
           <span class="level-badge">Ce que ça change pour le patron</span>
           <h4>La fin du casse-tête des fichiers</h4>
-          <p>Il dépose ses fichiers tels qu'ils sont (même avec des colonnes déplacées). L'application fait le tri, signale les doublons sans les supprimer en cachette, et lui montre sa trésorerie prévisionnelle à 30, 60 et 90 jours.</p>
+          <p>L’utilisateur dépose ses fichiers, vérifie les colonnes reconnues puis confirme l’import. Il consulte les indicateurs disponibles et les anomalies signalées. Les prévisions du forfait Pro nécessitent un historique suffisant.</p>
         </div>
 
         <div class="level-card">
@@ -1034,7 +1066,7 @@
             <strong>La question du gestionnaire :</strong> <em>« Est-ce qu'augmenter les salaires suffit à motiver et retenir une équipe ? »</em>
           </p>
           <div class="case-insight-box teal">
-            <strong>Ce que montre l'analyse :</strong> Sur 311 collaborateurs, le salaire a très peu de lien avec la note d'évaluation (r = 0,13). Une corrélation n'établit pas de lien de cause à effet, mais les retards répétés sont le premier signal mesurable d'un désengagement profond (r = -0,73). Mieux vaut miser sur le climat de travail et le management de proximité.
+            <strong>Ce que montre l'analyse :</strong> Sur 311 collaborateurs, le salaire a très peu de lien avec la note d'évaluation (r = 0,13). Une corrélation n'établit pas de lien de cause à effet, mais le jeu étudié montre une association entre retards et engagement (r = -0,73). Elle ne permet pas d’établir un diagnostic individuel ni de choisir seule une intervention RH.
           </div>
           <div class="case-footer-row">
             <span class="case-tools">Python · Pandas · Matplotlib · IQR</span>
@@ -1104,7 +1136,7 @@
             <strong>La question du gestionnaire :</strong> <em>« Où ouvrir notre prochain point de vente au Québec pour maximiser nos chances de succès ? »</em>
           </p>
           <div class="case-insight-box teal">
-            <strong>Ce que montre l'analyse :</strong> En croisant les 257 755 entreprises du répertoire de l'Institut de la statistique du Québec (ISQ) avec la population et les revenus, on constate que Montréal est saturé. Les meilleures opportunités d'expansion se situent en périphérie (Laval, Montérégie), où la concurrence est moins agressive.
+            <strong>Ce que montre l'analyse :</strong> En croisant les 257 755 entreprises du répertoire de l'Institut de la statistique du Québec (ISQ) avec la population et les revenus, le projet compare des territoires selon un score exploratoire. Ce score sert à formuler des hypothèses ; une étude locale et sectorielle reste nécessaire avant une décision d’implantation.
           </div>
           <div class="case-footer-row">
             <span class="case-tools">Python · SQL · Données Publiques ISQ</span>
@@ -1132,15 +1164,15 @@
           <div class="case-metrics-bar">
             <div>
               <div class="cm-val">IA</div>
-              <div class="cm-lbl">Vitesse d'Exécution</div>
+              <div class="cm-lbl">Écriture assistée</div>
             </div>
             <div>
-              <div class="cm-val">100 %</div>
-              <div class="cm-lbl">Audit Humain</div>
+              <div class="cm-val">Revue</div>
+              <div class="cm-lbl">Humaine</div>
             </div>
             <div>
-              <div class="cm-val" style="color:var(--teal);">Zéro</div>
-              <div class="cm-lbl">Calcul Opaque</div>
+              <div class="cm-val" style="color:var(--teal);">Sources</div>
+              <div class="cm-lbl">Traçables</div>
             </div>
           </div>
           <p class="case-desc">
@@ -1293,7 +1325,7 @@
             <tr>
               <td><strong>Conception Logicielle</strong></td>
               <td><a href="./gescop/">GESCOP SaaS</a></td>
-              <td>Données PME réelles</td>
+              <td>Jeux de données de référence</td>
               <td><a href="https://gescop.ca/application" target="_blank">Application en ligne</a></td>
               <td><span style="color:var(--teal);font-weight:800;">✅ Calculs vérifiés sur des jeux de référence</span></td>
             </tr>
